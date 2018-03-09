@@ -13,16 +13,16 @@
 <meta property="og:site_name" content="보고 배우는 개발">
 <meta property="og:description" content="브라우저 렌더링이 이루어지는 과정 웹을 개발하는 사람로써 웹브라우저가 렌더링 되는 과정을 이해하는 것은 필수가 아닐까합니다. 저는 왜???라는 말을 참 좋아하는데요.어떠한 행위를 할때 ‘왜?’ 라고 생각해보는 과정은 좋은 습관이라고 생각합니다.우리는 웹개발을 하는 사람으로써, 어떠한 과정에 한계를 두지 말고 지금은 모르더라도 점진적으로 알아가야 한다고 생">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://tuhbm.github.io/2017/08/10/images/bnr-html.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/2017/08/10/images/rendering/ex_html.png">
-<meta property="og:image" content="https://tuhbm.github.io/2017/08/10/images/rendering/rendering1.png">
-<meta property="og:image" content="https://tuhbm.github.io/2017/08/10/images/rendering/rendering2.png">
-<meta property="og:image" content="https://tuhbm.github.io/2017/08/10/images/rendering/rendering3.png">
-<meta property="og:updated_time" content="2018-03-09T16:24:55.823Z">
+<meta property="og:image" content="https://tuhbm.github.io/images/bnr-html.jpg">
+<meta property="og:image" content="https://tuhbm.github.io/images/rendering/ex_html.png">
+<meta property="og:image" content="https://tuhbm.github.io/images/rendering/rendering1.png">
+<meta property="og:image" content="https://tuhbm.github.io/images/rendering/rendering2.png">
+<meta property="og:image" content="https://tuhbm.github.io/images/rendering/rendering3.png">
+<meta property="og:updated_time" content="2018-03-09T16:36:59.163Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="rendering 1편">
 <meta name="twitter:description" content="브라우저 렌더링이 이루어지는 과정 웹을 개발하는 사람로써 웹브라우저가 렌더링 되는 과정을 이해하는 것은 필수가 아닐까합니다. 저는 왜???라는 말을 참 좋아하는데요.어떠한 행위를 할때 ‘왜?’ 라고 생각해보는 과정은 좋은 습관이라고 생각합니다.우리는 웹개발을 하는 사람으로써, 어떠한 과정에 한계를 두지 말고 지금은 모르더라도 점진적으로 알아가야 한다고 생">
-<meta name="twitter:image" content="https://tuhbm.github.io/2017/08/10/images/bnr-html.jpg">
+<meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-html.jpg">
     
 
     
@@ -258,7 +258,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="../images/bnr-html.jpg" alt="html"></p>
+            <p><img src="https://tuhbm.github.io/images/bnr-html.jpg" alt="html"></p>
 <h1 id="브라우저-렌더링이-이루어지는-과정"><a href="#브라우저-렌더링이-이루어지는-과정" class="headerlink" title="브라우저 렌더링이 이루어지는 과정"></a>브라우저 렌더링이 이루어지는 과정</h1><hr>
 <p><strong>웹을 개발하는 사람</strong>로써 웹브라우저가 렌더링 되는 과정을 이해하는 것은 필수가 아닐까합니다.</p>
 <p>저는 <strong>왜???</strong><br>라는 말을 참 좋아하는데요.<br>어떠한 행위를 할때 ‘왜?’ 라고 생각해보는 과정은 좋은 습관이라고 생각합니다.<br>우리는 웹개발을 하는 사람으로써, 어떠한 과정에 한계를 두지 말고 지금은 모르더라도 점진적으로 알아가야 한다고 생각을 하는데요.<br>우리가 작업을 하는 HTML, CSS, JavaScript가 렌더링 되는 과정을 이해하는 것이 매우 중요하다고 생각합니다.</p>
@@ -266,20 +266,20 @@
 <h2 id="우선-‘렌더링’-부터-알아보도록-하겠습니다"><a href="#우선-‘렌더링’-부터-알아보도록-하겠습니다" class="headerlink" title="우선 ‘렌더링’ 부터 알아보도록 하겠습니다."></a>우선 ‘렌더링’ 부터 알아보도록 하겠습니다.</h2><h3 id="렌더링이란"><a href="#렌더링이란" class="headerlink" title="렌더링이란?"></a>렌더링이란?</h3><p>렌더링(Rendering)은 컴퓨터 프로그램을 사용하여 모델(또는 이들을 모아놓은 장면인 씬(scene) 파일)로부터 영상을 만들어내는 과정을 말한다.<br>라고 간단하게 표현하고 있습니다.<br><strong>한마디로 클라이언트(사용자)에서 서버에 파일을 받아 브라우저에 뿌려주는 과정이라고 볼 수 있습니다.</strong><br>더 깊이 알고싶으시면 밑에 위키링크를 클릭해보세요.<br><a href="https://ko.wikipedia.org/wiki/%EB%A0%8C%EB%8D%94%EB%A7%81" rel="external nofollow noopener noreferrer" target="_blank">위키 렌더링</a></p>
 <p>클라이언트란 단어는 편하게 사용자라고 이해하시면 쉬울 것 같습니다.<br>모바일에서 접속하면, 모바일 === 클라인언트<br>pc에서 접속하면, pc === 클라이언트<br>인것이죠. 이는 브라우저에만 국한된 단어는 아닙니다. 그냥 사용자를 클라이언트라고 이해하시면 될 것 같습니다.</p>
 <p>제가 활동하고 있는 커뮤니티에서 한때 잠깐 어떤 질문이 올라온적이 있는데요.<br>질문의 내용은 html, css, javascript 렌더링 순서에 관한 질문이었습니다.</p>
-<p>그림을 살펴보도록하죠.<br><img src="../images/rendering/ex_html.png" alt="ex_html문"></p>
+<p>그림을 살펴보도록하죠.<br><img src="https://tuhbm.github.io/images/rendering/ex_html.png" alt="ex_html문"></p>
 <p>그림을 보면 doctype을 시작으로 html태그가 처음 나오는것을 보실 수 있습니다.<br>다음 meta태그, title태그 등을 지나 head태그안에 script와 link태그를 이용한 css를 불러오는 과정을 보실수 있습니다.<br>그렇다면..과연 html, css, javascript 중 가장 먼저 렌더링 되는 것은 무엇일까요?</p>
 <h4 id="정답-html"><a href="#정답-html" class="headerlink" title="정답 : html"></a>정답 : html</h4><p>맞습니다 html이 불러와 지고 그다음 css 및 javascript가 렌더링됩니다.</p>
 <p>아 참 빼먹은 설명이 있네요.<br>우리의 컴퓨터 및 프로그램들은<br><strong>좌에서 우로</strong> 그리고<br><strong>위에서 아래로</strong><br>문서를 파싱합니다.</p>
 <p><strong>파싱 === 문서를 읽는다</strong> 정도로 이해하시면 될 것 같습니다.</p>
 <p>렌더링에 관련되서 많은 서적 및 우리의 친구 구글에 보면 많은 자료들이 있습니다.<br>그중 우리 대한민국의 포탈 네이버에서도 렌더링 되는 과정에대해 설명해 놓은 자료가 있습니다.<br>그 중 참고를 해서 보여드리면,</p>
-<p><img src="../images/rendering/rendering1.png" alt="rendering 간단표현 이미지"></p>
+<p><img src="https://tuhbm.github.io/images/rendering/rendering1.png" alt="rendering 간단표현 이미지"></p>
 <p>dom트리..<br>랜더트리…<br>이건무슨말이다냐….ㅋㅋㅋㅋ</p>
 <p>DOM트리 란? 하나의 태그로 구성된 형태라고 보시면 될 것 같습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;p&gt;DOM트리&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
 <p>이 코드를 기준으로 설명드리면, ‘div’라는 돔이 있고, 그자식으로 ‘p’라는 돔이 ‘DOM트리’ 라는 텍스트를 가지고 있다.<br>어떤가요. 이해하셨나요? 우리가 사용하는 태그 하나하나가 모두 DOM이 됩니다.</p>
 <p>랜더트리 란? 쉽게표현해 html과 css 그리고 넓게 javascript까지!<br>스타일에 관여하는 모든 문서를 파싱하고 html의 돔에 적용을 시키기 전에!<br>그러니까 그리기 전에 기억을 해두는 것이라고 생각을 하면 편하겠네요.<br>어떠한 DOM은 display가 block이고, 어떠한 DOM은 color가 #000이고, 이러한 과정을 각각의 돔을 실제 그리기전에 스타일을 입히는 것!</p>
-<p>어떤가요 조금 이해 되셨나요?<br>웹킷(크롬)과 모질라의 게코에서 설명해 놓은 그림을 보면<br><img src="../images/rendering/rendering2.png" alt="웹킷"><br><strong>웹킷</strong></p>
+<p>어떤가요 조금 이해 되셨나요?<br>웹킷(크롬)과 모질라의 게코에서 설명해 놓은 그림을 보면<br><img src="https://tuhbm.github.io/images/rendering/rendering2.png" alt="웹킷"><br><strong>웹킷</strong></p>
 <hr>
-<p><img src="../images/rendering/rendering3.png" alt="게코"><br><strong>모질라 게코</strong></p>
+<p><img src="https://tuhbm.github.io/images/rendering/rendering3.png" alt="게코"><br><strong>모질라 게코</strong></p>
 <p>두 그림을 보면 조금의 용어의 차이는 있지만, 결론적으로 과정을 보면 동일한것을 보실 수 있습니다.</p>
 <p>어떤가요? 렌더링 과정 그림을 보니 조금 더 이해가 되나요..?</p>
 <p>DOM트리 와 랜더트리 과정을 보니…<br><strong>문서가 길수록, 구조가 복잡하면, 렌더링에 영향이 있겠구나..</strong><br><strong>그렇기 때문에 불필요한 태그 및 필요없는 부분을 지우라는 것이구나..</strong><br>라고 생각이 들면 이번 포스팅은 성공인것 같습니다.</p>
@@ -296,7 +296,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2017/08/10/rendering1/" data-id="cjek5u4f30017r0co68jq55mf" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2017/08/10/rendering1/" data-id="cjek5z2a90018dwcosoh2ty38" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding

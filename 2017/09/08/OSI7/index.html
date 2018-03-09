@@ -13,14 +13,14 @@
 <meta property="og:site_name" content="보고 배우는 개발">
 <meta property="og:description" content="이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  OSI 7계층면접을 보다보면, OSI 7계층에 대해 물어보는 곳이 꽤나있다.그렇게 접하게 된 OSI 7계층에 대해 네트워크 데이터 통신 책을">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://tuhbm.github.io/2017/09/08/images/bnr-word.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/2017/09/08/images/osi7/img1.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/2017/09/08/images/osi7/img2.gif">
-<meta property="og:updated_time" content="2018-03-09T16:24:55.825Z">
+<meta property="og:image" content="https://tuhbm.github.io/images/bnr-word.jpg">
+<meta property="og:image" content="https://tuhbm.github.io/images/osi7/img1.jpg">
+<meta property="og:image" content="https://tuhbm.github.io/images/osi7/img2.gif">
+<meta property="og:updated_time" content="2018-03-09T16:36:59.165Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OSI7">
 <meta name="twitter:description" content="이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  OSI 7계층면접을 보다보면, OSI 7계층에 대해 물어보는 곳이 꽤나있다.그렇게 접하게 된 OSI 7계층에 대해 네트워크 데이터 통신 책을">
-<meta name="twitter:image" content="https://tuhbm.github.io/2017/09/08/images/bnr-word.jpg">
+<meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-word.jpg">
     
 
     
@@ -256,10 +256,10 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="../images/bnr-word.jpg" alt="용어정리"><br>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
+            <p><img src="https://tuhbm.github.io/images/bnr-word.jpg" alt="용어정리"><br>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
 <hr>
 <h1 id="OSI-7계층"><a href="#OSI-7계층" class="headerlink" title="OSI 7계층"></a>OSI 7계층</h1><p>면접을 보다보면, OSI 7계층에 대해 물어보는 곳이 꽤나있다.<br>그렇게 접하게 된 OSI 7계층에 대해 네트워크 데이터 통신 책을 보며 간략히 정리를 해보았다.</p>
-<p><img src="../images/osi7/img1.jpg" alt="OSI7계층"></p>
+<p><img src="https://tuhbm.github.io/images/osi7/img1.jpg" alt="OSI7계층"></p>
 <p>OSI 7계층은<br>국제표준화 단체 ISO(International Standard Organization)에서 정한 네트워크 연결 시스템이다<br>네트워크에 연결된 호스트들은 7개층으로 모듈화된 통신기능을 갖추어야한다.<br>먼저 HTTP프로토콜을 이용하여, 데이터를 요청하게되면, 응용계층부터 위에서 밑으로 차례로 물리계층까지 전달된다.<br>또 데이터를 받는 과정은 반대로 물리계층부터 응용계층까지 순차적으로 밑에서부터 위로 전달된다.<br>OSI7계층은 그림처럼</p>
 <ul>
 <li>응용계층</li>
@@ -280,7 +280,7 @@
 <h2 id="데이터-링크-계층"><a href="#데이터-링크-계층" class="headerlink" title="데이터 링크 계층"></a>데이터 링크 계층</h2><p>데이터의 물리적 전송 오류를 해결합니다.<br>상위의 네트워크 계층에 신뢰성 있는 패킷전송을 보장하여, 전송오류에 대한 부담을 줄여주고, 두 호스트간에 일대일로 직접 연결된 환경에서만 데이터를 전송합니다.<br>이때 전송되는 데이터를 프레임이라고 부릅니다.<br>프레임헤더에 표시되는 송수신 호스트 정보에는 LAN카드에 내장된 송수신 호스트의 <a href="https://ko.wikipedia.org/wiki/MAC_%EC%A3%BC%EC%86%8C" rel="external nofollow noopener noreferrer" target="_blank">MAC</a>주소가 기록됩니다.<br>또한 송수신 호스트사이의 전송속도 차이를 고려한 <strong>흐름제어</strong>기능도 제공합니다.<br>그리고 물리적 오류를 감지하는 기능을 담당하며, 오류(데이터 분실 or 내용의 파손)를 감지하면 송신자가 원래데이터를 재전송으로 일반적으로 처리합니다. </p>
 <h2 id="물리계층"><a href="#물리계층" class="headerlink" title="물리계층"></a>물리계층</h2><p>물리적인 인터페이스에 관한 사항을 기술합니다.<br>물리계층은 하드웨어 시스템으로 구현되고, 계층2 이상(응용계층~데이터링크계층)은 소프트웨어적으로 구현됩니다.<br>물리계층에서 다루는 전송 매체의 특성은 데이터의 전송속도, 송수신 호스트사이의 클록의 동기화 방법, 물리적인 연결 형태등이 있습니다.</p>
 <p>이처럼 네트워크 통신과정에서는 HTTP프로토콜을 이용하여 HTTP헤더에 정보를 통해, 데이터를 송수신할때 OSI7계층을 통해 데이터가 전송됨을 알 수 있다.<br>밑에사진 HTTP프로토콜의 HTTP헤더 예시이미지 입니다.</p>
-<p><img src="../images/osi7/img2.gif" alt="HTTP헤더"></p>
+<p><img src="https://tuhbm.github.io/images/osi7/img2.gif" alt="HTTP헤더"></p>
 
         
         </div>
@@ -291,7 +291,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2017/09/08/OSI7/" data-id="cjek5u4di0000r0con3zqbip3" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2017/09/08/OSI7/" data-id="cjek5z28p0000dwcofw4f7t1y" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding

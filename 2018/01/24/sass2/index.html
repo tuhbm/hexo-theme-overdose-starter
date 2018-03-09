@@ -13,12 +13,12 @@
 <meta property="og:site_name" content="보고 배우는 개발">
 <meta property="og:description" content="SASSSASS를 통칭 사스 라고 표기하겠습니다.지난 포스팅을 통해 SASS의 확장자가 최종적으로 .scss로 확정되었다고 말씀드렸습니다.이번 포스팅부터는 사스의 문법에 대해 알아보겠습니다. 변수사용변수를 사용하므로써, 한번의 변경으로 사용한 모든 변수의 값을 바꿀 수 있는 효율적인 방법이라고 말씀드렸었습니다.변수를 키와값으로 표현해 보겠습니다.1$nor">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://tuhbm.github.io/2018/01/24/images/bnr-css.jpg">
-<meta property="og:updated_time" content="2018-03-09T16:24:55.804Z">
+<meta property="og:image" content="https://tuhbm.github.io/images/bnr-css.jpg">
+<meta property="og:updated_time" content="2018-03-09T16:36:59.142Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SASS에 대해 알아보자2">
 <meta name="twitter:description" content="SASSSASS를 통칭 사스 라고 표기하겠습니다.지난 포스팅을 통해 SASS의 확장자가 최종적으로 .scss로 확정되었다고 말씀드렸습니다.이번 포스팅부터는 사스의 문법에 대해 알아보겠습니다. 변수사용변수를 사용하므로써, 한번의 변경으로 사용한 모든 변수의 값을 바꿀 수 있는 효율적인 방법이라고 말씀드렸었습니다.변수를 키와값으로 표현해 보겠습니다.1$nor">
-<meta name="twitter:image" content="https://tuhbm.github.io/2018/01/24/images/bnr-css.jpg">
+<meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-css.jpg">
     
 
     
@@ -254,7 +254,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="../images/bnr-css.jpg" alt="css"></p>
+            <p><img src="https://tuhbm.github.io/images/bnr-css.jpg" alt="css"></p>
 <h1 id="SASS"><a href="#SASS" class="headerlink" title="SASS"></a>SASS</h1><p><code>SASS를 통칭 사스 라고 표기하겠습니다.</code><br><a href="https://tuhbm.github.io/2018/01/24/sass1/">지난 포스팅</a>을 통해 SASS의 확장자가 최종적으로 <code>.scss</code>로 확정되었다고 말씀드렸습니다.<br>이번 포스팅부터는 사스의 문법에 대해 알아보겠습니다.</p>
 <h2 id="변수사용"><a href="#변수사용" class="headerlink" title="변수사용"></a>변수사용</h2><p>변수를 사용하므로써, 한번의 변경으로 사용한 모든 변수의 값을 바꿀 수 있는 효율적인 방법이라고 말씀드렸었습니다.<br>변수를 <code>키</code>와<code>값</code>으로 표현해 보겠습니다.<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$normalFontSize</span>: <span class="number">14px</span>;</span><br></pre></td></tr></table></figure></p>
 <p>이제 <code>14px</code>은 <code>$normalFontSize</code>에 담겨있습니다.<br>여러가지의 형태로도 담을 수 있습니다.<br>이때 사용하는것이 <code>@mixin</code>입니다.<br>예를 들어보겠습니다.<br>대표적인 예로 우리는 <code>float을 해제</code> 할 때 여러방법이 있지만 가상선택자인 <code>:after를 사용한 클리어</code> 방법을 상황에 따라 사용합니다.<br>이것을 사스로 표현해보겠습니다.<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">mixin</span> afterClear &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">ul</span> &#123;</span><br><span class="line">  &amp;:after&#123;</span><br><span class="line">    @<span class="keyword">include</span> afterClear;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">li</span>&#123;</span><br><span class="line">    <span class="attribute">float</span>:left;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -273,7 +273,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/01/24/sass2/" data-id="cjek5u4fc001ir0conqfumc6h" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/01/24/sass2/" data-id="cjek5z2an001mdwco8itsg7g4" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
