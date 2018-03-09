@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-03-09T15:51:43.233Z</updated>
+  <updated>2018-03-09T16:24:55.834Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -17,11 +17,225 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>let 과 const</title>
+    <link href="https://tuhbm.github.io/2018/03/05/letAndConst/"/>
+    <id>https://tuhbm.github.io/2018/03/05/letAndConst/</id>
+    <published>2018-03-05T13:32:46.000Z</published>
+    <updated>2018-03-09T16:24:55.834Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-js.jpg&quot; alt=&quot;Javascript&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;let과-const&quot;&gt;&lt;a href=&quot;#let과-const&quot; class=&quot;headerlink&quot; title=&quot;let과 const&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+    
+      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
+    
+      <category term="ES6" scheme="https://tuhbm.github.io/tags/ES6/"/>
+    
+      <category term="var" scheme="https://tuhbm.github.io/tags/var/"/>
+    
+      <category term="let" scheme="https://tuhbm.github.io/tags/let/"/>
+    
+      <category term="const" scheme="https://tuhbm.github.io/tags/const/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Reflow와 Repaint</title>
+    <link href="https://tuhbm.github.io/2018/02/22/reflowAndRepaint/"/>
+    <id>https://tuhbm.github.io/2018/02/22/reflowAndRepaint/</id>
+    <published>2018-02-22T13:56:50.000Z</published>
+    <updated>2018-03-09T16:24:55.830Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수
+      
+    
+    </summary>
+    
+      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
+    
+    
+      <category term="javascript" scheme="https://tuhbm.github.io/tags/javascript/"/>
+    
+      <category term="rendering" scheme="https://tuhbm.github.io/tags/rendering/"/>
+    
+      <category term="reflow" scheme="https://tuhbm.github.io/tags/reflow/"/>
+    
+      <category term="repaint" scheme="https://tuhbm.github.io/tags/repaint/"/>
+    
+      <category term="렌더링" scheme="https://tuhbm.github.io/tags/%EB%A0%8C%EB%8D%94%EB%A7%81/"/>
+    
+      <category term="렌터트리" scheme="https://tuhbm.github.io/tags/%EB%A0%8C%ED%84%B0%ED%8A%B8%EB%A6%AC/"/>
+    
+      <category term="리플로우" scheme="https://tuhbm.github.io/tags/%EB%A6%AC%ED%94%8C%EB%A1%9C%EC%9A%B0/"/>
+    
+      <category term="리페인팅" scheme="https://tuhbm.github.io/tags/%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8C%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>프로그래머 첫걸음</title>
+    <link href="https://tuhbm.github.io/2018/02/21/firstProgramming/"/>
+    <id>https://tuhbm.github.io/2018/02/21/firstProgramming/</id>
+    <published>2018-02-21T12:51:20.000Z</published>
+    <updated>2018-03-09T16:24:55.826Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-books.jpg&quot; alt=&quot;books&quot;&gt;&lt;br&gt;이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;프로그래머-첫걸음&quot;&gt;&lt;a href=&quot;#프로그래머-첫걸
+      
+    
+    </summary>
+    
+      <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
+    
+    
+      <category term="python" scheme="https://tuhbm.github.io/tags/python/"/>
+    
+      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
+    
+      <category term="non-major" scheme="https://tuhbm.github.io/tags/non-major/"/>
+    
+      <category term="first-programming" scheme="https://tuhbm.github.io/tags/first-programming/"/>
+    
+      <category term="start" scheme="https://tuhbm.github.io/tags/start/"/>
+    
+      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
+    
+      <category term="북리뷰" scheme="https://tuhbm.github.io/tags/%EB%B6%81%EB%A6%AC%EB%B7%B0/"/>
+    
+      <category term="프로그래머" scheme="https://tuhbm.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8/"/>
+    
+      <category term="파이썬" scheme="https://tuhbm.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
+    
+      <category term="비전공자" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS - Resetting VS Normalize</title>
+    <link href="https://tuhbm.github.io/2018/02/21/cssReset/"/>
+    <id>https://tuhbm.github.io/2018/02/21/cssReset/</id>
+    <published>2018-02-21T12:00:04.000Z</published>
+    <updated>2018-03-09T16:24:55.813Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-css.jpg&quot; alt=&quot;css&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Resetting과-Normalize&quot;&gt;&lt;a href=&quot;#Resetting과-Normalize&quot; class=&quot;headerlink&quot; title=&quot;R
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="https://tuhbm.github.io/categories/CSS/"/>
+    
+    
+      <category term="reset" scheme="https://tuhbm.github.io/tags/reset/"/>
+    
+      <category term="normalize" scheme="https://tuhbm.github.io/tags/normalize/"/>
+    
+      <category term="ie" scheme="https://tuhbm.github.io/tags/ie/"/>
+    
+      <category term="chrome" scheme="https://tuhbm.github.io/tags/chrome/"/>
+    
+      <category term="firefox" scheme="https://tuhbm.github.io/tags/firefox/"/>
+    
+      <category term="safari" scheme="https://tuhbm.github.io/tags/safari/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python2</title>
+    <link href="https://tuhbm.github.io/2018/02/14/python2/"/>
+    <id>https://tuhbm.github.io/2018/02/14/python2/</id>
+    <published>2018-02-14T13:41:49.000Z</published>
+    <updated>2018-03-09T16:24:55.841Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-python.jpg&quot; alt=&quot;python&quot;&gt;&lt;br&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://tuhbm.github.io/categories/Python/"/>
+    
+    
+      <category term="python" scheme="https://tuhbm.github.io/tags/python/"/>
+    
+      <category term="파이썬" scheme="https://tuhbm.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
+    
+      <category term="indentationError" scheme="https://tuhbm.github.io/tags/indentationError/"/>
+    
+      <category term="문법" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EB%B2%95/"/>
+    
+      <category term="들여쓰기" scheme="https://tuhbm.github.io/tags/%EB%93%A4%EC%97%AC%EC%93%B0%EA%B8%B0/"/>
+    
+      <category term="논리연산자" scheme="https://tuhbm.github.io/tags/%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90/"/>
+    
+      <category term="에러" scheme="https://tuhbm.github.io/tags/%EC%97%90%EB%9F%AC/"/>
+    
+      <category term="예외" scheme="https://tuhbm.github.io/tags/%EC%98%88%EC%99%B8/"/>
+    
+      <category term="산술연산자" scheme="https://tuhbm.github.io/tags/%EC%82%B0%EC%88%A0%EC%97%B0%EC%82%B0%EC%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python 시작하기</title>
+    <link href="https://tuhbm.github.io/2018/02/12/startPython/"/>
+    <id>https://tuhbm.github.io/2018/02/12/startPython/</id>
+    <published>2018-02-12T12:17:35.000Z</published>
+    <updated>2018-03-09T16:24:55.782Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-python.jpg&quot; alt=&quot;python&quot;&gt;&lt;br&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://tuhbm.github.io/categories/Python/"/>
+    
+    
+      <category term="python" scheme="https://tuhbm.github.io/tags/python/"/>
+    
+      <category term="start" scheme="https://tuhbm.github.io/tags/start/"/>
+    
+      <category term="파이썬" scheme="https://tuhbm.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
+    
+      <category term="파이썬 시작" scheme="https://tuhbm.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%8B%9C%EC%9E%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>스레드(thread)</title>
     <link href="https://tuhbm.github.io/2018/02/06/thread/"/>
     <id>https://tuhbm.github.io/2018/02/06/thread/</id>
     <published>2018-02-06T12:43:00.000Z</published>
-    <updated>2018-03-09T15:51:43.233Z</updated>
+    <updated>2018-03-09T16:24:55.810Z</updated>
     
     <summary type="html">
     
@@ -44,6 +258,466 @@
       <category term="멀티스레드" scheme="https://tuhbm.github.io/tags/%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%93%9C/"/>
     
       <category term="프로세스" scheme="https://tuhbm.github.io/tags/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ThirdParty(서드파티)</title>
+    <link href="https://tuhbm.github.io/2018/01/26/thirdParty/"/>
+    <id>https://tuhbm.github.io/2018/01/26/thirdParty/</id>
+    <published>2018-01-26T11:54:28.000Z</published>
+    <updated>2018-03-09T16:24:55.802Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수
+      
+    
+    </summary>
+    
+      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
+    
+    
+      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
+    
+      <category term="framework" scheme="https://tuhbm.github.io/tags/framework/"/>
+    
+      <category term="third party" scheme="https://tuhbm.github.io/tags/third-party/"/>
+    
+      <category term="library" scheme="https://tuhbm.github.io/tags/library/"/>
+    
+      <category term="plug in" scheme="https://tuhbm.github.io/tags/plug-in/"/>
+    
+      <category term="vendor" scheme="https://tuhbm.github.io/tags/vendor/"/>
+    
+      <category term="플러그인" scheme="https://tuhbm.github.io/tags/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8/"/>
+    
+      <category term="라이브러리" scheme="https://tuhbm.github.io/tags/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/"/>
+    
+      <category term="프레임워크" scheme="https://tuhbm.github.io/tags/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>리터럴이란 무엇일까?</title>
+    <link href="https://tuhbm.github.io/2018/01/26/literal/"/>
+    <id>https://tuhbm.github.io/2018/01/26/literal/</id>
+    <published>2018-01-26T10:43:00.000Z</published>
+    <updated>2018-03-09T16:24:55.828Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수
+      
+    
+    </summary>
+    
+      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
+    
+    
+      <category term="var" scheme="https://tuhbm.github.io/tags/var/"/>
+    
+      <category term="let" scheme="https://tuhbm.github.io/tags/let/"/>
+    
+      <category term="const" scheme="https://tuhbm.github.io/tags/const/"/>
+    
+      <category term="리터럴" scheme="https://tuhbm.github.io/tags/%EB%A6%AC%ED%84%B0%EB%9F%B4/"/>
+    
+      <category term="literal" scheme="https://tuhbm.github.io/tags/literal/"/>
+    
+      <category term="상수" scheme="https://tuhbm.github.io/tags/%EC%83%81%EC%88%98/"/>
+    
+      <category term="변수" scheme="https://tuhbm.github.io/tags/%EB%B3%80%EC%88%98/"/>
+    
+      <category term="값" scheme="https://tuhbm.github.io/tags/%EA%B0%92/"/>
+    
+      <category term="메모리" scheme="https://tuhbm.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SASS에 대해 알아보자2</title>
+    <link href="https://tuhbm.github.io/2018/01/24/sass2/"/>
+    <id>https://tuhbm.github.io/2018/01/24/sass2/</id>
+    <published>2018-01-24T11:01:13.000Z</published>
+    <updated>2018-03-09T16:24:55.804Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-css.jpg&quot; alt=&quot;css&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;SASS&quot;&gt;&lt;a href=&quot;#SASS&quot; class=&quot;headerlink&quot; title=&quot;SASS&quot;&gt;&lt;/a&gt;SASS&lt;/h1&gt;&lt;p&gt;&lt;code&gt;SASS를
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="https://tuhbm.github.io/categories/CSS/"/>
+    
+      <category term="SASS" scheme="https://tuhbm.github.io/categories/CSS/SASS/"/>
+    
+    
+      <category term="변수" scheme="https://tuhbm.github.io/tags/%EB%B3%80%EC%88%98/"/>
+    
+      <category term="SASS" scheme="https://tuhbm.github.io/tags/SASS/"/>
+    
+      <category term="scss" scheme="https://tuhbm.github.io/tags/scss/"/>
+    
+      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
+    
+      <category term="mixin" scheme="https://tuhbm.github.io/tags/mixin/"/>
+    
+      <category term="include" scheme="https://tuhbm.github.io/tags/include/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SASS에 대해 알아보자1</title>
+    <link href="https://tuhbm.github.io/2018/01/24/sass1/"/>
+    <id>https://tuhbm.github.io/2018/01/24/sass1/</id>
+    <published>2018-01-24T07:12:13.000Z</published>
+    <updated>2018-03-09T16:24:55.815Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-css.jpg&quot; alt=&quot;css&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;SASS&quot;&gt;&lt;a href=&quot;#SASS&quot; class=&quot;headerlink&quot; title=&quot;SASS&quot;&gt;&lt;/a&gt;SASS&lt;/h1&gt;&lt;p&gt;&lt;code&gt;SASS를
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="https://tuhbm.github.io/categories/CSS/"/>
+    
+      <category term="SASS" scheme="https://tuhbm.github.io/categories/CSS/SASS/"/>
+    
+    
+      <category term="SASS" scheme="https://tuhbm.github.io/tags/SASS/"/>
+    
+      <category term="compile" scheme="https://tuhbm.github.io/tags/compile/"/>
+    
+      <category term="scss" scheme="https://tuhbm.github.io/tags/scss/"/>
+    
+      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
+    
+      <category term="sass" scheme="https://tuhbm.github.io/tags/sass/"/>
+    
+      <category term="CSS 전처리기" scheme="https://tuhbm.github.io/tags/CSS-%EC%A0%84%EC%B2%98%EB%A6%AC%EA%B8%B0/"/>
+    
+      <category term="CSS processors" scheme="https://tuhbm.github.io/tags/CSS-processors/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>부수효과</title>
+    <link href="https://tuhbm.github.io/2018/01/22/sideEffect/"/>
+    <id>https://tuhbm.github.io/2018/01/22/sideEffect/</id>
+    <published>2018-01-22T13:40:55.000Z</published>
+    <updated>2018-03-09T16:24:55.831Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수
+      
+    
+    </summary>
+    
+      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
+    
+    
+      <category term="side effect" scheme="https://tuhbm.github.io/tags/side-effect/"/>
+    
+      <category term="부수효과" scheme="https://tuhbm.github.io/tags/%EB%B6%80%EC%88%98%ED%9A%A8%EA%B3%BC/"/>
+    
+      <category term="functional programming" scheme="https://tuhbm.github.io/tags/functional-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VanillaJS</title>
+    <link href="https://tuhbm.github.io/2018/01/21/vanillaJS/"/>
+    <id>https://tuhbm.github.io/2018/01/21/vanillaJS/</id>
+    <published>2018-01-21T14:42:22.000Z</published>
+    <updated>2018-03-09T16:24:55.811Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-js.jpg&quot; alt=&quot;Javascript&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Vanilla-JS&quot;&gt;&lt;a href=&quot;#Vanilla-JS&quot; class=&quot;headerlink&quot; title=&quot;Vanilla JS&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+    
+      <category term="javascript" scheme="https://tuhbm.github.io/tags/javascript/"/>
+    
+      <category term="VanillaJS" scheme="https://tuhbm.github.io/tags/VanillaJS/"/>
+    
+      <category term="바닐라 JS" scheme="https://tuhbm.github.io/tags/%EB%B0%94%EB%8B%90%EB%9D%BC-JS/"/>
+    
+      <category term="jQuery" scheme="https://tuhbm.github.io/tags/jQuery/"/>
+    
+      <category term="Pure Javascript" scheme="https://tuhbm.github.io/tags/Pure-Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>늦은 2017 회고</title>
+    <link href="https://tuhbm.github.io/2018/01/17/bye2017/"/>
+    <id>https://tuhbm.github.io/2018/01/17/bye2017/</id>
+    <published>2018-01-17T12:31:12.000Z</published>
+    <updated>2018-03-09T16:24:55.807Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bye/img_bye2017.png&quot; alt=&quot;bye2017&quot;&gt;&lt;br&gt;2017년이 가고 2018년 1월이 반쯤 보낸 후, 다시 한번 나를 채찍질 하게 만든 사건을 통해 마음을 다잡고 공부와 블로그 운영을 다짐하
+      
+    
+    </summary>
+    
+      <category term="Column" scheme="https://tuhbm.github.io/categories/Column/"/>
+    
+    
+      <category term="UI개발" scheme="https://tuhbm.github.io/tags/UI%EA%B0%9C%EB%B0%9C/"/>
+    
+      <category term="UI-developer" scheme="https://tuhbm.github.io/tags/UI-developer/"/>
+    
+      <category term="웹퍼블리셔" scheme="https://tuhbm.github.io/tags/%EC%9B%B9%ED%8D%BC%EB%B8%94%EB%A6%AC%EC%85%94/"/>
+    
+      <category term="프론트엔드개발" scheme="https://tuhbm.github.io/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C%EA%B0%9C%EB%B0%9C/"/>
+    
+      <category term="front-end-developer" scheme="https://tuhbm.github.io/tags/front-end-developer/"/>
+    
+      <category term="javascript" scheme="https://tuhbm.github.io/tags/javascript/"/>
+    
+      <category term="gulp" scheme="https://tuhbm.github.io/tags/gulp/"/>
+    
+      <category term="task Runner" scheme="https://tuhbm.github.io/tags/task-Runner/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue 알아보기 4편</title>
+    <link href="https://tuhbm.github.io/2017/09/20/vue4/"/>
+    <id>https://tuhbm.github.io/2017/09/20/vue4/</id>
+    <published>2017-09-20T05:13:27.000Z</published>
+    <updated>2018-03-09T16:24:55.788Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-vue.jpg&quot; alt=&quot;Vue&quot;&gt;&lt;br&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
+    
+    
+      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
+    
+      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
+    
+      <category term="vue.js2" scheme="https://tuhbm.github.io/tags/vue-js2/"/>
+    
+      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
+    
+      <category term="Vue.component" scheme="https://tuhbm.github.io/tags/Vue-component/"/>
+    
+      <category term="refs" scheme="https://tuhbm.github.io/tags/refs/"/>
+    
+      <category term="vue-cli" scheme="https://tuhbm.github.io/tags/vue-cli/"/>
+    
+      <category term="vue init" scheme="https://tuhbm.github.io/tags/vue-init/"/>
+    
+      <category term="npm install" scheme="https://tuhbm.github.io/tags/npm-install/"/>
+    
+      <category term="npm run dev" scheme="https://tuhbm.github.io/tags/npm-run-dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue 알아보기 3편</title>
+    <link href="https://tuhbm.github.io/2017/09/19/vue3/"/>
+    <id>https://tuhbm.github.io/2017/09/19/vue3/</id>
+    <published>2017-09-19T05:58:26.000Z</published>
+    <updated>2018-03-09T16:24:55.786Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-vue.jpg&quot; alt=&quot;Vue&quot;&gt;&lt;br&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
+    
+    
+      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
+    
+      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
+    
+      <category term="vue.js2" scheme="https://tuhbm.github.io/tags/vue-js2/"/>
+    
+      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
+    
+      <category term="methods" scheme="https://tuhbm.github.io/tags/methods/"/>
+    
+      <category term="computed" scheme="https://tuhbm.github.io/tags/computed/"/>
+    
+      <category term="v-if" scheme="https://tuhbm.github.io/tags/v-if/"/>
+    
+      <category term="v-show" scheme="https://tuhbm.github.io/tags/v-show/"/>
+    
+      <category term="v-for" scheme="https://tuhbm.github.io/tags/v-for/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue 알아보기 2편</title>
+    <link href="https://tuhbm.github.io/2017/09/18/vue2/"/>
+    <id>https://tuhbm.github.io/2017/09/18/vue2/</id>
+    <published>2017-09-18T08:02:20.000Z</published>
+    <updated>2018-03-09T16:24:55.790Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-vue.jpg&quot; alt=&quot;Vue&quot;&gt;&lt;br&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
+    
+    
+      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
+    
+      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
+    
+      <category term="vue.js2" scheme="https://tuhbm.github.io/tags/vue-js2/"/>
+    
+      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
+    
+      <category term="v-bind" scheme="https://tuhbm.github.io/tags/v-bind/"/>
+    
+      <category term="v-on" scheme="https://tuhbm.github.io/tags/v-on/"/>
+    
+      <category term="v-model" scheme="https://tuhbm.github.io/tags/v-model/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue 알아보기 1편</title>
+    <link href="https://tuhbm.github.io/2017/09/15/vue1/"/>
+    <id>https://tuhbm.github.io/2017/09/15/vue1/</id>
+    <published>2017-09-15T03:49:08.000Z</published>
+    <updated>2018-03-09T16:24:55.808Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-vue.jpg&quot; alt=&quot;Vue&quot;&gt;&lt;br&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
+    
+    
+      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
+    
+      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
+    
+      <category term="vue.js2" scheme="https://tuhbm.github.io/tags/vue-js2/"/>
+    
+      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
+    
+      <category term="v-bind" scheme="https://tuhbm.github.io/tags/v-bind/"/>
+    
+      <category term="v-html" scheme="https://tuhbm.github.io/tags/v-html/"/>
+    
+      <category term="vue를 시작하는방법" scheme="https://tuhbm.github.io/tags/vue%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%EB%B0%A9%EB%B2%95/"/>
+    
+      <category term="텍스트 바인딩" scheme="https://tuhbm.github.io/tags/%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%B0%94%EC%9D%B8%EB%94%A9/"/>
+    
+      <category term="함수 바인딩" scheme="https://tuhbm.github.io/tags/%ED%95%A8%EC%88%98-%EB%B0%94%EC%9D%B8%EB%94%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OSI7</title>
+    <link href="https://tuhbm.github.io/2017/09/08/OSI7/"/>
+    <id>https://tuhbm.github.io/2017/09/08/OSI7/</id>
+    <published>2017-09-08T04:49:47.000Z</published>
+    <updated>2018-03-09T16:24:55.825Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수
+      
+    
+    </summary>
+    
+      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
+    
+    
+      <category term="Component" scheme="https://tuhbm.github.io/tags/Component/"/>
+    
+      <category term="컴포넌트" scheme="https://tuhbm.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Component</title>
+    <link href="https://tuhbm.github.io/2017/09/06/component/"/>
+    <id>https://tuhbm.github.io/2017/09/06/component/</id>
+    <published>2017-09-06T09:04:01.000Z</published>
+    <updated>2018-03-09T16:24:55.818Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수
+      
+    
+    </summary>
+    
+      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
+    
+    
+      <category term="Component" scheme="https://tuhbm.github.io/tags/Component/"/>
+    
+      <category term="컴포넌트" scheme="https://tuhbm.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/"/>
     
   </entry>
   

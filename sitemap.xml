@@ -2,9 +2,219 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/2018/02/14/python2/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.841Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/07/17/emmet1/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.839Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/08/14/rendering2/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.836Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/03/05/letAndConst/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.834Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/01/22/sideEffect/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.831Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/02/22/reflowAndRepaint/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.830Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/01/26/literal/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.828Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/02/21/firstProgramming/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.826Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/09/08/OSI7/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.825Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/08/10/rendering1/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.823Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/08/05/onePageResume/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.821Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/09/06/component/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.818Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/07/17/cli/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.817Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/01/24/sass1/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.815Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/02/21/cssReset/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.813Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/01/21/vanillaJS/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.811Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2018/02/06/thread/</loc>
     
-    <lastmod>2018-03-09T15:51:43.233Z</lastmod>
+    <lastmod>2018-03-09T16:24:55.810Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/09/15/vue1/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.808Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/01/17/bye2017/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.807Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/08/21/doctype/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.805Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/01/24/sass2/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.804Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/01/26/thirdParty/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.802Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/08/16/image-compressor/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.800Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/07/17/oneLine-ellipsis/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.799Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/08/17/function1/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.797Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/07/17/frameworkVSliblibrary/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.795Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/07/17/sass-compile/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.792Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/09/18/vue2/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.790Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/09/20/vue4/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.788Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2017/09/19/vue3/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.786Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/02/12/startPython/</loc>
+    
+    <lastmod>2018-03-09T16:24:55.782Z</lastmod>
     
   </url>
   
