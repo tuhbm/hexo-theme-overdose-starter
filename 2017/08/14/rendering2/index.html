@@ -5,22 +5,19 @@
     
     <title>rendering 2편 | 보고 배우는 개발</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="브라우저 렌더링에 영향을 주는 build 도구란 무엇인가?보통 많이 들 사용하는 대표적인 빌드도구는 gulp, grunt, webpack등이 있다.이러한 빌드도구는 업무의 효율성에서도 탁월하게 도움을 준다. 본인은 gulp와 webpack를 모두 조금씩 사용해보고, gulp를 더 자주 사용하고 있다.이유는 webpack은 webpack2를 넘어 webpa">
+    <meta name="description" content="브라우저 렌더링에 영향을 주는 build 도구란 무엇인가?보통 많이 들 사용하는 대표적인 빌드도구는 gulp, grunt, webpack등이 있다.이러한 빌드도구는 업무의 효율성에서도 탁월하게 도움을 준다. 본인은 gulp와 webpack를 모두 조금씩 사용해보고, gulp를 더 자주 사용하고 있다.이유는 webpack은 webpack2를 넘어 webpac">
 <meta name="keywords" content="gulp,html,rendering,랜더링,브라우저,grunt,webpack,build tool">
 <meta property="og:type" content="article">
 <meta property="og:title" content="rendering 2편">
 <meta property="og:url" content="https://tuhbm.github.io/2017/08/14/rendering2/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
-<meta property="og:description" content="브라우저 렌더링에 영향을 주는 build 도구란 무엇인가?보통 많이 들 사용하는 대표적인 빌드도구는 gulp, grunt, webpack등이 있다.이러한 빌드도구는 업무의 효율성에서도 탁월하게 도움을 준다. 본인은 gulp와 webpack를 모두 조금씩 사용해보고, gulp를 더 자주 사용하고 있다.이유는 webpack은 webpack2를 넘어 webpa">
+<meta property="og:description" content="브라우저 렌더링에 영향을 주는 build 도구란 무엇인가?보통 많이 들 사용하는 대표적인 빌드도구는 gulp, grunt, webpack등이 있다.이러한 빌드도구는 업무의 효율성에서도 탁월하게 도움을 준다. 본인은 gulp와 webpack를 모두 조금씩 사용해보고, gulp를 더 자주 사용하고 있다.이유는 webpack은 webpack2를 넘어 webpac">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-html.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/images/rendering/gulp-spritesmith.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/serverclient.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/images/rendering/img-rendering.png">
-<meta property="og:updated_time" content="2018-03-09T16:36:59.175Z">
+<meta property="og:updated_time" content="2018-03-09T16:47:38.824Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="rendering 2편">
-<meta name="twitter:description" content="브라우저 렌더링에 영향을 주는 build 도구란 무엇인가?보통 많이 들 사용하는 대표적인 빌드도구는 gulp, grunt, webpack등이 있다.이러한 빌드도구는 업무의 효율성에서도 탁월하게 도움을 준다. 본인은 gulp와 webpack를 모두 조금씩 사용해보고, gulp를 더 자주 사용하고 있다.이유는 webpack은 webpack2를 넘어 webpa">
+<meta name="twitter:description" content="브라우저 렌더링에 영향을 주는 build 도구란 무엇인가?보통 많이 들 사용하는 대표적인 빌드도구는 gulp, grunt, webpack등이 있다.이러한 빌드도구는 업무의 효율성에서도 탁월하게 도움을 준다. 본인은 gulp와 webpack를 모두 조금씩 사용해보고, gulp를 더 자주 사용하고 있다.이유는 webpack은 webpack2를 넘어 webpac">
 <meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-html.jpg">
     
 
@@ -257,8 +254,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-html.jpg" alt="html"></p>
-<h1 id="브라우저-렌더링에-영향을-주는-build-도구란-무엇인가"><a href="#브라우저-렌더링에-영향을-주는-build-도구란-무엇인가" class="headerlink" title="브라우저 렌더링에 영향을 주는 build 도구란 무엇인가?"></a>브라우저 렌더링에 영향을 주는 build 도구란 무엇인가?</h1><p>보통 많이 들 사용하는 대표적인 빌드도구는 <a href="https://gulpjs.com/" rel="external nofollow noopener noreferrer" target="_blank">gulp</a>, <a href="https://gruntjs.com/" rel="external nofollow noopener noreferrer" target="_blank">grunt</a>, <a href="https://webpack.js.org/" rel="external nofollow noopener noreferrer" target="_blank">webpack</a>등이 있다.<br>이러한 빌드도구는 업무의 효율성에서도 탁월하게 도움을 준다.</p>
+            <h1 id="브라우저-렌더링에-영향을-주는-build-도구란-무엇인가"><a href="#브라우저-렌더링에-영향을-주는-build-도구란-무엇인가" class="headerlink" title="브라우저 렌더링에 영향을 주는 build 도구란 무엇인가?"></a>브라우저 렌더링에 영향을 주는 build 도구란 무엇인가?</h1><p>보통 많이 들 사용하는 대표적인 빌드도구는 <a href="https://gulpjs.com/" rel="external nofollow noopener noreferrer" target="_blank">gulp</a>, <a href="https://gruntjs.com/" rel="external nofollow noopener noreferrer" target="_blank">grunt</a>, <a href="https://webpack.js.org/" rel="external nofollow noopener noreferrer" target="_blank">webpack</a>등이 있다.<br>이러한 빌드도구는 업무의 효율성에서도 탁월하게 도움을 준다.</p>
 <p>본인은 gulp와 webpack를 모두 조금씩 사용해보고, gulp를 더 자주 사용하고 있다.<br>이유는 webpack은 webpack2를 넘어 webpack3까지나면서 문법을 사용하는 방식도 달라지도 있기때문에,<br>설정을 하는데 조금 어려움이 있다.<br>그러한이유로 gulp를 사용하는것이 더 편하다고 느껴 <a href="https://gulpjs.com/" rel="external nofollow noopener noreferrer" target="_blank">gulp</a>를 사용하고있다.</p>
 <p>앞서 작업에 효율성에 도움을 준다고 하였는데, 대표적인 예시로는 <a href="https://www.npmjs.com/package/gulp.spritesmith" rel="external nofollow noopener noreferrer" target="_blank">gulp-spritesmith</a>가 있다.<br><img src="https://tuhbm.github.io/images/rendering/gulp-spritesmith.png" alt="gulp-spritesmith"><br>이처럼 자바스크립트 모듈을 사용하여, 스프라이트 이미지를 만들어주는 것이다.<br>이처럼 빌드도구는 필요한 모듈을 사용하여, 설정을 하고 작업에 효율성을 주는 도구이다.<br><strong>빌드도구를 사용하는 방법은 이번편에서 언급하지 않겠습니다.</strong></p>
 <h2 id="build-도구를-사용하는-이유는-무엇인가"><a href="#build-도구를-사용하는-이유는-무엇인가" class="headerlink" title="build 도구를 사용하는 이유는 무엇인가?"></a>build 도구를 사용하는 이유는 무엇인가?</h2><p>이렇게 작업을 효율성을 주어, 스프라이트 이미지를 사용하는 이유를 아는가?<br>전에 <a href="https://tuhbm.github.io/2017/08/10/rendering1/">1편</a>을 보신분은 마지막쯤에 언급한대로 ‘구조가 복잡하거 길면 렌더링의 영향을 주겠구나..’라는 언급을 기억하실 수 있습니다.<br>맞습니다! 분명히 영향을 받습니다!</p>
@@ -287,7 +283,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2017/08/14/rendering2/" data-id="cjek5z2ae001edwcoxe1jy84i" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2017/08/14/rendering2/" data-id="cjek6il6w001gt0coj6e51rb8" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -404,7 +400,7 @@
                             <a href="/2018/03/05/letAndConst/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="let 과 const" class="thumbnail-image"></span>
     
 </a>
 
@@ -423,7 +419,7 @@
                             <a href="/2018/02/22/reflowAndRepaint/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-word.jpg)" alt="Reflow와 Repaint" class="thumbnail-image"></span>
     
 </a>
 
@@ -442,7 +438,7 @@
                             <a href="/2018/02/21/firstProgramming/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-books.jpg)" alt="프로그래머 첫걸음" class="thumbnail-image"></span>
     
 </a>
 
@@ -461,7 +457,7 @@
                             <a href="/2018/02/21/cssReset/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-css.jpg)" alt="CSS - Resetting VS Normalize" class="thumbnail-image"></span>
     
 </a>
 
@@ -480,7 +476,7 @@
                             <a href="/2018/02/14/python2/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-python.jpg)" alt="python2" class="thumbnail-image"></span>
     
 </a>
 

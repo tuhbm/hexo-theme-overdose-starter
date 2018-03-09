@@ -5,23 +5,19 @@
     
     <title>vue 알아보기 2편 | 보고 배우는 개발</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  v-onv-on 어트리뷰트를 통해 이벤트를 발생시킬 수 있습니다.그리고약어 [ @ ] 를 통해 단축이 가능합니다.12&amp;lt;b">
+    <meta name="description" content="Vue프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  v-onv-on 어트리뷰트를 통해 이벤트를 발생시킬 수 있습니다.그리고약어 [ @ ] 를 통해 단축이 가능합니다.12&amp;l">
 <meta name="keywords" content="vue,vue.js,vue.js2,tutorial,v-bind,v-on,v-model">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue 알아보기 2편">
 <meta property="og:url" content="https://tuhbm.github.io/2017/09/18/vue2/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
-<meta property="og:description" content="프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  v-onv-on 어트리뷰트를 통해 이벤트를 발생시킬 수 있습니다.그리고약어 [ @ ] 를 통해 단축이 가능합니다.12&amp;lt;b">
+<meta property="og:description" content="Vue프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  v-onv-on 어트리뷰트를 통해 이벤트를 발생시킬 수 있습니다.그리고약어 [ @ ] 를 통해 단축이 가능합니다.12&amp;l">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-vue.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/2/img2.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/2/img1.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/2/img3.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/2/img4.png">
-<meta property="og:updated_time" content="2018-03-09T16:36:59.130Z">
+<meta property="og:updated_time" content="2018-03-09T16:50:38.599Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue 알아보기 2편">
-<meta name="twitter:description" content="프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  v-onv-on 어트리뷰트를 통해 이벤트를 발생시킬 수 있습니다.그리고약어 [ @ ] 를 통해 단축이 가능합니다.12&amp;lt;b">
+<meta name="twitter:description" content="Vue프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  v-onv-on 어트리뷰트를 통해 이벤트를 발생시킬 수 있습니다.그리고약어 [ @ ] 를 통해 단축이 가능합니다.12&amp;l">
 <meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-vue.jpg">
     
 
@@ -258,7 +254,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-vue.jpg" alt="Vue"><br>프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.<br>Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.</p>
+            <h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><p>프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.<br>Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.</p>
 <hr>
 <h1 id="v-on"><a href="#v-on" class="headerlink" title="v-on"></a>v-on</h1><p>v-on 어트리뷰트를 통해 이벤트를 발생시킬 수 있습니다.<br>그리고<br>약어 <strong>[ @ ]</strong> 를 통해 단축이 가능합니다.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click.once</span>=<span class="string">"Function"</span>&gt;</span>이벤트<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click.once</span>=<span class="string">"Function"</span>&gt;</span>이벤트<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="keyboard-event"><a href="#keyboard-event" class="headerlink" title="keyboard event"></a>keyboard event</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-on:keyup</span>=<span class="string">"logName()"</span>&gt;</span><span class="comment">&lt;!-- keyup 이벤트가 발생할때마다 logName 함수실행 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-on:keyup.enter</span>=<span class="string">"logName()"</span>&gt;</span><span class="comment">&lt;!--  enter를 눌렀을때마다 logName 함수실행 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-on:keyup.alt</span>,<span class="attr">enter</span>=<span class="string">"logName()"</span>&gt;</span><span class="comment">&lt;!--  alt키와 enter를 눌렀을때마다 logName 함수실행 --&gt;</span></span><br></pre></td></tr></table></figure>
@@ -313,7 +309,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2017/09/18/vue2/" data-id="cjek5z2b20026dwcons9v06sh" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2017/09/18/vue2/" data-id="cjek6il7i0026t0conw2hq00f" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -430,7 +426,7 @@
                             <a href="/2018/03/05/letAndConst/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="let 과 const" class="thumbnail-image"></span>
     
 </a>
 
@@ -449,7 +445,7 @@
                             <a href="/2018/02/22/reflowAndRepaint/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-word.jpg)" alt="Reflow와 Repaint" class="thumbnail-image"></span>
     
 </a>
 
@@ -468,7 +464,7 @@
                             <a href="/2018/02/21/firstProgramming/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-books.jpg)" alt="프로그래머 첫걸음" class="thumbnail-image"></span>
     
 </a>
 
@@ -487,7 +483,7 @@
                             <a href="/2018/02/21/cssReset/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-css.jpg)" alt="CSS - Resetting VS Normalize" class="thumbnail-image"></span>
     
 </a>
 
@@ -506,7 +502,7 @@
                             <a href="/2018/02/14/python2/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-python.jpg)" alt="python2" class="thumbnail-image"></span>
     
 </a>
 

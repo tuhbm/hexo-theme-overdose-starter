@@ -5,24 +5,19 @@
     
     <title>vue 알아보기 1편 | 보고 배우는 개발</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  Vue 시작하기Vue도 다른 프레임워크와 같이 npm 모듈을 이용해 설치해서 사용할 수 있습니다.1&amp;lt;script src=">
+    <meta name="description" content="Vue프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  Vue 시작하기Vue도 다른 프레임워크와 같이 npm 모듈을 이용해 설치해서 사용할 수 있습니다.1&amp;lt;script s">
 <meta name="keywords" content="vue,vue.js,vue.js2,tutorial,v-bind,v-html,vue를 시작하는방법,텍스트 바인딩,함수 바인딩">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue 알아보기 1편">
 <meta property="og:url" content="https://tuhbm.github.io/2017/09/15/vue1/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
-<meta property="og:description" content="프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  Vue 시작하기Vue도 다른 프레임워크와 같이 npm 모듈을 이용해 설치해서 사용할 수 있습니다.1&amp;lt;script src=">
+<meta property="og:description" content="Vue프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  Vue 시작하기Vue도 다른 프레임워크와 같이 npm 모듈을 이용해 설치해서 사용할 수 있습니다.1&amp;lt;script s">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-vue.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/1/img1.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/1/img2.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/1/img3.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/1/img4.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/1/img5.png">
-<meta property="og:updated_time" content="2018-03-09T16:36:59.147Z">
+<meta property="og:updated_time" content="2018-03-09T16:50:24.936Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue 알아보기 1편">
-<meta name="twitter:description" content="프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  Vue 시작하기Vue도 다른 프레임워크와 같이 npm 모듈을 이용해 설치해서 사용할 수 있습니다.1&amp;lt;script src=">
+<meta name="twitter:description" content="Vue프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  Vue 시작하기Vue도 다른 프레임워크와 같이 npm 모듈을 이용해 설치해서 사용할 수 있습니다.1&amp;lt;script s">
 <meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-vue.jpg">
     
 
@@ -259,7 +254,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-vue.jpg" alt="Vue"><br>프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.<br>Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.</p>
+            <h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><p>프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.<br>Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.</p>
 <hr>
 <h1 id="Vue-시작하기"><a href="#Vue-시작하기" class="headerlink" title="Vue 시작하기"></a>Vue 시작하기</h1><p>Vue도 다른 프레임워크와 같이 npm 모듈을 이용해 설치해서 사용할 수 있습니다.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"node_modules/vue/dist/vue.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>이렇게 스크립트 파일로 준비해 불러오면 Vue를 사용할 준비가 되었습니다.</p>
@@ -308,7 +303,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2017/09/15/vue1/" data-id="cjek5z2b00024dwcoz3f1e53x" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2017/09/15/vue1/" data-id="cjek6il7g0024t0cosdzmg4rn" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -425,7 +420,7 @@
                             <a href="/2018/03/05/letAndConst/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="let 과 const" class="thumbnail-image"></span>
     
 </a>
 
@@ -444,7 +439,7 @@
                             <a href="/2018/02/22/reflowAndRepaint/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-word.jpg)" alt="Reflow와 Repaint" class="thumbnail-image"></span>
     
 </a>
 
@@ -463,7 +458,7 @@
                             <a href="/2018/02/21/firstProgramming/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-books.jpg)" alt="프로그래머 첫걸음" class="thumbnail-image"></span>
     
 </a>
 
@@ -482,7 +477,7 @@
                             <a href="/2018/02/21/cssReset/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-css.jpg)" alt="CSS - Resetting VS Normalize" class="thumbnail-image"></span>
     
 </a>
 
@@ -501,7 +496,7 @@
                             <a href="/2018/02/14/python2/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-python.jpg)" alt="python2" class="thumbnail-image"></span>
     
 </a>
 

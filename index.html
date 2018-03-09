@@ -248,8 +248,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-js.jpg" alt="Javascript"></p>
-<h1 id="let과-const"><a href="#let과-const" class="headerlink" title="let과 const"></a>let과 const</h1><p>과거 ES5이하에서는 변수를 선언할때 아래와 같은 방식을 사용하였다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> c = a + b;</span><br></pre></td></tr></table></figure></p>
+            <h1 id="let과-const"><a href="#let과-const" class="headerlink" title="let과 const"></a>let과 const</h1><p>과거 ES5이하에서는 변수를 선언할때 아래와 같은 방식을 사용하였다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> c = a + b;</span><br></pre></td></tr></table></figure></p>
 <p>이러한 선언 방식은 javascript에게 유연함을 선물해 준 대신, 타언어를 공부한 많은 개발자들에게 혼란을 초래 했다.<br>2015년 ECMAscript2015 또는 ES6로 자바스크립트가 변화하면서, 많은 혼란을 조금을 달래줄 수 있었다.</p>
 <p>오늘은 ES6의 변수 선언방식인 <code>let</code>과 <code>const</code>에 대해 알아보겠다.<br>과거 javascript의 변수를 <code>var</code>로 선언하였을때 함수스코프, 호이스팅 등 많은 자유로움으로 인해 작은 문제가 큰문제로 발생하는 경우가 많았다.</p>
 <p>ES6의 변수 선언방식인 <code>let</code>과 <code>const</code>는 <em>block-scope</em>로 스코프범위를 일반적인 다른 언어들과 맞추었다.<br>예를 들어보자.</p>
@@ -274,7 +273,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/03/05/letAndConst/" data-id="cjek5z29t000odwcop15sdr1i" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/03/05/letAndConst/" data-id="cjek6il63000st0co04zxtpu2" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -393,7 +392,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-word.jpg" alt="용어정리"><br>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
+            <p>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
 <hr>
 <h1 id="Reflow와-Repaint"><a href="#Reflow와-Repaint" class="headerlink" title="Reflow와 Repaint"></a>Reflow와 Repaint</h1><p><strong>지금 이후 편하게 한국어로 <code>리플로우 &amp; 리페인트</code> 로 표현하도록 하겠습니다.</strong></p>
 <p>리플로우와 리페인트 웹을 만드는 개발자로써 많이 들어본 내용일 것이다.<br>이름만 들어로 <a href="https://ko.wiktionary.org/wiki/re-" rel="external nofollow noopener noreferrer" target="_blank">리(Re)</a>로 시작하는 하는 것이 뭔가 <code>다시</code>한다는 것 같다.<br>위키를 살펴보니 Re- 로 시작하는 단어들은 <em>다시 또는 반복, 되돌리다의 뜻을 더한 접두사</em>로 정리되어 있다.<br>리핏(repeat), 리턴(return), 리액션(reaction)등 우리가 아는 모든 단어가 위키에서 정리한대로 반복 또는 다시등의 뜻을 갖고 있다.<br>이중 우리가 <code>리플로우(reflow) &amp; 리페인트(repaint)</code>에 관심을 갖어야 하는 이유는 <strong>우리는 웹개발자이기 때문이다.</strong><br>먼저 플로우와 페인트는 우리가 만든 웹문서를 브라우저에서 렌더링할때 발생한다.<br>렌더링 과정은 이전에 <a href="https://tuhbm.github.io/2017/08/10/rendering1/">1편</a>과 <a href="https://tuhbm.github.io/2017/08/14/rendering2/">2편</a>으로 나누어서 포스팅했었다.(모르시는 분들을 위해 친절히 링크를 걸어두었습니다.)</p>
@@ -415,7 +414,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/02/22/reflowAndRepaint/" data-id="cjek5z2ab001adwcoxlrqc9s4" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/02/22/reflowAndRepaint/" data-id="cjek6il6n0018t0coradlo4i3" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -534,7 +533,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-books.jpg" alt="books"><br>이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.</p>
+            <p>이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.</p>
 <hr>
 <h1 id="프로그래머-첫걸음"><a href="#프로그래머-첫걸음" class="headerlink" title="프로그래머 첫걸음"></a>프로그래머 첫걸음</h1><p><img src="https://tuhbm.github.io/images/books/img_firstProgramming.jpg" alt="firstProgramming"></p>
 <h2 id="한줄평-리뷰"><a href="#한줄평-리뷰" class="headerlink" title="한줄평 리뷰"></a>한줄평 리뷰</h2><p>책 제목처럼 비전공자가 처음 프로그래밍을 배울때 보면 좋은도서다.</p>
@@ -568,7 +567,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/02/21/firstProgramming/" data-id="cjek5z29n000fdwco78az1prs" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/02/21/firstProgramming/" data-id="cjek6il5o000ft0cop46a74dj" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -687,8 +686,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-css.jpg" alt="css"></p>
-<h1 id="Resetting과-Normalize"><a href="#Resetting과-Normalize" class="headerlink" title="Resetting과 Normalize"></a><code>Resetting</code>과 <code>Normalize</code></h1><p>최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.<br>하지만 국내에서는 대부분 <code>front-end개발</code>의 아버지로 칭하는 <a href="https://en.wikipedia.org/wiki/Eric_A._Meyer" rel="external nofollow noopener noreferrer" target="_blank">Eric Meyer</a>의 <a href="https://meyerweb.com/eric/tools/css/reset/" rel="external nofollow noopener noreferrer" target="_blank">Reset.css</a>를 사용하거나,<br>yahoo가 내놓은 <a href="https://yuilibrary.com/yui/docs/cssreset/" rel="external nofollow noopener noreferrer" target="_blank">Reset.css</a>를 사용 또는 국내 IT대기업인 네이버나 다음의 reset.css를 사용한다.<br>그리고 본인의 입맛에 맞춰 커스터마이징하여 사용한다. 필자는 다음의 <em>reset.css</em>를 커스터마이징해서 사용한다.<br>이처럼 국내에서는 아직 Normalize보다는 Resetting을 하는 추세이다.<br>일단 Resetting은 대충 사용해보았기때문에 알 것 같은데 Normalize는 무엇인가를 정확히 설명 할 수 없을 것이다.<br>그럼 Resetting과 Normalize에 대해 알아보자</p>
+            <h1 id="Resetting과-Normalize"><a href="#Resetting과-Normalize" class="headerlink" title="Resetting과 Normalize"></a><code>Resetting</code>과 <code>Normalize</code></h1><p>최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.<br>하지만 국내에서는 대부분 <code>front-end개발</code>의 아버지로 칭하는 <a href="https://en.wikipedia.org/wiki/Eric_A._Meyer" rel="external nofollow noopener noreferrer" target="_blank">Eric Meyer</a>의 <a href="https://meyerweb.com/eric/tools/css/reset/" rel="external nofollow noopener noreferrer" target="_blank">Reset.css</a>를 사용하거나,<br>yahoo가 내놓은 <a href="https://yuilibrary.com/yui/docs/cssreset/" rel="external nofollow noopener noreferrer" target="_blank">Reset.css</a>를 사용 또는 국내 IT대기업인 네이버나 다음의 reset.css를 사용한다.<br>그리고 본인의 입맛에 맞춰 커스터마이징하여 사용한다. 필자는 다음의 <em>reset.css</em>를 커스터마이징해서 사용한다.<br>이처럼 국내에서는 아직 Normalize보다는 Resetting을 하는 추세이다.<br>일단 Resetting은 대충 사용해보았기때문에 알 것 같은데 Normalize는 무엇인가를 정확히 설명 할 수 없을 것이다.<br>그럼 Resetting과 Normalize에 대해 알아보자</p>
 <h2 id="Restting"><a href="#Restting" class="headerlink" title="Restting"></a>Restting</h2><p>우리가 주로 사용하는 Resetting을 알아보자. 위에서 언급한 바와 같이 <em><code>Reset.css</code></em>를 사용한다.<br><code>왜 멀쩡한 브라우저를 reset할까?</code> 초심자들은 의문을 갖을 수 있다. 하지만 상급자 또는 동료가 하기 때문에 자연스럽게 복사 붙여 넣기를 하여 작업을 시작한다.<br>필자는 이런 초심자들이 궁굼해 할만한 내용 찝찝한 등을 긁어주고자 한다. 고수들은 그냥 지나 쳐도 좋다.<br>본론으로 들어가서 왜 reset을 할까?</p>
 <p>우리의 주 업무는 성능쪽에도 관심을 둬야하지만, 일단 <code>front</code> 즉 보이는 부분을 담당한다.<br>하지만 기본적으로 브라우저는 각 브라우저별로 각각의 태그에 대한 기본 스타일링이 되어있다.<br>특히 <strong><code>우리의 적</code></strong> 익스플로러는 심하게 버전별로 차이가 있다.</p>
 <p>이처럼 브라우저별로 각가 태그에 대한 기본 스타일링이 다르기 때문에, 기본적인 것들은 초기화해서 사용합니다.<br>그래야지 우리가 생각하는 브라우저별 최대한 비슷한 흡사한 웹페이지를 작성할 수 있습니다.</p>
@@ -763,7 +761,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/02/21/cssReset/" data-id="cjek5z29b0007dwco2x2hg5w8" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/02/21/cssReset/" data-id="cjek6il580006t0coini6l9hq" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -882,7 +880,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-python.jpg" alt="python"><br>이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.<br>책을 보며, 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
+            <h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><p>이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.<br>책을 보며, 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
 <hr>
 <h1 id="파이썬-2편"><a href="#파이썬-2편" class="headerlink" title="파이썬 2편"></a>파이썬 2편</h1><h2 id="파이썬-문법"><a href="#파이썬-문법" class="headerlink" title="파이썬 문법"></a>파이썬 문법</h2><p>파이썬의 기본 문법은 들여쓰기로 구분이 됩니다.<br>자바스크립트는 <code>{}</code>의 블록 형태로 또는 <code>()</code>처럼 함수의 호출 등 괄호를 통해 문법을 구분하였습니다.<br>또는 실수를 하지 않도록 <code>;</code>을 통해 마침을 지었습니다. 그렇기에 자바스크립트 진영에서 <code>minify</code>을 하여도 문제가 되지 않았습니다.<br>그리고 <code>;</code>도 문자이므로 세미콜론을 <code>쓰지말아야한다</code> VS 안정감을 위해 <code>써야한다</code>라는 식의 논란이 있을정도로 구분이 쉬웠습니다.</p>
 <p>하지만 우리가 앞으로 배워나갈 파이썬은 들여쓰기로 문법을 나눕니다.<br>예를 들어보겠습니다.<br> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> x = <span class="number">2</span></span><br><span class="line">    y = <span class="number">4</span></span><br><span class="line">    </span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">이렇게 작성하면,</span></span><br><span class="line"><span class="string">IndentationError: unexpected indent </span></span><br><span class="line"><span class="string">에러가 발생합니다.</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure></p>
@@ -915,7 +913,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/02/14/python2/" data-id="cjek5z2a40010dwco5nm0slg9" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/02/14/python2/" data-id="cjek6il6k0013t0covq6cju22" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1034,7 +1032,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-python.jpg" alt="python"><br>이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.<br>책을 보며, 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
+            <h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><p>이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.<br>책을 보며, 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
 <hr>
 <h1 id="파이썬-python-시작하기"><a href="#파이썬-python-시작하기" class="headerlink" title="파이썬(python) 시작하기"></a>파이썬(python) 시작하기</h1><h2 id="파이썬을-시작하게된-계기"><a href="#파이썬을-시작하게된-계기" class="headerlink" title="파이썬을 시작하게된 계기"></a>파이썬을 시작하게된 계기</h2><p>한빛미디어의 <em>‘나는 리뷰어다.’</em> 라는 이벤트가 있습니다.<br>한빛미디어에서 신청을 받아 3가지의 선택한 책중 1권을 랜덤으로 보내주는데,<br>그 책을 읽고, 기간내에 책에 대한 리뷰를 블로그 및 온라인 서점 등에 리뷰를 작성하는 이벤트입니다.<br>그래서 받게 된 책이 <code>&#39;비전공자가 궁굼해하는 프로그래머의 첫걸음&#39;</code>입니다.<br>이 책은 프로그래밍의 내용을 요즘 HOT하다는 <code>파이썬</code>이란 언어 통해 프로그래밍에 관련된 내용을 전달합니다.<br>책을 반정도 읽다보니, 파이썬을 공부해 포스팅하는것도 좋겠다라는 생각이 들어 파이썬 공부를 시작하게 되었습니다.<br>다만, <code>제가 주로 사용하는 언어가 아닌 만큼 포스팅에 다소 시간이 걸릴 수 있습니다.</code></p>
 <h2 id="파이썬-설치하기"><a href="#파이썬-설치하기" class="headerlink" title="파이썬 설치하기"></a>파이썬 설치하기</h2><p>파이썬은 <a href="https://www.python.org/" rel="external nofollow noopener noreferrer" target="_blank">공식 홈페이지</a>를 통해 설치가 가능합니다.<br>저는 과거 버전인 2.x 버전이 아닌 3.x의 버전을 통해 공부를 시작하겠습니다.<br>공식홈페이지를 통해 다운을 받고 나면 일반적인 프로그램을 설치하는것처럼 설치를 합니다.</p>
@@ -1056,7 +1054,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/02/12/startPython/" data-id="cjek5z2aq001sdwco4qv0k2oz" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/02/12/startPython/" data-id="cjek6il75001st0co4h49iwjb" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1175,7 +1173,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-word.jpg" alt="용어정리"><br>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
+            <h2 id="용어정리"><a href="#용어정리" class="headerlink" title="용어정리"></a>용어정리</h2><p>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
 <hr>
 <h1 id="스레드-thread"><a href="#스레드-thread" class="headerlink" title="스레드(thread)"></a>스레드(thread)</h1><p><code>한글로 스레드라 표기하겠습니다.</code></p>
 <p>자바스크립트를 포함 여러 개발 서적 또는 웹문서들을 읽다 보면, 굉장히 많이 나오는 용어 중 하나이다.<br>스레드….싱글스레드….멀티스레드….<br>도대체 <code>스레드</code>란 무엇인가?<br>위키를 통해 <a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A0%88%EB%93%9C" rel="external nofollow noopener noreferrer" target="_blank">스레드</a>를 알아보자.<br>정리를 하면 프로그램 내에서 <code>프로세스가 실행되는 흐름</code>의 단위이다.</p>
@@ -1196,7 +1194,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/02/06/thread/" data-id="cjek5z2av001ydwco1dsp8v6k" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/02/06/thread/" data-id="cjek6il79001yt0cosieciqw1" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1315,7 +1313,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-word.jpg" alt="용어정리"><br>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
+            <h2 id="용어정리"><a href="#용어정리" class="headerlink" title="용어정리"></a>용어정리</h2><p>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
 <hr>
 <h1 id="Thrid-party-서드파티"><a href="#Thrid-party-서드파티" class="headerlink" title="Thrid party(서드파티)"></a>Thrid party(서드파티)</h1><p><code>지금부터 서드파티라 칭하겠습니다.</code><br>개발을 진행하다 보면, 모르는 부분을 검색을 통해 알아보는 경우가 매우 빈번하다.<br>블로그등을 보다보면 서드파티 라는 용어가 자주 존재하는데, 그뜻을 알아보도록 하자</p>
 <p>일단 용어 검색을 할때는 위키는 먼저 찾아보는데, 위키를 살펴본 <a href="https://namu.wiki/w/%EC%84%9C%EB%93%9C%ED%8C%8C%ED%8B%B0" rel="external nofollow noopener noreferrer" target="_blank">서드파티</a><br>정리를 하면, <code>제조사</code> 와 <code>소비자</code> 를 <code>연결</code>해주는 회사 또는 <code>제3자</code>라고 볼 수 있다.<br>예를 들면, <code>게임제조사</code> 와 <code>소비자</code> 를 연결해주는 <code>게임회사(퍼블리싱)</code>의 관계라고 볼 수 있다.<br>중국에 크로스파이어로 성공을 거둔 <code>스마일게이트(게임제조사)</code> 와 <code>유저(중국 사용자)</code>를 이어주는 <code>텐센트(퍼블리싱)</code>같은 예시가 있다.</p>
@@ -1331,7 +1329,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/01/26/thirdParty/" data-id="cjek5z2at001vdwcohqee2mdv" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/01/26/thirdParty/" data-id="cjek6il77001vt0co382bnsna" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1450,7 +1448,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-word.jpg" alt="용어정리"><br>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
+            <h2 id="용어정리"><a href="#용어정리" class="headerlink" title="용어정리"></a>용어정리</h2><p>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
 <hr>
 <p><img src="https://tuhbm.github.io/images/terms/literal_img1.jpg" alt="리터럴"></p>
 <h1 id="리터럴"><a href="#리터럴" class="headerlink" title="리터럴"></a>리터럴</h1><p>프로그램 개발을 하다보면, 리터럴이라는 단어를 많이 사용한다.<br>먼저 위키를 살펴보자</p>
@@ -1467,7 +1465,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/01/26/literal/" data-id="cjek5z29y000udwcohpsn9idu" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/01/26/literal/" data-id="cjek6il68000ut0co7knckpxz" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1586,8 +1584,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-css.jpg" alt="css"></p>
-<h1 id="SASS"><a href="#SASS" class="headerlink" title="SASS"></a>SASS</h1><p><code>SASS를 통칭 사스 라고 표기하겠습니다.</code><br><a href="https://tuhbm.github.io/2018/01/24/sass1/">지난 포스팅</a>을 통해 SASS의 확장자가 최종적으로 <code>.scss</code>로 확정되었다고 말씀드렸습니다.<br>이번 포스팅부터는 사스의 문법에 대해 알아보겠습니다.</p>
+            <h1 id="SASS"><a href="#SASS" class="headerlink" title="SASS"></a>SASS</h1><p><code>SASS를 통칭 사스 라고 표기하겠습니다.</code><br><a href="https://tuhbm.github.io/2018/01/24/sass1/">지난 포스팅</a>을 통해 SASS의 확장자가 최종적으로 <code>.scss</code>로 확정되었다고 말씀드렸습니다.<br>이번 포스팅부터는 사스의 문법에 대해 알아보겠습니다.</p>
 <h2 id="변수사용"><a href="#변수사용" class="headerlink" title="변수사용"></a>변수사용</h2><p>변수를 사용하므로써, 한번의 변경으로 사용한 모든 변수의 값을 바꿀 수 있는 효율적인 방법이라고 말씀드렸었습니다.<br>변수를 <code>키</code>와<code>값</code>으로 표현해 보겠습니다.<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$normalFontSize</span>: <span class="number">14px</span>;</span><br></pre></td></tr></table></figure></p>
 <p>이제 <code>14px</code>은 <code>$normalFontSize</code>에 담겨있습니다.<br>여러가지의 형태로도 담을 수 있습니다.<br>이때 사용하는것이 <code>@mixin</code>입니다.<br>예를 들어보겠습니다.<br>대표적인 예로 우리는 <code>float을 해제</code> 할 때 여러방법이 있지만 가상선택자인 <code>:after를 사용한 클리어</code> 방법을 상황에 따라 사용합니다.<br>이것을 사스로 표현해보겠습니다.<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">mixin</span> afterClear &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">ul</span> &#123;</span><br><span class="line">  &amp;:after&#123;</span><br><span class="line">    @<span class="keyword">include</span> afterClear;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">li</span>&#123;</span><br><span class="line">    <span class="attribute">float</span>:left;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>사스에서 CSS의 컴파일 된 코드를 보겠습니다.<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">   <span class="attribute">display</span>: block;</span><br><span class="line">   <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">   <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">   <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -1605,7 +1602,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/01/24/sass2/" data-id="cjek5z2an001mdwco8itsg7g4" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/01/24/sass2/" data-id="cjek6il71001mt0co85dr64l8" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1701,7 +1698,7 @@
                             <a href="/2018/03/05/letAndConst/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="let 과 const" class="thumbnail-image"></span>
     
 </a>
 
@@ -1720,7 +1717,7 @@
                             <a href="/2018/02/22/reflowAndRepaint/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-word.jpg)" alt="Reflow와 Repaint" class="thumbnail-image"></span>
     
 </a>
 
@@ -1739,7 +1736,7 @@
                             <a href="/2018/02/21/firstProgramming/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-books.jpg)" alt="프로그래머 첫걸음" class="thumbnail-image"></span>
     
 </a>
 
@@ -1758,7 +1755,7 @@
                             <a href="/2018/02/21/cssReset/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-css.jpg)" alt="CSS - Resetting VS Normalize" class="thumbnail-image"></span>
     
 </a>
 
@@ -1777,7 +1774,7 @@
                             <a href="/2018/02/14/python2/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-python.jpg)" alt="python2" class="thumbnail-image"></span>
     
 </a>
 

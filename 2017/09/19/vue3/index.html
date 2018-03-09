@@ -5,27 +5,19 @@
     
     <title>vue 알아보기 3편 | 보고 배우는 개발</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  computed계산된 속성을 바인딩할때 사용. computed 사용법123456new Vue(&amp;#123;  el:&apos;#app&apos;,">
+    <meta name="description" content="Vue프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  computed계산된 속성을 바인딩할때 사용. computed 사용법123456new Vue(&amp;#123;  el:&apos;#ap">
 <meta name="keywords" content="vue,vue.js,vue.js2,tutorial,methods,computed,v-if,v-show,v-for">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue 알아보기 3편">
 <meta property="og:url" content="https://tuhbm.github.io/2017/09/19/vue3/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
-<meta property="og:description" content="프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  computed계산된 속성을 바인딩할때 사용. computed 사용법123456new Vue(&amp;#123;  el:&apos;#app&apos;,">
+<meta property="og:description" content="Vue프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  computed계산된 속성을 바인딩할때 사용. computed 사용법123456new Vue(&amp;#123;  el:&apos;#ap">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-vue.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/3/img2.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/3/img2.gif">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/3/img3.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/3/img3.gif">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/3/img1.gif">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/3/img4.gif">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/3/img5.png">
-<meta property="og:image" content="https://tuhbm.github.io/images/vue/3/img6.png">
-<meta property="og:updated_time" content="2018-03-09T16:36:59.125Z">
+<meta property="og:updated_time" content="2018-03-09T16:50:53.997Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue 알아보기 3편">
-<meta name="twitter:description" content="프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  computed계산된 속성을 바인딩할때 사용. computed 사용법123456new Vue(&amp;#123;  el:&apos;#app&apos;,">
+<meta name="twitter:description" content="Vue프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.  computed계산된 속성을 바인딩할때 사용. computed 사용법123456new Vue(&amp;#123;  el:&apos;#ap">
 <meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-vue.jpg">
     
 
@@ -262,7 +254,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-vue.jpg" alt="Vue"><br>프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.<br>Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.</p>
+            <h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><p>프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.<br>Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.</p>
 <hr>
 <h1 id="computed"><a href="#computed" class="headerlink" title="computed"></a>computed</h1><p>계산된 속성을 바인딩할때 사용.</p>
 <h2 id="computed-사용법"><a href="#computed-사용법" class="headerlink" title="computed 사용법"></a>computed 사용법</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el:<span class="string">'#app'</span>,</span><br><span class="line">  data:&#123;&#125;,</span><br><span class="line">  methods:&#123;&#125;,</span><br><span class="line">  computed:&#123;&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
@@ -323,7 +315,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2017/09/19/vue3/" data-id="cjek5z2b4002adwcowe7uc74z" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2017/09/19/vue3/" data-id="cjek6il7k002at0coeli27mlh" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -440,7 +432,7 @@
                             <a href="/2018/03/05/letAndConst/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="let 과 const" class="thumbnail-image"></span>
     
 </a>
 
@@ -459,7 +451,7 @@
                             <a href="/2018/02/22/reflowAndRepaint/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-word.jpg)" alt="Reflow와 Repaint" class="thumbnail-image"></span>
     
 </a>
 
@@ -478,7 +470,7 @@
                             <a href="/2018/02/21/firstProgramming/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-books.jpg)" alt="프로그래머 첫걸음" class="thumbnail-image"></span>
     
 </a>
 
@@ -497,7 +489,7 @@
                             <a href="/2018/02/21/cssReset/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-css.jpg)" alt="CSS - Resetting VS Normalize" class="thumbnail-image"></span>
     
 </a>
 
@@ -516,7 +508,7 @@
                             <a href="/2018/02/14/python2/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-python.jpg)" alt="python2" class="thumbnail-image"></span>
     
 </a>
 

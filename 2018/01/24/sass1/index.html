@@ -5,20 +5,19 @@
     
     <title>SASS에 대해 알아보자1 | 보고 배우는 개발</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="SASSSASS를 통칭 사스 라고 표기하겠습니다.금일은 사스에 대해 알아보겠습니다.우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.  1. scout앱 사용하여 컴파일하기 (지난번 포스팅내용입니다.)2. Ruby를 설치해 Cli를 통해 컴파일하기3. gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기4. pre">
+    <meta name="description" content="SASSSASS를 통칭 사스 라고 표기하겠습니다.금일은 사스에 대해 알아보겠습니다.우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.  1. scout앱 사용하여 컴파일하기 (지난번 포스팅내용입니다.)2. Ruby를 설치해 Cli를 통해 컴파일하기3. gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기4. prep">
 <meta name="keywords" content="SASS,compile,sass,scss,CSS 전처리기,CSS processors,사스">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SASS에 대해 알아보자1">
 <meta property="og:url" content="https://tuhbm.github.io/2018/01/24/sass1/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
-<meta property="og:description" content="SASSSASS를 통칭 사스 라고 표기하겠습니다.금일은 사스에 대해 알아보겠습니다.우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.  1. scout앱 사용하여 컴파일하기 (지난번 포스팅내용입니다.)2. Ruby를 설치해 Cli를 통해 컴파일하기3. gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기4. pre">
+<meta property="og:description" content="SASSSASS를 통칭 사스 라고 표기하겠습니다.금일은 사스에 대해 알아보겠습니다.우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.  1. scout앱 사용하여 컴파일하기 (지난번 포스팅내용입니다.)2. Ruby를 설치해 Cli를 통해 컴파일하기3. gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기4. prep">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-css.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/images/sass/sass_img1.png">
-<meta property="og:updated_time" content="2018-03-09T16:36:59.154Z">
+<meta property="og:updated_time" content="2018-03-09T16:47:50.592Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SASS에 대해 알아보자1">
-<meta name="twitter:description" content="SASSSASS를 통칭 사스 라고 표기하겠습니다.금일은 사스에 대해 알아보겠습니다.우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.  1. scout앱 사용하여 컴파일하기 (지난번 포스팅내용입니다.)2. Ruby를 설치해 Cli를 통해 컴파일하기3. gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기4. pre">
+<meta name="twitter:description" content="SASSSASS를 통칭 사스 라고 표기하겠습니다.금일은 사스에 대해 알아보겠습니다.우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.  1. scout앱 사용하여 컴파일하기 (지난번 포스팅내용입니다.)2. Ruby를 설치해 Cli를 통해 컴파일하기3. gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기4. prep">
 <meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-css.jpg">
     
 
@@ -255,8 +254,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-css.jpg" alt="css"></p>
-<h1 id="SASS"><a href="#SASS" class="headerlink" title="SASS"></a>SASS</h1><p><code>SASS를 통칭 사스 라고 표기하겠습니다.</code><br>금일은 사스에 대해 알아보겠습니다.<br>우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.</p>
+            <h1 id="SASS"><a href="#SASS" class="headerlink" title="SASS"></a>SASS</h1><p><code>SASS를 통칭 사스 라고 표기하겠습니다.</code><br>금일은 사스에 대해 알아보겠습니다.<br>우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.</p>
 <blockquote>
 <p><strong>1. <a href="https://tuhbm.github.io/2017/07/17/sass-compile/">scout앱 사용하여 컴파일하기</a> (지난번 포스팅내용입니다.)</strong><br><strong>2. <a href="https://velopert.com/1712" rel="external nofollow noopener noreferrer" target="_blank">Ruby를 설치해 Cli를 통해 컴파일하기</a></strong><br><strong>3. <a href="http://webclub.tistory.com/470" rel="external nofollow noopener noreferrer" target="_blank">gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기</a></strong><br><strong>4. <a href="https://prepros.io/" rel="external nofollow noopener noreferrer" target="_blank">prepros</a> 또는 <a href="http://koala-app.com/" rel="external nofollow noopener noreferrer" target="_blank">kolal</a>등의 앱사용하기</strong></p>
 </blockquote>
@@ -298,7 +296,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/01/24/sass1/" data-id="cjek5z2ah001gdwco43jrl4zu" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/01/24/sass1/" data-id="cjek6il6z001kt0cotwbwyn8k" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -415,7 +413,7 @@
                             <a href="/2018/03/05/letAndConst/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="let 과 const" class="thumbnail-image"></span>
     
 </a>
 
@@ -434,7 +432,7 @@
                             <a href="/2018/02/22/reflowAndRepaint/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-word.jpg)" alt="Reflow와 Repaint" class="thumbnail-image"></span>
     
 </a>
 
@@ -453,7 +451,7 @@
                             <a href="/2018/02/21/firstProgramming/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-books.jpg)" alt="프로그래머 첫걸음" class="thumbnail-image"></span>
     
 </a>
 
@@ -472,7 +470,7 @@
                             <a href="/2018/02/21/cssReset/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-css.jpg)" alt="CSS - Resetting VS Normalize" class="thumbnail-image"></span>
     
 </a>
 
@@ -491,7 +489,7 @@
                             <a href="/2018/02/14/python2/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-python.jpg)" alt="python2" class="thumbnail-image"></span>
     
 </a>
 

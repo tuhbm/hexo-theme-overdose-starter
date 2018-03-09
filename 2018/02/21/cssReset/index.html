@@ -5,21 +5,19 @@
     
     <title>CSS - Resetting VS Normalize | 보고 배우는 개발</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Resetting과 Normalize최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.하지만 국내에서는 대부분 front-end개발의 아버지로 칭하는 Eric Meyer의 Reset.css를 사용하거나,yahoo가 내놓은 Reset.css를 사용 또는 국내 IT대기업인">
+    <meta name="description" content="Resetting과 Normalize최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.하지만 국내에서는 대부분 front-end개발의 아버지로 칭하는 Eric Meyer의 Reset.css를 사용하거나,yahoo가 내놓은 Reset.css를 사용 또는 국내 IT대기업인 네">
 <meta name="keywords" content="reset,normalize,ie,chrome,firefox,safari">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS - Resetting VS Normalize">
 <meta property="og:url" content="https://tuhbm.github.io/2018/02/21/cssReset/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
-<meta property="og:description" content="Resetting과 Normalize최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.하지만 국내에서는 대부분 front-end개발의 아버지로 칭하는 Eric Meyer의 Reset.css를 사용하거나,yahoo가 내놓은 Reset.css를 사용 또는 국내 IT대기업인">
+<meta property="og:description" content="Resetting과 Normalize최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.하지만 국내에서는 대부분 front-end개발의 아버지로 칭하는 Eric Meyer의 Reset.css를 사용하거나,yahoo가 내놓은 Reset.css를 사용 또는 국내 IT대기업인 네">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-css.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/images/cssPostting/normalize_browser.jpg">
-<meta property="og:image" content="https://tuhbm.github.io/images/cssPostting/normalize_style.jpg">
-<meta property="og:updated_time" content="2018-03-09T16:36:59.153Z">
+<meta property="og:updated_time" content="2018-03-09T16:42:43.158Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS - Resetting VS Normalize">
-<meta name="twitter:description" content="Resetting과 Normalize최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.하지만 국내에서는 대부분 front-end개발의 아버지로 칭하는 Eric Meyer의 Reset.css를 사용하거나,yahoo가 내놓은 Reset.css를 사용 또는 국내 IT대기업인">
+<meta name="twitter:description" content="Resetting과 Normalize최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.하지만 국내에서는 대부분 front-end개발의 아버지로 칭하는 Eric Meyer의 Reset.css를 사용하거나,yahoo가 내놓은 Reset.css를 사용 또는 국내 IT대기업인 네">
 <meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-css.jpg">
     
 
@@ -256,8 +254,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p><img src="https://tuhbm.github.io/images/bnr-css.jpg" alt="css"></p>
-<h1 id="Resetting과-Normalize"><a href="#Resetting과-Normalize" class="headerlink" title="Resetting과 Normalize"></a><code>Resetting</code>과 <code>Normalize</code></h1><p>최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.<br>하지만 국내에서는 대부분 <code>front-end개발</code>의 아버지로 칭하는 <a href="https://en.wikipedia.org/wiki/Eric_A._Meyer" rel="external nofollow noopener noreferrer" target="_blank">Eric Meyer</a>의 <a href="https://meyerweb.com/eric/tools/css/reset/" rel="external nofollow noopener noreferrer" target="_blank">Reset.css</a>를 사용하거나,<br>yahoo가 내놓은 <a href="https://yuilibrary.com/yui/docs/cssreset/" rel="external nofollow noopener noreferrer" target="_blank">Reset.css</a>를 사용 또는 국내 IT대기업인 네이버나 다음의 reset.css를 사용한다.<br>그리고 본인의 입맛에 맞춰 커스터마이징하여 사용한다. 필자는 다음의 <em>reset.css</em>를 커스터마이징해서 사용한다.<br>이처럼 국내에서는 아직 Normalize보다는 Resetting을 하는 추세이다.<br>일단 Resetting은 대충 사용해보았기때문에 알 것 같은데 Normalize는 무엇인가를 정확히 설명 할 수 없을 것이다.<br>그럼 Resetting과 Normalize에 대해 알아보자</p>
+            <h1 id="Resetting과-Normalize"><a href="#Resetting과-Normalize" class="headerlink" title="Resetting과 Normalize"></a><code>Resetting</code>과 <code>Normalize</code></h1><p>최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.<br>하지만 국내에서는 대부분 <code>front-end개발</code>의 아버지로 칭하는 <a href="https://en.wikipedia.org/wiki/Eric_A._Meyer" rel="external nofollow noopener noreferrer" target="_blank">Eric Meyer</a>의 <a href="https://meyerweb.com/eric/tools/css/reset/" rel="external nofollow noopener noreferrer" target="_blank">Reset.css</a>를 사용하거나,<br>yahoo가 내놓은 <a href="https://yuilibrary.com/yui/docs/cssreset/" rel="external nofollow noopener noreferrer" target="_blank">Reset.css</a>를 사용 또는 국내 IT대기업인 네이버나 다음의 reset.css를 사용한다.<br>그리고 본인의 입맛에 맞춰 커스터마이징하여 사용한다. 필자는 다음의 <em>reset.css</em>를 커스터마이징해서 사용한다.<br>이처럼 국내에서는 아직 Normalize보다는 Resetting을 하는 추세이다.<br>일단 Resetting은 대충 사용해보았기때문에 알 것 같은데 Normalize는 무엇인가를 정확히 설명 할 수 없을 것이다.<br>그럼 Resetting과 Normalize에 대해 알아보자</p>
 <h2 id="Restting"><a href="#Restting" class="headerlink" title="Restting"></a>Restting</h2><p>우리가 주로 사용하는 Resetting을 알아보자. 위에서 언급한 바와 같이 <em><code>Reset.css</code></em>를 사용한다.<br><code>왜 멀쩡한 브라우저를 reset할까?</code> 초심자들은 의문을 갖을 수 있다. 하지만 상급자 또는 동료가 하기 때문에 자연스럽게 복사 붙여 넣기를 하여 작업을 시작한다.<br>필자는 이런 초심자들이 궁굼해 할만한 내용 찝찝한 등을 긁어주고자 한다. 고수들은 그냥 지나 쳐도 좋다.<br>본론으로 들어가서 왜 reset을 할까?</p>
 <p>우리의 주 업무는 성능쪽에도 관심을 둬야하지만, 일단 <code>front</code> 즉 보이는 부분을 담당한다.<br>하지만 기본적으로 브라우저는 각 브라우저별로 각각의 태그에 대한 기본 스타일링이 되어있다.<br>특히 <strong><code>우리의 적</code></strong> 익스플로러는 심하게 버전별로 차이가 있다.</p>
 <p>이처럼 브라우저별로 각가 태그에 대한 기본 스타일링이 다르기 때문에, 기본적인 것들은 초기화해서 사용합니다.<br>그래야지 우리가 생각하는 브라우저별 최대한 비슷한 흡사한 웹페이지를 작성할 수 있습니다.</p>
@@ -332,7 +329,7 @@
 
 </div>
 
-    <a data-url="https://tuhbm.github.io/2018/02/21/cssReset/" data-id="cjek5z29b0007dwco2x2hg5w8" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://tuhbm.github.io/2018/02/21/cssReset/" data-id="cjek6il580006t0coini6l9hq" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -449,7 +446,7 @@
                             <a href="/2018/03/05/letAndConst/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="let 과 const" class="thumbnail-image"></span>
     
 </a>
 
@@ -468,7 +465,7 @@
                             <a href="/2018/02/22/reflowAndRepaint/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-word.jpg)" alt="Reflow와 Repaint" class="thumbnail-image"></span>
     
 </a>
 
@@ -487,7 +484,7 @@
                             <a href="/2018/02/21/firstProgramming/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-books.jpg)" alt="프로그래머 첫걸음" class="thumbnail-image"></span>
     
 </a>
 
@@ -506,7 +503,7 @@
                             <a href="/2018/02/21/cssReset/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-css.jpg)" alt="CSS - Resetting VS Normalize" class="thumbnail-image"></span>
     
 </a>
 
@@ -525,7 +522,7 @@
                             <a href="/2018/02/14/python2/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-python.jpg)" alt="python2" class="thumbnail-image"></span>
     
 </a>
 

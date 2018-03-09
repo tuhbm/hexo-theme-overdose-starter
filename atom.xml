@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-03-09T16:36:59.173Z</updated>
+  <updated>2018-03-09T16:41:11.996Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,14 +21,13 @@
     <link href="https://tuhbm.github.io/2018/03/05/letAndConst/"/>
     <id>https://tuhbm.github.io/2018/03/05/letAndConst/</id>
     <published>2018-03-05T13:32:46.000Z</published>
-    <updated>2018-03-09T16:36:59.173Z</updated>
+    <updated>2018-03-09T16:41:11.996Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-js.jpg&quot; alt=&quot;Javascript&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;let과-const&quot;&gt;&lt;a href=&quot;#let과-const&quot; class=&quot;headerlink&quot; t
+        &lt;h1 id=&quot;let과-const&quot;&gt;&lt;a href=&quot;#let과-const&quot; class=&quot;headerlink&quot; title=&quot;let과 const&quot;&gt;&lt;/a&gt;let과 const&lt;/h1&gt;&lt;p&gt;과거 ES5이하에서는 변수를 선언할때 아래와 같은 방식을 사용하였다.
       
     
     </summary>
@@ -53,13 +52,14 @@
     <link href="https://tuhbm.github.io/2018/02/22/reflowAndRepaint/"/>
     <id>https://tuhbm.github.io/2018/02/22/reflowAndRepaint/</id>
     <published>2018-02-22T13:56:50.000Z</published>
-    <updated>2018-03-09T16:36:59.170Z</updated>
+    <updated>2018-03-09T16:47:11.776Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방
+        &lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
       
     
     </summary>
@@ -90,15 +90,15 @@
     <link href="https://tuhbm.github.io/2018/02/21/firstProgramming/"/>
     <id>https://tuhbm.github.io/2018/02/21/firstProgramming/</id>
     <published>2018-02-21T12:51:20.000Z</published>
-    <updated>2018-03-09T16:36:59.167Z</updated>
+    <updated>2018-03-09T16:44:45.873Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-books.jpg&quot; alt=&quot;books&quot;&gt;&lt;br&gt;이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.&lt;/p&gt;
+        &lt;p&gt;이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;프로그래머-첫걸
+&lt;h1 id=&quot;프로그래머-첫걸음&quot;&gt;&lt;a href=&quot;#프로그래머-첫걸음&quot; class=&quot;headerlink&quot; title=&quot;프로그래머 첫걸음&quot;&gt;&lt;/a&gt;프로그래머 첫
       
     
     </summary>
@@ -133,14 +133,13 @@
     <link href="https://tuhbm.github.io/2018/02/21/cssReset/"/>
     <id>https://tuhbm.github.io/2018/02/21/cssReset/</id>
     <published>2018-02-21T12:00:04.000Z</published>
-    <updated>2018-03-09T16:36:59.153Z</updated>
+    <updated>2018-03-09T16:42:43.158Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-css.jpg&quot; alt=&quot;css&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Resetting과-Normalize&quot;&gt;&lt;a href=&quot;#Resetting과-Normalize&quot; class=
+        &lt;h1 id=&quot;Resetting과-Normalize&quot;&gt;&lt;a href=&quot;#Resetting과-Normalize&quot; class=&quot;headerlink&quot; title=&quot;Resetting과 Normalize&quot;&gt;&lt;/a&gt;&lt;code&gt;Resetting&lt;/code&gt;과 &lt;c
       
     
     </summary>
@@ -167,13 +166,13 @@
     <link href="https://tuhbm.github.io/2018/02/14/python2/"/>
     <id>https://tuhbm.github.io/2018/02/14/python2/</id>
     <published>2018-02-14T13:41:49.000Z</published>
-    <updated>2018-03-09T16:36:59.178Z</updated>
+    <updated>2018-03-09T16:49:13.844Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-python.jpg&quot; alt=&quot;python&quot;&gt;&lt;br&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;code&gt;잘못된 내
+        &lt;h2 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;p&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;c
       
     
     </summary>
@@ -206,13 +205,13 @@
     <link href="https://tuhbm.github.io/2018/02/12/startPython/"/>
     <id>https://tuhbm.github.io/2018/02/12/startPython/</id>
     <published>2018-02-12T12:17:35.000Z</published>
-    <updated>2018-03-09T16:36:59.121Z</updated>
+    <updated>2018-03-09T16:49:05.108Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-python.jpg&quot; alt=&quot;python&quot;&gt;&lt;br&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;code&gt;잘못된 내
+        &lt;h2 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;p&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;c
       
     
     </summary>
@@ -235,13 +234,13 @@
     <link href="https://tuhbm.github.io/2018/02/06/thread/"/>
     <id>https://tuhbm.github.io/2018/02/06/thread/</id>
     <published>2018-02-06T12:43:00.000Z</published>
-    <updated>2018-03-09T16:36:59.149Z</updated>
+    <updated>2018-03-09T16:49:55.913Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방
+        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
       
     
     </summary>
@@ -266,13 +265,13 @@
     <link href="https://tuhbm.github.io/2018/01/26/thirdParty/"/>
     <id>https://tuhbm.github.io/2018/01/26/thirdParty/</id>
     <published>2018-01-26T11:54:28.000Z</published>
-    <updated>2018-03-09T16:36:59.140Z</updated>
+    <updated>2018-03-09T16:49:42.190Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방
+        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
       
     
     </summary>
@@ -305,13 +304,13 @@
     <link href="https://tuhbm.github.io/2018/01/26/literal/"/>
     <id>https://tuhbm.github.io/2018/01/26/literal/</id>
     <published>2018-01-26T10:43:00.000Z</published>
-    <updated>2018-03-09T16:36:59.168Z</updated>
+    <updated>2018-03-09T16:45:58.173Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방
+        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
       
     
     </summary>
@@ -344,14 +343,13 @@
     <link href="https://tuhbm.github.io/2018/01/24/sass2/"/>
     <id>https://tuhbm.github.io/2018/01/24/sass2/</id>
     <published>2018-01-24T11:01:13.000Z</published>
-    <updated>2018-03-09T16:36:59.142Z</updated>
+    <updated>2018-03-09T16:48:01.934Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-css.jpg&quot; alt=&quot;css&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;SASS&quot;&gt;&lt;a href=&quot;#SASS&quot; class=&quot;headerlink&quot; title=&quot;SASS&quot;&gt;&lt;/a&gt;SA
+        &lt;h1 id=&quot;SASS&quot;&gt;&lt;a href=&quot;#SASS&quot; class=&quot;headerlink&quot; title=&quot;SASS&quot;&gt;&lt;/a&gt;SASS&lt;/h1&gt;&lt;p&gt;&lt;code&gt;SASS를 통칭 사스 라고 표기하겠습니다.&lt;/code&gt;&lt;br&gt;&lt;a href=&quot;https://tuhbm
       
     
     </summary>
@@ -380,14 +378,13 @@
     <link href="https://tuhbm.github.io/2018/01/24/sass1/"/>
     <id>https://tuhbm.github.io/2018/01/24/sass1/</id>
     <published>2018-01-24T07:12:13.000Z</published>
-    <updated>2018-03-09T16:36:59.154Z</updated>
+    <updated>2018-03-09T16:47:50.592Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-css.jpg&quot; alt=&quot;css&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;SASS&quot;&gt;&lt;a href=&quot;#SASS&quot; class=&quot;headerlink&quot; title=&quot;SASS&quot;&gt;&lt;/a&gt;SA
+        &lt;h1 id=&quot;SASS&quot;&gt;&lt;a href=&quot;#SASS&quot; class=&quot;headerlink&quot; title=&quot;SASS&quot;&gt;&lt;/a&gt;SASS&lt;/h1&gt;&lt;p&gt;&lt;code&gt;SASS를 통칭 사스 라고 표기하겠습니다.&lt;/code&gt;&lt;br&gt;금일은 사스에 대해 알아보겠습니다.&lt;br
       
     
     </summary>
@@ -418,13 +415,13 @@
     <link href="https://tuhbm.github.io/2018/01/22/sideEffect/"/>
     <id>https://tuhbm.github.io/2018/01/22/sideEffect/</id>
     <published>2018-01-22T13:40:55.000Z</published>
-    <updated>2018-03-09T16:36:59.171Z</updated>
+    <updated>2018-03-09T16:48:42.436Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방
+        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
       
     
     </summary>
@@ -445,14 +442,13 @@
     <link href="https://tuhbm.github.io/2018/01/21/vanillaJS/"/>
     <id>https://tuhbm.github.io/2018/01/21/vanillaJS/</id>
     <published>2018-01-21T14:42:22.000Z</published>
-    <updated>2018-03-09T16:36:59.151Z</updated>
+    <updated>2018-03-09T16:50:07.297Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-js.jpg&quot; alt=&quot;Javascript&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Vanilla-JS&quot;&gt;&lt;a href=&quot;#Vanilla-JS&quot; class=&quot;headerlink&quot; t
+        &lt;h1 id=&quot;Vanilla-JS&quot;&gt;&lt;a href=&quot;#Vanilla-JS&quot; class=&quot;headerlink&quot; title=&quot;Vanilla JS&quot;&gt;&lt;/a&gt;Vanilla JS&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;지금부터는 Vanilla JS를 편하게 바닐라JS라고 
       
     
     </summary>
@@ -477,13 +473,13 @@
     <link href="https://tuhbm.github.io/2018/01/17/bye2017/"/>
     <id>https://tuhbm.github.io/2018/01/17/bye2017/</id>
     <published>2018-01-17T12:31:12.000Z</published>
-    <updated>2018-03-09T16:36:59.145Z</updated>
+    <updated>2018-03-09T16:41:40.227Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bye/img_bye2017.png&quot; alt=&quot;bye2017&quot;&gt;&lt;br&gt;2017년이 가고 2018년 1월이 반쯤 보낸 후, 다시 한번 나를 채찍질 하게 만든 사건을 통해 마음
+        &lt;h1 id=&quot;2017년-회고&quot;&gt;&lt;a href=&quot;#2017년-회고&quot; class=&quot;headerlink&quot; title=&quot;2017년 회고&quot;&gt;&lt;/a&gt;2017년 회고&lt;/h1&gt;&lt;p&gt;2017년이 가고 2018년 1월이 반쯤 보낸 후, 다시 한번 나를 채찍질 하게 만
       
     
     </summary>
@@ -514,13 +510,13 @@
     <link href="https://tuhbm.github.io/2017/09/20/vue4/"/>
     <id>https://tuhbm.github.io/2017/09/20/vue4/</id>
     <published>2017-09-20T05:13:27.000Z</published>
-    <updated>2018-03-09T16:36:59.127Z</updated>
+    <updated>2018-03-09T16:51:12.774Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-vue.jpg&quot; alt=&quot;Vue&quot;&gt;&lt;br&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br
+        &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.
       
     
     </summary>
@@ -557,13 +553,13 @@
     <link href="https://tuhbm.github.io/2017/09/19/vue3/"/>
     <id>https://tuhbm.github.io/2017/09/19/vue3/</id>
     <published>2017-09-19T05:58:26.000Z</published>
-    <updated>2018-03-09T16:36:59.125Z</updated>
+    <updated>2018-03-09T16:50:53.997Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-vue.jpg&quot; alt=&quot;Vue&quot;&gt;&lt;br&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br
+        &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.
       
     
     </summary>
@@ -598,13 +594,13 @@
     <link href="https://tuhbm.github.io/2017/09/18/vue2/"/>
     <id>https://tuhbm.github.io/2017/09/18/vue2/</id>
     <published>2017-09-18T08:02:20.000Z</published>
-    <updated>2018-03-09T16:36:59.130Z</updated>
+    <updated>2018-03-09T16:50:38.599Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-vue.jpg&quot; alt=&quot;Vue&quot;&gt;&lt;br&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br
+        &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.
       
     
     </summary>
@@ -635,13 +631,13 @@
     <link href="https://tuhbm.github.io/2017/09/15/vue1/"/>
     <id>https://tuhbm.github.io/2017/09/15/vue1/</id>
     <published>2017-09-15T03:49:08.000Z</published>
-    <updated>2018-03-09T16:36:59.147Z</updated>
+    <updated>2018-03-09T16:50:24.936Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-vue.jpg&quot; alt=&quot;Vue&quot;&gt;&lt;br&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br
+        &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.
       
     
     </summary>
@@ -676,13 +672,13 @@
     <link href="https://tuhbm.github.io/2017/09/08/OSI7/"/>
     <id>https://tuhbm.github.io/2017/09/08/OSI7/</id>
     <published>2017-09-08T04:49:47.000Z</published>
-    <updated>2018-03-09T16:36:59.165Z</updated>
+    <updated>2018-03-09T16:46:35.435Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방
+        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
       
     
     </summary>
@@ -701,13 +697,13 @@
     <link href="https://tuhbm.github.io/2017/09/06/component/"/>
     <id>https://tuhbm.github.io/2017/09/06/component/</id>
     <published>2017-09-06T09:04:01.000Z</published>
-    <updated>2018-03-09T16:36:59.157Z</updated>
+    <updated>2018-03-09T16:43:55.892Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-word.jpg&quot; alt=&quot;용어정리&quot;&gt;&lt;br&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방
+        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
       
     
     </summary>
