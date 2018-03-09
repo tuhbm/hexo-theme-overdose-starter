@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    
+    <title>스레드(thread) | 보고 배우는 개발</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  스레드(thread)한글로 스레드라 표기하겠습니다. 자바스크립트를 포함 여러 개발 서적 또는 웹문서들을 읽다 보면, 굉장히 많이 나오는 용어">
+<meta name="keywords" content="thread,스레드,싱글스레드,멀티스레드,프로세스">
+<meta property="og:type" content="article">
+<meta property="og:title" content="스레드(thread)">
+<meta property="og:url" content="https://tuhbm.github.io/2018/02/06/thread/index.html">
+<meta property="og:site_name" content="보고 배우는 개발">
+<meta property="og:description" content="이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  스레드(thread)한글로 스레드라 표기하겠습니다. 자바스크립트를 포함 여러 개발 서적 또는 웹문서들을 읽다 보면, 굉장히 많이 나오는 용어">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://tuhbm.github.io/2018/02/06/images/bnr-word.jpg">
+<meta property="og:image" content="https://tuhbm.github.io/2018/02/06/images/terms/thread.jpg">
+<meta property="og:updated_time" content="2018-03-09T15:51:43.233Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="스레드(thread)">
+<meta name="twitter:description" content="이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  스레드(thread)한글로 스레드라 표기하겠습니다. 자바스크립트를 포함 여러 개발 서적 또는 웹문서들을 읽다 보면, 굉장히 많이 나오는 용어">
+<meta name="twitter:image" content="https://tuhbm.github.io/2018/02/06/images/bnr-word.jpg">
+    
+
+    
+        <link rel="alternate" href="/" title="보고 배우는 개발" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/images/logo2.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">보고 배우는 개발</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">Home</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="https://taekyunkimdev.github.io/" rel="external nofollow noopener noreferrer" target="_blank">Portfolio</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/images/logo2.ico">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '포스트',
+            PAGES: 'Pages',
+            CATEGORIES: '카테고리',
+            TAGS: '태그',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="https://taekyunkimdev.github.io/" rel="external nofollow noopener noreferrer" target="_blank">Portfolio</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/images/logo2.ico">
+            <h2 id="name">TaekyunKim</h2>
+            <h3 id="title">UI Developer &amp; Front-end Developer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Incheon, Korea</span>
+            <a id="follow" target="_blank" href="https://github.com/ppoffice/" rel="external nofollow noopener noreferrer">팔로우</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                1
+                <span>포스트</span>
+            </div>
+            <div class="article-info-block">
+                5
+                <span>태그</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/tuhbm" target="_blank" title="github" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class="tooltip">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="facebook" class="tooltip">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class="tooltip">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-thread" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            스레드(thread)
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/02/06/thread/">
+            <time datetime="2018-02-06T12:43:00.000Z" itemprop="datePublished">2018-02-06</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/용어정리/">용어정리</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/thread/">thread</a>, <a class="tag-link" href="/tags/멀티스레드/">멀티스레드</a>, <a class="tag-link" href="/tags/스레드/">스레드</a>, <a class="tag-link" href="/tags/싱글스레드/">싱글스레드</a>, <a class="tag-link" href="/tags/프로세스/">프로세스</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p><img src="../images/bnr-word.jpg" alt="용어정리"><br>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
+<hr>
+<h1 id="스레드-thread"><a href="#스레드-thread" class="headerlink" title="스레드(thread)"></a>스레드(thread)</h1><p><code>한글로 스레드라 표기하겠습니다.</code></p>
+<p>자바스크립트를 포함 여러 개발 서적 또는 웹문서들을 읽다 보면, 굉장히 많이 나오는 용어 중 하나이다.<br>스레드….싱글스레드….멀티스레드….<br>도대체 <code>스레드</code>란 무엇인가?<br>위키를 통해 <a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A0%88%EB%93%9C" rel="external nofollow noopener noreferrer" target="_blank">스레드</a>를 알아보자.<br>정리를 하면 프로그램 내에서 <code>프로세스가 실행되는 흐름</code>의 단위이다.</p>
+<p>그렇다면 <code>프로세스</code>는 무엇인가?<br><a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" rel="external nofollow noopener noreferrer" target="_blank">프로세스</a>는 <code>소프트웨어가 실행되는 작업단위</code>이다.</p>
+<p>이말인즉, <strong>프로그램(소프트웨어) &gt; 프로세스 &gt; 스레드</strong> 라고 보면 이해하면 된다.<br><strong>스레드</strong>가 모여 <strong>프로세스</strong>가 되고, <strong>프로세스</strong>가 모여 하나의 <strong>프로그램</strong>이 된다.</p>
+<h2 id="자바스크립트의-스레드"><a href="#자바스크립트의-스레드" class="headerlink" title="자바스크립트의 스레드"></a>자바스크립트의 스레드</h2><p>각 언어별 특이한 사항들이 있다.<br>자바스크립트의 특징은 <code>싱글스레드</code>라는 것이다.</p>
+<p><strong>싱글스레드</strong><br>싱글스레드는 말 그대로 <code>하나의 직렬</code>로 처리하는 스레드 방식이라는 것이다.<br>이말인 즉 하나의 요청이 있으면 하나를 처리할때까지 다음 요청은 대기상태라는것이다.<br><code>하나씩만 실행 할 수 있다.</code>라는 뜻이다.</p>
+<p>물론 자바스크립트에서도 멀티스레드 비슷한 방식으로 처리 하기위해 <a href="http://html5dev.tistory.com/184" rel="external nofollow noopener noreferrer" target="_blank">WebWork</a>를 사용하면 된다.<br><code>멀티스레드</code>는 여러개의 스레드를 사용한다는 방식인대,<br>실제 한번에 두가지 일을 <code>동시에 병렬</code>로 처리하는 것이 아니라 번갈아 가며 처리하므로써 동시에 작업이 처리되는 것처럼 느끼게 하는 방식이다.<br>이는 채팅을 예로 들면, 상대방의 메시지를 다운 받는 동안 나는 입력을 할 수 없을 경우 멀티스레드를 사용하여 다운과 입력을 동시에 처리하는 것과 같다.</p>
+<p>정리해보면 그림과 같다.<br><img src="../images/terms/thread.jpg" alt="싱글스레드와 멀티스레드"><br><a href="http://blog.lgcns.com/1084" rel="external nofollow noopener noreferrer" target="_blank">이미지 참조사이트-LG CNS</a></p>
+<h3 id="결론"><a href="#결론" class="headerlink" title="결론"></a><strong>결론</strong></h3><p>싱글스레드와 멀티스레드를 사용할때 무작정 사용하는 것이 아니라<br>작업의 효율을 따져보고 <strong>직렬로 빠르게 처리해야할 것, 또는 병렬로 다중으로 처리해야할 것</strong>을 구분하여<br>상황에 맞게 사용해야 한다.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="https://tuhbm.github.io/2018/02/06/thread/" data-id="cjek5alno00009hcoetoninna" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+
+        </footer>
+    </div>
+    
+        
+
+    
+</article>
+
+
+    
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">최근 글</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/02/06/thread/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/용어정리/">용어정리</a></p>
+                            <p class="item-title"><a href="/2018/02/06/thread/" class="title">스레드(thread)</a></p>
+                            <p class="item-date"><time datetime="2018-02-06T12:43:00.000Z" itemprop="datePublished">2018-02-06</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">카테고리</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/용어정리/">용어정리</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">아카이브</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">태그</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/thread/">thread</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/멀티스레드/">멀티스레드</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/스레드/">스레드</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/싱글스레드/">싱글스레드</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/프로세스/">프로세스</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">태그 클라우드</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/thread/" style="font-size: 10px;">thread</a> <a href="/tags/멀티스레드/" style="font-size: 10px;">멀티스레드</a> <a href="/tags/스레드/" style="font-size: 10px;">스레드</a> <a href="/tags/싱글스레드/" style="font-size: 10px;">싱글스레드</a> <a href="/tags/프로세스/" style="font-size: 10px;">프로세스</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">링크</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io" rel="external nofollow noopener noreferrer" target="_blank">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Taekyun Kim<br>
+            Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme by <a href="http://github.com/ppoffice" rel="external nofollow noopener noreferrer" target="_blank">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
