@@ -401,15 +401,15 @@
     
       <category term="compile" scheme="https://tuhbm.github.io/tags/compile/"/>
     
-      <category term="scss" scheme="https://tuhbm.github.io/tags/scss/"/>
-    
-      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
-    
       <category term="sass" scheme="https://tuhbm.github.io/tags/sass/"/>
+    
+      <category term="scss" scheme="https://tuhbm.github.io/tags/scss/"/>
     
       <category term="CSS 전처리기" scheme="https://tuhbm.github.io/tags/CSS-%EC%A0%84%EC%B2%98%EB%A6%AC%EA%B8%B0/"/>
     
       <category term="CSS processors" scheme="https://tuhbm.github.io/tags/CSS-processors/"/>
+    
+      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
     
   </entry>
   
@@ -477,13 +477,13 @@
     <link href="https://tuhbm.github.io/2018/01/17/bye2017/"/>
     <id>https://tuhbm.github.io/2018/01/17/bye2017/</id>
     <published>2018-01-17T12:31:12.000Z</published>
-    <updated>2018-03-09T16:24:55.807Z</updated>
+    <updated>2018-03-09T16:33:12.036Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;../images/bye/img_bye2017.png&quot; alt=&quot;bye2017&quot;&gt;&lt;br&gt;2017년이 가고 2018년 1월이 반쯤 보낸 후, 다시 한번 나를 채찍질 하게 만든 사건을 통해 마음을 다잡고 공부와 블로그 운영을 다짐하
+        &lt;p&gt;&lt;img src=&quot;../../../../images/bye/img_bye2017.png&quot; alt=&quot;bye2017&quot;&gt;&lt;br&gt;2017년이 가고 2018년 1월이 반쯤 보낸 후, 다시 한번 나를 채찍질 하게 만든 사건을 통해 마음을 다잡고 공부와 블로
       
     
     </summary>
