@@ -14,7 +14,7 @@
 <meta property="og:description" content="SASSSASS를 통칭 사스 라고 표기하겠습니다.금일은 사스에 대해 알아보겠습니다.우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.  1. scout앱 사용하여 컴파일하기 (지난번 포스팅내용입니다.)2. Ruby를 설치해 Cli를 통해 컴파일하기3. gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기4. prep">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-css.jpg">
-<meta property="og:updated_time" content="2018-03-09T16:47:50.592Z">
+<meta property="og:updated_time" content="2018-03-11T03:23:03.878Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SASS에 대해 알아보자1">
 <meta name="twitter:description" content="SASSSASS를 통칭 사스 라고 표기하겠습니다.금일은 사스에 대해 알아보겠습니다.우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.  1. scout앱 사용하여 컴파일하기 (지난번 포스팅내용입니다.)2. Ruby를 설치해 Cli를 통해 컴파일하기3. gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기4. prep">
@@ -271,7 +271,7 @@ ga('send', 'pageview');
 <blockquote>
 <p><strong>1. <a href="https://tuhbm.github.io/2017/07/17/sass-compile/">scout앱 사용하여 컴파일하기</a> (지난번 포스팅내용입니다.)</strong><br><strong>2. <a href="https://velopert.com/1712" rel="external nofollow noopener noreferrer" target="_blank">Ruby를 설치해 Cli를 통해 컴파일하기</a></strong><br><strong>3. <a href="http://webclub.tistory.com/470" rel="external nofollow noopener noreferrer" target="_blank">gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기</a></strong><br><strong>4. <a href="https://prepros.io/" rel="external nofollow noopener noreferrer" target="_blank">prepros</a> 또는 <a href="http://koala-app.com/" rel="external nofollow noopener noreferrer" target="_blank">kolal</a>등의 앱사용하기</strong></p>
 </blockquote>
-<p>사스는 이렇게 컴파일 하시면 되겠구요.</p>
+<p>사스는 이렇게 컴파일 하시면 되겠구요.<br><a id="more"></a></p>
 <h2 id="사스등-CSS-전처리기의-사용-이유"><a href="#사스등-CSS-전처리기의-사용-이유" class="headerlink" title="사스등 CSS 전처리기의 사용 이유"></a>사스등 CSS 전처리기의 사용 이유</h2><p>우선 <a href="https://ko.wikipedia.org/wiki/%EC%A0%84%EC%B2%98%EB%A6%AC%EA%B8%B0" rel="external nofollow noopener noreferrer" target="_blank">전처리기(위키바로가기)</a>란?<br>요약해보면 입력 데이터를 처리하여 다른 프로그램에 대한 입력으로서 사용되는 출력물을 만들어내는 프로그램입니다.</p>
 <p>CSS는 웹을 구현하는데 <code>스타일</code>을 담당하고 있습니다. 그렇기에 CSS만으로 웹을 정복하겠다는 생각을 가지신분을 없으시겠죠…?<br>CSS는 웹의 스타일을 담당하는 웹에서 필수는 아니지만, 보이는 부분을 처리해주는 중요한 역할을 하고 있습니다. CSS가 없는 웹을 상상해 보셨나요?<br>보신적있으신가요? 대부분 없을테니 보여드리겠습니다.<br><img src="https://tuhbm.github.io/images/sass/sass_img1.png" alt="css"><br>어떤가요. 우리나라의 녹색사이트 입니다.<br>이처럼 CSS로 인해 스타일을 입히는 것은 매우 <code>중요</code>한 작업입니다.<br>물론 모든 회사들이 이부분을 알기 때문에 css를 빼고 웹개발을 진행 할리없습니다.<br>서론이 길었습니다.</p>
 <p>현대시대에 웹개발 기술은 지속적인 발전을 이루었습니다.<br>웹에서 돔을 구성하는 HTML도 템플릿화 된 jade 또는 pug등의 방법으로 발전하였고,<br>현재 가장 화두가 되고 있는 Javascript도 각각 라이브러리와 프레임워크등으로 발전하고 있습니다.<br>여기서 <code>발전 === 효율적으로 작업자들이 작업</code>을 할 수 있고, 깊게는 렌더링등의 성능적인 부분에도 영향을 줄 수 있습니다.(성능적인 부분은 문서가 짧아지고 그러므로써.)</p>

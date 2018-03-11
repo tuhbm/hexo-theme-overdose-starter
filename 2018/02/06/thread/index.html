@@ -5,19 +5,19 @@
     
     <title>스레드(thread) | 보고 배우는 개발</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="용어정리이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  스레드(thread)한글로 스레드라 표기하겠습니다. 자바스크립트를 포함 여러 개발 서적 또는 웹문서들을 읽다 보면, 굉장히 많이 나오">
+    <meta name="description" content="용어정리이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  스레드(thread)한글로 스레드라 표기하겠습니다.">
 <meta name="keywords" content="thread,스레드,싱글스레드,멀티스레드,프로세스">
 <meta property="og:type" content="article">
 <meta property="og:title" content="스레드(thread)">
 <meta property="og:url" content="https://tuhbm.github.io/2018/02/06/thread/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
-<meta property="og:description" content="용어정리이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  스레드(thread)한글로 스레드라 표기하겠습니다. 자바스크립트를 포함 여러 개발 서적 또는 웹문서들을 읽다 보면, 굉장히 많이 나오">
+<meta property="og:description" content="용어정리이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  스레드(thread)한글로 스레드라 표기하겠습니다.">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-word.jpg">
-<meta property="og:updated_time" content="2018-03-09T16:49:55.913Z">
+<meta property="og:updated_time" content="2018-03-11T03:23:03.913Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="스레드(thread)">
-<meta name="twitter:description" content="용어정리이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  스레드(thread)한글로 스레드라 표기하겠습니다. 자바스크립트를 포함 여러 개발 서적 또는 웹문서들을 읽다 보면, 굉장히 많이 나오">
+<meta name="twitter:description" content="용어정리이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.  스레드(thread)한글로 스레드라 표기하겠습니다.">
 <meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-word.jpg">
     
 
@@ -269,8 +269,7 @@ ga('send', 'pageview');
             
             <h2 id="용어정리"><a href="#용어정리" class="headerlink" title="용어정리"></a>용어정리</h2><p>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
 <hr>
-<h1 id="스레드-thread"><a href="#스레드-thread" class="headerlink" title="스레드(thread)"></a>스레드(thread)</h1><p><code>한글로 스레드라 표기하겠습니다.</code></p>
-<p>자바스크립트를 포함 여러 개발 서적 또는 웹문서들을 읽다 보면, 굉장히 많이 나오는 용어 중 하나이다.<br>스레드….싱글스레드….멀티스레드….<br>도대체 <code>스레드</code>란 무엇인가?<br>위키를 통해 <a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A0%88%EB%93%9C" rel="external nofollow noopener noreferrer" target="_blank">스레드</a>를 알아보자.<br>정리를 하면 프로그램 내에서 <code>프로세스가 실행되는 흐름</code>의 단위이다.</p>
+<h1 id="스레드-thread"><a href="#스레드-thread" class="headerlink" title="스레드(thread)"></a>스레드(thread)</h1><p><code>한글로 스레드라 표기하겠습니다.</code><br><a id="more"></a><br>자바스크립트를 포함 여러 개발 서적 또는 웹문서들을 읽다 보면, 굉장히 많이 나오는 용어 중 하나이다.<br>스레드….싱글스레드….멀티스레드….<br>도대체 <code>스레드</code>란 무엇인가?<br>위키를 통해 <a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A0%88%EB%93%9C" rel="external nofollow noopener noreferrer" target="_blank">스레드</a>를 알아보자.<br>정리를 하면 프로그램 내에서 <code>프로세스가 실행되는 흐름</code>의 단위이다.</p>
 <p>그렇다면 <code>프로세스</code>는 무엇인가?<br><a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" rel="external nofollow noopener noreferrer" target="_blank">프로세스</a>는 <code>소프트웨어가 실행되는 작업단위</code>이다.</p>
 <p>이말인즉, <strong>프로그램(소프트웨어) &gt; 프로세스 &gt; 스레드</strong> 라고 보면 이해하면 된다.<br><strong>스레드</strong>가 모여 <strong>프로세스</strong>가 되고, <strong>프로세스</strong>가 모여 하나의 <strong>프로그램</strong>이 된다.</p>
 <h2 id="자바스크립트의-스레드"><a href="#자바스크립트의-스레드" class="headerlink" title="자바스크립트의 스레드"></a>자바스크립트의 스레드</h2><p>각 언어별 특이한 사항들이 있다.<br>자바스크립트의 특징은 <code>싱글스레드</code>라는 것이다.</p>

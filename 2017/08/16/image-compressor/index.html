@@ -5,19 +5,19 @@
     
     <title>Image Compressor | 보고 배우는 개발</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="이미지 압축지난번 랜더링 포스팅에 있어 클라이언트가 서버에 요청을 줄이는 것이 가장 효율적인 렌더링을 하는 방법이라는 것을 포스팅했습니다.지난포스팅 1편 다시보기지난포스팅 2편 다시보기 랜더링에 있어 요청을 줄이는 것 만큼 중요한것이 있다.바로  이미지우리가 입력한 코드들은 문자이므로 코드용량 굉장히 작은 크기이다.하지만 이미지는 굉장히 다양하게도 큰용량을">
+    <meta name="description" content="이미지 압축지난번 랜더링 포스팅에 있어 클라이언트가 서버에 요청을 줄이는 것이 가장 효율적인 렌더링을 하는 방법이라는 것을 포스팅했습니다.지난포스팅 1편 다시보기지난포스팅 2편 다시보기 랜더링에 있어 요청을 줄이는 것 만큼 중요한것이 있다.바로  이미지">
 <meta name="keywords" content="image,rendering,image optimization,compressor,image compressor">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Image Compressor">
 <meta property="og:url" content="https://tuhbm.github.io/2017/08/16/image-compressor/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
-<meta property="og:description" content="이미지 압축지난번 랜더링 포스팅에 있어 클라이언트가 서버에 요청을 줄이는 것이 가장 효율적인 렌더링을 하는 방법이라는 것을 포스팅했습니다.지난포스팅 1편 다시보기지난포스팅 2편 다시보기 랜더링에 있어 요청을 줄이는 것 만큼 중요한것이 있다.바로  이미지우리가 입력한 코드들은 문자이므로 코드용량 굉장히 작은 크기이다.하지만 이미지는 굉장히 다양하게도 큰용량을">
+<meta property="og:description" content="이미지 압축지난번 랜더링 포스팅에 있어 클라이언트가 서버에 요청을 줄이는 것이 가장 효율적인 렌더링을 하는 방법이라는 것을 포스팅했습니다.지난포스팅 1편 다시보기지난포스팅 2편 다시보기 랜더링에 있어 요청을 줄이는 것 만큼 중요한것이 있다.바로  이미지">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-etc.jpg">
-<meta property="og:updated_time" content="2018-03-09T16:45:38.302Z">
+<meta property="og:updated_time" content="2018-03-11T03:23:03.896Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Image Compressor">
-<meta name="twitter:description" content="이미지 압축지난번 랜더링 포스팅에 있어 클라이언트가 서버에 요청을 줄이는 것이 가장 효율적인 렌더링을 하는 방법이라는 것을 포스팅했습니다.지난포스팅 1편 다시보기지난포스팅 2편 다시보기 랜더링에 있어 요청을 줄이는 것 만큼 중요한것이 있다.바로  이미지우리가 입력한 코드들은 문자이므로 코드용량 굉장히 작은 크기이다.하지만 이미지는 굉장히 다양하게도 큰용량을">
+<meta name="twitter:description" content="이미지 압축지난번 랜더링 포스팅에 있어 클라이언트가 서버에 요청을 줄이는 것이 가장 효율적인 렌더링을 하는 방법이라는 것을 포스팅했습니다.지난포스팅 1편 다시보기지난포스팅 2편 다시보기 랜더링에 있어 요청을 줄이는 것 만큼 중요한것이 있다.바로  이미지">
 <meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-etc.jpg">
     
 
@@ -269,7 +269,8 @@ ga('send', 'pageview');
             
             <h1 id="이미지-압축"><a href="#이미지-압축" class="headerlink" title="이미지 압축"></a>이미지 압축</h1><p>지난번 랜더링 포스팅에 있어 <strong>클라이언트가 서버에 요청을 줄이는 것이 가장 효율적인 렌더링을 하는 방법</strong>이라는 것을 포스팅했습니다.<br><a href="https://tuhbm.github.io/2017/08/10/rendering1/">지난포스팅 1편 다시보기</a><br><a href="https://tuhbm.github.io/2017/08/14/rendering2/">지난포스팅 2편 다시보기</a></p>
 <p>랜더링에 있어 요청을 줄이는 것 만큼 중요한것이 있다.<br>바로 </p>
-<h4 id="이미지"><a href="#이미지" class="headerlink" title="이미지"></a>이미지</h4><p>우리가 입력한 코드들은 문자이므로 코드용량 굉장히 작은 크기이다.<br>하지만 이미지는 굉장히 다양하게도 큰용량을 차지한다.<br>많은 컬러 또 크기에 따라 용량차이는 천차만별이다.</p>
+<h4 id="이미지"><a href="#이미지" class="headerlink" title="이미지"></a>이미지</h4><a id="more"></a>
+<p>우리가 입력한 코드들은 문자이므로 코드용량 굉장히 작은 크기이다.<br>하지만 이미지는 굉장히 다양하게도 큰용량을 차지한다.<br>많은 컬러 또 크기에 따라 용량차이는 천차만별이다.</p>
 <p>이러한 이미지는 랜더링에도 굉장히 많은 영향을 미친다.<br>그렇기때문에 많은 회사들에서는 요청을 줄이기위해 스트라이프 이미지를 만들고,<a href="http://sprite.asamaru.net/" rel="external nofollow noopener noreferrer" target="_blank">스트라이트만들기 웹사이트</a><br>그 후에 압축을 한다.<br>압축!!! 압축은 말그래로 용량을 줄이는 것 입니다.<br>하지만 압축은 이미지를 손상시키지 않는 선에서 압축을 해야하는데요.<br>압축을 빌드툴을 이용해서 하는 방법도 있지만, 웹사이트를 통해 압축할 수 있습니다.<br>지금 부터 소개해드리겠습니다.</p>
 <p>직접 예시를 들어 설명을 해보겠습니다.<br>오늘의 예제이미지<br><img src="https://tuhbm.github.io/images/imageCompressor/ex-img.png" alt="예시이미지"><br>가로 - 3720px<br>세로 - 2138px<br>용량 - 7.4MB의 이미지 파일입니다.<br>의 구글 지도 이미지 입니다.</p>
 <hr>

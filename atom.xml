@@ -52,15 +52,13 @@
     <link href="https://tuhbm.github.io/2018/02/22/reflowAndRepaint/"/>
     <id>https://tuhbm.github.io/2018/02/22/reflowAndRepaint/</id>
     <published>2018-02-22T13:56:50.000Z</published>
-    <updated>2018-03-09T16:47:11.776Z</updated>
+    <updated>2018-03-11T03:23:03.862Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
+      &lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
 &lt;hr&gt;
-      
+&lt;h1 id=&quot;Reflow와-Repaint&quot;&gt;&lt;a href=&quot;#Reflow와-Repaint&quot; class=&quot;headerlink&quot; title=&quot;Reflow와 Repaint&quot;&gt;&lt;/a&gt;Reflow와 Repaint&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;지금 이후 편하게 한국어로 &lt;code&gt;리플로우 &amp;amp; 리페인트&lt;/code&gt; 로 표현하도록 하겠습니다.&lt;/strong&gt;&lt;br&gt;
     
     </summary>
     
@@ -90,16 +88,16 @@
     <link href="https://tuhbm.github.io/2018/02/21/firstProgramming/"/>
     <id>https://tuhbm.github.io/2018/02/21/firstProgramming/</id>
     <published>2018-02-21T12:51:20.000Z</published>
-    <updated>2018-03-09T16:44:45.873Z</updated>
+    <updated>2018-03-11T03:23:03.904Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.&lt;/p&gt;
+      &lt;p&gt;이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;프로그래머-첫걸음&quot;&gt;&lt;a href=&quot;#프로그래머-첫걸음&quot; class=&quot;headerlink&quot; title=&quot;프로그래머 첫걸음&quot;&gt;&lt;/a&gt;프로그래머 첫
-      
+&lt;h1 id=&quot;프로그래머-첫걸음&quot;&gt;&lt;a href=&quot;#프로그래머-첫걸음&quot; class=&quot;headerlink&quot; title=&quot;프로그래머 첫걸음&quot;&gt;&lt;/a&gt;프로그래머 첫걸음&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/books/img_firstProgramming.jpg&quot; alt=&quot;firstProgramming&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;한줄평-리뷰&quot;&gt;&lt;a href=&quot;#한줄평-리뷰&quot; class=&quot;headerlink&quot; title=&quot;한줄평 리뷰&quot;&gt;&lt;/a&gt;한줄평 리뷰&lt;/h2&gt;&lt;p&gt;책 제목처럼 비전공자가 처음 프로그래밍을 배울때 보면 좋은도서다.&lt;/p&gt;
+&lt;h2 id=&quot;책정보&quot;&gt;&lt;a href=&quot;#책정보&quot; class=&quot;headerlink&quot; title=&quot;책정보&quot;&gt;&lt;/a&gt;책정보&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;판매처: 한빛출판네트워크&lt;br&gt;저자 : 코리 알트호프&lt;br&gt;번역 : 한선용&lt;br&gt;출간 : 2018-01-02&lt;br&gt;페이지 : 404 쪽&lt;br&gt;가격 : 정가 19,800원 -&amp;gt; 판매가 17,8200원(10% off)&lt;br&gt;
     
     </summary>
     
@@ -133,14 +131,11 @@
     <link href="https://tuhbm.github.io/2018/02/21/cssReset/"/>
     <id>https://tuhbm.github.io/2018/02/21/cssReset/</id>
     <published>2018-02-21T12:00:04.000Z</published>
-    <updated>2018-03-09T16:42:43.158Z</updated>
+    <updated>2018-03-11T03:23:03.885Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;Resetting과-Normalize&quot;&gt;&lt;a href=&quot;#Resetting과-Normalize&quot; class=&quot;headerlink&quot; title=&quot;Resetting과 Normalize&quot;&gt;&lt;/a&gt;&lt;code&gt;Resetting&lt;/code&gt;과 &lt;c
-      
+      &lt;h1 id=&quot;Resetting과-Normalize&quot;&gt;&lt;a href=&quot;#Resetting과-Normalize&quot; class=&quot;headerlink&quot; title=&quot;Resetting과 Normalize&quot;&gt;&lt;/a&gt;&lt;code&gt;Resetting&lt;/code&gt;과 &lt;code&gt;Normalize&lt;/code&gt;&lt;/h1&gt;&lt;p&gt;최근 외국의 한 블로거를 통해 작업 전 기본적으로 브라우저별 태그에 대한 기본 스타일링을 제어하는 두가지 방법을 비교한 글을 본적 있다.&lt;br&gt;하지만 국내에서는 대부분 &lt;code&gt;front-end개발&lt;/code&gt;의 아버지로 칭하는 &lt;a href=&quot;https://en.wikipedia.org/wiki/Eric_A._Meyer&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Eric Meyer&lt;/a&gt;의 &lt;a href=&quot;https://meyerweb.com/eric/tools/css/reset/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Reset.css&lt;/a&gt;를 사용하거나,&lt;br&gt;yahoo가 내놓은 &lt;a href=&quot;https://yuilibrary.com/yui/docs/cssreset/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Reset.css&lt;/a&gt;를 사용 또는 국내 IT대기업인 네이버나 다음의 reset.css를 사용한다.&lt;br&gt;그리고 본인의 입맛에 맞춰 커스터마이징하여 사용한다. 필자는 다음의 &lt;em&gt;reset.css&lt;/em&gt;를 커스터마이징해서 사용한다.&lt;br&gt;이처럼 국내에서는 아직 Normalize보다는 Resetting을 하는 추세이다.&lt;br&gt;일단 Resetting은 대충 사용해보았기때문에 알 것 같은데 Normalize는 무엇인가를 정확히 설명 할 수 없을 것이다.&lt;br&gt;그럼 Resetting과 Normalize에 대해 알아보자&lt;br&gt;
     
     </summary>
     
@@ -166,14 +161,13 @@
     <link href="https://tuhbm.github.io/2018/02/14/python2/"/>
     <id>https://tuhbm.github.io/2018/02/14/python2/</id>
     <published>2018-02-14T13:41:49.000Z</published>
-    <updated>2018-03-09T16:49:13.844Z</updated>
+    <updated>2018-03-11T03:23:03.859Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;p&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;c
-      
+      &lt;h2 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;p&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;파이썬-2편&quot;&gt;&lt;a href=&quot;#파이썬-2편&quot; class=&quot;headerlink&quot; title=&quot;파이썬 2편&quot;&gt;&lt;/a&gt;파이썬 2편&lt;/h1&gt;
     
     </summary>
     
@@ -205,14 +199,13 @@
     <link href="https://tuhbm.github.io/2018/02/12/startPython/"/>
     <id>https://tuhbm.github.io/2018/02/12/startPython/</id>
     <published>2018-02-12T12:17:35.000Z</published>
-    <updated>2018-03-09T16:49:05.108Z</updated>
+    <updated>2018-03-11T03:23:03.874Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;p&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;c
-      
+      &lt;h2 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;p&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;파이썬-python-시작하기&quot;&gt;&lt;a href=&quot;#파이썬-python-시작하기&quot; class=&quot;headerlink&quot; title=&quot;파이썬(python) 시작하기&quot;&gt;&lt;/a&gt;파이썬(python) 시작하기&lt;/h1&gt;&lt;h2 id=&quot;파이썬을-시작하게된-계기&quot;&gt;&lt;a href=&quot;#파이썬을-시작하게된-계기&quot; class=&quot;headerlink&quot; title=&quot;파이썬을 시작하게된 계기&quot;&gt;&lt;/a&gt;파이썬을 시작하게된 계기&lt;/h2&gt;&lt;p&gt;한빛미디어의 &lt;em&gt;‘나는 리뷰어다.’&lt;/em&gt; 라는 이벤트가 있습니다.&lt;br&gt;한빛미디어에서 신청을 받아 3가지의 선택한 책중 1권을 랜덤으로 보내주는데,&lt;br&gt;그 책을 읽고, 기간내에 책에 대한 리뷰를 블로그 및 온라인 서점 등에 리뷰를 작성하는 이벤트입니다.&lt;br&gt;그래서 받게 된 책이 &lt;code&gt;&amp;#39;비전공자가 궁굼해하는 프로그래머의 첫걸음&amp;#39;&lt;/code&gt;입니다.&lt;br&gt;이 책은 프로그래밍의 내용을 요즘 HOT하다는 &lt;code&gt;파이썬&lt;/code&gt;이란 언어 통해 프로그래밍에 관련된 내용을 전달합니다.&lt;br&gt;책을 반정도 읽다보니, 파이썬을 공부해 포스팅하는것도 좋겠다라는 생각이 들어 파이썬 공부를 시작하게 되었습니다.&lt;br&gt;다만, &lt;code&gt;제가 주로 사용하는 언어가 아닌 만큼 포스팅에 다소 시간이 걸릴 수 있습니다.&lt;/code&gt;&lt;br&gt;
     
     </summary>
     
@@ -234,14 +227,13 @@
     <link href="https://tuhbm.github.io/2018/02/06/thread/"/>
     <id>https://tuhbm.github.io/2018/02/06/thread/</id>
     <published>2018-02-06T12:43:00.000Z</published>
-    <updated>2018-03-09T16:49:55.913Z</updated>
+    <updated>2018-03-11T03:23:03.913Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
-      
+      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;스레드-thread&quot;&gt;&lt;a href=&quot;#스레드-thread&quot; class=&quot;headerlink&quot; title=&quot;스레드(thread)&quot;&gt;&lt;/a&gt;스레드(thread)&lt;/h1&gt;&lt;p&gt;&lt;code&gt;한글로 스레드라 표기하겠습니다.&lt;/code&gt;&lt;br&gt;
     
     </summary>
     
@@ -265,14 +257,13 @@
     <link href="https://tuhbm.github.io/2018/01/26/thirdParty/"/>
     <id>https://tuhbm.github.io/2018/01/26/thirdParty/</id>
     <published>2018-01-26T11:54:28.000Z</published>
-    <updated>2018-03-09T16:49:42.190Z</updated>
+    <updated>2018-03-11T03:23:03.870Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
-      
+      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;Thrid-party-서드파티&quot;&gt;&lt;a href=&quot;#Thrid-party-서드파티&quot; class=&quot;headerlink&quot; title=&quot;Thrid party(서드파티)&quot;&gt;&lt;/a&gt;Thrid party(서드파티)&lt;/h1&gt;&lt;p&gt;&lt;code&gt;지금부터 서드파티라 칭하겠습니다.&lt;/code&gt;&lt;br&gt;개발을 진행하다 보면, 모르는 부분을 검색을 통해 알아보는 경우가 매우 빈번하다.&lt;br&gt;블로그등을 보다보면 서드파티 라는 용어가 자주 존재하는데, 그뜻을 알아보도록 하자&lt;br&gt;
     
     </summary>
     
@@ -304,14 +295,14 @@
     <link href="https://tuhbm.github.io/2018/01/26/literal/"/>
     <id>https://tuhbm.github.io/2018/01/26/literal/</id>
     <published>2018-01-26T10:43:00.000Z</published>
-    <updated>2018-03-09T16:45:58.173Z</updated>
+    <updated>2018-03-11T03:23:03.894Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
-      
+      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/terms/literal_img1.jpg&quot; alt=&quot;리터럴&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;리터럴&quot;&gt;&lt;a href=&quot;#리터럴&quot; class=&quot;headerlink&quot; title=&quot;리터럴&quot;&gt;&lt;/a&gt;리터럴&lt;/h1&gt;&lt;p&gt;프로그램 개발을 하다보면, 리터럴이라는 단어를 많이 사용한다.&lt;br&gt;먼저 위키를 살펴보자&lt;br&gt;
     
     </summary>
     
@@ -343,14 +334,12 @@
     <link href="https://tuhbm.github.io/2018/01/24/sass2/"/>
     <id>https://tuhbm.github.io/2018/01/24/sass2/</id>
     <published>2018-01-24T11:01:13.000Z</published>
-    <updated>2018-03-09T16:48:01.934Z</updated>
+    <updated>2018-03-11T03:23:03.901Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;SASS&quot;&gt;&lt;a href=&quot;#SASS&quot; class=&quot;headerlink&quot; title=&quot;SASS&quot;&gt;&lt;/a&gt;SASS&lt;/h1&gt;&lt;p&gt;&lt;code&gt;SASS를 통칭 사스 라고 표기하겠습니다.&lt;/code&gt;&lt;br&gt;&lt;a href=&quot;https://tuhbm
-      
+      &lt;h1 id=&quot;SASS&quot;&gt;&lt;a href=&quot;#SASS&quot; class=&quot;headerlink&quot; title=&quot;SASS&quot;&gt;&lt;/a&gt;SASS&lt;/h1&gt;&lt;p&gt;&lt;code&gt;SASS를 통칭 사스 라고 표기하겠습니다.&lt;/code&gt;&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/01/24/sass1/&quot;&gt;지난 포스팅&lt;/a&gt;을 통해 SASS의 확장자가 최종적으로 &lt;code&gt;.scss&lt;/code&gt;로 확정되었다고 말씀드렸습니다.&lt;br&gt;이번 포스팅부터는 사스의 문법에 대해 알아보겠습니다.&lt;/p&gt;
+&lt;h2 id=&quot;변수사용&quot;&gt;&lt;a href=&quot;#변수사용&quot; class=&quot;headerlink&quot; title=&quot;변수사용&quot;&gt;&lt;/a&gt;변수사용&lt;/h2&gt;&lt;p&gt;변수를 사용하므로써, 한번의 변경으로 사용한 모든 변수의 값을 바꿀 수 있는 효율적인 방법이라고 말씀드렸었습니다.&lt;br&gt;변수를 &lt;code&gt;키&lt;/code&gt;와&lt;code&gt;값&lt;/code&gt;으로 표현해 보겠습니다.&lt;br&gt;&lt;figure class=&quot;highlight scss&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$normalFontSize&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;14px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
     
@@ -378,14 +367,15 @@
     <link href="https://tuhbm.github.io/2018/01/24/sass1/"/>
     <id>https://tuhbm.github.io/2018/01/24/sass1/</id>
     <published>2018-01-24T07:12:13.000Z</published>
-    <updated>2018-03-09T16:47:50.592Z</updated>
+    <updated>2018-03-11T03:23:03.878Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;SASS&quot;&gt;&lt;a href=&quot;#SASS&quot; class=&quot;headerlink&quot; title=&quot;SASS&quot;&gt;&lt;/a&gt;SASS&lt;/h1&gt;&lt;p&gt;&lt;code&gt;SASS를 통칭 사스 라고 표기하겠습니다.&lt;/code&gt;&lt;br&gt;금일은 사스에 대해 알아보겠습니다.&lt;br
-      
+      &lt;h1 id=&quot;SASS&quot;&gt;&lt;a href=&quot;#SASS&quot; class=&quot;headerlink&quot; title=&quot;SASS&quot;&gt;&lt;/a&gt;SASS&lt;/h1&gt;&lt;p&gt;&lt;code&gt;SASS를 통칭 사스 라고 표기하겠습니다.&lt;/code&gt;&lt;br&gt;금일은 사스에 대해 알아보겠습니다.&lt;br&gt;우선 컴파일 하는 방법에 대해 지난번 포스팅한 것이 있는데요.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;1. &lt;a href=&quot;https://tuhbm.github.io/2017/07/17/sass-compile/&quot;&gt;scout앱 사용하여 컴파일하기&lt;/a&gt; (지난번 포스팅내용입니다.)&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;2. &lt;a href=&quot;https://velopert.com/1712&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Ruby를 설치해 Cli를 통해 컴파일하기&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;3. &lt;a href=&quot;http://webclub.tistory.com/470&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;gulp등 Task runner(또는 webpack같은 빌드도구)이용하여 컴파일하기&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;4. &lt;a href=&quot;https://prepros.io/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;prepros&lt;/a&gt; 또는 &lt;a href=&quot;http://koala-app.com/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;kolal&lt;/a&gt;등의 앱사용하기&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;사스는 이렇게 컴파일 하시면 되겠구요.&lt;br&gt;
     
     </summary>
     
@@ -415,14 +405,13 @@
     <link href="https://tuhbm.github.io/2018/01/22/sideEffect/"/>
     <id>https://tuhbm.github.io/2018/01/22/sideEffect/</id>
     <published>2018-01-22T13:40:55.000Z</published>
-    <updated>2018-03-09T16:48:42.436Z</updated>
+    <updated>2018-03-11T03:23:03.879Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
-      
+      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;부수효과-side-effect&quot;&gt;&lt;a href=&quot;#부수효과-side-effect&quot; class=&quot;headerlink&quot; title=&quot;부수효과(side effect)&quot;&gt;&lt;/a&gt;부수효과(side effect)&lt;/h1&gt;&lt;p&gt;&lt;code&gt;부수효과를 좀 있어보이게 사이드이팩트라 쓰겠습니다&lt;/code&gt;&lt;br&gt;사이드이팩트란 무엇인가 알아보았다.&lt;br&gt;위키에서의 &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EB%B6%80%EA%B0%80%EC%9E%91%EC%9A%A9&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;부수효과(부가작용)&lt;/a&gt; 이렇게 정의하고 있습니다.&lt;br&gt;이처럼 &lt;code&gt;원래의 목적과 다르게 다른 효과 또는 부작용이 나는 상태&lt;/code&gt;를 지칭합니다.&lt;br&gt;
     
     </summary>
     
@@ -442,14 +431,11 @@
     <link href="https://tuhbm.github.io/2018/01/21/vanillaJS/"/>
     <id>https://tuhbm.github.io/2018/01/21/vanillaJS/</id>
     <published>2018-01-21T14:42:22.000Z</published>
-    <updated>2018-03-09T16:50:07.297Z</updated>
+    <updated>2018-03-11T03:23:03.890Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;Vanilla-JS&quot;&gt;&lt;a href=&quot;#Vanilla-JS&quot; class=&quot;headerlink&quot; title=&quot;Vanilla JS&quot;&gt;&lt;/a&gt;Vanilla JS&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;지금부터는 Vanilla JS를 편하게 바닐라JS라고 
-      
+      &lt;h1 id=&quot;Vanilla-JS&quot;&gt;&lt;a href=&quot;#Vanilla-JS&quot; class=&quot;headerlink&quot; title=&quot;Vanilla JS&quot;&gt;&lt;/a&gt;Vanilla JS&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;지금부터는 Vanilla JS를 편하게 바닐라JS라고 기재하겠다.&lt;/strong&gt;&lt;br&gt;&lt;code&gt;Javascript&lt;/code&gt;를 사용하는 개발자로써, 많은 사람들이 들어 보았을 것이다.&lt;br&gt;필자는 과거 면접에서 이러한 질문을 받은 적이 있다.&lt;br&gt;‘바닐라 JS에 대해 아시나요?’라는 질문을 받았다. 좀 당황스러운 질문이었다.&lt;br&gt;평소 &lt;code&gt;바닐라JS === Javascript&lt;/code&gt;라고 생각해 온 상황이서 그런지 더욱 당황스러웠지만…답을했다.&lt;br&gt;‘일반적으로 우리가 사용하고 있는 Javascript라고 합니다.’&lt;br&gt;‘그럼 왜 자바스크립트가 바닐라JS라고 불리는지 아시나요?’ 또 당황스러웠다.(이것이 면접에서 말리는 시초였다.)&lt;br&gt;
     
     </summary>
     
@@ -473,14 +459,11 @@
     <link href="https://tuhbm.github.io/2018/01/17/bye2017/"/>
     <id>https://tuhbm.github.io/2018/01/17/bye2017/</id>
     <published>2018-01-17T12:31:12.000Z</published>
-    <updated>2018-03-09T16:41:40.227Z</updated>
+    <updated>2018-03-11T03:20:33.188Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;2017년-회고&quot;&gt;&lt;a href=&quot;#2017년-회고&quot; class=&quot;headerlink&quot; title=&quot;2017년 회고&quot;&gt;&lt;/a&gt;2017년 회고&lt;/h1&gt;&lt;p&gt;2017년이 가고 2018년 1월이 반쯤 보낸 후, 다시 한번 나를 채찍질 하게 만
-      
+      &lt;h1 id=&quot;2017년-회고&quot;&gt;&lt;a href=&quot;#2017년-회고&quot; class=&quot;headerlink&quot; title=&quot;2017년 회고&quot;&gt;&lt;/a&gt;2017년 회고&lt;/h1&gt;&lt;p&gt;2017년이 가고 2018년 1월이 반쯤 보낸 후, 다시 한번 나를 채찍질 하게 만든 사건을 통해 마음을 다잡고 공부와 블로그 운영을 다짐하며,&lt;br&gt;첫 회고를 쓴다.&lt;br&gt;올해는 유난히 ‘첫, 처음’이란 단어가 어울렸던 한해였다.&lt;br&gt;첫 블로그, 첫 커플해외여행, 첫 에이전시, 첫 기술들등……&lt;br&gt;항상 개발을 하며 느끼는 점은 ‘처음’ 그리고 ‘낯선’ 기술등에 대한 어려움이나 반감이었다.&lt;br&gt;물론 기술들에 대한 반감은 내가 당했던 것이다.&lt;br&gt;필자는 개발자라면, 당연히 더 좋은 기술, 더 좋은 방법이 있다면 그것에 대해 지금 당장 사용을 하지 못하더라도 알아두는것 정도는 해야한다고 생각한다.&lt;br&gt;서론이 길었다. 처음 쓰는 회고라 다른 분들의 회고를 보니 주제를 나눠 이야기 하는 것을 보았다. 나도 그방법을 선택하도록 하겠다.&lt;br&gt;
     
     </summary>
     
@@ -510,14 +493,13 @@
     <link href="https://tuhbm.github.io/2017/09/20/vue4/"/>
     <id>https://tuhbm.github.io/2017/09/20/vue4/</id>
     <published>2017-09-20T05:13:27.000Z</published>
-    <updated>2018-03-09T16:51:12.774Z</updated>
+    <updated>2018-03-11T03:23:03.887Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.
-      
+      &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;Vue-component&quot;&gt;&lt;a href=&quot;#Vue-component&quot; class=&quot;headerlink&quot; title=&quot;Vue.component&quot;&gt;&lt;/a&gt;Vue.component&lt;/h1&gt;&lt;p&gt;우리는 SPA(single page application)을 제작할때 컴포넌트를 만들고 재사용하는 방법을 일반적으로 많이 사용합니다.&lt;br&gt;그만큼 컴포넌트를 만드는 것이 중요합니다.&lt;br&gt;이번에는 Vue를 이용해서 컴포넌트를 만드는 방법을 알아보겠습니다.&lt;br&gt;기존의 방식과 같이 뷰 프레임워크를 연동 후 부터 진행을 해보겠습니다.&lt;br&gt;
     
     </summary>
     
@@ -553,14 +535,14 @@
     <link href="https://tuhbm.github.io/2017/09/19/vue3/"/>
     <id>https://tuhbm.github.io/2017/09/19/vue3/</id>
     <published>2017-09-19T05:58:26.000Z</published>
-    <updated>2018-03-09T16:50:53.997Z</updated>
+    <updated>2018-03-11T03:23:03.892Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.
-      
+      &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;computed&quot;&gt;&lt;a href=&quot;#computed&quot; class=&quot;headerlink&quot; title=&quot;computed&quot;&gt;&lt;/a&gt;computed&lt;/h1&gt;&lt;p&gt;계산된 속성을 바인딩할때 사용.&lt;/p&gt;
+&lt;h2 id=&quot;computed-사용법&quot;&gt;&lt;a href=&quot;#computed-사용법&quot; class=&quot;headerlink&quot; title=&quot;computed 사용법&quot;&gt;&lt;/a&gt;computed 사용법&lt;/h2&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Vue(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  el:&lt;span class=&quot;string&quot;&gt;&#39;#app&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  data:&amp;#123;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  methods:&amp;#123;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  computed:&amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -594,14 +576,13 @@
     <link href="https://tuhbm.github.io/2017/09/18/vue2/"/>
     <id>https://tuhbm.github.io/2017/09/18/vue2/</id>
     <published>2017-09-18T08:02:20.000Z</published>
-    <updated>2018-03-09T16:50:38.599Z</updated>
+    <updated>2018-03-11T03:23:03.866Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.
-      
+      &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;v-on&quot;&gt;&lt;a href=&quot;#v-on&quot; class=&quot;headerlink&quot; title=&quot;v-on&quot;&gt;&lt;/a&gt;v-on&lt;/h1&gt;&lt;p&gt;v-on 어트리뷰트를 통해 이벤트를 발생시킬 수 있습니다.&lt;br&gt;그리고&lt;br&gt;약어 &lt;strong&gt;[ @ ]&lt;/strong&gt; 를 통해 단축이 가능합니다.&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;v-on:click.once&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Function&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;이벤트&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt; @&lt;span class=&quot;attr&quot;&gt;click.once&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Function&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;이벤트&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
     
@@ -631,14 +612,13 @@
     <link href="https://tuhbm.github.io/2017/09/15/vue1/"/>
     <id>https://tuhbm.github.io/2017/09/15/vue1/</id>
     <published>2017-09-15T03:49:08.000Z</published>
-    <updated>2018-03-09T16:50:24.936Z</updated>
+    <updated>2018-03-11T03:23:03.905Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.
-      
+      &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;Vue-시작하기&quot;&gt;&lt;a href=&quot;#Vue-시작하기&quot; class=&quot;headerlink&quot; title=&quot;Vue 시작하기&quot;&gt;&lt;/a&gt;Vue 시작하기&lt;/h1&gt;&lt;p&gt;Vue도 다른 프레임워크와 같이 npm 모듈을 이용해 설치해서 사용할 수 있습니다.&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;node_modules/vue/dist/vue.min.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
     
@@ -672,14 +652,13 @@
     <link href="https://tuhbm.github.io/2017/09/08/OSI7/"/>
     <id>https://tuhbm.github.io/2017/09/08/OSI7/</id>
     <published>2017-09-08T04:49:47.000Z</published>
-    <updated>2018-03-09T16:46:35.435Z</updated>
+    <updated>2018-03-11T03:23:03.876Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
-      
+      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;OSI-7계층&quot;&gt;&lt;a href=&quot;#OSI-7계층&quot; class=&quot;headerlink&quot; title=&quot;OSI 7계층&quot;&gt;&lt;/a&gt;OSI 7계층&lt;/h1&gt;&lt;p&gt;면접을 보다보면, OSI 7계층에 대해 물어보는 곳이 꽤나있다.&lt;br&gt;그렇게 접하게 된 OSI 7계층에 대해 네트워크 데이터 통신 책을 보며 간략히 정리를 해보았다.&lt;br&gt;
     
     </summary>
     
@@ -697,14 +676,13 @@
     <link href="https://tuhbm.github.io/2017/09/06/component/"/>
     <id>https://tuhbm.github.io/2017/09/06/component/</id>
     <published>2017-09-06T09:04:01.000Z</published>
-    <updated>2018-03-09T16:43:55.892Z</updated>
+    <updated>2018-03-11T03:20:48.859Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;
-      
+      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;컴포넌트란 무엇인가?&lt;br&gt;쉬운듯 하나 어려운 IT언어…&lt;br&gt;금일은 컴포넌트단위.. 컴포넌트수정..등 컴포넌트에 대해 알아보겠습니다.&lt;br&gt;
     
     </summary>
     
