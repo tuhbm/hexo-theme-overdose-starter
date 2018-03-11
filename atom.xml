@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-03-09T16:41:11.996Z</updated>
+  <updated>2018-03-11T03:17:50.676Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://tuhbm.github.io/2018/03/05/letAndConst/"/>
     <id>https://tuhbm.github.io/2018/03/05/letAndConst/</id>
     <published>2018-03-05T13:32:46.000Z</published>
-    <updated>2018-03-09T16:41:11.996Z</updated>
+    <updated>2018-03-11T03:17:50.676Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;let과-const&quot;&gt;&lt;a href=&quot;#let과-const&quot; class=&quot;headerlink&quot; title=&quot;let과 const&quot;&gt;&lt;/a&gt;let과 const&lt;/h1&gt;&lt;p&gt;과거 ES5이하에서는 변수를 선언할때 아래와 같은 방식을 사용하였다.
-      
+      &lt;h1 id=&quot;let과-const&quot;&gt;&lt;a href=&quot;#let과-const&quot; class=&quot;headerlink&quot; title=&quot;let과 const&quot;&gt;&lt;/a&gt;let과 const&lt;/h1&gt;&lt;p&gt;과거 ES5이하에서는 변수를 선언할때 아래와 같은 방식을 사용하였다.&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; b = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; c = a + b;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;이러한 선언 방식은 javascript에게 유연함을 선물해 준 대신, 타언어를 공부한 많은 개발자들에게 혼란을 초래 했다.&lt;br&gt;2015년 ECMAscript2015 또는 ES6로 자바스크립트가 변화하면서, 많은 혼란을 조금을 달래줄 수 있었다.&lt;/p&gt;
+&lt;p&gt;오늘은 ES6의 변수 선언방식인 &lt;code&gt;let&lt;/code&gt;과 &lt;code&gt;const&lt;/code&gt;에 대해 알아보겠다.&lt;br&gt;과거 javascript의 변수를 &lt;code&gt;var&lt;/code&gt;로 선언하였을때 함수스코프, 호이스팅 등 많은 자유로움으로 인해 작은 문제가 큰문제로 발생하는 경우가 많았다.&lt;/p&gt;
+&lt;p&gt;ES6의 변수 선언방식인 &lt;code&gt;let&lt;/code&gt;과 &lt;code&gt;const&lt;/code&gt;는 &lt;em&gt;block-scope&lt;/em&gt;로 스코프범위를 일반적인 다른 언어들과 맞추었다.&lt;br&gt;예를 들어보자.&lt;/p&gt;
     
     </summary>
     
@@ -279,9 +279,9 @@
       <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
     
     
-      <category term="framework" scheme="https://tuhbm.github.io/tags/framework/"/>
-    
       <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
+    
+      <category term="framework" scheme="https://tuhbm.github.io/tags/framework/"/>
     
       <category term="third party" scheme="https://tuhbm.github.io/tags/third-party/"/>
     
@@ -398,15 +398,15 @@
     
       <category term="compile" scheme="https://tuhbm.github.io/tags/compile/"/>
     
-      <category term="scss" scheme="https://tuhbm.github.io/tags/scss/"/>
-    
-      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
-    
       <category term="sass" scheme="https://tuhbm.github.io/tags/sass/"/>
+    
+      <category term="scss" scheme="https://tuhbm.github.io/tags/scss/"/>
     
       <category term="CSS 전처리기" scheme="https://tuhbm.github.io/tags/CSS-%EC%A0%84%EC%B2%98%EB%A6%AC%EA%B8%B0/"/>
     
       <category term="CSS processors" scheme="https://tuhbm.github.io/tags/CSS-processors/"/>
+    
+      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
     
   </entry>
   
