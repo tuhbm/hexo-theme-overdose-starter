@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/2018/02/21/firstProgramming/</loc>
+    
+    <lastmod>2018-03-11T03:24:56.677Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2018/02/06/thread/</loc>
     
     <lastmod>2018-03-11T03:23:03.913Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://tuhbm.github.io/2017/09/15/vue1/</loc>
     
     <lastmod>2018-03-11T03:23:03.905Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2018/02/21/firstProgramming/</loc>
-    
-    <lastmod>2018-03-11T03:23:03.904Z</lastmod>
     
   </url>
   
