@@ -279,9 +279,9 @@
       <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
     
     
-      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
-    
       <category term="framework" scheme="https://tuhbm.github.io/tags/framework/"/>
+    
+      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
     
       <category term="third party" scheme="https://tuhbm.github.io/tags/third-party/"/>
     
@@ -398,15 +398,15 @@
     
       <category term="compile" scheme="https://tuhbm.github.io/tags/compile/"/>
     
-      <category term="sass" scheme="https://tuhbm.github.io/tags/sass/"/>
-    
       <category term="scss" scheme="https://tuhbm.github.io/tags/scss/"/>
+    
+      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
+    
+      <category term="sass" scheme="https://tuhbm.github.io/tags/sass/"/>
     
       <category term="CSS 전처리기" scheme="https://tuhbm.github.io/tags/CSS-%EC%A0%84%EC%B2%98%EB%A6%AC%EA%B8%B0/"/>
     
       <category term="CSS processors" scheme="https://tuhbm.github.io/tags/CSS-processors/"/>
-    
-      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
     
   </entry>
   
