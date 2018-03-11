@@ -597,9 +597,9 @@
     
       <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
     
-      <category term="v-on" scheme="https://tuhbm.github.io/tags/v-on/"/>
-    
       <category term="v-bind" scheme="https://tuhbm.github.io/tags/v-bind/"/>
+    
+      <category term="v-on" scheme="https://tuhbm.github.io/tags/v-on/"/>
     
       <category term="v-model" scheme="https://tuhbm.github.io/tags/v-model/"/>
     
