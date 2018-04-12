@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-04-12T13:48:19.780Z</updated>
+  <updated>2018-04-12T13:50:10.193Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,12 +21,11 @@
     <link href="https://tuhbm.github.io/2018/04/12/javaBook/"/>
     <id>https://tuhbm.github.io/2018/04/12/javaBook/</id>
     <published>2018-04-12T12:51:20.000Z</published>
-    <updated>2018-04-12T13:48:19.780Z</updated>
+    <updated>2018-04-12T13:50:10.193Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.&lt;/p&gt;
-&lt;hr&gt;
 &lt;hr&gt;
 &lt;h1 id=&quot;이것이-자바다&quot;&gt;&lt;a href=&quot;#이것이-자바다&quot; class=&quot;headerlink&quot; title=&quot;이것이 자바다&quot;&gt;&lt;/a&gt;이것이 자바다&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/books/java_book1.jpg&quot; alt=&quot;this is java&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;한줄평-리뷰&quot;&gt;&lt;a href=&quot;#한줄평-리뷰&quot; class=&quot;headerlink&quot; title=&quot;한줄평 리뷰&quot;&gt;&lt;/a&gt;한줄평 리뷰&lt;/h2&gt;&lt;p&gt;어마어마한 두께만큼 배울때 보면 좋은도서다.&lt;br&gt;
@@ -113,15 +112,15 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
+    
+      <category term="ES6" scheme="https://tuhbm.github.io/tags/ES6/"/>
+    
       <category term="var" scheme="https://tuhbm.github.io/tags/var/"/>
     
       <category term="let" scheme="https://tuhbm.github.io/tags/let/"/>
     
       <category term="const" scheme="https://tuhbm.github.io/tags/const/"/>
-    
-      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
-    
-      <category term="ES6" scheme="https://tuhbm.github.io/tags/ES6/"/>
     
   </entry>
   
