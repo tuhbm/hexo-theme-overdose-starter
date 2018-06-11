@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-04-12T13:50:10.193Z</updated>
+  <updated>2018-06-11T13:43:19.537Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 시작</title>
+    <link href="https://tuhbm.github.io/2018/06/11/startJava/"/>
+    <id>https://tuhbm.github.io/2018/06/11/startJava/</id>
+    <published>2018-06-11T13:07:25.000Z</published>
+    <updated>2018-06-11T13:43:19.537Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/h2&gt;&lt;p&gt;이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 또는 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;자바-JAVA-시작하기&quot;&gt;&lt;a href=&quot;#자바-JAVA-시작하기&quot; class=&quot;headerlink&quot; title=&quot;자바(JAVA) 시작하기&quot;&gt;&lt;/a&gt;자바(JAVA) 시작하기&lt;/h1&gt;&lt;h2 id=&quot;자바를-시작하게된-계기&quot;&gt;&lt;a href=&quot;#자바를-시작하게된-계기&quot; class=&quot;headerlink&quot; title=&quot;자바를 시작하게된 계기&quot;&gt;&lt;/a&gt;자바를 시작하게된 계기&lt;/h2&gt;&lt;p&gt;프론트 엔드 개발자로써 예전부터 패러다임이었던 &lt;strong&gt;OOP(Object-Oriented Programming)&lt;/strong&gt; 즉 객체지향프로그래밍은 모든 개발자에게 접할 수 밖에 없는 숙제 일것이다.&lt;br&gt;개발을 시작한지 얼마 되지 않은 필자는 지금까지 해왔던 절차지향프로그래밍을 떠나 객체지향프로그래밍을 접하기 위해, 공부를 하던 중 객체지향프로그래밍의 본좌인 JAVA를 공부하고 싶은 호기심이 생겼다.&lt;br&gt;최근 개발 패러다임이라면 함수형 프로그래밍도 있겠지만, 좀 더 아직까진 대중적인 패러다임인 객체지향 프로그래밍을 시작하기로 했다.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JAVA" scheme="https://tuhbm.github.io/categories/JAVA/"/>
+    
+    
+      <category term="java" scheme="https://tuhbm.github.io/tags/java/"/>
+    
+      <category term="oop" scheme="https://tuhbm.github.io/tags/oop/"/>
+    
+      <category term="객체지향" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>이것이 자바다</title>
@@ -679,46 +705,6 @@
       <category term="v-on" scheme="https://tuhbm.github.io/tags/v-on/"/>
     
       <category term="v-model" scheme="https://tuhbm.github.io/tags/v-model/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue 알아보기 1편</title>
-    <link href="https://tuhbm.github.io/2017/09/15/vue1/"/>
-    <id>https://tuhbm.github.io/2017/09/15/vue1/</id>
-    <published>2017-09-15T03:49:08.000Z</published>
-    <updated>2018-03-11T03:23:03.905Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;Vue-시작하기&quot;&gt;&lt;a href=&quot;#Vue-시작하기&quot; class=&quot;headerlink&quot; title=&quot;Vue 시작하기&quot;&gt;&lt;/a&gt;Vue 시작하기&lt;/h1&gt;&lt;p&gt;Vue도 다른 프레임워크와 같이 npm 모듈을 이용해 설치해서 사용할 수 있습니다.&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;node_modules/vue/dist/vue.min.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
-    
-      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
-    
-    
-      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
-    
-      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
-    
-      <category term="vue.js2" scheme="https://tuhbm.github.io/tags/vue-js2/"/>
-    
-      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
-    
-      <category term="v-bind" scheme="https://tuhbm.github.io/tags/v-bind/"/>
-    
-      <category term="v-html" scheme="https://tuhbm.github.io/tags/v-html/"/>
-    
-      <category term="vue를 시작하는방법" scheme="https://tuhbm.github.io/tags/vue%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%EB%B0%A9%EB%B2%95/"/>
-    
-      <category term="텍스트 바인딩" scheme="https://tuhbm.github.io/tags/%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%B0%94%EC%9D%B8%EB%94%A9/"/>
-    
-      <category term="함수 바인딩" scheme="https://tuhbm.github.io/tags/%ED%95%A8%EC%88%98-%EB%B0%94%EC%9D%B8%EB%94%A9/"/>
     
   </entry>
   
