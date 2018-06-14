@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-06-11T13:43:19.537Z</updated>
+  <updated>2018-06-14T13:11:35.231Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -17,17 +17,84 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Java Data Type</title>
+    <link href="https://tuhbm.github.io/2018/06/14/javaDataType/"/>
+    <id>https://tuhbm.github.io/2018/06/14/javaDataType/</id>
+    <published>2018-06-14T12:27:36.000Z</published>
+    <updated>2018-06-14T13:11:35.231Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/h2&gt;&lt;p&gt;이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 또는 독학을 하므로 &lt;code&gt;잘못
+      
+    
+    </summary>
+    
+      <category term="JAVA" scheme="https://tuhbm.github.io/categories/JAVA/"/>
+    
+    
+      <category term="java" scheme="https://tuhbm.github.io/tags/java/"/>
+    
+      <category term="oop" scheme="https://tuhbm.github.io/tags/oop/"/>
+    
+      <category term="객체지향" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 숫자와 문자</title>
+    <link href="https://tuhbm.github.io/2018/06/13/javaNumberText/"/>
+    <id>https://tuhbm.github.io/2018/06/13/javaNumberText/</id>
+    <published>2018-06-13T11:29:10.000Z</published>
+    <updated>2018-06-14T12:47:53.840Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/h2&gt;&lt;p&gt;이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 또는 독학을 하므로 &lt;code&gt;잘못
+      
+    
+    </summary>
+    
+      <category term="JAVA" scheme="https://tuhbm.github.io/categories/JAVA/"/>
+    
+    
+      <category term="java" scheme="https://tuhbm.github.io/tags/java/"/>
+    
+      <category term="oop" scheme="https://tuhbm.github.io/tags/oop/"/>
+    
+      <category term="객체지향" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/"/>
+    
+      <category term="System.out" scheme="https://tuhbm.github.io/tags/System-out/"/>
+    
+      <category term="console" scheme="https://tuhbm.github.io/tags/console/"/>
+    
+      <category term="세미콜론" scheme="https://tuhbm.github.io/tags/%EC%84%B8%EB%AF%B8%EC%BD%9C%EB%A1%A0/"/>
+    
+      <category term="큰따옴표" scheme="https://tuhbm.github.io/tags/%ED%81%B0%EB%94%B0%EC%98%B4%ED%91%9C/"/>
+    
+      <category term="작은따옴표" scheme="https://tuhbm.github.io/tags/%EC%9E%91%EC%9D%80%EB%94%B0%EC%98%B4%ED%91%9C/"/>
+    
+      <category term="문자열" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java 시작</title>
     <link href="https://tuhbm.github.io/2018/06/11/startJava/"/>
     <id>https://tuhbm.github.io/2018/06/11/startJava/</id>
     <published>2018-06-11T13:07:25.000Z</published>
-    <updated>2018-06-11T13:43:19.537Z</updated>
+    <updated>2018-06-14T12:30:30.710Z</updated>
     
     <summary type="html">
     
       &lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/h2&gt;&lt;p&gt;이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 또는 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;자바-JAVA-시작하기&quot;&gt;&lt;a href=&quot;#자바-JAVA-시작하기&quot; class=&quot;headerlink&quot; title=&quot;자바(JAVA) 시작하기&quot;&gt;&lt;/a&gt;자바(JAVA) 시작하기&lt;/h1&gt;&lt;h2 id=&quot;자바를-시작하게된-계기&quot;&gt;&lt;a href=&quot;#자바를-시작하게된-계기&quot; class=&quot;headerlink&quot; title=&quot;자바를 시작하게된 계기&quot;&gt;&lt;/a&gt;자바를 시작하게된 계기&lt;/h2&gt;&lt;p&gt;프론트 엔드 개발자로써 예전부터 패러다임이었던 &lt;strong&gt;OOP(Object-Oriented Programming)&lt;/strong&gt; 즉 객체지향프로그래밍은 모든 개발자에게 접할 수 밖에 없는 숙제 일것이다.&lt;br&gt;개발을 시작한지 얼마 되지 않은 필자는 지금까지 해왔던 절차지향프로그래밍을 떠나 객체지향프로그래밍을 접하기 위해, 공부를 하던 중 객체지향프로그래밍의 본좌인 JAVA를 공부하고 싶은 호기심이 생겼다.&lt;br&gt;최근 개발 패러다임이라면 함수형 프로그래밍도 있겠지만, 좀 더 아직까진 대중적인 패러다임인 객체지향 프로그래밍을 시작하기로 했다.&lt;br&gt;
+&lt;h1 id=&quot;자바-JAVA-시작하기&quot;&gt;&lt;a href=&quot;#자바-JAVA-시작하기&quot; class=&quot;headerlink&quot; title=&quot;자바(JAVA) 시작하기&quot;&gt;&lt;/a&gt;자바(JAVA) 시작하기&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/java/img_java.jpg&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;자바를-시작하게된-계기&quot;&gt;&lt;a href=&quot;#자바를-시작하게된-계기&quot; class=&quot;headerlink&quot; title=&quot;자바를 시작하게된 계기&quot;&gt;&lt;/a&gt;자바를 시작하게된 계기&lt;/h2&gt;&lt;p&gt;프론트 엔드 개발자로써 예전부터 패러다임이었던 &lt;strong&gt;OOP(Object-Oriented Programming)&lt;/strong&gt; 즉 객체지향프로그래밍은 모든 개발자에게 접할 수 밖에 없는 숙제 일것이다.&lt;br&gt;개발을 시작한지 얼마 되지 않은 필자는 지금까지 해왔던 절차지향프로그래밍을 떠나 객체지향프로그래밍을 접하기 위해, 공부를 하던 중 객체지향프로그래밍의 본좌인 JAVA를 공부하고 싶은 호기심이 생겼다.&lt;br&gt;최근 개발 패러다임이라면 함수형 프로그래밍도 있겠지만, 좀 더 아직까진 대중적인 패러다임인 객체지향 프로그래밍을 시작하기로 했다.&lt;br&gt;
     
     </summary>
     
@@ -371,9 +438,9 @@
       <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
     
     
-      <category term="framework" scheme="https://tuhbm.github.io/tags/framework/"/>
-    
       <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
+    
+      <category term="framework" scheme="https://tuhbm.github.io/tags/framework/"/>
     
       <category term="third party" scheme="https://tuhbm.github.io/tags/third-party/"/>
     
@@ -489,15 +556,15 @@
     
       <category term="compile" scheme="https://tuhbm.github.io/tags/compile/"/>
     
-      <category term="sass" scheme="https://tuhbm.github.io/tags/sass/"/>
-    
       <category term="scss" scheme="https://tuhbm.github.io/tags/scss/"/>
+    
+      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
+    
+      <category term="sass" scheme="https://tuhbm.github.io/tags/sass/"/>
     
       <category term="CSS 전처리기" scheme="https://tuhbm.github.io/tags/CSS-%EC%A0%84%EC%B2%98%EB%A6%AC%EA%B8%B0/"/>
     
       <category term="CSS processors" scheme="https://tuhbm.github.io/tags/CSS-processors/"/>
-    
-      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
     
   </entry>
   
@@ -560,7 +627,7 @@
     <link href="https://tuhbm.github.io/2018/01/17/bye2017/"/>
     <id>https://tuhbm.github.io/2018/01/17/bye2017/</id>
     <published>2018-01-17T12:31:12.000Z</published>
-    <updated>2018-03-13T16:42:55.588Z</updated>
+    <updated>2018-06-14T12:29:49.794Z</updated>
     
     <summary type="html">
     
@@ -628,83 +695,6 @@
       <category term="npm install" scheme="https://tuhbm.github.io/tags/npm-install/"/>
     
       <category term="npm run dev" scheme="https://tuhbm.github.io/tags/npm-run-dev/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue 알아보기 3편</title>
-    <link href="https://tuhbm.github.io/2017/09/19/vue3/"/>
-    <id>https://tuhbm.github.io/2017/09/19/vue3/</id>
-    <published>2017-09-19T05:58:26.000Z</published>
-    <updated>2018-03-11T03:23:03.892Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;computed&quot;&gt;&lt;a href=&quot;#computed&quot; class=&quot;headerlink&quot; title=&quot;computed&quot;&gt;&lt;/a&gt;computed&lt;/h1&gt;&lt;p&gt;계산된 속성을 바인딩할때 사용.&lt;/p&gt;
-&lt;h2 id=&quot;computed-사용법&quot;&gt;&lt;a href=&quot;#computed-사용법&quot; class=&quot;headerlink&quot; title=&quot;computed 사용법&quot;&gt;&lt;/a&gt;computed 사용법&lt;/h2&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Vue(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  el:&lt;span class=&quot;string&quot;&gt;&#39;#app&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  data:&amp;#123;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  methods:&amp;#123;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  computed:&amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
-    
-      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
-    
-    
-      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
-    
-      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
-    
-      <category term="vue.js2" scheme="https://tuhbm.github.io/tags/vue-js2/"/>
-    
-      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
-    
-      <category term="methods" scheme="https://tuhbm.github.io/tags/methods/"/>
-    
-      <category term="computed" scheme="https://tuhbm.github.io/tags/computed/"/>
-    
-      <category term="v-if" scheme="https://tuhbm.github.io/tags/v-if/"/>
-    
-      <category term="v-show" scheme="https://tuhbm.github.io/tags/v-show/"/>
-    
-      <category term="v-for" scheme="https://tuhbm.github.io/tags/v-for/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue 알아보기 2편</title>
-    <link href="https://tuhbm.github.io/2017/09/18/vue2/"/>
-    <id>https://tuhbm.github.io/2017/09/18/vue2/</id>
-    <published>2017-09-18T08:02:20.000Z</published>
-    <updated>2018-03-11T03:23:03.866Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;v-on&quot;&gt;&lt;a href=&quot;#v-on&quot; class=&quot;headerlink&quot; title=&quot;v-on&quot;&gt;&lt;/a&gt;v-on&lt;/h1&gt;&lt;p&gt;v-on 어트리뷰트를 통해 이벤트를 발생시킬 수 있습니다.&lt;br&gt;그리고&lt;br&gt;약어 &lt;strong&gt;[ @ ]&lt;/strong&gt; 를 통해 단축이 가능합니다.&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;v-on:click.once&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Function&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;이벤트&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt; @&lt;span class=&quot;attr&quot;&gt;click.once&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Function&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;이벤트&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
-    
-      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
-    
-    
-      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
-    
-      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
-    
-      <category term="vue.js2" scheme="https://tuhbm.github.io/tags/vue-js2/"/>
-    
-      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
-    
-      <category term="v-bind" scheme="https://tuhbm.github.io/tags/v-bind/"/>
-    
-      <category term="v-on" scheme="https://tuhbm.github.io/tags/v-on/"/>
-    
-      <category term="v-model" scheme="https://tuhbm.github.io/tags/v-model/"/>
     
   </entry>
   

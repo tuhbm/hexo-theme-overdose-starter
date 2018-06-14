@@ -165,11 +165,11 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                34
+                36
                 <span>포스트</span>
             </div>
             <div class="article-info-block">
-                151
+                157
                 <span>태그</span>
             </div>
         </div>
@@ -218,6 +218,383 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-javaDataType" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/06/14/javaDataType/">Java Data Type</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/06/14/javaDataType/">
+            <time datetime="2018-06-14T12:27:36.000Z" itemprop="datePublished">2018-06-14</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/JAVA/">JAVA</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/java/">java</a>, <a class="tag-link" href="/tags/oop/">oop</a>, <a class="tag-link" href="/tags/객체지향/">객체지향</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
+<hr>
+<h1 id="데이터-타입"><a href="#데이터-타입" class="headerlink" title="데이터 타입"></a>데이터 타입</h1><p><img src="https://tuhbm.github.io/images/java/img_java.jpg" alt="JAVA"><br>프로그래밍에서 데이터는 데이터형식, 메모리의 소비크기, 표현가능범위에 따라 알맞게 사용해야합니다.<br>그 내용은 데이터의 형식을 알아보면서 알아보겠습니다.</p>
+<h2 id="숫자"><a href="#숫자" class="headerlink" title="숫자"></a>숫자</h2><h3 id="정수형"><a href="#정수형" class="headerlink" title="정수형"></a>정수형</h3><table>
+<thead>
+<tr>
+<th>데이터 타입</th>
+<th>메모리의 크기</th>
+<th>표현 가능 범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td>1 byte</td>
+<td>-128 ~ 127</td>
+</tr>
+<tr>
+<td>short</td>
+<td>2 byte</td>
+<td>-32,768 ~ 32,767</td>
+</tr>
+<tr>
+<td>int</td>
+<td>4 byte</td>
+<td>-2,147,483,648~2,147,483,647</td>
+</tr>
+<tr>
+<td>long</td>
+<td>8 byte</td>
+<td>-9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807</td>
+</tr>
+</tbody>
+</table>
+<h3 id="실수형"><a href="#실수형" class="headerlink" title="실수형"></a>실수형</h3><table>
+<thead>
+<tr>
+<th>데이터 타입</th>
+<th>메모리의 크기</th>
+<th>표현 가능 범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td>4byte</td>
+<td>±(1.40129846432481707e-45 ~ 3.40282346638528860e+38)</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8byte</td>
+<td>±(4.94065645841246544e-324d ~ 1.79769313486231570e+308d)</td>
+</tr>
+</tbody>
+</table>
+<p>여기서 문제를 내보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">long a = 123123123;</span><br><span class="line">long b = 123;</span><br></pre></td></tr></table></figure></p>
+<p><em>이 변수의 메모리의 크기는 같을까요? 다를까요?</em></p>
+<p>정답은 같습니다.</p>
+<p>하지만 a에는 123132123이라는 큰 숫자가 들어갔지만,<br>b에는 123이라는 작은 숫자가 들어갔습니다. 그럼에도 불구하고 메모리의 크기는 같습니다.<br><code>컴퓨터 프로그래밍은 결국 메모리를 어떻게 사용하느냐</code>에 따라 성능의 차이가 나타납니다.<br>위의 b와같은 경우처럼 작은 숫자를 이용할때는 byte를 사용해야 하는것처럼 <code>알맞은 데이터형태를 선언</code>하므로써 <strong>메모리의 용량</strong>을 아낄수 있습니다.<br><strong>추가적으로 오늘날 하드웨어의 발달로 인해 메모리의 용량이 많이 향상되어, 정수를 사용할때는 충분히 편하게 큰 수를 표현 할 수 있는 데이터 타입인 int를 주로 사용합니다.</strong></p>
+<h3 id="명시적-데이터타입"><a href="#명시적-데이터타입" class="headerlink" title="명시적 데이터타입"></a>명시적 데이터타입</h3><p>명시적으로 데이터 형태를 표기해줘야 하는 데이터타입 형태가 있다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int a = 2.2;</span><br></pre></td></tr></table></figure></p>
+<p>에러가 납니다. 2.2는 실수형 타입입니다. 그렇다면 실수형 타입인 float으로 변경해보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">float a = 2.2;</span><br></pre></td></tr></table></figure></p>
+<p>에러가 납니다.<br>그렇다면 double형태를 사용해보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">double a = 2.2;</span><br></pre></td></tr></table></figure></p>
+<p>에러가 나지않습니다.<br>이는 2.2는 double형태의 데이터값이라는 것입니다.<br>‘float의 데이터형태는 언제 사용하지…?’라는 의문이 듭니다.<br><code>float</code>의 데이터 타입은 명시적으로 값에 float의 형태의 값이라는 <code>F</code>을 지정해줘야합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">float a = 2.2F;</span><br></pre></td></tr></table></figure></p>
+<p>이렇게 하니 에러가 안나는 것을 확인 할 수 있습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int a = 2147483648;</span><br></pre></td></tr></table></figure></p>
+<p>int는 2,147,483,647까지 밖에 표현을 못합니다.<br>그러면 큰값을 표기할 수 있는 long의 데이터 형태를 사용해보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">long a = 2147483648;</span><br></pre></td></tr></table></figure></p>
+<p>에러가 납니다. 이부분 역시 float의 형태와 같이 명시적으로 값을 지정해주겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">long a = 2147483648L;</span><br></pre></td></tr></table></figure></p>
+<p>이렇게 명시적으로 값을 <code>long</code>의 데이터 타입 <code>L</code>을 지정해주니 에러가 발생하지 않습니다.</p>
+<p>byte나 short의 데이터의 형태같은경우 자바에서 자체적으로 편하게 사용하기위해 int의 데이터값을 허용하고 있습니다. 단 허용범위내에 표시 할 수 있는 경우에 한에서만 가능합니다.</p>
+<p>이부분은 <a href="https://opentutorials.org/course/1223/5326" rel="external nofollow noopener noreferrer" target="_blank">생활코딩 강좌</a>를 참고하였습니다.</p>
+<hr>
+<h2 id="문자"><a href="#문자" class="headerlink" title="문자"></a>문자</h2><table>
+<thead>
+<tr>
+<th>데이터 타입</th>
+<th>메모리의 크기</th>
+<th>표현 가능 범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>char</td>
+<td>2byte</td>
+<td>모든 유니코드 문자</td>
+</tr>
+</tbody>
+</table>
+<p>자바에서는 문자와 문자열이 다릅니다.<br><strong>문자(character)는 글자 하나를 의미하고, 문자열은 글자들의 집합</strong>을 의미합니다.</p>
+<h3 id="문자열"><a href="#문자열" class="headerlink" title="문자열"></a>문자열</h3><table>
+<thead>
+<tr>
+<th>데이터 타입</th>
+<th>메모리의 크기</th>
+<th>표현 가능 범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td>글자당 2byte</td>
+<td>모든 유니코드 문자</td>
+</tr>
+</tbody>
+</table>
+<h2 id="자동-형-변환"><a href="#자동-형-변환" class="headerlink" title="자동 형 변환"></a>자동 형 변환</h2><p>서로 다른 데이터 타입의 형태의 숫자가 있다고 이를 더해야 한다고 생각을 해봅시다.<br>예를들면 int와 byte값이 있다면 이는 데이터형태가 다르므로 더하기가 안되야합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int a = 20;</span><br><span class="line">byte b = 10;</span><br><span class="line">int p = a+b;</span><br><span class="line">System.out.println(p); //30</span><br></pre></td></tr></table></figure></p>
+<p>실행이 되는 것을 볼 수 있습니다.</p>
+<p>‘자바는 형태에 따른 오류를 방지하기 위한 엄격한 언어인데..’라는 생각이 들겠지만,<br>자바도 유연함을 갖추고 있습니다.<br>바로 표현 할 수 있는 메모리의 크기별로 데이터의 손실이 발생하지 않으므로,<br><code>자동으로 형변환</code>을 합니다.</p>
+<p>또한 실수는 정수를 포함하지만, 정수는 실수를 포함 할 수 없습니다.<br>이처럼 데이터 형태에 따라 자동으로 형변환이 가능한부분을 표기해보면<br><code>byte =&gt; short, char =&gt; int =&gt; long =&gt; float =&gt; double</code><br>순서로 <strong>자동으로 형변환</strong>이 됩니다.</p>
+<h2 id="명시적-형-변환"><a href="#명시적-형-변환" class="headerlink" title="명시적 형 변환"></a>명시적 형 변환</h2><p>자동으로 형변환이 되지 않는 부분들은 직접 <code>명시적 형 변환</code>을 해야 합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int a = 100.0F;</span><br></pre></td></tr></table></figure></p>
+<p>이러한 변수타입은 에러가 발생합니다.<br>데이터형태는 int형태이나 값은 float의 형태이기 때문입니다.<br>이와같은경우 명시적 형 변환이 필요합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int a = (int) 100.0F;</span><br></pre></td></tr></table></figure></p>
+<p>이렇게 값앞에 (int)을 적어주므로써 값을 명시적으로 int의 데이터형태로 변화하였습니다.</p>
+<p>다른 예를 들어보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int b = 100.1F;</span><br></pre></td></tr></table></figure></p>
+<p>변환해보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int b = (int) 100.1F;</span><br></pre></td></tr></table></figure></p>
+<p>결과는 100이 출력됩니다.<br>int의 형태로 변경하기위해 소수점이하를 버림으로 처리하기 때문입니다.<br>이와 같은경우 기존에 갖고 있던 <code>데이터의 손실이 발생</code>합니다. 데이터의 손실이 발생하지않도록 곱하기를 하거나 더하기와 같이 추가적인 계산을 통해 데이터 손실이 발생하지 않도록 해야 합니다.</p>
+<p>이번 포스팅을 통해 <code>데이터의 타입과 형변환</code>에 대해 알아보았습니다.<br>다음시간엔 <code>비교연산자와 배열</code>에 대해 알아보도록하겠습니다.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="https://tuhbm.github.io/2018/06/14/javaDataType/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2018/06/14/javaDataType/">댓글</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-javaNumberText" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/06/13/javaNumberText/">Java 숫자와 문자</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/06/13/javaNumberText/">
+            <time datetime="2018-06-13T11:29:10.000Z" itemprop="datePublished">2018-06-13</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/JAVA/">JAVA</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/System-out/">System.out</a>, <a class="tag-link" href="/tags/console/">console</a>, <a class="tag-link" href="/tags/java/">java</a>, <a class="tag-link" href="/tags/oop/">oop</a>, <a class="tag-link" href="/tags/객체지향/">객체지향</a>, <a class="tag-link" href="/tags/문자열/">문자열</a>, <a class="tag-link" href="/tags/세미콜론/">세미콜론</a>, <a class="tag-link" href="/tags/작은따옴표/">작은따옴표</a>, <a class="tag-link" href="/tags/큰따옴표/">큰따옴표</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
+<hr>
+<h1 id="자바-JAVA-숫자와-문자"><a href="#자바-JAVA-숫자와-문자" class="headerlink" title="자바(JAVA) 숫자와 문자"></a>자바(JAVA) 숫자와 문자</h1><p><img src="https://tuhbm.github.io/images/java/img_java.jpg" alt="JAVA"></p>
+<h2 id="System-out"><a href="#System-out" class="headerlink" title="System.out"></a>System.out</h2><p>숫자와 문자를 접하기전에 우리는 결과물을 확인 할 방법을 먼저 알아보겠습니다.<br>자바는 웹브라우저가 아닌 <strong>JVM</strong>을 이용해 실행합니다. CMD나 터미널등을 통해서도 코드작성이 가능하지만, <strong>IDE(Integrated development environment)</strong>를 통해 편하게 개발을 할 수 있습니다.<br>IDE에는 여러가지가 있겠지만, 저는 jetbrain사의 <a href="https://www.jetbrains.com/idea/" rel="external nofollow noopener noreferrer" target="_blank">intellij</a>를 사용하고 있습니다.<br>개발시 각자 본인에 맞는 IDE를 찾아보시길 권장합니다.<br>IDE에서는 Run기능을 통해 실행하여 작성한 코드의 컴파일 결과를 확인 할 수 있습니다.</p>
+<p><code>자바스크립트에서 console의 역할</code>을 하는 부분을 자바에서는 <code>**System.out 프로퍼티**</code>를 통해 실행 결과 확인할 수 있습니다.</p>
+<h5 id="System-out-println-입력시-한줄씩-자동-줄바뀜"><a href="#System-out-println-입력시-한줄씩-자동-줄바뀜" class="headerlink" title="System.out.println - 입력시 한줄씩 자동 줄바뀜"></a>System.out.println - 입력시 한줄씩 자동 줄바뀜</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&quot;테스트1&quot;);</span><br><span class="line">System.out.println(&quot;테스트2&quot;);</span><br><span class="line">System.out.println(&quot;테스트3&quot;);</span><br></pre></td></tr></table></figure>
+<h5 id="결과물"><a href="#결과물" class="headerlink" title="결과물"></a>결과물</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">테스트1</span><br><span class="line">테스트2</span><br><span class="line">테스트3</span><br></pre></td></tr></table></figure>
+<h5 id="System-out-print-입력시-이어서-출력"><a href="#System-out-print-입력시-이어서-출력" class="headerlink" title="System.out.print - 입력시 이어서 출력"></a>System.out.print - 입력시 이어서 출력</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">System.out.print(&quot;테스트1&quot;);</span><br><span class="line">System.out.print(&quot;테스트2&quot;);</span><br><span class="line">System.out.print(&quot;테스트3&quot;);</span><br></pre></td></tr></table></figure>
+<h5 id="결과물-1"><a href="#결과물-1" class="headerlink" title="결과물"></a>결과물</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">테스트1테스트2테스트3</span><br></pre></td></tr></table></figure>
+<p>위에 내용을 살펴보면<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.print(&quot;테스트1&quot;);</span><br></pre></td></tr></table></figure></p>
+<p>이처럼 <code>&quot;&quot;</code>큰따옴표를 사용한 것을 볼 수 있습니다.</p>
+<p>기존 <code>자바스크립트</code>에서는 <code>&#39;&#39;</code> 또는 <code>&quot;&quot;</code>를 이용해 문자열을 입력하였습니다.<br><code>자바</code>에서도 마찬가지로 ‘’ 또는 <code>&quot;&quot;</code>를 이용 할 수 있습니다.<br>하지만 차이가 있습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&quot;테스트&quot;);</span><br></pre></td></tr></table></figure></p>
+<p>를 입력시 정상적으로 실행이 됩니다.</p>
+<p><strong>하지만</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&apos;테스트&apos;);</span><br></pre></td></tr></table></figure></p>
+<p>여러글자를 입력시 오류가 발생합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&apos;테&apos;);</span><br></pre></td></tr></table></figure></p>
+<p>이처럼 한글자의 문자를 넣을때는 작은따옴표가 허용이되지만, <code>문자열(문자조합)</code>을 입력시는 <code>큰따옴표</code>를 사용해야합니다.</p>
+<p><strong><code>문자열</code> 입력시 큰따옴표를 사용해야합니다</strong></p>
+<hr>
+<h2 id="변수"><a href="#변수" class="headerlink" title="변수"></a>변수</h2><p>기존 <strong>자바스크립트는 데이터의 형식을 정하지 않고, 자유로운 형식의 데이터</strong>를 변수에 담을 수 있었습니다.<br>이부분은 ‘자유롭다. 유연하다.’라는 장점과 ‘그로 인해 오류가 발생하기 쉽다.’단점을 갖고 있습니다.</p>
+<p>하지만 <strong>자바는 이러한 데이터형식을 변수를 선언할때 정의</strong>해야합니다.<br>데이터 형식을 정의하지 않은 변수를 작성시 컴파일이 되지 않는 <code>엄격한 언어</code>입니다.</p>
+<p>자바스크립트와 비교해보도록 하겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = 0;</span><br><span class="line">let b = 1;</span><br><span class="line">const pi = 3.14;</span><br></pre></td></tr></table></figure></p>
+<p>선언시 데이터의 형태를 구분하는 부분이 없습니다.<br>그렇기에 코드를 작성할때 방어패턴등을 사용하여, 올바른 데이터형태가 들어왔는지 확인하는 등의 방법으로 오류를 방지하였습니다.</p>
+<p>다음으로 자바입니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int a = 0;</span><br><span class="line">double pi = 3.14;</span><br><span class="line">String b = &quot;문자&quot;;</span><br><span class="line">byte c = 1;</span><br></pre></td></tr></table></figure></p>
+<p>등 선언시 <code>int</code>, <code>double</code>, <code>String</code>, <code>byte</code>등의 데이터 형식을 미리 정의 한 후 변수이름을 선언합니다.<br>데이터 형태는 다음 시간에 포스팅하도록 하겠습니다.</p>
+<hr>
+<h2 id="세미콜론"><a href="#세미콜론" class="headerlink" title="세미콜론"></a>세미콜론</h2><p>세미콜론(<code>;</code>)은 코드를 작성시 끝을 의미한다.<br>과거 자바스크립트에서는 <code>세미콜론을 사용해도 되고, 사용하지 않아도 됩니다.</code><br>세미콜론을 사용하므로써, 좀 더 <strong>명확히 문장의 끝</strong>을 나타내 사람도 보기 편하고 오류도 줄이는 결과를 가져올 수 있지만,<br>한편으로는 세미콜론도 하나의 문자로 문서의 크기를 늘린다고 보는 개발자들도 존재한다.<br>그렇기에 외국의 동영상강의를 보았을때 세미콜론을 사용하지 않는 개발자들도 많이 보았습니다.</p>
+<p>하지만 자바에서는 세미콜론을 사용하지 않으면 컴파일이 되지 않아 에러가 발생하므로,<br><code>자바에서는 세미콜론을 강제한다.</code>라고 기억해 두시기 바랍니다.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="https://tuhbm.github.io/2018/06/13/javaNumberText/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2018/06/13/javaNumberText/">댓글</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-startJava" class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
@@ -262,7 +639,8 @@ ga('send', 'pageview');
         
             <p></p><h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
 <hr>
-<h1 id="자바-JAVA-시작하기"><a href="#자바-JAVA-시작하기" class="headerlink" title="자바(JAVA) 시작하기"></a>자바(JAVA) 시작하기</h1><h2 id="자바를-시작하게된-계기"><a href="#자바를-시작하게된-계기" class="headerlink" title="자바를 시작하게된 계기"></a>자바를 시작하게된 계기</h2><p>프론트 엔드 개발자로써 예전부터 패러다임이었던 <strong>OOP(Object-Oriented Programming)</strong> 즉 객체지향프로그래밍은 모든 개발자에게 접할 수 밖에 없는 숙제 일것이다.<br>개발을 시작한지 얼마 되지 않은 필자는 지금까지 해왔던 절차지향프로그래밍을 떠나 객체지향프로그래밍을 접하기 위해, 공부를 하던 중 객체지향프로그래밍의 본좌인 JAVA를 공부하고 싶은 호기심이 생겼다.<br>최근 개발 패러다임이라면 함수형 프로그래밍도 있겠지만, 좀 더 아직까진 대중적인 패러다임인 객체지향 프로그래밍을 시작하기로 했다.<br></p>
+<h1 id="자바-JAVA-시작하기"><a href="#자바-JAVA-시작하기" class="headerlink" title="자바(JAVA) 시작하기"></a>자바(JAVA) 시작하기</h1><p><img src="https://tuhbm.github.io/images/java/img_java.jpg" alt="JAVA"></p>
+<h2 id="자바를-시작하게된-계기"><a href="#자바를-시작하게된-계기" class="headerlink" title="자바를 시작하게된 계기"></a>자바를 시작하게된 계기</h2><p>프론트 엔드 개발자로써 예전부터 패러다임이었던 <strong>OOP(Object-Oriented Programming)</strong> 즉 객체지향프로그래밍은 모든 개발자에게 접할 수 밖에 없는 숙제 일것이다.<br>개발을 시작한지 얼마 되지 않은 필자는 지금까지 해왔던 절차지향프로그래밍을 떠나 객체지향프로그래밍을 접하기 위해, 공부를 하던 중 객체지향프로그래밍의 본좌인 JAVA를 공부하고 싶은 호기심이 생겼다.<br>최근 개발 패러다임이라면 함수형 프로그래밍도 있겠지만, 좀 더 아직까진 대중적인 패러다임인 객체지향 프로그래밍을 시작하기로 했다.<br></p>
             <p class="article-more-link">
                 <a href="/2018/06/11/startJava/#more">자세히 보기</a>
             </p>
@@ -1195,250 +1573,6 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-startPython" class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/02/12/startPython/">python 시작하기</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/02/12/startPython/">
-            <time datetime="2018-02-12T12:17:35.000Z" itemprop="datePublished">2018-02-12</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Python/">Python</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/python/">python</a>, <a class="tag-link" href="/tags/start/">start</a>, <a class="tag-link" href="/tags/파이썬/">파이썬</a>, <a class="tag-link" href="/tags/파이썬-시작/">파이썬 시작</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p></p><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><p>이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.<br>책을 보며, 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
-<hr>
-<h1 id="파이썬-python-시작하기"><a href="#파이썬-python-시작하기" class="headerlink" title="파이썬(python) 시작하기"></a>파이썬(python) 시작하기</h1><h2 id="파이썬을-시작하게된-계기"><a href="#파이썬을-시작하게된-계기" class="headerlink" title="파이썬을 시작하게된 계기"></a>파이썬을 시작하게된 계기</h2><p>한빛미디어의 <em>‘나는 리뷰어다.’</em> 라는 이벤트가 있습니다.<br>한빛미디어에서 신청을 받아 3가지의 선택한 책중 1권을 랜덤으로 보내주는데,<br>그 책을 읽고, 기간내에 책에 대한 리뷰를 블로그 및 온라인 서점 등에 리뷰를 작성하는 이벤트입니다.<br>그래서 받게 된 책이 <code>&#39;비전공자가 궁굼해하는 프로그래머의 첫걸음&#39;</code>입니다.<br>이 책은 프로그래밍의 내용을 요즘 HOT하다는 <code>파이썬</code>이란 언어 통해 프로그래밍에 관련된 내용을 전달합니다.<br>책을 반정도 읽다보니, 파이썬을 공부해 포스팅하는것도 좋겠다라는 생각이 들어 파이썬 공부를 시작하게 되었습니다.<br>다만, <code>제가 주로 사용하는 언어가 아닌 만큼 포스팅에 다소 시간이 걸릴 수 있습니다.</code><br></p>
-            <p class="article-more-link">
-                <a href="/2018/02/12/startPython/#more">자세히 보기</a>
-            </p>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-    <div class="a2a_kit a2a_default_style">
-    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
-    <span class="a2a_divider"></span>
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_google_plus"></a>
-    <a class="a2a_button_pinterest"></a>
-    <a class="a2a_button_tumblr"></a>
-</div>
-<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-<style>
-    .a2a_menu {
-        border-radius: 4px;
-    }
-    .a2a_menu a {
-        margin: 2px 0;
-        font-size: 14px;
-        line-height: 16px;
-        border-radius: 4px;
-        color: inherit !important;
-        font-family: 'Microsoft Yahei';
-    }
-    #a2apage_dropdown {
-        margin: 10px 0;
-    }
-    .a2a_mini_services {
-        padding: 10px;
-    }
-    a.a2a_i,
-    i.a2a_i {
-        width: 122px;
-        line-height: 16px;
-    }
-    a.a2a_i .a2a_svg,
-    a.a2a_more .a2a_svg {
-        width: 16px;
-        height: 16px;
-        line-height: 16px;
-        vertical-align: top;
-        background-size: 16px;
-    }
-    a.a2a_i {
-        border: none !important;
-    }
-    a.a2a_menu_show_more_less {
-        margin: 0;
-        padding: 10px 0;
-        line-height: 16px;
-    }
-    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-    .a2a_mini_services{*+height:1%;}
-</style>
-
-</div>
-
-            
-    
-        <a href="https://tuhbm.github.io/2018/02/12/startPython/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2018/02/12/startPython/">댓글</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-thread" class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/02/06/thread/">스레드(thread)</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/02/06/thread/">
-            <time datetime="2018-02-06T12:43:00.000Z" itemprop="datePublished">2018-02-06</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/용어정리/">용어정리</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/thread/">thread</a>, <a class="tag-link" href="/tags/멀티스레드/">멀티스레드</a>, <a class="tag-link" href="/tags/스레드/">스레드</a>, <a class="tag-link" href="/tags/싱글스레드/">싱글스레드</a>, <a class="tag-link" href="/tags/프로세스/">프로세스</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p></p><h2 id="용어정리"><a href="#용어정리" class="headerlink" title="용어정리"></a>용어정리</h2><p>이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.<br>제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.<br>오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.</p>
-<hr>
-<h1 id="스레드-thread"><a href="#스레드-thread" class="headerlink" title="스레드(thread)"></a>스레드(thread)</h1><p><code>한글로 스레드라 표기하겠습니다.</code><br></p>
-            <p class="article-more-link">
-                <a href="/2018/02/06/thread/#more">자세히 보기</a>
-            </p>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-    <div class="a2a_kit a2a_default_style">
-    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
-    <span class="a2a_divider"></span>
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_google_plus"></a>
-    <a class="a2a_button_pinterest"></a>
-    <a class="a2a_button_tumblr"></a>
-</div>
-<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-<style>
-    .a2a_menu {
-        border-radius: 4px;
-    }
-    .a2a_menu a {
-        margin: 2px 0;
-        font-size: 14px;
-        line-height: 16px;
-        border-radius: 4px;
-        color: inherit !important;
-        font-family: 'Microsoft Yahei';
-    }
-    #a2apage_dropdown {
-        margin: 10px 0;
-    }
-    .a2a_mini_services {
-        padding: 10px;
-    }
-    a.a2a_i,
-    i.a2a_i {
-        width: 122px;
-        line-height: 16px;
-    }
-    a.a2a_i .a2a_svg,
-    a.a2a_more .a2a_svg {
-        width: 16px;
-        height: 16px;
-        line-height: 16px;
-        vertical-align: top;
-        background-size: 16px;
-    }
-    a.a2a_i {
-        border: none !important;
-    }
-    a.a2a_menu_show_more_less {
-        margin: 0;
-        padding: 10px 0;
-        line-height: 16px;
-    }
-    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-    .a2a_mini_services{*+height:1%;}
-</style>
-
-</div>
-
-            
-    
-        <a href="https://tuhbm.github.io/2018/02/06/thread/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2018/02/06/thread/">댓글</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <nav id="page-nav">
         <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">다음 &raquo;</a>
     </nav>
@@ -1452,6 +1586,44 @@ ga('send', 'pageview');
         <h3 class="widget-title">최근 글</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/14/javaDataType/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="Java Data Type" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
+                            <p class="item-title"><a href="/2018/06/14/javaDataType/" class="title">Java Data Type</a></p>
+                            <p class="item-date"><time datetime="2018-06-14T12:27:36.000Z" itemprop="datePublished">2018-06-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/13/javaNumberText/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="Java 숫자와 문자" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
+                            <p class="item-title"><a href="/2018/06/13/javaNumberText/" class="title">Java 숫자와 문자</a></p>
+                            <p class="item-date"><time datetime="2018-06-13T11:29:10.000Z" itemprop="datePublished">2018-06-13</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -1510,44 +1682,6 @@ ga('send', 'pageview');
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/03/05/letAndConst/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="let 과 const" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
-                            <p class="item-title"><a href="/2018/03/05/letAndConst/" class="title">let 과 const</a></p>
-                            <p class="item-date"><time datetime="2018-03-05T13:32:46.000Z" itemprop="datePublished">2018-03-05</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/02/22/reflowAndRepaint/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://tuhbm.github.io/images/bnr-word.jpg)" alt="Reflow와 Repaint" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/용어정리/">용어정리</a></p>
-                            <p class="item-title"><a href="/2018/02/22/reflowAndRepaint/" class="title">Reflow와 Repaint</a></p>
-                            <p class="item-date"><time datetime="2018-02-22T13:56:50.000Z" itemprop="datePublished">2018-02-22</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -1557,7 +1691,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">카테고리</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/SASS/">SASS</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Column/">Column</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ETC/">ETC</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/Vue/">Vue</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/book/">book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/용어정리/">용어정리</a><span class="category-list-count">9</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/SASS/">SASS</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Column/">Column</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ETC/">ETC</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/Vue/">Vue</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/book/">book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/용어정리/">용어정리</a><span class="category-list-count">9</span></li></ul>
         </div>
     </div>
 
@@ -1566,7 +1700,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">아카이브</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">6월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">4월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">3월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1월 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">9월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">8월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">7월 2017</a><span class="archive-list-count">5</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">6월 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">4월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">3월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1월 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">9월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">8월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">7월 2017</a><span class="archive-list-count">5</span></li></ul>
         </div>
     </div>
 
@@ -1575,7 +1709,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">태그 클라우드</h3>
         <div class="widget tagcloud">
-            <a href="/tags/CLI/" style="font-size: 10px;">CLI</a> <a href="/tags/CMD/" style="font-size: 10px;">CMD</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS-processors/" style="font-size: 10px;">CSS processors</a> <a href="/tags/CSS-전처리기/" style="font-size: 10px;">CSS 전처리기</a> <a href="/tags/Component/" style="font-size: 13.33px;">Component</a> <a href="/tags/DTD/" style="font-size: 10px;">DTD</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/HTML-이력서/" style="font-size: 10px;">HTML 이력서</a> <a href="/tags/ONEPAGE/" style="font-size: 10px;">ONEPAGE</a> <a href="/tags/Pure-Javascript/" style="font-size: 10px;">Pure Javascript</a> <a href="/tags/RESUME/" style="font-size: 10px;">RESUME</a> <a href="/tags/SASS/" style="font-size: 16.67px;">SASS</a> <a href="/tags/SCOUT/" style="font-size: 10px;">SCOUT</a> <a href="/tags/UI-developer/" style="font-size: 10px;">UI-developer</a> <a href="/tags/UI개발/" style="font-size: 10px;">UI개발</a> <a href="/tags/VanillaJS/" style="font-size: 10px;">VanillaJS</a> <a href="/tags/Vue-component/" style="font-size: 10px;">Vue.component</a> <a href="/tags/book-review/" style="font-size: 13.33px;">book-review</a> <a href="/tags/build-tool/" style="font-size: 10px;">build tool</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/compile/" style="font-size: 13.33px;">compile</a> <a href="/tags/compressor/" style="font-size: 10px;">compressor</a> <a href="/tags/computed/" style="font-size: 10px;">computed</a> <a href="/tags/const/" style="font-size: 13.33px;">const</a> <a href="/tags/doc/" style="font-size: 10px;">doc</a> <a href="/tags/ellipsis/" style="font-size: 10px;">ellipsis</a> <a href="/tags/emmet/" style="font-size: 10px;">emmet</a> <a href="/tags/firefox/" style="font-size: 10px;">firefox</a> <a href="/tags/first-programming/" style="font-size: 10px;">first-programming</a> <a href="/tags/framework/" style="font-size: 13.33px;">framework</a> <a href="/tags/front-end-developer/" style="font-size: 10px;">front-end-developer</a> <a href="/tags/function/" style="font-size: 10px;">function</a> <a href="/tags/functional-programming/" style="font-size: 10px;">functional programming</a> <a href="/tags/grunt/" style="font-size: 10px;">grunt</a> <a href="/tags/gulp/" style="font-size: 13.33px;">gulp</a> <a href="/tags/html/" style="font-size: 20px;">html</a> <a href="/tags/html-doctype/" style="font-size: 10px;">html doctype</a> <a href="/tags/html-template-resume/" style="font-size: 10px;">html template resume</a> <a href="/tags/ie/" style="font-size: 10px;">ie</a> <a href="/tags/image/" style="font-size: 10px;">image</a> <a href="/tags/image-compressor/" style="font-size: 10px;">image compressor</a> <a href="/tags/image-optimization/" style="font-size: 10px;">image optimization</a> <a href="/tags/include/" style="font-size: 10px;">include</a> <a href="/tags/indentationError/" style="font-size: 10px;">indentationError</a> <a href="/tags/inherit/" style="font-size: 10px;">inherit</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/java/" style="font-size: 13.33px;">java</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/javascript-function/" style="font-size: 10px;">javascript function</a> <a href="/tags/let/" style="font-size: 13.33px;">let</a> <a href="/tags/liblibrary/" style="font-size: 10px;">liblibrary</a> <a href="/tags/library/" style="font-size: 10px;">library</a> <a href="/tags/literal/" style="font-size: 10px;">literal</a> <a href="/tags/major/" style="font-size: 10px;">major</a> <a href="/tags/methods/" style="font-size: 10px;">methods</a> <a href="/tags/mixin/" style="font-size: 10px;">mixin</a> <a href="/tags/new/" style="font-size: 10px;">new</a> <a href="/tags/non-major/" style="font-size: 10px;">non-major</a> <a href="/tags/normalize/" style="font-size: 10px;">normalize</a> <a href="/tags/npm-install/" style="font-size: 10px;">npm install</a> <a href="/tags/npm-run-dev/" style="font-size: 10px;">npm run dev</a> <a href="/tags/oop/" style="font-size: 10px;">oop</a> <a href="/tags/plug-in/" style="font-size: 10px;">plug in</a> <a href="/tags/programming/" style="font-size: 16.67px;">programming</a> <a href="/tags/prototype/" style="font-size: 10px;">prototype</a> <a href="/tags/python/" style="font-size: 16.67px;">python</a> <a href="/tags/reflow/" style="font-size: 10px;">reflow</a> <a href="/tags/refs/" style="font-size: 10px;">refs</a> <a href="/tags/rendering/" style="font-size: 20px;">rendering</a> <a href="/tags/repaint/" style="font-size: 10px;">repaint</a> <a href="/tags/reset/" style="font-size: 10px;">reset</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a> <a href="/tags/sass/" style="font-size: 10px;">sass</a> <a href="/tags/scope/" style="font-size: 10px;">scope</a> <a href="/tags/scss/" style="font-size: 13.33px;">scss</a> <a href="/tags/side-effect/" style="font-size: 10px;">side effect</a> <a href="/tags/start/" style="font-size: 16.67px;">start</a> <a href="/tags/subClass/" style="font-size: 10px;">subClass</a> <a href="/tags/superClass/" style="font-size: 10px;">superClass</a> <a href="/tags/task-Runner/" style="font-size: 10px;">task Runner</a> <a href="/tags/third-party/" style="font-size: 10px;">third party</a> <a href="/tags/thread/" style="font-size: 10px;">thread</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/v-bind/" style="font-size: 13.33px;">v-bind</a> <a href="/tags/v-for/" style="font-size: 10px;">v-for</a> <a href="/tags/v-html/" style="font-size: 10px;">v-html</a> <a href="/tags/v-if/" style="font-size: 10px;">v-if</a> <a href="/tags/v-model/" style="font-size: 10px;">v-model</a> <a href="/tags/v-on/" style="font-size: 10px;">v-on</a> <a href="/tags/v-show/" style="font-size: 10px;">v-show</a> <a href="/tags/var/" style="font-size: 13.33px;">var</a> <a href="/tags/vendor/" style="font-size: 10px;">vendor</a> <a href="/tags/vue/" style="font-size: 20px;">vue</a> <a href="/tags/vue-init/" style="font-size: 10px;">vue init</a> <a href="/tags/vue-cli/" style="font-size: 10px;">vue-cli</a> <a href="/tags/vue-js/" style="font-size: 20px;">vue.js</a> <a href="/tags/vue-js2/" style="font-size: 20px;">vue.js2</a> <a href="/tags/vue를-시작하는방법/" style="font-size: 10px;">vue를 시작하는방법</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/값/" style="font-size: 10px;">값</a> <a href="/tags/객체/" style="font-size: 10px;">객체</a> <a href="/tags/객체지향/" style="font-size: 10px;">객체지향</a> <a href="/tags/논리연산자/" style="font-size: 10px;">논리연산자</a> <a href="/tags/들여쓰기/" style="font-size: 10px;">들여쓰기</a> <a href="/tags/라이브러리/" style="font-size: 10px;">라이브러리</a> <a href="/tags/랜더링/" style="font-size: 13.33px;">랜더링</a> <a href="/tags/렌더링/" style="font-size: 10px;">렌더링</a> <a href="/tags/렌터트리/" style="font-size: 10px;">렌터트리</a> <a href="/tags/리터럴/" style="font-size: 10px;">리터럴</a> <a href="/tags/리페인팅/" style="font-size: 10px;">리페인팅</a> <a href="/tags/리플로우/" style="font-size: 10px;">리플로우</a> <a href="/tags/멀티스레드/" style="font-size: 10px;">멀티스레드</a> <a href="/tags/메모리/" style="font-size: 10px;">메모리</a> <a href="/tags/문법/" style="font-size: 10px;">문법</a> <a href="/tags/바닐라-JS/" style="font-size: 10px;">바닐라 JS</a> <a href="/tags/변수/" style="font-size: 13.33px;">변수</a> <a href="/tags/부수효과/" style="font-size: 10px;">부수효과</a> <a href="/tags/북리뷰/" style="font-size: 13.33px;">북리뷰</a> <a href="/tags/브라우저/" style="font-size: 13.33px;">브라우저</a> <a href="/tags/비전공자/" style="font-size: 13.33px;">비전공자</a> <a href="/tags/사스/" style="font-size: 13.33px;">사스</a> <a href="/tags/산술연산자/" style="font-size: 10px;">산술연산자</a> <a href="/tags/상속/" style="font-size: 10px;">상속</a> <a href="/tags/상수/" style="font-size: 10px;">상수</a> <a href="/tags/생성자함수/" style="font-size: 10px;">생성자함수</a> <a href="/tags/서브클래스/" style="font-size: 10px;">서브클래스</a> <a href="/tags/슈퍼클래스/" style="font-size: 10px;">슈퍼클래스</a> <a href="/tags/스레드/" style="font-size: 10px;">스레드</a> <a href="/tags/싱글스레드/" style="font-size: 10px;">싱글스레드</a> <a href="/tags/에러/" style="font-size: 10px;">에러</a> <a href="/tags/예외/" style="font-size: 10px;">예외</a> <a href="/tags/원페이지-이력서/" style="font-size: 10px;">원페이지 이력서</a> <a href="/tags/웹퍼블리셔/" style="font-size: 10px;">웹퍼블리셔</a> <a href="/tags/컴포넌트/" style="font-size: 13.33px;">컴포넌트</a> <a href="/tags/클래스/" style="font-size: 10px;">클래스</a> <a href="/tags/터미널/" style="font-size: 10px;">터미널</a> <a href="/tags/텍스트-바인딩/" style="font-size: 10px;">텍스트 바인딩</a> <a href="/tags/파이썬/" style="font-size: 16.67px;">파이썬</a> <a href="/tags/파이썬-시작/" style="font-size: 10px;">파이썬 시작</a> <a href="/tags/프레임워크/" style="font-size: 10px;">프레임워크</a> <a href="/tags/프로그래머/" style="font-size: 13.33px;">프로그래머</a> <a href="/tags/프로세스/" style="font-size: 10px;">프로세스</a> <a href="/tags/프로토타입/" style="font-size: 10px;">프로토타입</a> <a href="/tags/프론트엔드개발/" style="font-size: 10px;">프론트엔드개발</a> <a href="/tags/플러그인/" style="font-size: 10px;">플러그인</a> <a href="/tags/한줄-말줄임/" style="font-size: 10px;">한줄 말줄임</a> <a href="/tags/함수/" style="font-size: 10px;">함수</a> <a href="/tags/함수-바인딩/" style="font-size: 10px;">함수 바인딩</a> <a href="/tags/함수선언문/" style="font-size: 10px;">함수선언문</a> <a href="/tags/함수표현식/" style="font-size: 10px;">함수표현식</a>
+            <a href="/tags/CLI/" style="font-size: 10px;">CLI</a> <a href="/tags/CMD/" style="font-size: 10px;">CMD</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS-processors/" style="font-size: 10px;">CSS processors</a> <a href="/tags/CSS-전처리기/" style="font-size: 10px;">CSS 전처리기</a> <a href="/tags/Component/" style="font-size: 13.33px;">Component</a> <a href="/tags/DTD/" style="font-size: 10px;">DTD</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/HTML-이력서/" style="font-size: 10px;">HTML 이력서</a> <a href="/tags/ONEPAGE/" style="font-size: 10px;">ONEPAGE</a> <a href="/tags/Pure-Javascript/" style="font-size: 10px;">Pure Javascript</a> <a href="/tags/RESUME/" style="font-size: 10px;">RESUME</a> <a href="/tags/SASS/" style="font-size: 16.67px;">SASS</a> <a href="/tags/SCOUT/" style="font-size: 10px;">SCOUT</a> <a href="/tags/System-out/" style="font-size: 10px;">System.out</a> <a href="/tags/UI-developer/" style="font-size: 10px;">UI-developer</a> <a href="/tags/UI개발/" style="font-size: 10px;">UI개발</a> <a href="/tags/VanillaJS/" style="font-size: 10px;">VanillaJS</a> <a href="/tags/Vue-component/" style="font-size: 10px;">Vue.component</a> <a href="/tags/book-review/" style="font-size: 13.33px;">book-review</a> <a href="/tags/build-tool/" style="font-size: 10px;">build tool</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/compile/" style="font-size: 13.33px;">compile</a> <a href="/tags/compressor/" style="font-size: 10px;">compressor</a> <a href="/tags/computed/" style="font-size: 10px;">computed</a> <a href="/tags/console/" style="font-size: 10px;">console</a> <a href="/tags/const/" style="font-size: 13.33px;">const</a> <a href="/tags/doc/" style="font-size: 10px;">doc</a> <a href="/tags/ellipsis/" style="font-size: 10px;">ellipsis</a> <a href="/tags/emmet/" style="font-size: 10px;">emmet</a> <a href="/tags/firefox/" style="font-size: 10px;">firefox</a> <a href="/tags/first-programming/" style="font-size: 10px;">first-programming</a> <a href="/tags/framework/" style="font-size: 13.33px;">framework</a> <a href="/tags/front-end-developer/" style="font-size: 10px;">front-end-developer</a> <a href="/tags/function/" style="font-size: 10px;">function</a> <a href="/tags/functional-programming/" style="font-size: 10px;">functional programming</a> <a href="/tags/grunt/" style="font-size: 10px;">grunt</a> <a href="/tags/gulp/" style="font-size: 13.33px;">gulp</a> <a href="/tags/html/" style="font-size: 20px;">html</a> <a href="/tags/html-doctype/" style="font-size: 10px;">html doctype</a> <a href="/tags/html-template-resume/" style="font-size: 10px;">html template resume</a> <a href="/tags/ie/" style="font-size: 10px;">ie</a> <a href="/tags/image/" style="font-size: 10px;">image</a> <a href="/tags/image-compressor/" style="font-size: 10px;">image compressor</a> <a href="/tags/image-optimization/" style="font-size: 10px;">image optimization</a> <a href="/tags/include/" style="font-size: 10px;">include</a> <a href="/tags/indentationError/" style="font-size: 10px;">indentationError</a> <a href="/tags/inherit/" style="font-size: 10px;">inherit</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/javascript-function/" style="font-size: 10px;">javascript function</a> <a href="/tags/let/" style="font-size: 13.33px;">let</a> <a href="/tags/liblibrary/" style="font-size: 10px;">liblibrary</a> <a href="/tags/library/" style="font-size: 10px;">library</a> <a href="/tags/literal/" style="font-size: 10px;">literal</a> <a href="/tags/major/" style="font-size: 10px;">major</a> <a href="/tags/methods/" style="font-size: 10px;">methods</a> <a href="/tags/mixin/" style="font-size: 10px;">mixin</a> <a href="/tags/new/" style="font-size: 10px;">new</a> <a href="/tags/non-major/" style="font-size: 10px;">non-major</a> <a href="/tags/normalize/" style="font-size: 10px;">normalize</a> <a href="/tags/npm-install/" style="font-size: 10px;">npm install</a> <a href="/tags/npm-run-dev/" style="font-size: 10px;">npm run dev</a> <a href="/tags/oop/" style="font-size: 16.67px;">oop</a> <a href="/tags/plug-in/" style="font-size: 10px;">plug in</a> <a href="/tags/programming/" style="font-size: 16.67px;">programming</a> <a href="/tags/prototype/" style="font-size: 10px;">prototype</a> <a href="/tags/python/" style="font-size: 16.67px;">python</a> <a href="/tags/reflow/" style="font-size: 10px;">reflow</a> <a href="/tags/refs/" style="font-size: 10px;">refs</a> <a href="/tags/rendering/" style="font-size: 20px;">rendering</a> <a href="/tags/repaint/" style="font-size: 10px;">repaint</a> <a href="/tags/reset/" style="font-size: 10px;">reset</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a> <a href="/tags/sass/" style="font-size: 10px;">sass</a> <a href="/tags/scope/" style="font-size: 10px;">scope</a> <a href="/tags/scss/" style="font-size: 13.33px;">scss</a> <a href="/tags/side-effect/" style="font-size: 10px;">side effect</a> <a href="/tags/start/" style="font-size: 16.67px;">start</a> <a href="/tags/subClass/" style="font-size: 10px;">subClass</a> <a href="/tags/superClass/" style="font-size: 10px;">superClass</a> <a href="/tags/task-Runner/" style="font-size: 10px;">task Runner</a> <a href="/tags/third-party/" style="font-size: 10px;">third party</a> <a href="/tags/thread/" style="font-size: 10px;">thread</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/v-bind/" style="font-size: 13.33px;">v-bind</a> <a href="/tags/v-for/" style="font-size: 10px;">v-for</a> <a href="/tags/v-html/" style="font-size: 10px;">v-html</a> <a href="/tags/v-if/" style="font-size: 10px;">v-if</a> <a href="/tags/v-model/" style="font-size: 10px;">v-model</a> <a href="/tags/v-on/" style="font-size: 10px;">v-on</a> <a href="/tags/v-show/" style="font-size: 10px;">v-show</a> <a href="/tags/var/" style="font-size: 13.33px;">var</a> <a href="/tags/vendor/" style="font-size: 10px;">vendor</a> <a href="/tags/vue/" style="font-size: 20px;">vue</a> <a href="/tags/vue-init/" style="font-size: 10px;">vue init</a> <a href="/tags/vue-cli/" style="font-size: 10px;">vue-cli</a> <a href="/tags/vue-js/" style="font-size: 20px;">vue.js</a> <a href="/tags/vue-js2/" style="font-size: 20px;">vue.js2</a> <a href="/tags/vue를-시작하는방법/" style="font-size: 10px;">vue를 시작하는방법</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/값/" style="font-size: 10px;">값</a> <a href="/tags/객체/" style="font-size: 10px;">객체</a> <a href="/tags/객체지향/" style="font-size: 16.67px;">객체지향</a> <a href="/tags/논리연산자/" style="font-size: 10px;">논리연산자</a> <a href="/tags/들여쓰기/" style="font-size: 10px;">들여쓰기</a> <a href="/tags/라이브러리/" style="font-size: 10px;">라이브러리</a> <a href="/tags/랜더링/" style="font-size: 13.33px;">랜더링</a> <a href="/tags/렌더링/" style="font-size: 10px;">렌더링</a> <a href="/tags/렌터트리/" style="font-size: 10px;">렌터트리</a> <a href="/tags/리터럴/" style="font-size: 10px;">리터럴</a> <a href="/tags/리페인팅/" style="font-size: 10px;">리페인팅</a> <a href="/tags/리플로우/" style="font-size: 10px;">리플로우</a> <a href="/tags/멀티스레드/" style="font-size: 10px;">멀티스레드</a> <a href="/tags/메모리/" style="font-size: 10px;">메모리</a> <a href="/tags/문법/" style="font-size: 10px;">문법</a> <a href="/tags/문자열/" style="font-size: 10px;">문자열</a> <a href="/tags/바닐라-JS/" style="font-size: 10px;">바닐라 JS</a> <a href="/tags/변수/" style="font-size: 13.33px;">변수</a> <a href="/tags/부수효과/" style="font-size: 10px;">부수효과</a> <a href="/tags/북리뷰/" style="font-size: 13.33px;">북리뷰</a> <a href="/tags/브라우저/" style="font-size: 13.33px;">브라우저</a> <a href="/tags/비전공자/" style="font-size: 13.33px;">비전공자</a> <a href="/tags/사스/" style="font-size: 13.33px;">사스</a> <a href="/tags/산술연산자/" style="font-size: 10px;">산술연산자</a> <a href="/tags/상속/" style="font-size: 10px;">상속</a> <a href="/tags/상수/" style="font-size: 10px;">상수</a> <a href="/tags/생성자함수/" style="font-size: 10px;">생성자함수</a> <a href="/tags/서브클래스/" style="font-size: 10px;">서브클래스</a> <a href="/tags/세미콜론/" style="font-size: 10px;">세미콜론</a> <a href="/tags/슈퍼클래스/" style="font-size: 10px;">슈퍼클래스</a> <a href="/tags/스레드/" style="font-size: 10px;">스레드</a> <a href="/tags/싱글스레드/" style="font-size: 10px;">싱글스레드</a> <a href="/tags/에러/" style="font-size: 10px;">에러</a> <a href="/tags/예외/" style="font-size: 10px;">예외</a> <a href="/tags/원페이지-이력서/" style="font-size: 10px;">원페이지 이력서</a> <a href="/tags/웹퍼블리셔/" style="font-size: 10px;">웹퍼블리셔</a> <a href="/tags/작은따옴표/" style="font-size: 10px;">작은따옴표</a> <a href="/tags/컴포넌트/" style="font-size: 13.33px;">컴포넌트</a> <a href="/tags/큰따옴표/" style="font-size: 10px;">큰따옴표</a> <a href="/tags/클래스/" style="font-size: 10px;">클래스</a> <a href="/tags/터미널/" style="font-size: 10px;">터미널</a> <a href="/tags/텍스트-바인딩/" style="font-size: 10px;">텍스트 바인딩</a> <a href="/tags/파이썬/" style="font-size: 16.67px;">파이썬</a> <a href="/tags/파이썬-시작/" style="font-size: 10px;">파이썬 시작</a> <a href="/tags/프레임워크/" style="font-size: 10px;">프레임워크</a> <a href="/tags/프로그래머/" style="font-size: 13.33px;">프로그래머</a> <a href="/tags/프로세스/" style="font-size: 10px;">프로세스</a> <a href="/tags/프로토타입/" style="font-size: 10px;">프로토타입</a> <a href="/tags/프론트엔드개발/" style="font-size: 10px;">프론트엔드개발</a> <a href="/tags/플러그인/" style="font-size: 10px;">플러그인</a> <a href="/tags/한줄-말줄임/" style="font-size: 10px;">한줄 말줄임</a> <a href="/tags/함수/" style="font-size: 10px;">함수</a> <a href="/tags/함수-바인딩/" style="font-size: 10px;">함수 바인딩</a> <a href="/tags/함수선언문/" style="font-size: 10px;">함수선언문</a> <a href="/tags/함수표현식/" style="font-size: 10px;">함수표현식</a>
         </div>
     </div>
 
