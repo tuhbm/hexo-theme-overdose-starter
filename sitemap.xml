@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/2018/06/21/javaObjectOriented/</loc>
+    
+    <lastmod>2018-06-21T13:44:57.531Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/01/17/bye2017/</loc>
+    
+    <lastmod>2018-06-21T13:32:36.793Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2018/06/13/javaNumberText/</loc>
     
     <lastmod>2018-06-14T13:16:01.760Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>https://tuhbm.github.io/2018/06/11/startJava/</loc>
     
     <lastmod>2018-06-14T12:30:30.710Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2018/01/17/bye2017/</loc>
-    
-    <lastmod>2018-06-14T12:29:49.794Z</lastmod>
     
   </url>
   

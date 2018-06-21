@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-06-14T13:15:55.324Z</updated>
+  <updated>2018-06-21T13:44:57.531Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>객체지향 언어 자바 이론</title>
+    <link href="https://tuhbm.github.io/2018/06/21/javaObjectOriented/"/>
+    <id>https://tuhbm.github.io/2018/06/21/javaObjectOriented/</id>
+    <published>2018-06-21T13:33:33.000Z</published>
+    <updated>2018-06-21T13:44:57.531Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/h2&gt;&lt;p&gt;이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 또는 독학을 하므로 &lt;code&gt;잘못
+      
+    
+    </summary>
+    
+      <category term="JAVA" scheme="https://tuhbm.github.io/categories/JAVA/"/>
+    
+    
+      <category term="java" scheme="https://tuhbm.github.io/tags/java/"/>
+    
+      <category term="oop" scheme="https://tuhbm.github.io/tags/oop/"/>
+    
+      <category term="객체지향" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/"/>
+    
+      <category term="메소드" scheme="https://tuhbm.github.io/tags/%EB%A9%94%EC%86%8C%EB%93%9C/"/>
+    
+      <category term="클래스" scheme="https://tuhbm.github.io/tags/%ED%81%B4%EB%9E%98%EC%8A%A4/"/>
+    
+      <category term="멤버변수" scheme="https://tuhbm.github.io/tags/%EB%A9%A4%EB%B2%84%EB%B3%80%EC%88%98/"/>
+    
+      <category term="은닉화" scheme="https://tuhbm.github.io/tags/%EC%9D%80%EB%8B%89%ED%99%94/"/>
+    
+      <category term="캡슐화" scheme="https://tuhbm.github.io/tags/%EC%BA%A1%EC%8A%90%ED%99%94/"/>
+    
+      <category term="인터페이스" scheme="https://tuhbm.github.io/tags/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>Java Data Type</title>
@@ -186,6 +225,8 @@
       <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
     
     
+      <category term="클래스" scheme="https://tuhbm.github.io/tags/%ED%81%B4%EB%9E%98%EC%8A%A4/"/>
+    
       <category term="superClass" scheme="https://tuhbm.github.io/tags/superClass/"/>
     
       <category term="subClass" scheme="https://tuhbm.github.io/tags/subClass/"/>
@@ -195,8 +236,6 @@
       <category term="슈퍼클래스" scheme="https://tuhbm.github.io/tags/%EC%8A%88%ED%8D%BC%ED%81%B4%EB%9E%98%EC%8A%A4/"/>
     
       <category term="서브클래스" scheme="https://tuhbm.github.io/tags/%EC%84%9C%EB%B8%8C%ED%81%B4%EB%9E%98%EC%8A%A4/"/>
-    
-      <category term="클래스" scheme="https://tuhbm.github.io/tags/%ED%81%B4%EB%9E%98%EC%8A%A4/"/>
     
       <category term="상속" scheme="https://tuhbm.github.io/tags/%EC%83%81%EC%86%8D/"/>
     
@@ -227,15 +266,15 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
+    
+      <category term="ES6" scheme="https://tuhbm.github.io/tags/ES6/"/>
+    
       <category term="var" scheme="https://tuhbm.github.io/tags/var/"/>
     
       <category term="let" scheme="https://tuhbm.github.io/tags/let/"/>
     
       <category term="const" scheme="https://tuhbm.github.io/tags/const/"/>
-    
-      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
-    
-      <category term="ES6" scheme="https://tuhbm.github.io/tags/ES6/"/>
     
   </entry>
   
@@ -649,7 +688,7 @@
     <link href="https://tuhbm.github.io/2018/01/17/bye2017/"/>
     <id>https://tuhbm.github.io/2018/01/17/bye2017/</id>
     <published>2018-01-17T12:31:12.000Z</published>
-    <updated>2018-06-14T12:29:49.794Z</updated>
+    <updated>2018-06-21T13:32:36.793Z</updated>
     
     <summary type="html">
     
@@ -674,49 +713,7 @@
     
       <category term="gulp" scheme="https://tuhbm.github.io/tags/gulp/"/>
     
-      <category term="task Runner" scheme="https://tuhbm.github.io/tags/task-Runner/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue 알아보기 4편</title>
-    <link href="https://tuhbm.github.io/2017/09/20/vue4/"/>
-    <id>https://tuhbm.github.io/2017/09/20/vue4/</id>
-    <published>2017-09-20T05:13:27.000Z</published>
-    <updated>2018-03-11T03:23:03.887Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;프론트엔드 개발 공부를 위해 SPA페이지 제작을 위한 Javascript 프레임워크 중 Vue를 공부해보도록하겠습니다.&lt;br&gt;Vue에 대한 설명 및 장단점은 추후 포스팅하도록 하고, 지금은 사용방법에 대해서만 포스팅을 하도록 하겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;Vue-component&quot;&gt;&lt;a href=&quot;#Vue-component&quot; class=&quot;headerlink&quot; title=&quot;Vue.component&quot;&gt;&lt;/a&gt;Vue.component&lt;/h1&gt;&lt;p&gt;우리는 SPA(single page application)을 제작할때 컴포넌트를 만들고 재사용하는 방법을 일반적으로 많이 사용합니다.&lt;br&gt;그만큼 컴포넌트를 만드는 것이 중요합니다.&lt;br&gt;이번에는 Vue를 이용해서 컴포넌트를 만드는 방법을 알아보겠습니다.&lt;br&gt;기존의 방식과 같이 뷰 프레임워크를 연동 후 부터 진행을 해보겠습니다.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
-    
-      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
-    
-    
-      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
-    
-      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
-    
-      <category term="vue.js2" scheme="https://tuhbm.github.io/tags/vue-js2/"/>
-    
-      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
-    
-      <category term="Vue.component" scheme="https://tuhbm.github.io/tags/Vue-component/"/>
-    
-      <category term="refs" scheme="https://tuhbm.github.io/tags/refs/"/>
-    
-      <category term="vue-cli" scheme="https://tuhbm.github.io/tags/vue-cli/"/>
-    
-      <category term="vue init" scheme="https://tuhbm.github.io/tags/vue-init/"/>
-    
-      <category term="npm install" scheme="https://tuhbm.github.io/tags/npm-install/"/>
-    
-      <category term="npm run dev" scheme="https://tuhbm.github.io/tags/npm-run-dev/"/>
+      <category term="task-runner" scheme="https://tuhbm.github.io/tags/task-runner/"/>
     
   </entry>
   
