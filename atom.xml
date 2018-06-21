@@ -61,13 +61,13 @@
     <link href="https://tuhbm.github.io/2018/06/14/javaDataType/"/>
     <id>https://tuhbm.github.io/2018/06/14/javaDataType/</id>
     <published>2018-06-14T12:27:36.000Z</published>
-    <updated>2018-06-21T13:46:50.863Z</updated>
+    <updated>2018-06-21T14:01:13.528Z</updated>
     
     <summary type="html">
     
       &lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/h2&gt;&lt;p&gt;이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 또는 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;데이터-타입&quot;&gt;&lt;a href=&quot;#데이터-타입&quot; class=&quot;headerlink&quot; title=&quot;데이터 타입&quot;&gt;&lt;/a&gt;데이터 타입&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/java/img_java.jpg&quot; alt=&quot;JAVA&quot;&gt;&lt;br&gt;프로그래밍에서 데이터는 데이터형식, 메모리의 소비크기, 표현가능범위에 따라 알맞게 사용해야합니다.&lt;br&gt;그 내용은 데이터의 형식을 알아보면서 알아보겠습니다.&lt;br&gt;
+&lt;h1 id=&quot;데이터-타입&quot;&gt;&lt;a href=&quot;#데이터-타입&quot; class=&quot;headerlink&quot; title=&quot;데이터 타입&quot;&gt;&lt;/a&gt;데이터 타입&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/java/img_data.jpg&quot; alt=&quot;data&quot;&gt;&lt;br&gt;프로그래밍에서 데이터는 데이터형식, 메모리의 소비크기, 표현가능범위에 따라 알맞게 사용해야합니다.&lt;br&gt;그 내용은 데이터의 형식을 알아보면서 알아보겠습니다.&lt;br&gt;
     
     </summary>
     
