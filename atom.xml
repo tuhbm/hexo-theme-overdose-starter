@@ -266,15 +266,15 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
-    
-      <category term="ES6" scheme="https://tuhbm.github.io/tags/ES6/"/>
-    
       <category term="var" scheme="https://tuhbm.github.io/tags/var/"/>
     
       <category term="let" scheme="https://tuhbm.github.io/tags/let/"/>
     
       <category term="const" scheme="https://tuhbm.github.io/tags/const/"/>
+    
+      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
+    
+      <category term="ES6" scheme="https://tuhbm.github.io/tags/ES6/"/>
     
   </entry>
   
@@ -617,15 +617,15 @@
     
       <category term="compile" scheme="https://tuhbm.github.io/tags/compile/"/>
     
-      <category term="sass" scheme="https://tuhbm.github.io/tags/sass/"/>
-    
       <category term="scss" scheme="https://tuhbm.github.io/tags/scss/"/>
+    
+      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
+    
+      <category term="sass" scheme="https://tuhbm.github.io/tags/sass/"/>
     
       <category term="CSS 전처리기" scheme="https://tuhbm.github.io/tags/CSS-%EC%A0%84%EC%B2%98%EB%A6%AC%EA%B8%B0/"/>
     
       <category term="CSS processors" scheme="https://tuhbm.github.io/tags/CSS-processors/"/>
-    
-      <category term="사스" scheme="https://tuhbm.github.io/tags/%EC%82%AC%EC%8A%A4/"/>
     
   </entry>
   

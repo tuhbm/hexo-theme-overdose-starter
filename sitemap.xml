@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/about/index.html</loc>
+    
+    <lastmod>2018-06-21T14:36:46.449Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2018/06/14/javaDataType/</loc>
     
     <lastmod>2018-06-21T14:01:13.528Z</lastmod>
@@ -257,13 +264,6 @@
     <loc>https://tuhbm.github.io/2018/03/05/letAndConst/</loc>
     
     <lastmod>2018-03-11T03:17:50.676Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/about/index.html</loc>
-    
-    <lastmod>2018-03-09T15:34:08.472Z</lastmod>
     
   </url>
   
