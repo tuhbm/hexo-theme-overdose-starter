@@ -260,28 +260,14 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
+            <p></p><h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
 <hr>
 <h1 id="객체지향"><a href="#객체지향" class="headerlink" title="객체지향"></a>객체지향</h1><p><img src="https://tuhbm.github.io/images/java/img_java.jpg" alt="JAVA"></p>
 <h2 id="이론"><a href="#이론" class="headerlink" title="이론"></a>이론</h2><p>하나의 결과물을 만들때, 필요한부분을 각각 개발하여, 하나로 사용하고, 또 필요한부분을 가져가 쓰는 방법이 객체지향프로그래밍입니다.</p>
-<p>예를 들어보겠습니다.<br>초창기 컴퓨터는 하나의 기계였습니다..<br>그림으로 살펴보겠습니다..</p>
-<p><img src="https://tuhbm.github.io/images/java/img_oldcomputer.jpg" alt="JAVA"></p>
-<p>이처럼 각 모니터(출력장치)와 본체(저장 및 연산장치) 키보드(입력장치)가 모두 하나로 연결되어있습니다.<br>그렇기에 각각 하나의 부분이 고장난다고하면, 전체 수리를 맡기거나 교체를 해야 합니다.</p>
-<p><img src="https://tuhbm.github.io/images/java/img_computer.jpg" alt="JAVA"><br>그렇기에 현대의 컴퓨터는 각각 필요한 부분을 <strong>부품화</strong>하여, <strong>조합</strong>하여 사용하는 방법으로 사용하고 있습니다.<br>이러한 방식으로 부품화하여, 필요에 의해 부품을 가져다 쓰는방법입니다.<br>예를 들면 필요에 의해 모니터를 두개사용하는 듀얼모니터 등을 예로 들 수 있습니다.</p>
-<p>앞서 컴퓨터를 예로 들어본것처럼<br><code>저장매체(아는것) + 출력&amp;입력등(하는것)</code>을 하나로 묶은 객체를 <code>부품화</code>하여,<br>각각 조합하여 사용하는 방법을 <code>객체지향프로그래밍</code>이라고 이해하면 될 것 같습니다.</p>
-<h2 id="클래스"><a href="#클래스" class="headerlink" title="클래스"></a>클래스</h2><p><code>멤버변수(아는것)</code>와 <code>메소드(하는것)</code>를 둘중 하나를 꼭 포함한 하나의 부품</p>
-<h2 id="멤버변수-아는것"><a href="#멤버변수-아는것" class="headerlink" title="멤버변수(아는것)"></a>멤버변수(아는것)</h2><ul>
-<li>변수로 상태(아는것) 또는 값을 저장</li>
-</ul>
-<h2 id="메소드"><a href="#메소드" class="headerlink" title="메소드"></a>메소드</h2><ul>
-<li>기능부분(하는일)</li>
-<li>공통부분을 하나의 기능별로 정리</li>
-</ul>
-<h2 id="은닉화-캡슐화"><a href="#은닉화-캡슐화" class="headerlink" title="은닉화,캡슐화"></a>은닉화,캡슐화</h2><p>부품을 사용할때, 단순 그룹핑하여 객체화 하였다고, 끝이 아닙니다.<br>정작 사용하는데 있어서, 전문지식이 없이도 어떠한 정보만으로 만들 수 있도록 해야합니다.<br>어떻게 동작하는지 정확히 알지못하는 사람도 사용할 수 있도록 만들어야 합니다.<br>예를 들면 모니터가 어떻게 작동하는지에 대한 원리는 우리는 알지 못합니다.<br>하지만 HDMI케이블 또는 DVI케이블을 사용하여, 본체와 연결하면 제대로 작동시킬 줄 아는것처럼<br><code>동작 방법을 클래스 안에 숨기고, 사용방법만을 노출하는 방식</code>을 <code>은닉화, 캡슐화</code>라고 합니다.</p>
-<h2 id="인터페이스"><a href="#인터페이스" class="headerlink" title="인터페이스"></a>인터페이스</h2><p>부품과 부품사이 연결을 통하여, 부품끼리의 정보교환을 통해 연산 또는 출력 등의 작업이 이루어집니다.<br>예를 들면, 본체와 모니터를 연결하는 HDMI의 연결선은 <code>규격화</code> 되어있어, 어떠한 모니터를 변경하여도 정상적으로 연결이 가능합니다.</p>
-<p>이러한 규격화되어있는 HDMI와 같은 연결선을 <code>인터페이스</code>라고 합니다.<br>부품끼리 서로 규격에 맞지 않는 부분이 있는데 연결하려 하면, 연결이 안됩니다.<br>사전에 맞지 않는 부분을 차단하는 역할을 한다고 할 수 있습니다.</p>
-
+<p>예를 들어보겠습니다.<br>초창기 컴퓨터는 하나의 기계였습니다..<br>그림으로 살펴보겠습니다..<br></p>
+            <p class="article-more-link">
+                <a href="/2018/06/21/javaObjectOriented/#more">자세히 보기</a>
+            </p>
         
         </div>
         <footer class="article-footer">
@@ -398,122 +384,12 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
+            <p></p><h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
 <hr>
-<h1 id="데이터-타입"><a href="#데이터-타입" class="headerlink" title="데이터 타입"></a>데이터 타입</h1><p><img src="https://tuhbm.github.io/images/java/img_java.jpg" alt="JAVA"><br>프로그래밍에서 데이터는 데이터형식, 메모리의 소비크기, 표현가능범위에 따라 알맞게 사용해야합니다.<br>그 내용은 데이터의 형식을 알아보면서 알아보겠습니다.</p>
-<h2 id="숫자"><a href="#숫자" class="headerlink" title="숫자"></a>숫자</h2><h3 id="정수형"><a href="#정수형" class="headerlink" title="정수형"></a>정수형</h3><table>
-<thead>
-<tr>
-<th>데이터 타입</th>
-<th>메모리의 크기</th>
-<th>표현 가능 범위</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>byte</td>
-<td>1 byte</td>
-<td>-128 ~ 127</td>
-</tr>
-<tr>
-<td>short</td>
-<td>2 byte</td>
-<td>-32,768 ~ 32,767</td>
-</tr>
-<tr>
-<td>int</td>
-<td>4 byte</td>
-<td>-2,147,483,648~2,147,483,647</td>
-</tr>
-<tr>
-<td>long</td>
-<td>8 byte</td>
-<td>-9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807</td>
-</tr>
-</tbody>
-</table>
-<h3 id="실수형"><a href="#실수형" class="headerlink" title="실수형"></a>실수형</h3><table>
-<thead>
-<tr>
-<th>데이터 타입</th>
-<th>메모리의 크기</th>
-<th>표현 가능 범위</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>float</td>
-<td>4byte</td>
-<td>±(1.40129846432481707e-45 ~ 3.40282346638528860e+38)</td>
-</tr>
-<tr>
-<td>double</td>
-<td>8byte</td>
-<td>±(4.94065645841246544e-324d ~ 1.79769313486231570e+308d)</td>
-</tr>
-</tbody>
-</table>
-<p>여기서 문제를 내보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">long a = 123123123;</span><br><span class="line">long b = 123;</span><br></pre></td></tr></table></figure></p>
-<p><em>이 변수의 메모리의 크기는 같을까요? 다를까요?</em></p>
-<p>정답은 같습니다.</p>
-<p>하지만 a에는 123132123이라는 큰 숫자가 들어갔지만,<br>b에는 123이라는 작은 숫자가 들어갔습니다. 그럼에도 불구하고 메모리의 크기는 같습니다.<br><code>컴퓨터 프로그래밍은 결국 메모리를 어떻게 사용하느냐</code>에 따라 성능의 차이가 나타납니다.<br>위의 b와같은 경우처럼 작은 숫자를 이용할때는 byte를 사용해야 하는것처럼 <code>알맞은 데이터형태를 선언</code>하므로써 <strong>메모리의 용량</strong>을 아낄수 있습니다.<br><strong>추가적으로 오늘날 하드웨어의 발달로 인해 메모리의 용량이 많이 향상되어, 정수를 사용할때는 충분히 편하게 큰 수를 표현 할 수 있는 데이터 타입인 int를 주로 사용합니다.</strong></p>
-<h3 id="명시적-데이터타입"><a href="#명시적-데이터타입" class="headerlink" title="명시적 데이터타입"></a>명시적 데이터타입</h3><p>명시적으로 데이터 형태를 표기해줘야 하는 데이터타입 형태가 있다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int a = 2.2;</span><br></pre></td></tr></table></figure></p>
-<p>에러가 납니다. 2.2는 실수형 타입입니다. 그렇다면 실수형 타입인 float으로 변경해보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">float a = 2.2;</span><br></pre></td></tr></table></figure></p>
-<p>에러가 납니다.<br>그렇다면 double형태를 사용해보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">double a = 2.2;</span><br></pre></td></tr></table></figure></p>
-<p>에러가 나지않습니다.<br>이는 2.2는 double형태의 데이터값이라는 것입니다.<br>‘float의 데이터형태는 언제 사용하지…?’라는 의문이 듭니다.<br><code>float</code>의 데이터 타입은 명시적으로 값에 float의 형태의 값이라는 <code>F</code>을 지정해줘야합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">float a = 2.2F;</span><br></pre></td></tr></table></figure></p>
-<p>이렇게 하니 에러가 안나는 것을 확인 할 수 있습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int a = 2147483648;</span><br></pre></td></tr></table></figure></p>
-<p>int는 2,147,483,647까지 밖에 표현을 못합니다.<br>그러면 큰값을 표기할 수 있는 long의 데이터 형태를 사용해보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">long a = 2147483648;</span><br></pre></td></tr></table></figure></p>
-<p>에러가 납니다. 이부분 역시 float의 형태와 같이 명시적으로 값을 지정해주겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">long a = 2147483648L;</span><br></pre></td></tr></table></figure></p>
-<p>이렇게 명시적으로 값을 <code>long</code>의 데이터 타입 <code>L</code>을 지정해주니 에러가 발생하지 않습니다.</p>
-<p>byte나 short의 데이터의 형태같은경우 자바에서 자체적으로 편하게 사용하기위해 int의 데이터값을 허용하고 있습니다. 단 허용범위내에 표시 할 수 있는 경우에 한에서만 가능합니다.</p>
-<p>이부분은 <a href="https://opentutorials.org/course/1223/5326" rel="external nofollow noopener noreferrer" target="_blank">생활코딩 강좌</a>를 참고하였습니다.</p>
-<hr>
-<h2 id="문자"><a href="#문자" class="headerlink" title="문자"></a>문자</h2><table>
-<thead>
-<tr>
-<th>데이터 타입</th>
-<th>메모리의 크기</th>
-<th>표현 가능 범위</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>char</td>
-<td>2byte</td>
-<td>모든 유니코드 문자</td>
-</tr>
-</tbody>
-</table>
-<p>자바에서는 문자와 문자열이 다릅니다.<br><strong>문자(character)는 글자 하나를 의미하고, 문자열은 글자들의 집합</strong>을 의미합니다.</p>
-<h3 id="문자열"><a href="#문자열" class="headerlink" title="문자열"></a>문자열</h3><table>
-<thead>
-<tr>
-<th>데이터 타입</th>
-<th>메모리의 크기</th>
-<th>표현 가능 범위</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>String</td>
-<td>글자당 2byte</td>
-<td>모든 유니코드 문자</td>
-</tr>
-</tbody>
-</table>
-<h2 id="자동-형-변환"><a href="#자동-형-변환" class="headerlink" title="자동 형 변환"></a>자동 형 변환</h2><p>서로 다른 데이터 타입의 형태의 숫자가 있다고 이를 더해야 한다고 생각을 해봅시다.<br>예를들면 int와 byte값이 있다면 이는 데이터형태가 다르므로 더하기가 안되야합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int a = 20;</span><br><span class="line">byte b = 10;</span><br><span class="line">int p = a+b;</span><br><span class="line">System.out.println(p); //30</span><br></pre></td></tr></table></figure></p>
-<p>실행이 되는 것을 볼 수 있습니다.</p>
-<p>‘자바는 형태에 따른 오류를 방지하기 위한 엄격한 언어인데..’라는 생각이 들겠지만,<br>자바도 유연함을 갖추고 있습니다.<br>바로 표현 할 수 있는 메모리의 크기별로 데이터의 손실이 발생하지 않으므로,<br><code>자동으로 형변환</code>을 합니다.</p>
-<p>또한 실수는 정수를 포함하지만, 정수는 실수를 포함 할 수 없습니다.<br>이처럼 데이터 형태에 따라 자동으로 형변환이 가능한부분을 표기해보면<br><code>byte =&gt; short, char =&gt; int =&gt; long =&gt; float =&gt; double</code><br>순서로 <strong>자동으로 형변환</strong>이 됩니다.</p>
-<h2 id="명시적-형-변환"><a href="#명시적-형-변환" class="headerlink" title="명시적 형 변환"></a>명시적 형 변환</h2><p>자동으로 형변환이 되지 않는 부분들은 직접 <code>명시적 형 변환</code>을 해야 합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int a = 100.0F;</span><br></pre></td></tr></table></figure></p>
-<p>이러한 변수타입은 에러가 발생합니다.<br>데이터형태는 int형태이나 값은 float의 형태이기 때문입니다.<br>이와같은경우 명시적 형 변환이 필요합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int a = (int) 100.0F;</span><br></pre></td></tr></table></figure></p>
-<p>이렇게 값앞에 (int)을 적어주므로써 값을 명시적으로 int의 데이터형태로 변화하였습니다.</p>
-<p>다른 예를 들어보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int b = 100.1F;</span><br></pre></td></tr></table></figure></p>
-<p>변환해보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int b = (int) 100.1F;</span><br></pre></td></tr></table></figure></p>
-<p>결과는 100이 출력됩니다.<br>int의 형태로 변경하기위해 소수점이하를 버림으로 처리하기 때문입니다.<br>이와 같은경우 기존에 갖고 있던 <code>데이터의 손실이 발생</code>합니다. 데이터의 손실이 발생하지않도록 곱하기를 하거나 더하기와 같이 추가적인 계산을 통해 데이터 손실이 발생하지 않도록 해야 합니다.</p>
-<p>이번 포스팅을 통해 <code>데이터의 타입과 형변환</code>에 대해 알아보았습니다.<br>다음시간엔 <code>비교연산자와 배열</code>에 대해 알아보도록하겠습니다.</p>
-
+<h1 id="데이터-타입"><a href="#데이터-타입" class="headerlink" title="데이터 타입"></a>데이터 타입</h1><p><img src="https://tuhbm.github.io/images/java/img_java.jpg" alt="JAVA"><br>프로그래밍에서 데이터는 데이터형식, 메모리의 소비크기, 표현가능범위에 따라 알맞게 사용해야합니다.<br>그 내용은 데이터의 형식을 알아보면서 알아보겠습니다.<br></p>
+            <p class="article-more-link">
+                <a href="/2018/06/14/javaDataType/#more">자세히 보기</a>
+            </p>
         
         </div>
         <footer class="article-footer">
@@ -630,35 +506,13 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
+            <p></p><h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
 <hr>
 <h1 id="자바-JAVA-숫자와-문자"><a href="#자바-JAVA-숫자와-문자" class="headerlink" title="자바(JAVA) 숫자와 문자"></a>자바(JAVA) 숫자와 문자</h1><p><img src="https://tuhbm.github.io/images/java/img_java.jpg" alt="JAVA"></p>
-<h2 id="System-out"><a href="#System-out" class="headerlink" title="System.out"></a>System.out</h2><p>숫자와 문자를 접하기전에 우리는 결과물을 확인 할 방법을 먼저 알아보겠습니다.<br>자바는 웹브라우저가 아닌 <strong>JVM</strong>을 이용해 실행합니다. CMD나 터미널등을 통해서도 코드작성이 가능하지만, <strong>IDE(Integrated development environment)</strong>를 통해 편하게 개발을 할 수 있습니다.<br>IDE에는 여러가지가 있겠지만, 저는 jetbrain사의 <a href="https://www.jetbrains.com/idea/" rel="external nofollow noopener noreferrer" target="_blank">intellij</a>를 사용하고 있습니다.<br>개발시 각자 본인에 맞는 IDE를 찾아보시길 권장합니다.<br>IDE에서는 Run기능을 통해 실행하여 작성한 코드의 컴파일 결과를 확인 할 수 있습니다.</p>
-<p><code>자바스크립트에서 console의 역할</code>을 하는 부분을 자바에서는 <code>**System.out 프로퍼티**</code>를 통해 실행 결과 확인할 수 있습니다.</p>
-<h5 id="System-out-println-입력시-한줄씩-자동-줄바뀜"><a href="#System-out-println-입력시-한줄씩-자동-줄바뀜" class="headerlink" title="System.out.println - 입력시 한줄씩 자동 줄바뀜"></a>System.out.println - 입력시 한줄씩 자동 줄바뀜</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&quot;테스트1&quot;);</span><br><span class="line">System.out.println(&quot;테스트2&quot;);</span><br><span class="line">System.out.println(&quot;테스트3&quot;);</span><br></pre></td></tr></table></figure>
-<h5 id="결과물"><a href="#결과물" class="headerlink" title="결과물"></a>결과물</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">테스트1</span><br><span class="line">테스트2</span><br><span class="line">테스트3</span><br></pre></td></tr></table></figure>
-<h5 id="System-out-print-입력시-이어서-출력"><a href="#System-out-print-입력시-이어서-출력" class="headerlink" title="System.out.print - 입력시 이어서 출력"></a>System.out.print - 입력시 이어서 출력</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">System.out.print(&quot;테스트1&quot;);</span><br><span class="line">System.out.print(&quot;테스트2&quot;);</span><br><span class="line">System.out.print(&quot;테스트3&quot;);</span><br></pre></td></tr></table></figure>
-<h5 id="결과물-1"><a href="#결과물-1" class="headerlink" title="결과물"></a>결과물</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">테스트1테스트2테스트3</span><br></pre></td></tr></table></figure>
-<p>위에 내용을 살펴보면<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.print(&quot;테스트1&quot;);</span><br></pre></td></tr></table></figure></p>
-<p>이처럼 <code>&quot;&quot;</code>큰따옴표를 사용한 것을 볼 수 있습니다.</p>
-<p>기존 <code>자바스크립트</code>에서는 <code>&#39;&#39;</code> 또는 <code>&quot;&quot;</code>를 이용해 문자열을 입력하였습니다.<br><code>자바</code>에서도 마찬가지로 ‘’ 또는 <code>&quot;&quot;</code>를 이용 할 수 있습니다.<br>하지만 차이가 있습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&quot;테스트&quot;);</span><br></pre></td></tr></table></figure></p>
-<p>를 입력시 정상적으로 실행이 됩니다.</p>
-<p><strong>하지만</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&apos;테스트&apos;);</span><br></pre></td></tr></table></figure></p>
-<p>여러글자를 입력시 오류가 발생합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&apos;테&apos;);</span><br></pre></td></tr></table></figure></p>
-<p>이처럼 한글자의 문자를 넣을때는 작은따옴표가 허용이되지만, <code>문자열(문자조합)</code>을 입력시는 <code>큰따옴표</code>를 사용해야합니다.</p>
-<p><strong><code>문자열</code> 입력시 큰따옴표를 사용해야합니다</strong></p>
-<hr>
-<h2 id="변수"><a href="#변수" class="headerlink" title="변수"></a>변수</h2><p>기존 <strong>자바스크립트는 데이터의 형식을 정하지 않고, 자유로운 형식의 데이터</strong>를 변수에 담을 수 있었습니다.<br>이부분은 ‘자유롭다. 유연하다.’라는 장점과 ‘그로 인해 오류가 발생하기 쉽다.’단점을 갖고 있습니다.</p>
-<p>하지만 <strong>자바는 이러한 데이터형식을 변수를 선언할때 정의</strong>해야합니다.<br>데이터 형식을 정의하지 않은 변수를 작성시 컴파일이 되지 않는 <code>엄격한 언어</code>입니다.</p>
-<p>자바스크립트와 비교해보도록 하겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = 0;</span><br><span class="line">let b = 1;</span><br><span class="line">const pi = 3.14;</span><br></pre></td></tr></table></figure></p>
-<p>선언시 데이터의 형태를 구분하는 부분이 없습니다.<br>그렇기에 코드를 작성할때 방어패턴등을 사용하여, 올바른 데이터형태가 들어왔는지 확인하는 등의 방법으로 오류를 방지하였습니다.</p>
-<p>다음으로 자바입니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int a = 0;</span><br><span class="line">double pi = 3.14;</span><br><span class="line">String b = &quot;문자&quot;;</span><br><span class="line">byte c = 1;</span><br></pre></td></tr></table></figure></p>
-<p>등 선언시 <code>int</code>, <code>double</code>, <code>String</code>, <code>byte</code>등의 데이터 형식을 미리 정의 한 후 변수이름을 선언합니다.<br>데이터 형태는 다음 시간에 포스팅하도록 하겠습니다.</p>
-<hr>
-<h2 id="세미콜론"><a href="#세미콜론" class="headerlink" title="세미콜론"></a>세미콜론</h2><p>세미콜론(<code>;</code>)은 코드를 작성시 끝을 의미한다.<br>과거 자바스크립트에서는 <code>세미콜론을 사용해도 되고, 사용하지 않아도 됩니다.</code><br>세미콜론을 사용하므로써, 좀 더 <strong>명확히 문장의 끝</strong>을 나타내 사람도 보기 편하고 오류도 줄이는 결과를 가져올 수 있지만,<br>한편으로는 세미콜론도 하나의 문자로 문서의 크기를 늘린다고 보는 개발자들도 존재한다.<br>그렇기에 외국의 동영상강의를 보았을때 세미콜론을 사용하지 않는 개발자들도 많이 보았습니다.</p>
-<p>하지만 자바에서는 세미콜론을 사용하지 않으면 컴파일이 되지 않아 에러가 발생하므로,<br><code>자바에서는 세미콜론을 강제한다.</code>라고 기억해 두시기 바랍니다.</p>
-
+<h2 id="System-out"><a href="#System-out" class="headerlink" title="System.out"></a>System.out</h2><p>숫자와 문자를 접하기전에 우리는 결과물을 확인 할 방법을 먼저 알아보겠습니다.<br>자바는 웹브라우저가 아닌 <strong>JVM</strong>을 이용해 실행합니다. CMD나 터미널등을 통해서도 코드작성이 가능하지만, <strong>IDE(Integrated development environment)</strong>를 통해 편하게 개발을 할 수 있습니다.<br>IDE에는 여러가지가 있겠지만, 저는 jetbrain사의 <a href="https://www.jetbrains.com/idea/" rel="external nofollow noopener noreferrer" target="_blank">intellij</a>를 사용하고 있습니다.<br>개발시 각자 본인에 맞는 IDE를 찾아보시길 권장합니다.<br>IDE에서는 Run기능을 통해 실행하여 작성한 코드의 컴파일 결과를 확인 할 수 있습니다.<br></p>
+            <p class="article-more-link">
+                <a href="/2018/06/13/javaNumberText/#more">자세히 보기</a>
+            </p>
         
         </div>
         <footer class="article-footer">
