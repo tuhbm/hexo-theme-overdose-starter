@@ -3,21 +3,21 @@
 <head>
     <meta charset="utf-8">
     
-    <title>javaScope | 보고 배우는 개발</title>
+    <title>java 유효범위(scope) | 보고 배우는 개발</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="JAVA이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.책을 보며, 또는 독학을 하므로 잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.   유효범위(scope) 이론우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.예를들어,12int lef">
+    <meta name="description" content="JAVA이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.책을 보며, 또는 독학을 하므로 잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.  유효범위(scope) 이론우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.예를들어,12int left">
 <meta name="keywords" content="java,oop,객체지향,메소드,클래스,멤버변수,유효범위,스코프,scope,this">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javaScope">
+<meta property="og:title" content="java 유효범위(scope)">
 <meta property="og:url" content="https://tuhbm.github.io/2018/06/24/javaScope/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
-<meta property="og:description" content="JAVA이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.책을 보며, 또는 독학을 하므로 잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.   유효범위(scope) 이론우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.예를들어,12int lef">
+<meta property="og:description" content="JAVA이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.책을 보며, 또는 독학을 하므로 잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.  유효범위(scope) 이론우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.예를들어,12int left">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-java.jpg">
-<meta property="og:updated_time" content="2018-06-24T12:15:54.097Z">
+<meta property="og:updated_time" content="2018-06-24T12:17:40.693Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javaScope">
-<meta name="twitter:description" content="JAVA이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.책을 보며, 또는 독학을 하므로 잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.   유효범위(scope) 이론우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.예를들어,12int lef">
+<meta name="twitter:title" content="java 유효범위(scope)">
+<meta name="twitter:description" content="JAVA이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.책을 보며, 또는 독학을 하므로 잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.  유효범위(scope) 이론우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.예를들어,12int left">
 <meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-java.jpg">
     
 
@@ -232,7 +232,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-            javaScope
+            java 유효범위(scope)
         </h1>
     
 
@@ -268,7 +268,6 @@ ga('send', 'pageview');
         
             
             <h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
-<hr>
 <hr>
 <h1 id="유효범위-scope"><a href="#유효범위-scope" class="headerlink" title="유효범위(scope)"></a>유효범위(scope)</h1><p><img src="https://tuhbm.github.io/images/java/img_scope.jpg" alt="Scope"></p>
 <h2 id="이론"><a href="#이론" class="headerlink" title="이론"></a>이론</h2><p>우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.<br>그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.<br>예를들어,<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> left;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">left</span><span class="params">()</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure></p>
@@ -404,7 +403,7 @@ ga('send', 'pageview');
                             <a href="/2018/06/24/javaScope/" class="thumbnail">
     
     
-        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="javaScope" class="thumbnail-image"></span>
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="java 유효범위(scope)" class="thumbnail-image"></span>
     
 </a>
 
@@ -412,7 +411,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
-                            <p class="item-title"><a href="/2018/06/24/javaScope/" class="title">javaScope</a></p>
+                            <p class="item-title"><a href="/2018/06/24/javaScope/" class="title">java 유효범위(scope)</a></p>
                             <p class="item-date"><time datetime="2018-06-24T12:08:55.000Z" itemprop="datePublished">2018-06-24</time></p>
                         </div>
                     </li>
