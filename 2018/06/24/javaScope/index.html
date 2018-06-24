@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    
+    <title>javaScope | 보고 배우는 개발</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="JAVA이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.책을 보며, 또는 독학을 하므로 잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.   유효범위(scope) 이론우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.예를들어,12int lef">
+<meta name="keywords" content="java,oop,객체지향,메소드,클래스,멤버변수,유효범위,스코프,scope,this">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javaScope">
+<meta property="og:url" content="https://tuhbm.github.io/2018/06/24/javaScope/index.html">
+<meta property="og:site_name" content="보고 배우는 개발">
+<meta property="og:description" content="JAVA이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.책을 보며, 또는 독학을 하므로 잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.   유효범위(scope) 이론우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.예를들어,12int lef">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://tuhbm.github.io/images/bnr-java.jpg">
+<meta property="og:updated_time" content="2018-06-24T12:15:54.097Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javaScope">
+<meta name="twitter:description" content="JAVA이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.책을 보며, 또는 독학을 하므로 잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.   유효범위(scope) 이론우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.예를들어,12int lef">
+<meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-java.jpg">
+    
+
+    
+        <link rel="alternate" href="/" title="보고 배우는 개발" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/images/logo2.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-104350689-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+        <meta name="google-site-verification" content="104350689">
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">보고 배우는 개발</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">Home</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="https://taekyunkimdev.github.io/" rel="external nofollow noopener noreferrer" target="_blank">Portfolio</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/images/logo2.ico">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '포스트',
+            PAGES: 'Pages',
+            CATEGORIES: '카테고리',
+            TAGS: '태그',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="https://taekyunkimdev.github.io/" rel="external nofollow noopener noreferrer" target="_blank">Portfolio</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/images/logo2.ico">
+            <h2 id="name">TaekyunKim</h2>
+            <h3 id="title">UI Developer &amp; Front-end Developer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Incheon, Korea</span>
+            <a id="follow" target="_blank" href="https://github.com/tuhbm/" rel="external nofollow noopener noreferrer">팔로우</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                38
+                <span>포스트</span>
+            </div>
+            <div class="article-info-block">
+                175
+                <span>태그</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/tuhbm/" target="_blank" title="github" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class="tooltip">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.facebook.com/tuhbm/" target="_blank" title="facebook" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class="tooltip">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-javaScope" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            javaScope
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/06/24/javaScope/">
+            <time datetime="2018-06-24T12:08:55.000Z" itemprop="datePublished">2018-06-24</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/JAVA/">JAVA</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/java/">java</a>, <a class="tag-link" href="/tags/oop/">oop</a>, <a class="tag-link" href="/tags/scope/">scope</a>, <a class="tag-link" href="/tags/this/">this</a>, <a class="tag-link" href="/tags/객체지향/">객체지향</a>, <a class="tag-link" href="/tags/메소드/">메소드</a>, <a class="tag-link" href="/tags/멤버변수/">멤버변수</a>, <a class="tag-link" href="/tags/스코프/">스코프</a>, <a class="tag-link" href="/tags/유효범위/">유효범위</a>, <a class="tag-link" href="/tags/클래스/">클래스</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><p>이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.<br>책을 보며, 또는 독학을 하므로 <code>잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.</code></p>
+<hr>
+<hr>
+<h1 id="유효범위-scope"><a href="#유효범위-scope" class="headerlink" title="유효범위(scope)"></a>유효범위(scope)</h1><p><img src="https://tuhbm.github.io/images/java/img_scope.jpg" alt="Scope"></p>
+<h2 id="이론"><a href="#이론" class="headerlink" title="이론"></a>이론</h2><p>우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.<br>그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.<br>예를들어,<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> left;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">left</span><span class="params">()</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>위의 경우와 같이 left는 왼쪽이라는 뜻으로 사용 할 수도있고, leave의 과거형 left으로 사용될 수 도 있습니다.<br>이와같은 경우는 흔히 매우 빈번히 발생하는 경우 입니다.<br>그렇기에 개발을 함에 있어, 에러등이 발생 할 수 있습니다.</p>
+<p>자바역시 자바스크립트와 같이 <code>유효범위(scope)</code>가 존재하므로써 이러한 명명충돌을 방지할 수 있습니다.</p>
+<p><strong>번외의 이야기만 사실 명명할때 사람이 보기 좋은 누가봐도 알 수 있을 만한 명명규칙을 고민해봅시다.</strong><br>예를들면, <code>getArticleInfo</code>와 같이 길어도 누가봐도 <code>기사정보를 가져오는 메소드구나!</code> 이러한 느낌이 들도록 명명규칙을 고민해봅시다.</p>
+<p>명명규칙에서 길더라도 명확한게 좋습니다. 다만 보통 단어별로 대문자를 사용하는 카멜케이스를 사용합니다.(물론 케밥기법이라던지 다양한 종류가 있지만 필자는 카멜케이스를 선호합니다.)<br>다양한 방법은 [위키]<a href="https://zetawiki.com/wiki/%EC%B9%B4%EB%A9%9C%ED%91%9C%EA%B8%B0%EB%B2%95_camelCase,_%ED%8C%8C%EC%8A%A4%EC%B9%BC%ED%91%9C%EA%B8%B0%EB%B2%95_PascalCase를" rel="external nofollow noopener noreferrer" target="_blank">https://zetawiki.com/wiki/%EC%B9%B4%EB%A9%9C%ED%91%9C%EA%B8%B0%EB%B2%95_camelCase,_%ED%8C%8C%EC%8A%A4%EC%B9%BC%ED%91%9C%EA%B8%B0%EB%B2%95_PascalCase를</a> 참고하세요.</p>
+<p>다시 본론으로 들어가서</p>
+<p>유효범위에 대해 다시 돌아가 보겠습니다.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoScope</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">a</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">         a();</span><br><span class="line">         System.out.println(i);</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>결과를 예상해봅시다.<br>유효범위(Scope)를 제외하고 생각하면<br>for문이 돌아갈때 메소드 a가 실행되면 i=0 이 되므로 0이 무한으로 찍히는 경우가 발생합니다.<br>바로 무한루프가 발생합니다.</p>
+<p>하지만 유효범위(Scope)라는 것이 존재하기에 이 코드는 0,1,2,3,4가 찍히고 종료됩니다.<br>유효범위(Scope)가 존재하기 때문입니다.<br>메소드에서 다른메소드의 지역변수(i)를 호출한다하더라도, 유효 범위의 우선순위는 <code>지역변수 그다음이 멤버변수</code>입니다.<br>또한 <code>메소드에서 다른 메소드의 지역변수의 값은 참조 할 수 없습니다.</code><br>그렇기에 main메소드의 지역변수 i의 값은 0,1,2,3,4가 찍히게 되는것입니다.</p>
+<p>다음예제를 보겠습니다.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoScope</span> </span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">int</span> i;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">a</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        i = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            a();</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>이전 코드와 다른점은 <code>메소드a의 i</code>와 <code>for문에 i</code>가 모두 멤버변수의 값을 참조하고있습니다.<br>이코드를 실행시키면 어떻게 될까요?<br>0000000000000000000000이 무한하게 찍히는 무한루프에 빠집니다.<br>위에서 말씀드렸다시피 메소드에서 유효범위(Scope)의 우선순위는 <code>지역변수 다음 멤버변수</code>입니다.<br>하지만 이코드에서는 for문에서 i를 증가되어도 <code>System.out.println(i)</code>가 실행전 <code>메소드a</code>가 먼저 실행되기 때문에 i의 값은 계속 0이 되므로 무한루프에 빠지게 되는 것입니다.</p>
+<p>무한루프를 빠져나오기 위해선 메소드 a의 i의 값을 지역변수로 선언해주면 말끔히 해결됩니다.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">a</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>이렇게 고쳐주면 메소드 a의 i의 값은 지역변수가 되므로 멤버변수의 i의 값에는 영향을 미치지 못합니다.<br>또한 main메소드에서는 i의 값을 멤버변수의 i의 값을 사용하는것입니다.</p>
+<p>그렇다면 <code>지역변수가 존재하는 메소드에서는 멤버변수에 접근을 못하는것인가?</code>라는 의문을 가질 수 있습니다.<br>예제를 들어보겠습니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> v = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">m</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> v = <span class="number">20</span>;</span><br><span class="line">        System.out.println(v);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoScope2</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Demo c1 = <span class="keyword">new</span> Demo();</span><br><span class="line">        c1.m();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>결과를 예측해보세요.</p>
+<p>결과는 20이 출력됩니다.<br>그렇다면 우리가 원하는 멤버변수의 값인 10이 나오게하려면 어떻게 해야할까요?<br>이럴때 사용하는 키워드가 바로 <code>this</code>입니다.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">m</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> v = <span class="number">20</span>;</span><br><span class="line">    System.out.println(<span class="keyword">this</span>.v);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>이렇게 <code>this</code>를 사용하면 결과 값은 10이 나옵니다.<br>this는 현재 실행된 메소드의 부모를 나타내므로 클래스Demo를 가르키게 됩니다.</p>
+<p>이상으로 유효범위에 대해 알아보았습니다.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="https://tuhbm.github.io/2018/06/24/javaScope/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2018/06/24/javaScope/">댓글</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/06/21/javaObjectOriented/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">이전 글</strong>
+            <div class="article-nav-title">객체지향 언어 자바 이론</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">최근 글</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/24/javaScope/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="javaScope" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
+                            <p class="item-title"><a href="/2018/06/24/javaScope/" class="title">javaScope</a></p>
+                            <p class="item-date"><time datetime="2018-06-24T12:08:55.000Z" itemprop="datePublished">2018-06-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/21/javaObjectOriented/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="객체지향 언어 자바 이론" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
+                            <p class="item-title"><a href="/2018/06/21/javaObjectOriented/" class="title">객체지향 언어 자바 이론</a></p>
+                            <p class="item-date"><time datetime="2018-06-21T13:33:33.000Z" itemprop="datePublished">2018-06-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/14/javaDataType/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="Java Data Type" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
+                            <p class="item-title"><a href="/2018/06/14/javaDataType/" class="title">Java Data Type</a></p>
+                            <p class="item-date"><time datetime="2018-06-14T12:27:36.000Z" itemprop="datePublished">2018-06-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/13/javaNumberText/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="Java 숫자와 문자" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
+                            <p class="item-title"><a href="/2018/06/13/javaNumberText/" class="title">Java 숫자와 문자</a></p>
+                            <p class="item-date"><time datetime="2018-06-13T11:29:10.000Z" itemprop="datePublished">2018-06-13</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/11/startJava/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="Java 시작" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
+                            <p class="item-title"><a href="/2018/06/11/startJava/" class="title">Java 시작</a></p>
+                            <p class="item-date"><time datetime="2018-06-11T13:07:25.000Z" itemprop="datePublished">2018-06-11</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">카테고리</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/SASS/">SASS</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Column/">Column</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ETC/">ETC</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/Vue/">Vue</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/book/">book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/용어정리/">용어정리</a><span class="category-list-count">9</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">아카이브</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">6월 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">4월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">3월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1월 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">9월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">8월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">7월 2017</a><span class="archive-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">태그 클라우드</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/CLI/" style="font-size: 10px;">CLI</a> <a href="/tags/CMD/" style="font-size: 10px;">CMD</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS-processors/" style="font-size: 10px;">CSS processors</a> <a href="/tags/CSS-전처리기/" style="font-size: 10px;">CSS 전처리기</a> <a href="/tags/Component/" style="font-size: 12px;">Component</a> <a href="/tags/DTD/" style="font-size: 10px;">DTD</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/HTML-이력서/" style="font-size: 10px;">HTML 이력서</a> <a href="/tags/ONEPAGE/" style="font-size: 10px;">ONEPAGE</a> <a href="/tags/Pure-Javascript/" style="font-size: 10px;">Pure Javascript</a> <a href="/tags/RESUME/" style="font-size: 10px;">RESUME</a> <a href="/tags/SASS/" style="font-size: 14px;">SASS</a> <a href="/tags/SCOUT/" style="font-size: 10px;">SCOUT</a> <a href="/tags/System-out/" style="font-size: 10px;">System.out</a> <a href="/tags/UI-developer/" style="font-size: 10px;">UI-developer</a> <a href="/tags/UI개발/" style="font-size: 10px;">UI개발</a> <a href="/tags/VanillaJS/" style="font-size: 10px;">VanillaJS</a> <a href="/tags/Vue-component/" style="font-size: 10px;">Vue.component</a> <a href="/tags/book-review/" style="font-size: 12px;">book-review</a> <a href="/tags/build-tool/" style="font-size: 10px;">build tool</a> <a href="/tags/byte/" style="font-size: 10px;">byte</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/compile/" style="font-size: 12px;">compile</a> <a href="/tags/compressor/" style="font-size: 10px;">compressor</a> <a href="/tags/computed/" style="font-size: 10px;">computed</a> <a href="/tags/console/" style="font-size: 10px;">console</a> <a href="/tags/const/" style="font-size: 12px;">const</a> <a href="/tags/doc/" style="font-size: 10px;">doc</a> <a href="/tags/ellipsis/" style="font-size: 10px;">ellipsis</a> <a href="/tags/emmet/" style="font-size: 10px;">emmet</a> <a href="/tags/firefox/" style="font-size: 10px;">firefox</a> <a href="/tags/first-programming/" style="font-size: 10px;">first-programming</a> <a href="/tags/float/" style="font-size: 10px;">float</a> <a href="/tags/framework/" style="font-size: 12px;">framework</a> <a href="/tags/front-end-developer/" style="font-size: 10px;">front-end-developer</a> <a href="/tags/function/" style="font-size: 10px;">function</a> <a href="/tags/functional-programming/" style="font-size: 10px;">functional programming</a> <a href="/tags/grunt/" style="font-size: 10px;">grunt</a> <a href="/tags/gulp/" style="font-size: 12px;">gulp</a> <a href="/tags/html/" style="font-size: 16px;">html</a> <a href="/tags/html-doctype/" style="font-size: 10px;">html doctype</a> <a href="/tags/html-template-resume/" style="font-size: 10px;">html template resume</a> <a href="/tags/ie/" style="font-size: 10px;">ie</a> <a href="/tags/image/" style="font-size: 10px;">image</a> <a href="/tags/image-compressor/" style="font-size: 10px;">image compressor</a> <a href="/tags/image-optimization/" style="font-size: 10px;">image optimization</a> <a href="/tags/include/" style="font-size: 10px;">include</a> <a href="/tags/indentationError/" style="font-size: 10px;">indentationError</a> <a href="/tags/inherit/" style="font-size: 10px;">inherit</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/javascript/" style="font-size: 16px;">javascript</a> <a href="/tags/javascript-function/" style="font-size: 10px;">javascript function</a> <a href="/tags/let/" style="font-size: 12px;">let</a> <a href="/tags/liblibrary/" style="font-size: 10px;">liblibrary</a> <a href="/tags/library/" style="font-size: 10px;">library</a> <a href="/tags/literal/" style="font-size: 10px;">literal</a> <a href="/tags/long/" style="font-size: 10px;">long</a> <a href="/tags/major/" style="font-size: 10px;">major</a> <a href="/tags/methods/" style="font-size: 10px;">methods</a> <a href="/tags/mixin/" style="font-size: 10px;">mixin</a> <a href="/tags/new/" style="font-size: 10px;">new</a> <a href="/tags/non-major/" style="font-size: 10px;">non-major</a> <a href="/tags/normalize/" style="font-size: 10px;">normalize</a> <a href="/tags/npm-install/" style="font-size: 10px;">npm install</a> <a href="/tags/npm-run-dev/" style="font-size: 10px;">npm run dev</a> <a href="/tags/oop/" style="font-size: 18px;">oop</a> <a href="/tags/plug-in/" style="font-size: 10px;">plug in</a> <a href="/tags/programming/" style="font-size: 14px;">programming</a> <a href="/tags/prototype/" style="font-size: 10px;">prototype</a> <a href="/tags/python/" style="font-size: 14px;">python</a> <a href="/tags/reflow/" style="font-size: 10px;">reflow</a> <a href="/tags/refs/" style="font-size: 10px;">refs</a> <a href="/tags/rendering/" style="font-size: 16px;">rendering</a> <a href="/tags/repaint/" style="font-size: 10px;">repaint</a> <a href="/tags/reset/" style="font-size: 10px;">reset</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a> <a href="/tags/sass/" style="font-size: 10px;">sass</a> <a href="/tags/scope/" style="font-size: 12px;">scope</a> <a href="/tags/scss/" style="font-size: 12px;">scss</a> <a href="/tags/side-effect/" style="font-size: 10px;">side effect</a> <a href="/tags/start/" style="font-size: 14px;">start</a> <a href="/tags/subClass/" style="font-size: 10px;">subClass</a> <a href="/tags/superClass/" style="font-size: 10px;">superClass</a> <a href="/tags/task-runner/" style="font-size: 10px;">task-runner</a> <a href="/tags/third-party/" style="font-size: 10px;">third party</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/thread/" style="font-size: 10px;">thread</a> <a href="/tags/tutorial/" style="font-size: 16px;">tutorial</a> <a href="/tags/v-bind/" style="font-size: 12px;">v-bind</a> <a href="/tags/v-for/" style="font-size: 10px;">v-for</a> <a href="/tags/v-html/" style="font-size: 10px;">v-html</a> <a href="/tags/v-if/" style="font-size: 10px;">v-if</a> <a href="/tags/v-model/" style="font-size: 10px;">v-model</a> <a href="/tags/v-on/" style="font-size: 10px;">v-on</a> <a href="/tags/v-show/" style="font-size: 10px;">v-show</a> <a href="/tags/var/" style="font-size: 12px;">var</a> <a href="/tags/vendor/" style="font-size: 10px;">vendor</a> <a href="/tags/vue/" style="font-size: 16px;">vue</a> <a href="/tags/vue-init/" style="font-size: 10px;">vue init</a> <a href="/tags/vue-cli/" style="font-size: 10px;">vue-cli</a> <a href="/tags/vue-js/" style="font-size: 16px;">vue.js</a> <a href="/tags/vue-js2/" style="font-size: 16px;">vue.js2</a> <a href="/tags/vue를-시작하는방법/" style="font-size: 10px;">vue를 시작하는방법</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/값/" style="font-size: 10px;">값</a> <a href="/tags/객체/" style="font-size: 10px;">객체</a> <a href="/tags/객체지향/" style="font-size: 18px;">객체지향</a> <a href="/tags/논리연산자/" style="font-size: 10px;">논리연산자</a> <a href="/tags/데이터타입/" style="font-size: 10px;">데이터타입</a> <a href="/tags/들여쓰기/" style="font-size: 10px;">들여쓰기</a> <a href="/tags/라이브러리/" style="font-size: 10px;">라이브러리</a> <a href="/tags/랜더링/" style="font-size: 12px;">랜더링</a> <a href="/tags/렌더링/" style="font-size: 10px;">렌더링</a> <a href="/tags/렌터트리/" style="font-size: 10px;">렌터트리</a> <a href="/tags/리터럴/" style="font-size: 10px;">리터럴</a> <a href="/tags/리페인팅/" style="font-size: 10px;">리페인팅</a> <a href="/tags/리플로우/" style="font-size: 10px;">리플로우</a> <a href="/tags/멀티스레드/" style="font-size: 10px;">멀티스레드</a> <a href="/tags/메모리/" style="font-size: 10px;">메모리</a> <a href="/tags/메소드/" style="font-size: 12px;">메소드</a> <a href="/tags/멤버변수/" style="font-size: 12px;">멤버변수</a> <a href="/tags/명시적형변화/" style="font-size: 10px;">명시적형변화</a> <a href="/tags/문법/" style="font-size: 10px;">문법</a> <a href="/tags/문자/" style="font-size: 10px;">문자</a> <a href="/tags/문자열/" style="font-size: 12px;">문자열</a> <a href="/tags/바닐라-JS/" style="font-size: 10px;">바닐라 JS</a> <a href="/tags/변수/" style="font-size: 12px;">변수</a> <a href="/tags/부수효과/" style="font-size: 10px;">부수효과</a> <a href="/tags/북리뷰/" style="font-size: 12px;">북리뷰</a> <a href="/tags/브라우저/" style="font-size: 12px;">브라우저</a> <a href="/tags/비전공자/" style="font-size: 12px;">비전공자</a> <a href="/tags/사스/" style="font-size: 12px;">사스</a> <a href="/tags/산술연산자/" style="font-size: 10px;">산술연산자</a> <a href="/tags/상속/" style="font-size: 10px;">상속</a> <a href="/tags/상수/" style="font-size: 10px;">상수</a> <a href="/tags/생성자함수/" style="font-size: 10px;">생성자함수</a> <a href="/tags/서브클래스/" style="font-size: 10px;">서브클래스</a> <a href="/tags/세미콜론/" style="font-size: 10px;">세미콜론</a> <a href="/tags/숫자/" style="font-size: 10px;">숫자</a> <a href="/tags/슈퍼클래스/" style="font-size: 10px;">슈퍼클래스</a> <a href="/tags/스레드/" style="font-size: 10px;">스레드</a> <a href="/tags/스코프/" style="font-size: 10px;">스코프</a> <a href="/tags/실수/" style="font-size: 10px;">실수</a> <a href="/tags/싱글스레드/" style="font-size: 10px;">싱글스레드</a> <a href="/tags/암시적형변화/" style="font-size: 10px;">암시적형변화</a> <a href="/tags/에러/" style="font-size: 10px;">에러</a> <a href="/tags/예외/" style="font-size: 10px;">예외</a> <a href="/tags/원페이지-이력서/" style="font-size: 10px;">원페이지 이력서</a> <a href="/tags/웹퍼블리셔/" style="font-size: 10px;">웹퍼블리셔</a> <a href="/tags/유효범위/" style="font-size: 10px;">유효범위</a> <a href="/tags/은닉화/" style="font-size: 10px;">은닉화</a> <a href="/tags/인터페이스/" style="font-size: 10px;">인터페이스</a> <a href="/tags/작은따옴표/" style="font-size: 10px;">작은따옴표</a> <a href="/tags/정수/" style="font-size: 10px;">정수</a> <a href="/tags/캡슐화/" style="font-size: 10px;">캡슐화</a> <a href="/tags/컴포넌트/" style="font-size: 12px;">컴포넌트</a> <a href="/tags/큰따옴표/" style="font-size: 10px;">큰따옴표</a> <a href="/tags/클래스/" style="font-size: 14px;">클래스</a> <a href="/tags/터미널/" style="font-size: 10px;">터미널</a> <a href="/tags/텍스트-바인딩/" style="font-size: 10px;">텍스트 바인딩</a> <a href="/tags/파이썬/" style="font-size: 14px;">파이썬</a> <a href="/tags/파이썬-시작/" style="font-size: 10px;">파이썬 시작</a> <a href="/tags/프레임워크/" style="font-size: 10px;">프레임워크</a> <a href="/tags/프로그래머/" style="font-size: 12px;">프로그래머</a> <a href="/tags/프로세스/" style="font-size: 10px;">프로세스</a> <a href="/tags/프로토타입/" style="font-size: 10px;">프로토타입</a> <a href="/tags/프론트엔드개발/" style="font-size: 10px;">프론트엔드개발</a> <a href="/tags/플러그인/" style="font-size: 10px;">플러그인</a> <a href="/tags/한줄-말줄임/" style="font-size: 10px;">한줄 말줄임</a> <a href="/tags/함수/" style="font-size: 10px;">함수</a> <a href="/tags/함수-바인딩/" style="font-size: 10px;">함수 바인딩</a> <a href="/tags/함수선언문/" style="font-size: 10px;">함수선언문</a> <a href="/tags/함수표현식/" style="font-size: 10px;">함수표현식</a>
+        </div>
+    </div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Taekyun Kim<br>
+            Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme by <a href="http://github.com/ppoffice" rel="external nofollow noopener noreferrer" target="_blank">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'https://tuhbm.github.io/2018/06/24/javaScope/';
+        
+        this.page.identifier = 'javaScope';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'bogo-baeuneun-gaebal-6734' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
