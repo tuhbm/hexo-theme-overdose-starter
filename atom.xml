@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-06-24T12:20:02.089Z</updated>
+  <updated>2018-08-20T14:01:37.861Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>알고리즘</title>
+    <link href="https://tuhbm.github.io/2018/08/20/algorithm/"/>
+    <id>https://tuhbm.github.io/2018/08/20/algorithm/</id>
+    <published>2018-08-20T13:47:40.000Z</published>
+    <updated>2018-08-20T14:01:37.861Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/terms/algorithm1.png&quot; alt=&quot;알고리즘&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;알고리즘&quot;&gt;&lt;a href=&quot;#알고리즘&quot; class=&quot;headerlink&quot; title=&quot;알고리즘&quot;&gt;&lt;/a&gt;알고리즘&lt;/h1&gt;&lt;h2 id=&quot;알고리즘이란&quot;&gt;&lt;a href=&quot;#알고리즘이란&quot; class=&quot;headerlink&quot; title=&quot;알고리즘이란?&quot;&gt;&lt;/a&gt;알고리즘이란?&lt;/h2&gt;&lt;p&gt;명령어들의 순서상 &lt;strong&gt;처리과정&lt;/strong&gt;을 말합니다.&lt;br&gt;예를들어 우리가 학교에 등교할때도 잠에서 깨고, 아침을 먹고, 양치를 하고, 씻고, 교복을 입고, 학교에 도착하기까지의 순서상 처리하는 과정이 있습니다.&lt;br&gt;이들을 순서상 나열해놓은 것을 알고리즘이라고 합니다.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
+    
+    
+      <category term="효율성" scheme="https://tuhbm.github.io/tags/%ED%9A%A8%EC%9C%A8%EC%84%B1/"/>
+    
+      <category term="algorithm" scheme="https://tuhbm.github.io/tags/algorithm/"/>
+    
+      <category term="알고리즘" scheme="https://tuhbm.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="개발" scheme="https://tuhbm.github.io/tags/%EA%B0%9C%EB%B0%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>java 유효범위(scope)</title>
@@ -540,11 +569,11 @@
       <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
     
     
+      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
+    
       <category term="framework" scheme="https://tuhbm.github.io/tags/framework/"/>
     
       <category term="library" scheme="https://tuhbm.github.io/tags/library/"/>
-    
-      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
     
       <category term="third party" scheme="https://tuhbm.github.io/tags/third-party/"/>
     
@@ -565,7 +594,7 @@
     <link href="https://tuhbm.github.io/2018/01/26/literal/"/>
     <id>https://tuhbm.github.io/2018/01/26/literal/</id>
     <published>2018-01-26T10:43:00.000Z</published>
-    <updated>2018-03-11T03:23:03.894Z</updated>
+    <updated>2018-08-20T14:01:33.565Z</updated>
     
     <summary type="html">
     
@@ -693,34 +722,6 @@
       <category term="부수효과" scheme="https://tuhbm.github.io/tags/%EB%B6%80%EC%88%98%ED%9A%A8%EA%B3%BC/"/>
     
       <category term="functional programming" scheme="https://tuhbm.github.io/tags/functional-programming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VanillaJS</title>
-    <link href="https://tuhbm.github.io/2018/01/21/vanillaJS/"/>
-    <id>https://tuhbm.github.io/2018/01/21/vanillaJS/</id>
-    <published>2018-01-21T14:42:22.000Z</published>
-    <updated>2018-03-11T03:23:03.890Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Vanilla-JS&quot;&gt;&lt;a href=&quot;#Vanilla-JS&quot; class=&quot;headerlink&quot; title=&quot;Vanilla JS&quot;&gt;&lt;/a&gt;Vanilla JS&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;지금부터는 Vanilla JS를 편하게 바닐라JS라고 기재하겠다.&lt;/strong&gt;&lt;br&gt;&lt;code&gt;Javascript&lt;/code&gt;를 사용하는 개발자로써, 많은 사람들이 들어 보았을 것이다.&lt;br&gt;필자는 과거 면접에서 이러한 질문을 받은 적이 있다.&lt;br&gt;‘바닐라 JS에 대해 아시나요?’라는 질문을 받았다. 좀 당황스러운 질문이었다.&lt;br&gt;평소 &lt;code&gt;바닐라JS === Javascript&lt;/code&gt;라고 생각해 온 상황이서 그런지 더욱 당황스러웠지만…답을했다.&lt;br&gt;‘일반적으로 우리가 사용하고 있는 Javascript라고 합니다.’&lt;br&gt;‘그럼 왜 자바스크립트가 바닐라JS라고 불리는지 아시나요?’ 또 당황스러웠다.(이것이 면접에서 말리는 시초였다.)&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
-    
-    
-      <category term="javascript" scheme="https://tuhbm.github.io/tags/javascript/"/>
-    
-      <category term="VanillaJS" scheme="https://tuhbm.github.io/tags/VanillaJS/"/>
-    
-      <category term="바닐라 JS" scheme="https://tuhbm.github.io/tags/%EB%B0%94%EB%8B%90%EB%9D%BC-JS/"/>
-    
-      <category term="jQuery" scheme="https://tuhbm.github.io/tags/jQuery/"/>
-    
-      <category term="Pure Javascript" scheme="https://tuhbm.github.io/tags/Pure-Javascript/"/>
     
   </entry>
   
