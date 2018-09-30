@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    
+    <title>SEO(Search Engine Optimization) 검색 엔진 최적화 | 보고 배우는 개발</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="SEO의 중요성비지니스 측면에 있어서 검색순위 상위권에 노출되는 것은 매우 중요한 부분입니다.검색시 페이지 이동을 해야 검색이 된다면, 그만큼 유저들이 이전페이지들에서 원하는 결과를 얻어 해당 웹사이트에 접속할 확률이 낮습니다.물론 입소문이 타서 자연스럽게 해당 검색어를 정확하게 입력한다면 유저의 유입확률이 높을 것이지만, 그렇지 못한 경우가 많습니다.노">
+<meta name="keywords" content="html,seo,search,engine,optimization,검색최적화">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SEO(Search Engine Optimization) 검색 엔진 최적화">
+<meta property="og:url" content="https://tuhbm.github.io/2018/09/29/seo/index.html">
+<meta property="og:site_name" content="보고 배우는 개발">
+<meta property="og:description" content="SEO의 중요성비지니스 측면에 있어서 검색순위 상위권에 노출되는 것은 매우 중요한 부분입니다.검색시 페이지 이동을 해야 검색이 된다면, 그만큼 유저들이 이전페이지들에서 원하는 결과를 얻어 해당 웹사이트에 접속할 확률이 낮습니다.물론 입소문이 타서 자연스럽게 해당 검색어를 정확하게 입력한다면 유저의 유입확률이 높을 것이지만, 그렇지 못한 경우가 많습니다.노">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://tuhbm.github.io/images/bnr-html.jpg">
+<meta property="og:updated_time" content="2018-09-28T23:47:03.426Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SEO(Search Engine Optimization) 검색 엔진 최적화">
+<meta name="twitter:description" content="SEO의 중요성비지니스 측면에 있어서 검색순위 상위권에 노출되는 것은 매우 중요한 부분입니다.검색시 페이지 이동을 해야 검색이 된다면, 그만큼 유저들이 이전페이지들에서 원하는 결과를 얻어 해당 웹사이트에 접속할 확률이 낮습니다.물론 입소문이 타서 자연스럽게 해당 검색어를 정확하게 입력한다면 유저의 유입확률이 높을 것이지만, 그렇지 못한 경우가 많습니다.노">
+<meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-html.jpg">
+    
+
+    
+        <link rel="alternate" href="/" title="보고 배우는 개발" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/images/logo2.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-104350689-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+        <meta name="google-site-verification" content="104350689">
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">보고 배우는 개발</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">Home</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="https://taekyunkimdev.github.io/" rel="external nofollow noopener noreferrer" target="_blank">Portfolio</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/images/logo2.ico">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '포스트',
+            PAGES: 'Pages',
+            CATEGORIES: '카테고리',
+            TAGS: '태그',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="https://taekyunkimdev.github.io/" rel="external nofollow noopener noreferrer" target="_blank">Portfolio</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/images/logo2.ico">
+            <h2 id="name">TaekyunKim</h2>
+            <h3 id="title">UI Developer &amp; Front-end Developer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Incheon, Korea</span>
+            <a id="follow" target="_blank" href="https://github.com/tuhbm/" rel="external nofollow noopener noreferrer">팔로우</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                41
+                <span>포스트</span>
+            </div>
+            <div class="article-info-block">
+                183
+                <span>태그</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/tuhbm/" target="_blank" title="github" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class="tooltip">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.facebook.com/tuhbm/" target="_blank" title="facebook" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class="tooltip">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-seo" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            SEO(Search Engine Optimization) 검색 엔진 최적화
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/09/29/seo/">
+            <time datetime="2018-09-28T23:32:59.000Z" itemprop="datePublished">2018-09-29</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/engine/">engine</a>, <a class="tag-link" href="/tags/html/">html</a>, <a class="tag-link" href="/tags/optimization/">optimization</a>, <a class="tag-link" href="/tags/search/">search</a>, <a class="tag-link" href="/tags/seo/">seo</a>, <a class="tag-link" href="/tags/검색최적화/">검색최적화</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p><img src="https://tuhbm.github.io/images/seo.jpg" alt="SEO"></p>
+<h1 id="SEO의-중요성"><a href="#SEO의-중요성" class="headerlink" title="SEO의 중요성"></a>SEO의 중요성</h1><p>비지니스 측면에 있어서 검색순위 상위권에 노출되는 것은 매우 중요한 부분입니다.<br>검색시 페이지 이동을 해야 검색이 된다면, 그만큼 유저들이 이전페이지들에서 원하는 결과를 얻어 해당 웹사이트에 접속할 확률이 낮습니다.<br>물론 입소문이 타서 자연스럽게 해당 검색어를 정확하게 입력한다면 유저의 유입확률이 높을 것이지만, 그렇지 못한 경우가 많습니다.<br>노출의 효과는 광고를 보면 알 수 있습니다. 자주 보는 광고를 통해 유저에게 특정 비지니스 상품을 홍보하고 그로인해 수익이 됩니다.<br>검색 엔진 최적화도 마찬가지의 효과입니다.<br>그러므로 비지니스 측면에서 검색 엔진 최적화는 매우 중요합니다.<br>스타트업 또는 신제품의 경우 더더욱 중요합니다.</p>
+<a id="more"></a>
+<p>우리가 살고 있는 대한민국의 경우 대표적으로 <a href="https://www.naver.com/" rel="external nofollow noopener noreferrer" target="_blank">NAVER</a>를 통해 검색하고,<br>개발자들 같은 경우 <a href="https://www.google.com/" rel="external nofollow noopener noreferrer" target="_blank">GOOGLE</a>에서 검색을 많이 합니다.<br><img src="https://tuhbm.github.io/images/seo1.jpg" alt="검색엔진"><br>두개의 포털사이트는 각각 다른 검색 엔진을 사용하지만, 기본적인 검색 엔진 최적화 작업은 동일합니다.<br>지금부터 제가 알고 있는 범위내에서 검색 엔진 최적화작업 방법을 기재해보겠습니다.</p>
+<h2 id="img태그의-alt값-넣기"><a href="#img태그의-alt값-넣기" class="headerlink" title="img태그의 alt값 넣기"></a>img태그의 alt값 넣기</h2><p>기본적인 웹표준에서 alt값은 이미지가 노출이 되지 않았을 때 대체 텍스트로 들어갈 값을 넣는 것으로 알고 있습니다.<br>이부분 말고도 검색엔진에서는 alt값의 값을 긁어가 검색시 노출값으로 사용합니다.<br>그렇기에 alt값은 웹표준 측면 뿐만 아니라 검색 엔진 최적화 작업에서도 매우 중요합니다.</p>
+<h2 id="a태그에-href값-넣기"><a href="#a태그에-href값-넣기" class="headerlink" title="a태그에 href값 넣기"></a>a태그에 href값 넣기</h2><p>a태그는 링크 또는 책갈피같은 역할을 합니다.<br>href값에 URL을 넣으면 해당 URL로 이동을 하는 링크역할,<br>그리고 href값에 #ID 값을 넣으면 해당페이지 내에 값으로 입력한 ID를 가진 DOM으로 이동하는 책갈피 기능합니다.<br>검색 엔진 로봇은 이러한 href값을 읽어 해당 페이지의 검색요소들을 찾는다고 합니다.<br>예를 들어 해당 상세페이지로 이동하여 그안에 검색요소들을 찾아 검색노출값에 노출하는 것입니다.</p>
+<h2 id="heading-tag의-적절한-사용"><a href="#heading-tag의-적절한-사용" class="headerlink" title="heading tag의 적절한 사용"></a>heading tag의 적절한 사용</h2><p>h1~h6까지 heading tag는 페이지 내용의 구조의 제목을 나타내는 태그로 용도에 맞춰 사용해야하며, 또한 너무 남발시 검색엔진이 페이지 구조를 파악하는데 어려움이 있습니다. </p>
+<h2 id="title태그-와-description-그리고-keywords"><a href="#title태그-와-description-그리고-keywords" class="headerlink" title="title태그 와 description 그리고 keywords"></a>title태그 와 description 그리고 keywords</h2><p>title태그와 meta태그의 description은 검색엔진이 페이지의 내용을 파악할때 기본적으로 사용하는 데이터입니다.<br>title태그는 해당 페이지의 제목을, description은 그페이지에 대한 설명을 나타냅니다.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>페이지 제목<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"페이지 설명을 간략하게 나타냅니다."</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>특별한 글자수 제한은 없지만 네이버 검색엔진에서는 너무 길게 작성시 페널티가 있을 수 있다는 권고사항이 있습니다.</p>
+<p>또한 keywords는 검색엔진에 큰영향을 미치지는 않지만 무시할 만한 요소는 아닙니다.<br>description 처럼 키워드 역시 메타태그에 한 종류로 고유한 단어나 문구를 기록합니다.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">"대표키워드, 키워드1, 키워드2, 키워드3, 키워드4, 키워드5"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="대표URL설정"><a href="#대표URL설정" class="headerlink" title="대표URL설정"></a>대표URL설정</h2><p>하나의 페이지에 여러 URL이 존재할 경우 대표URL을 설정하여 리다이렉션 시키거나 또는 페이지 내에 rel=”canonical”표시를 추가하는 것이 좋습니다. 그래야 페이지랭크에 하나의 대표URL이 등록되어 페이지랭크가 올라가게 되어있습니다. 여기서 말하는 대표URL은 해당 페이지의 표준페이지로 인식됩니다.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"canonical"</span> <span class="attr">href</span>=<span class="string">"http://www.seo.com"</span> /&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="오픈그래프-사용"><a href="#오픈그래프-사용" class="headerlink" title="오픈그래프 사용"></a>오픈그래프 사용</h2><p>meta태그에 소셜미디어로 공유시 우선적으로 활용되는 정보입니다. 해당 웹페이지의 제목,설명,대표이미지를 같이 넣어주면 검색엔진이 이를 인식해 검색내용에 활용합니다.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:type"</span> <span class="attr">content</span>=<span class="string">"website"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:title"</span> <span class="attr">content</span>=<span class="string">"페이지 제목"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:description"</span> <span class="attr">content</span>=<span class="string">"페이지 설명"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:image"</span> <span class="attr">content</span>=<span class="string">"http://www.site.com/image.jpg"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:url"</span> <span class="attr">content</span>=<span class="string">"http://www.site.com"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="소셜미디어-오픈그래프-사용"><a href="#소셜미디어-오픈그래프-사용" class="headerlink" title="소셜미디어 오픈그래프 사용"></a>소셜미디어 오픈그래프 사용</h2><p>위의 방법과 마찬가지로 소셜미디어 내에 검색 및 공유시 콘텐츠의 정보를 보여주므로써 검색확률을 높일 수 있습니다.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"twitter:card"</span> <span class="attr">content</span>=<span class="string">"summary"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"twitter:title"</span> <span class="attr">content</span>=<span class="string">"페이지 제목"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"twitter:description"</span> <span class="attr">content</span>=<span class="string">"페이지 설명"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"twitter:image"</span> <span class="attr">content</span>=<span class="string">"http://www.site.com/article/article1.html"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"twitter:domain"</span> <span class="attr">content</span>=<span class="string">"사이트 명"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="robots-txt-사용"><a href="#robots-txt-사용" class="headerlink" title="robots.txt 사용"></a>robots.txt 사용</h2><p>robots.txt는 검색엔진이 사이트에서 액세스할 수 있는 부분과 하지 말아야할 부분을 정해 놓은 검색엔진과의 규약입니다.<br>기본적으로는 검색로봇이 방문하면 안되는 페이지를 이 파일 속에 양식에 맞춰 기록하면 됩니다.<br>robots.txt 파일은 반드시 root에 위치해야 합니다. </p>
+<p>또한 과도한 robots.txt 설정은 사이트에 더 많은 방문자를 유도할 수 있는 정상적인 검색 엔진만을 차단할 뿐, 해킹이나 악성코드를 유발하는 수많은 악의적인 로봇들은 이러한 로봇 배제 표준을 따르지 않는다는 점도 유의해야 합니다.</p>
+<h2 id="사이트맵-Sitemap-의-작성"><a href="#사이트맵-Sitemap-의-작성" class="headerlink" title="사이트맵(Sitemap)의 작성"></a>사이트맵(Sitemap)의 작성</h2><p>사이트맵은 웹사이트의 구조를 알려주는 페이지입니다.<br>통상적으로 ‘사이트맵’이라고 하면 웹사이트의 메뉴 항목에 포함된 사이트맵 페이지를 떠올리는 경우가 많지만(물론 사용자에게 웹사이트의 구조를 알려준다는 측면에서 이 페이지는 중요합니다), 검색엔진 입장에서 특히 중요한 것은 흔히 ‘Sitemap XML’이라 부르는 XML 형식의 파일입니다.<br>이 파일을 작성하여 (웹마스터 도구를 이용해) 검색엔진에 등록하면 검색엔진이 사이트의 전체 구조를 파악하고 색인을 생성하는데 도움이 됩니다.</p>
+<h2 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h2><p>이러한 방법들을 사용한다고해서 검색시 무조건 상위에 들어간다는 보장은 없습니다.<br>제일 좋은 방법은 많은 유저가 방문하므로써 검색랭킹이 올라가는 방법이 가장 좋은 방법입니다.<br>하지만 유저수를 확보하지 못한 스타트업이나 신규서비스는 마케팅을 제외하고 개발자가 유저에게 노출빈도를 높히는 방법에는 검색 엔진 최적화 작업을 통해 노출하는 방법입니다.<br><a href="http://www.seocert.net/" rel="external nofollow noopener noreferrer" target="_blank">SEO 점수 체크</a> 서비스(해당서비스는 google 검색엔진 기준으로 체크) 오픈전 체크를 통해 검색 엔진 최적화가 얼마나 잘 되었는지 확인이 필요합니다.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="https://tuhbm.github.io/2018/09/29/seo/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2018/09/29/seo/">댓글</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/09/03/arrayAlign/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">이전 글</strong>
+            <div class="article-nav-title">자료정렬</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">최근 글</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/09/29/seo/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-html.jpg)" alt="SEO(Search Engine Optimization) 검색 엔진 최적화" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/09/29/seo/" class="title">SEO(Search Engine Optimization) 검색 엔진 최적화</a></p>
+                            <p class="item-date"><time datetime="2018-09-28T23:32:59.000Z" itemprop="datePublished">2018-09-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/09/03/arrayAlign/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-etc.jpg)" alt="자료정렬" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/용어정리/">용어정리</a></p>
+                            <p class="item-title"><a href="/2018/09/03/arrayAlign/" class="title">자료정렬</a></p>
+                            <p class="item-date"><time datetime="2018-09-03T13:20:41.161Z" itemprop="datePublished">2018-09-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/20/algorithm/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-etc.jpg)" alt="알고리즘" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/용어정리/">용어정리</a></p>
+                            <p class="item-title"><a href="/2018/08/20/algorithm/" class="title">알고리즘</a></p>
+                            <p class="item-date"><time datetime="2018-08-20T13:47:40.000Z" itemprop="datePublished">2018-08-20</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/24/javaScope/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="java 유효범위(scope)" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
+                            <p class="item-title"><a href="/2018/06/24/javaScope/" class="title">java 유효범위(scope)</a></p>
+                            <p class="item-date"><time datetime="2018-06-24T12:08:55.000Z" itemprop="datePublished">2018-06-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/21/javaObjectOriented/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-java.jpg)" alt="객체지향 언어 자바 이론" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JAVA/">JAVA</a></p>
+                            <p class="item-title"><a href="/2018/06/21/javaObjectOriented/" class="title">객체지향 언어 자바 이론</a></p>
+                            <p class="item-date"><time datetime="2018-06-21T13:33:33.000Z" itemprop="datePublished">2018-06-21</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">카테고리</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/SASS/">SASS</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Column/">Column</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ETC/">ETC</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/Vue/">Vue</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/book/">book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/용어정리/">용어정리</a><span class="category-list-count">11</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">아카이브</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">9월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">8월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">6월 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">4월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">3월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1월 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">9월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">8월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">7월 2017</a><span class="archive-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">태그 클라우드</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/CLI/" style="font-size: 10px;">CLI</a> <a href="/tags/CMD/" style="font-size: 10px;">CMD</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS-processors/" style="font-size: 10px;">CSS processors</a> <a href="/tags/CSS-전처리기/" style="font-size: 10px;">CSS 전처리기</a> <a href="/tags/Component/" style="font-size: 12px;">Component</a> <a href="/tags/DTD/" style="font-size: 10px;">DTD</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/HTML-이력서/" style="font-size: 10px;">HTML 이력서</a> <a href="/tags/ONEPAGE/" style="font-size: 10px;">ONEPAGE</a> <a href="/tags/Pure-Javascript/" style="font-size: 10px;">Pure Javascript</a> <a href="/tags/RESUME/" style="font-size: 10px;">RESUME</a> <a href="/tags/SASS/" style="font-size: 14px;">SASS</a> <a href="/tags/SCOUT/" style="font-size: 10px;">SCOUT</a> <a href="/tags/System-out/" style="font-size: 10px;">System.out</a> <a href="/tags/UI-developer/" style="font-size: 10px;">UI-developer</a> <a href="/tags/UI개발/" style="font-size: 10px;">UI개발</a> <a href="/tags/VanillaJS/" style="font-size: 10px;">VanillaJS</a> <a href="/tags/Vue-component/" style="font-size: 10px;">Vue.component</a> <a href="/tags/algorithm/" style="font-size: 12px;">algorithm</a> <a href="/tags/book-review/" style="font-size: 12px;">book-review</a> <a href="/tags/build-tool/" style="font-size: 10px;">build tool</a> <a href="/tags/byte/" style="font-size: 10px;">byte</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/compile/" style="font-size: 12px;">compile</a> <a href="/tags/compressor/" style="font-size: 10px;">compressor</a> <a href="/tags/computed/" style="font-size: 10px;">computed</a> <a href="/tags/console/" style="font-size: 10px;">console</a> <a href="/tags/const/" style="font-size: 12px;">const</a> <a href="/tags/doc/" style="font-size: 10px;">doc</a> <a href="/tags/ellipsis/" style="font-size: 10px;">ellipsis</a> <a href="/tags/emmet/" style="font-size: 10px;">emmet</a> <a href="/tags/engine/" style="font-size: 10px;">engine</a> <a href="/tags/firefox/" style="font-size: 10px;">firefox</a> <a href="/tags/first-programming/" style="font-size: 10px;">first-programming</a> <a href="/tags/float/" style="font-size: 10px;">float</a> <a href="/tags/framework/" style="font-size: 12px;">framework</a> <a href="/tags/front-end-developer/" style="font-size: 10px;">front-end-developer</a> <a href="/tags/function/" style="font-size: 10px;">function</a> <a href="/tags/functional-programming/" style="font-size: 10px;">functional programming</a> <a href="/tags/grunt/" style="font-size: 10px;">grunt</a> <a href="/tags/gulp/" style="font-size: 12px;">gulp</a> <a href="/tags/html/" style="font-size: 18px;">html</a> <a href="/tags/html-doctype/" style="font-size: 10px;">html doctype</a> <a href="/tags/html-template-resume/" style="font-size: 10px;">html template resume</a> <a href="/tags/ie/" style="font-size: 10px;">ie</a> <a href="/tags/image/" style="font-size: 10px;">image</a> <a href="/tags/image-compressor/" style="font-size: 10px;">image compressor</a> <a href="/tags/image-optimization/" style="font-size: 10px;">image optimization</a> <a href="/tags/include/" style="font-size: 10px;">include</a> <a href="/tags/indentationError/" style="font-size: 10px;">indentationError</a> <a href="/tags/inherit/" style="font-size: 10px;">inherit</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/javascript/" style="font-size: 16px;">javascript</a> <a href="/tags/javascript-function/" style="font-size: 10px;">javascript function</a> <a href="/tags/let/" style="font-size: 12px;">let</a> <a href="/tags/library/" style="font-size: 12px;">library</a> <a href="/tags/literal/" style="font-size: 10px;">literal</a> <a href="/tags/long/" style="font-size: 10px;">long</a> <a href="/tags/major/" style="font-size: 10px;">major</a> <a href="/tags/methods/" style="font-size: 10px;">methods</a> <a href="/tags/mixin/" style="font-size: 10px;">mixin</a> <a href="/tags/new/" style="font-size: 10px;">new</a> <a href="/tags/non-major/" style="font-size: 10px;">non-major</a> <a href="/tags/normalize/" style="font-size: 10px;">normalize</a> <a href="/tags/npm-install/" style="font-size: 10px;">npm install</a> <a href="/tags/npm-run-dev/" style="font-size: 10px;">npm run dev</a> <a href="/tags/oop/" style="font-size: 18px;">oop</a> <a href="/tags/optimization/" style="font-size: 10px;">optimization</a> <a href="/tags/plug-in/" style="font-size: 10px;">plug in</a> <a href="/tags/programming/" style="font-size: 14px;">programming</a> <a href="/tags/prototype/" style="font-size: 10px;">prototype</a> <a href="/tags/python/" style="font-size: 14px;">python</a> <a href="/tags/reflow/" style="font-size: 10px;">reflow</a> <a href="/tags/refs/" style="font-size: 10px;">refs</a> <a href="/tags/rendering/" style="font-size: 16px;">rendering</a> <a href="/tags/repaint/" style="font-size: 10px;">repaint</a> <a href="/tags/reset/" style="font-size: 10px;">reset</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a> <a href="/tags/sass/" style="font-size: 10px;">sass</a> <a href="/tags/scope/" style="font-size: 12px;">scope</a> <a href="/tags/scss/" style="font-size: 12px;">scss</a> <a href="/tags/search/" style="font-size: 10px;">search</a> <a href="/tags/seo/" style="font-size: 10px;">seo</a> <a href="/tags/side-effect/" style="font-size: 10px;">side effect</a> <a href="/tags/start/" style="font-size: 14px;">start</a> <a href="/tags/subClass/" style="font-size: 10px;">subClass</a> <a href="/tags/superClass/" style="font-size: 10px;">superClass</a> <a href="/tags/task-runner/" style="font-size: 10px;">task-runner</a> <a href="/tags/third-party/" style="font-size: 10px;">third party</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/thread/" style="font-size: 10px;">thread</a> <a href="/tags/tutorial/" style="font-size: 16px;">tutorial</a> <a href="/tags/v-bind/" style="font-size: 12px;">v-bind</a> <a href="/tags/v-for/" style="font-size: 10px;">v-for</a> <a href="/tags/v-html/" style="font-size: 10px;">v-html</a> <a href="/tags/v-if/" style="font-size: 10px;">v-if</a> <a href="/tags/v-model/" style="font-size: 10px;">v-model</a> <a href="/tags/v-on/" style="font-size: 10px;">v-on</a> <a href="/tags/v-show/" style="font-size: 10px;">v-show</a> <a href="/tags/var/" style="font-size: 12px;">var</a> <a href="/tags/vendor/" style="font-size: 10px;">vendor</a> <a href="/tags/vue/" style="font-size: 16px;">vue</a> <a href="/tags/vue-init/" style="font-size: 10px;">vue init</a> <a href="/tags/vue-cli/" style="font-size: 10px;">vue-cli</a> <a href="/tags/vue-js/" style="font-size: 16px;">vue.js</a> <a href="/tags/vue-js2/" style="font-size: 16px;">vue.js2</a> <a href="/tags/vue를-시작하는방법/" style="font-size: 10px;">vue를 시작하는방법</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/값/" style="font-size: 10px;">값</a> <a href="/tags/개발/" style="font-size: 12px;">개발</a> <a href="/tags/객체/" style="font-size: 10px;">객체</a> <a href="/tags/객체지향/" style="font-size: 18px;">객체지향</a> <a href="/tags/검색최적화/" style="font-size: 10px;">검색최적화</a> <a href="/tags/논리연산자/" style="font-size: 10px;">논리연산자</a> <a href="/tags/데이터타입/" style="font-size: 10px;">데이터타입</a> <a href="/tags/들여쓰기/" style="font-size: 10px;">들여쓰기</a> <a href="/tags/라이브러리/" style="font-size: 10px;">라이브러리</a> <a href="/tags/랜더링/" style="font-size: 12px;">랜더링</a> <a href="/tags/렌더링/" style="font-size: 10px;">렌더링</a> <a href="/tags/렌터트리/" style="font-size: 10px;">렌터트리</a> <a href="/tags/리터럴/" style="font-size: 10px;">리터럴</a> <a href="/tags/리페인팅/" style="font-size: 10px;">리페인팅</a> <a href="/tags/리플로우/" style="font-size: 10px;">리플로우</a> <a href="/tags/멀티스레드/" style="font-size: 10px;">멀티스레드</a> <a href="/tags/메모리/" style="font-size: 10px;">메모리</a> <a href="/tags/메소드/" style="font-size: 12px;">메소드</a> <a href="/tags/멤버변수/" style="font-size: 12px;">멤버변수</a> <a href="/tags/명시적형변화/" style="font-size: 10px;">명시적형변화</a> <a href="/tags/문법/" style="font-size: 10px;">문법</a> <a href="/tags/문자/" style="font-size: 10px;">문자</a> <a href="/tags/문자열/" style="font-size: 12px;">문자열</a> <a href="/tags/바닐라-JS/" style="font-size: 10px;">바닐라 JS</a> <a href="/tags/변수/" style="font-size: 12px;">변수</a> <a href="/tags/부수효과/" style="font-size: 10px;">부수효과</a> <a href="/tags/북리뷰/" style="font-size: 12px;">북리뷰</a> <a href="/tags/브라우저/" style="font-size: 12px;">브라우저</a> <a href="/tags/비전공자/" style="font-size: 12px;">비전공자</a> <a href="/tags/사스/" style="font-size: 12px;">사스</a> <a href="/tags/산술연산자/" style="font-size: 10px;">산술연산자</a> <a href="/tags/상속/" style="font-size: 10px;">상속</a> <a href="/tags/상수/" style="font-size: 10px;">상수</a> <a href="/tags/생성자함수/" style="font-size: 10px;">생성자함수</a> <a href="/tags/서브클래스/" style="font-size: 10px;">서브클래스</a> <a href="/tags/세미콜론/" style="font-size: 10px;">세미콜론</a> <a href="/tags/숫자/" style="font-size: 10px;">숫자</a> <a href="/tags/슈퍼클래스/" style="font-size: 10px;">슈퍼클래스</a> <a href="/tags/스레드/" style="font-size: 10px;">스레드</a> <a href="/tags/스코프/" style="font-size: 10px;">스코프</a> <a href="/tags/실수/" style="font-size: 10px;">실수</a> <a href="/tags/싱글스레드/" style="font-size: 10px;">싱글스레드</a> <a href="/tags/알고리즘/" style="font-size: 12px;">알고리즘</a> <a href="/tags/암시적형변화/" style="font-size: 10px;">암시적형변화</a> <a href="/tags/에러/" style="font-size: 10px;">에러</a> <a href="/tags/예외/" style="font-size: 10px;">예외</a> <a href="/tags/원페이지-이력서/" style="font-size: 10px;">원페이지 이력서</a> <a href="/tags/웹퍼블리셔/" style="font-size: 10px;">웹퍼블리셔</a> <a href="/tags/유효범위/" style="font-size: 10px;">유효범위</a> <a href="/tags/은닉화/" style="font-size: 10px;">은닉화</a> <a href="/tags/인터페이스/" style="font-size: 10px;">인터페이스</a> <a href="/tags/작은따옴표/" style="font-size: 10px;">작은따옴표</a> <a href="/tags/정수/" style="font-size: 10px;">정수</a> <a href="/tags/캡슐화/" style="font-size: 10px;">캡슐화</a> <a href="/tags/컴포넌트/" style="font-size: 12px;">컴포넌트</a> <a href="/tags/큰따옴표/" style="font-size: 10px;">큰따옴표</a> <a href="/tags/클래스/" style="font-size: 14px;">클래스</a> <a href="/tags/터미널/" style="font-size: 10px;">터미널</a> <a href="/tags/텍스트-바인딩/" style="font-size: 10px;">텍스트 바인딩</a> <a href="/tags/파이썬/" style="font-size: 14px;">파이썬</a> <a href="/tags/파이썬-시작/" style="font-size: 10px;">파이썬 시작</a> <a href="/tags/프레임워크/" style="font-size: 10px;">프레임워크</a> <a href="/tags/프로그래머/" style="font-size: 12px;">프로그래머</a> <a href="/tags/프로세스/" style="font-size: 10px;">프로세스</a> <a href="/tags/프로토타입/" style="font-size: 10px;">프로토타입</a> <a href="/tags/프론트엔드개발/" style="font-size: 10px;">프론트엔드개발</a> <a href="/tags/플러그인/" style="font-size: 10px;">플러그인</a> <a href="/tags/한줄-말줄임/" style="font-size: 10px;">한줄 말줄임</a> <a href="/tags/함수/" style="font-size: 10px;">함수</a> <a href="/tags/함수-바인딩/" style="font-size: 10px;">함수 바인딩</a> <a href="/tags/함수선언문/" style="font-size: 10px;">함수선언문</a> <a href="/tags/함수표현식/" style="font-size: 10px;">함수표현식</a> <a href="/tags/효율성/" style="font-size: 12px;">효율성</a>
+        </div>
+    </div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Taekyun Kim<br>
+            Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme by <a href="http://github.com/ppoffice" rel="external nofollow noopener noreferrer" target="_blank">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'https://tuhbm.github.io/2018/09/29/seo/';
+        
+        this.page.identifier = 'seo';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'bogo-baeuneun-gaebal-6734' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
