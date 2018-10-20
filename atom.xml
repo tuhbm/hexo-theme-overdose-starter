@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-10-20T05:34:42.007Z</updated>
+  <updated>2018-10-20T05:44:19.107Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tuhbm.github.io/2018/10/20/vue-firebase2/"/>
     <id>https://tuhbm.github.io/2018/10/20/vue-firebase2/</id>
     <published>2018-10-20T04:50:24.000Z</published>
-    <updated>2018-10-20T05:34:42.007Z</updated>
+    <updated>2018-10-20T05:44:19.107Z</updated>
     
     <summary type="html">
     
@@ -45,15 +45,17 @@
     
       <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
     
-      <category term="Vue.component" scheme="https://tuhbm.github.io/tags/Vue-component/"/>
+      <category term="vue-router" scheme="https://tuhbm.github.io/tags/vue-router/"/>
     
-      <category term="vue-cli" scheme="https://tuhbm.github.io/tags/vue-cli/"/>
+      <category term="컴포넌트" scheme="https://tuhbm.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/"/>
     
-      <category term="vue init" scheme="https://tuhbm.github.io/tags/vue-init/"/>
+      <category term="history mode" scheme="https://tuhbm.github.io/tags/history-mode/"/>
     
-      <category term="npm install" scheme="https://tuhbm.github.io/tags/npm-install/"/>
+      <category term="router-lint" scheme="https://tuhbm.github.io/tags/router-lint/"/>
     
-      <category term="npm run dev" scheme="https://tuhbm.github.io/tags/npm-run-dev/"/>
+      <category term="to" scheme="https://tuhbm.github.io/tags/to/"/>
+    
+      <category term="compontent" scheme="https://tuhbm.github.io/tags/compontent/"/>
     
   </entry>
   
@@ -62,7 +64,7 @@
     <link href="https://tuhbm.github.io/2018/10/20/vue-firebase1/"/>
     <id>https://tuhbm.github.io/2018/10/20/vue-firebase1/</id>
     <published>2018-10-20T03:56:34.000Z</published>
-    <updated>2018-10-20T05:27:38.676Z</updated>
+    <updated>2018-10-20T05:42:23.516Z</updated>
     
     <summary type="html">
     
@@ -93,6 +95,10 @@
       <category term="npm install" scheme="https://tuhbm.github.io/tags/npm-install/"/>
     
       <category term="npm run dev" scheme="https://tuhbm.github.io/tags/npm-run-dev/"/>
+    
+      <category term="vue-cli 3.0" scheme="https://tuhbm.github.io/tags/vue-cli-3-0/"/>
+    
+      <category term="vue create" scheme="https://tuhbm.github.io/tags/vue-create/"/>
     
   </entry>
   
