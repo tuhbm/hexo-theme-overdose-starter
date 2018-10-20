@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-10-20T04:13:15.091Z</updated>
+  <updated>2018-10-20T04:25:55.933Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://tuhbm.github.io/2018/10/20/vue-firebase1/"/>
     <id>https://tuhbm.github.io/2018/10/20/vue-firebase1/</id>
     <published>2018-10-20T03:56:34.000Z</published>
-    <updated>2018-10-20T04:13:15.091Z</updated>
+    <updated>2018-10-20T04:25:55.933Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;Vue-2-Firebase-Firebase-인증-시스템을-사용하여-15분-안에-Vue-앱을-만드는-방법&quot;&gt;&lt;a href=&quot;#Vue-2-Firebase-Firebase-인증-시스템을-사용하여-15분-안에-Vue-앱을-만드는-방법&quot; clas
-      
+      &lt;h1 id=&quot;Vue-2-Firebase-Firebase-인증-시스템을-사용하여-15분-안에-Vue-앱을-만드는-방법&quot;&gt;&lt;a href=&quot;#Vue-2-Firebase-Firebase-인증-시스템을-사용하여-15분-안에-Vue-앱을-만드는-방법&quot; class=&quot;headerlink&quot; title=&quot;Vue 2 + Firebase: Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법&quot;&gt;&lt;/a&gt;Vue 2 + Firebase: Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase1.png&quot; alt=&quot;Vue &amp;amp; Firebase&quot;&gt;&lt;/p&gt;
+&lt;p&gt;이 튜토리얼에서는 Vue 2, vue-router 사용 그리고 Firebase의 인증 시스템을 사용하여,&lt;br&gt;웹 어플리케이션을 신속하게 구축하는 방법을 알아봅니다.&lt;/p&gt;
+&lt;h2 id=&quot;Vue-js란-무엇인가&quot;&gt;&lt;a href=&quot;#Vue-js란-무엇인가&quot; class=&quot;headerlink&quot; title=&quot;Vue.js란 무엇인가?&quot;&gt;&lt;/a&gt;Vue.js란 무엇인가?&lt;/h2&gt;&lt;p&gt;다음은 놀랍고 가벼운 Javascript 프레임워크인 Vue.js의 개요입니다.&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Vue는 사용자 인터페이스 구축을 위한 진보적인 프레임워크입니다. Vue는 타 다른 프레임 워크와 다르게 점진적으로 채택 가능하도록 설계되었습니다. 핵심 라이브러리는 &amp;apos;View&amp;apos; 단에만 초점을 맞추고 있으며, 다른 라이브러리 또는 기존 프로젝트와 통합하기가 매우 쉽습니다.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vuejs 공식 문서: &amp;lt;https://vuejs.org/v2/guide&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
