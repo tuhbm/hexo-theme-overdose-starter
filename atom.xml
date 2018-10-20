@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-10-20T05:44:19.107Z</updated>
+  <updated>2018-10-20T05:47:15.398Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 2편</title>
     <link href="https://tuhbm.github.io/2018/10/20/vue-firebase2/"/>
     <id>https://tuhbm.github.io/2018/10/20/vue-firebase2/</id>
-    <published>2018-10-20T04:50:24.000Z</published>
-    <updated>2018-10-20T05:44:19.107Z</updated>
+    <published>2018-10-20T05:20:24.000Z</published>
+    <updated>2018-10-20T05:47:15.398Z</updated>
     
     <summary type="html">
     
@@ -50,8 +50,6 @@
       <category term="컴포넌트" scheme="https://tuhbm.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/"/>
     
       <category term="history mode" scheme="https://tuhbm.github.io/tags/history-mode/"/>
-    
-      <category term="router-lint" scheme="https://tuhbm.github.io/tags/router-lint/"/>
     
       <category term="to" scheme="https://tuhbm.github.io/tags/to/"/>
     
@@ -92,13 +90,13 @@
     
       <category term="vue init" scheme="https://tuhbm.github.io/tags/vue-init/"/>
     
-      <category term="npm install" scheme="https://tuhbm.github.io/tags/npm-install/"/>
-    
-      <category term="npm run dev" scheme="https://tuhbm.github.io/tags/npm-run-dev/"/>
-    
       <category term="vue-cli 3.0" scheme="https://tuhbm.github.io/tags/vue-cli-3-0/"/>
     
       <category term="vue create" scheme="https://tuhbm.github.io/tags/vue-create/"/>
+    
+      <category term="npm install" scheme="https://tuhbm.github.io/tags/npm-install/"/>
+    
+      <category term="npm run dev" scheme="https://tuhbm.github.io/tags/npm-run-dev/"/>
     
   </entry>
   
