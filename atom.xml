@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-10-20T04:32:05.227Z</updated>
+  <updated>2018-10-20T04:36:10.121Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -17,15 +17,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법</title>
-    <link href="https://tuhbm.github.io/2018/10/20/vue-firebase1/"/>
-    <id>https://tuhbm.github.io/2018/10/20/vue-firebase1/</id>
-    <published>2018-10-20T03:56:34.000Z</published>
-    <updated>2018-10-20T04:32:05.227Z</updated>
+    <title>Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 1편</title>
+    <link href="https://tuhbm.github.io/2018/10/20/vue-firebase2/"/>
+    <id>https://tuhbm.github.io/2018/10/20/vue-firebase2/</id>
+    <published>2018-10-20T04:50:24.000Z</published>
+    <updated>2018-10-20T04:36:10.121Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Vue-2-Firebase-Firebase-인증-시스템을-사용하여-15분-안에-Vue-앱을-만드는-방법&quot;&gt;&lt;a href=&quot;#Vue-2-Firebase-Firebase-인증-시스템을-사용하여-15분-안에-Vue-앱을-만드는-방법&quot; class=&quot;headerlink&quot; title=&quot;Vue 2 + Firebase: Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법&quot;&gt;&lt;/a&gt;Vue 2 + Firebase: Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase1.png&quot; alt=&quot;Vue &amp;amp; Firebase&quot;&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;코드-작성하기&quot;&gt;&lt;a href=&quot;#코드-작성하기&quot; class=&quot;headerlink&quot; title=&quot;코드 작성하기!&quot;&gt;&lt;/a&gt;코드 작성하기!&lt;/h2&gt;&lt;h4 id=&quot;우리의-미래-App-아키텍처&quot;&gt;&lt;a href=&quot;#우리의-미래-App-아키텍처&quot; class=&quot;headerlink&quot; title=&quot;우리의 미래 App 아키텍처&quot;&gt;&lt;/a&gt;우리의 미래 App 아키텍처&lt;/h4&gt;&lt;p&gt;우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다.&lt;br&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase7.png&quot; alt=&quot;APP의 View구성&quot;&gt;&lt;/p&gt;
+&lt;p&gt;로그인이 성공적으로 완료되거나 새 계정을 만든 후에는 앱의 인증 된 부분 Hello의 View로 리다이렉션됩니다.&lt;/p&gt;
+&lt;h2 id=&quot;스텝1-로그인과-회원가입&quot;&gt;&lt;a href=&quot;#스텝1-로그인과-회원가입&quot; class=&quot;headerlink&quot; title=&quot;스텝1. 로그인과 회원가입&quot;&gt;&lt;/a&gt;스텝1. 로그인과 회원가입&lt;/h2&gt;&lt;h3 id=&quot;1-1-로그인-View&quot;&gt;&lt;a href=&quot;#1-1-로그인-View&quot; class=&quot;headerlink&quot; title=&quot;1-1 로그인 View&quot;&gt;&lt;/a&gt;1-1 로그인 View&lt;/h3&gt;&lt;p&gt;Login 컴포넌트를 만들어봅시다. src / components 아래에 Login이라는 새로운 Vue 구성 요소를 만듭니다.&lt;/p&gt;
+&lt;p&gt;일단 컴포넌트는 단순히 제목, 두 개의 input 필드, 버튼 그리고 간단한 문장으로 구성됩니다.&lt;br&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase8.png&quot; alt=&quot;Login 컴포넌트&quot;&gt;&lt;/p&gt;
+&lt;p&gt;이제 컴포넌트가 생성되었습니다! 하지만이 새로운 컴포넌트를 우리 앱에 어떻게 보여 줄 수 있을까요?&lt;br&gt;음… 우리는 vue-router를 사용할것입니다. 기억하시나요? 우리는 Vue-cli로 앱을 초기 구성할때 이미 vue-router를 설치했습니다.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
+    
+    
+      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
+    
+      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
+    
+      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
+    
+      <category term="Vue.component" scheme="https://tuhbm.github.io/tags/Vue-component/"/>
+    
+      <category term="vue-cli" scheme="https://tuhbm.github.io/tags/vue-cli/"/>
+    
+      <category term="vue init" scheme="https://tuhbm.github.io/tags/vue-init/"/>
+    
+      <category term="npm install" scheme="https://tuhbm.github.io/tags/npm-install/"/>
+    
+      <category term="npm run dev" scheme="https://tuhbm.github.io/tags/npm-run-dev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 1편</title>
+    <link href="https://tuhbm.github.io/2018/10/20/vue-firebase1/"/>
+    <id>https://tuhbm.github.io/2018/10/20/vue-firebase1/</id>
+    <published>2018-10-20T03:56:34.000Z</published>
+    <updated>2018-10-20T04:35:56.521Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Vue-2-Firebase-Firebase-인증-시스템을-사용하여-15분-안에-Vue-앱을-만드는-방법-2편&quot;&gt;&lt;a href=&quot;#Vue-2-Firebase-Firebase-인증-시스템을-사용하여-15분-안에-Vue-앱을-만드는-방법-2편&quot; class=&quot;headerlink&quot; title=&quot;Vue 2 + Firebase: Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 2편&quot;&gt;&lt;/a&gt;Vue 2 + Firebase: Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 2편&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase1.png&quot; alt=&quot;Vue &amp;amp; Firebase&quot;&gt;&lt;/p&gt;
 &lt;p&gt;이 튜토리얼에서는 Vue 2, vue-router 사용 그리고 Firebase의 인증 시스템을 사용하여,&lt;br&gt;웹 어플리케이션을 신속하게 구축하는 방법을 알아봅니다.&lt;/p&gt;
 &lt;h2 id=&quot;Vue-js란-무엇인가&quot;&gt;&lt;a href=&quot;#Vue-js란-무엇인가&quot; class=&quot;headerlink&quot; title=&quot;Vue.js란 무엇인가?&quot;&gt;&lt;/a&gt;Vue.js란 무엇인가?&lt;/h2&gt;&lt;p&gt;다음은 놀랍고 가벼운 Javascript 프레임워크인 Vue.js의 개요입니다.&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Vue는 사용자 인터페이스 구축을 위한 진보적인 프레임워크입니다. Vue는 타 다른 프레임 워크와 다르게 점진적으로 채택 가능하도록 설계되었습니다. 핵심 라이브러리는 &amp;apos;View&amp;apos; 단에만 초점을 맞추고 있으며, 다른 라이브러리 또는 기존 프로젝트와 통합하기가 매우 쉽습니다.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vuejs 공식 문서: &amp;lt;https://vuejs.org/v2/guide&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -686,45 +726,6 @@
       <category term="라이브러리" scheme="https://tuhbm.github.io/tags/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/"/>
     
       <category term="프레임워크" scheme="https://tuhbm.github.io/tags/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>리터럴이란 무엇일까?</title>
-    <link href="https://tuhbm.github.io/2018/01/26/literal/"/>
-    <id>https://tuhbm.github.io/2018/01/26/literal/</id>
-    <published>2018-01-26T10:43:00.000Z</published>
-    <updated>2018-08-20T14:01:33.566Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/terms/literal_img1.jpg&quot; alt=&quot;리터럴&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;리터럴&quot;&gt;&lt;a href=&quot;#리터럴&quot; class=&quot;headerlink&quot; title=&quot;리터럴&quot;&gt;&lt;/a&gt;리터럴&lt;/h1&gt;&lt;p&gt;프로그램 개발을 하다보면, 리터럴이라는 단어를 많이 사용한다.&lt;br&gt;먼저 위키를 살펴보자&lt;br&gt;
-    
-    </summary>
-    
-      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
-    
-    
-      <category term="var" scheme="https://tuhbm.github.io/tags/var/"/>
-    
-      <category term="let" scheme="https://tuhbm.github.io/tags/let/"/>
-    
-      <category term="const" scheme="https://tuhbm.github.io/tags/const/"/>
-    
-      <category term="리터럴" scheme="https://tuhbm.github.io/tags/%EB%A6%AC%ED%84%B0%EB%9F%B4/"/>
-    
-      <category term="literal" scheme="https://tuhbm.github.io/tags/literal/"/>
-    
-      <category term="상수" scheme="https://tuhbm.github.io/tags/%EC%83%81%EC%88%98/"/>
-    
-      <category term="변수" scheme="https://tuhbm.github.io/tags/%EB%B3%80%EC%88%98/"/>
-    
-      <category term="값" scheme="https://tuhbm.github.io/tags/%EA%B0%92/"/>
-    
-      <category term="메모리" scheme="https://tuhbm.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/"/>
     
   </entry>
   
