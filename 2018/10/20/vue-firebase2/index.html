@@ -5,19 +5,19 @@
     
     <title>Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 2편 | 보고 배우는 개발</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="코드 작성하기!우리의 미래 App 아키텍처우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다. 로그인이 성공적으로 완료되거나 새 계정을 만든 후에는 앱의 인증 된 부분 Hello의 View로 리다이렉션됩니다. 스텝1.">
+    <meta name="description" content="코드 작성하기!지난 포스팅에서 우리는 vue와 vue-router등에대해 알아보고 실습을 위한 이론등을 알아보았습니다. 우리의 미래 App 아키텍처우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다. 로그인이 성공적으로">
 <meta name="keywords" content="vue,vue.js,tutorial,Vue.component,vue-cli,vue init,npm install,npm run dev">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 2편">
 <meta property="og:url" content="https://tuhbm.github.io/2018/10/20/vue-firebase2/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
-<meta property="og:description" content="코드 작성하기!우리의 미래 App 아키텍처우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다. 로그인이 성공적으로 완료되거나 새 계정을 만든 후에는 앱의 인증 된 부분 Hello의 View로 리다이렉션됩니다. 스텝1.">
+<meta property="og:description" content="코드 작성하기!지난 포스팅에서 우리는 vue와 vue-router등에대해 알아보고 실습을 위한 이론등을 알아보았습니다. 우리의 미래 App 아키텍처우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다. 로그인이 성공적으로">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/vue-firebase/vue-firebase1.png">
-<meta property="og:updated_time" content="2018-10-20T04:37:17.784Z">
+<meta property="og:updated_time" content="2018-10-20T04:41:01.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 2편">
-<meta name="twitter:description" content="코드 작성하기!우리의 미래 App 아키텍처우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다. 로그인이 성공적으로 완료되거나 새 계정을 만든 후에는 앱의 인증 된 부분 Hello의 View로 리다이렉션됩니다. 스텝1.">
+<meta name="twitter:description" content="코드 작성하기!지난 포스팅에서 우리는 vue와 vue-router등에대해 알아보고 실습을 위한 이론등을 알아보았습니다. 우리의 미래 App 아키텍처우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다. 로그인이 성공적으로">
 <meta name="twitter:image" content="https://tuhbm.github.io/images/vue-firebase/vue-firebase1.png">
     
 
@@ -267,7 +267,8 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h2 id="코드-작성하기"><a href="#코드-작성하기" class="headerlink" title="코드 작성하기!"></a>코드 작성하기!</h2><h4 id="우리의-미래-App-아키텍처"><a href="#우리의-미래-App-아키텍처" class="headerlink" title="우리의 미래 App 아키텍처"></a>우리의 미래 App 아키텍처</h4><p>우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다.<br><img src="https://tuhbm.github.io/images/vue-firebase/vue-firebase7.png" alt="APP의 View구성"></p>
+            <h2 id="코드-작성하기"><a href="#코드-작성하기" class="headerlink" title="코드 작성하기!"></a>코드 작성하기!</h2><p><a href="https://tuhbm.github.io/2018/10/20/vue-firebase1/">지난 포스팅</a>에서 우리는 vue와 vue-router등에대해 알아보고 실습을 위한 이론등을 알아보았습니다.</p>
+<h4 id="우리의-미래-App-아키텍처"><a href="#우리의-미래-App-아키텍처" class="headerlink" title="우리의 미래 App 아키텍처"></a>우리의 미래 App 아키텍처</h4><p>우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다.<br><img src="https://tuhbm.github.io/images/vue-firebase/vue-firebase7.png" alt="APP의 View구성"></p>
 <p>로그인이 성공적으로 완료되거나 새 계정을 만든 후에는 앱의 인증 된 부분 Hello의 View로 리다이렉션됩니다.</p>
 <h2 id="스텝1-로그인과-회원가입"><a href="#스텝1-로그인과-회원가입" class="headerlink" title="스텝1. 로그인과 회원가입"></a>스텝1. 로그인과 회원가입</h2><h3 id="1-1-로그인-View"><a href="#1-1-로그인-View" class="headerlink" title="1-1 로그인 View"></a>1-1 로그인 View</h3><p>Login 컴포넌트를 만들어봅시다. src / components 아래에 Login이라는 새로운 Vue 구성 요소를 만듭니다.</p>
 <p>일단 컴포넌트는 단순히 제목, 두 개의 input 필드, 버튼 그리고 간단한 문장으로 구성됩니다.<br><img src="https://tuhbm.github.io/images/vue-firebase/vue-firebase8.png" alt="Login 컴포넌트"></p>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-10-20T04:37:17.784Z</updated>
+  <updated>2018-10-20T04:41:01.614Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,11 +21,12 @@
     <link href="https://tuhbm.github.io/2018/10/20/vue-firebase2/"/>
     <id>https://tuhbm.github.io/2018/10/20/vue-firebase2/</id>
     <published>2018-10-20T04:50:24.000Z</published>
-    <updated>2018-10-20T04:37:17.784Z</updated>
+    <updated>2018-10-20T04:41:01.614Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;코드-작성하기&quot;&gt;&lt;a href=&quot;#코드-작성하기&quot; class=&quot;headerlink&quot; title=&quot;코드 작성하기!&quot;&gt;&lt;/a&gt;코드 작성하기!&lt;/h2&gt;&lt;h4 id=&quot;우리의-미래-App-아키텍처&quot;&gt;&lt;a href=&quot;#우리의-미래-App-아키텍처&quot; class=&quot;headerlink&quot; title=&quot;우리의 미래 App 아키텍처&quot;&gt;&lt;/a&gt;우리의 미래 App 아키텍처&lt;/h4&gt;&lt;p&gt;우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다.&lt;br&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase7.png&quot; alt=&quot;APP의 View구성&quot;&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;코드-작성하기&quot;&gt;&lt;a href=&quot;#코드-작성하기&quot; class=&quot;headerlink&quot; title=&quot;코드 작성하기!&quot;&gt;&lt;/a&gt;코드 작성하기!&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase1/&quot;&gt;지난 포스팅&lt;/a&gt;에서 우리는 vue와 vue-router등에대해 알아보고 실습을 위한 이론등을 알아보았습니다.&lt;/p&gt;
+&lt;h4 id=&quot;우리의-미래-App-아키텍처&quot;&gt;&lt;a href=&quot;#우리의-미래-App-아키텍처&quot; class=&quot;headerlink&quot; title=&quot;우리의 미래 App 아키텍처&quot;&gt;&lt;/a&gt;우리의 미래 App 아키텍처&lt;/h4&gt;&lt;p&gt;우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다.&lt;br&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase7.png&quot; alt=&quot;APP의 View구성&quot;&gt;&lt;/p&gt;
 &lt;p&gt;로그인이 성공적으로 완료되거나 새 계정을 만든 후에는 앱의 인증 된 부분 Hello의 View로 리다이렉션됩니다.&lt;/p&gt;
 &lt;h2 id=&quot;스텝1-로그인과-회원가입&quot;&gt;&lt;a href=&quot;#스텝1-로그인과-회원가입&quot; class=&quot;headerlink&quot; title=&quot;스텝1. 로그인과 회원가입&quot;&gt;&lt;/a&gt;스텝1. 로그인과 회원가입&lt;/h2&gt;&lt;h3 id=&quot;1-1-로그인-View&quot;&gt;&lt;a href=&quot;#1-1-로그인-View&quot; class=&quot;headerlink&quot; title=&quot;1-1 로그인 View&quot;&gt;&lt;/a&gt;1-1 로그인 View&lt;/h3&gt;&lt;p&gt;Login 컴포넌트를 만들어봅시다. src / components 아래에 Login이라는 새로운 Vue 구성 요소를 만듭니다.&lt;/p&gt;
 &lt;p&gt;일단 컴포넌트는 단순히 제목, 두 개의 input 필드, 버튼 그리고 간단한 문장으로 구성됩니다.&lt;br&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase8.png&quot; alt=&quot;Login 컴포넌트&quot;&gt;&lt;/p&gt;
@@ -61,7 +62,7 @@
     <link href="https://tuhbm.github.io/2018/10/20/vue-firebase1/"/>
     <id>https://tuhbm.github.io/2018/10/20/vue-firebase1/</id>
     <published>2018-10-20T03:56:34.000Z</published>
-    <updated>2018-10-20T04:38:58.956Z</updated>
+    <updated>2018-10-20T04:39:58.594Z</updated>
     
     <summary type="html">
     
