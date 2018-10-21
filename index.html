@@ -260,33 +260,13 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <p>지난 앞선 포스팅에서 <a href="https://tuhbm.github.io/2018/10/20/vue-firebase1/">1편</a>에서는 기본 이론을 알고,<br><a href="https://tuhbm.github.io/2018/10/20/vue-firebase2/">2편</a>에선 컴포넌트를 각각 구성해보고, vue-router에 대한 이론을 알아보았습니다.<br>이제 vue-router를 사용해 컴포넌트간 이동을 진행해보도록 하겠습니다. </p>
+            <p></p><p>지난 앞선 포스팅에서 <a href="https://tuhbm.github.io/2018/10/20/vue-firebase1/">1편</a>에서는 기본 이론을 알고,<br><a href="https://tuhbm.github.io/2018/10/20/vue-firebase2/">2편</a>에선 컴포넌트를 각각 구성해보고, vue-router에 대한 이론을 알아보았습니다.<br>이제 vue-router를 사용해 컴포넌트간 이동을 진행해보도록 하겠습니다. </p>
 <h2 id="스텝2-컴포넌트에서-컴포넌트의-이동"><a href="#스텝2-컴포넌트에서-컴포넌트의-이동" class="headerlink" title="스텝2 컴포넌트에서 컴포넌트의 이동"></a>스텝2 컴포넌트에서 컴포넌트의 이동</h2><p>우리가 정의한 앱 구조를 살펴보면 Login 컴포넌트에서 SignUp컴포넌트로 이동하고 두 컴포넌트에서 Hello 컴포넌트로 이동할 수 있습니다.<br>어떻게 해야할까요?</p>
 <p>우리는 <em>router-link</em>라는 <em>vue-router</em> 구성 요소를 사용할 것입니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-link&gt;는 라우터를 사용하는 앱에서 사용자가 이동하기 위한 구성 요소입니다. 목표 위치는 to라는 prop으로 지정됩니다.</span><br><span class="line">기본적으로 올바른 href로 &lt;a&gt; 태그로 렌더링되지만 tag의 prop으로 구성할 수 있습니다.</span><br><span class="line"></span><br><span class="line">&lt;router-link tag=&quot;li&quot; to=&quot;/foo&quot;&gt;</span><br><span class="line">   &lt;a&gt;/foo&lt;/a&gt;</span><br><span class="line">&lt;/router-link&gt;</span><br><span class="line"></span><br><span class="line">또한 대상 경로가 활성화되어 있으면 링크가 자동으로 활성화된 CSS 클래스를 가져옵니다.</span><br><span class="line"></span><br><span class="line">vue-router 설명서&lt;https://router.vuejs.org/en/api/router-link.html&gt;</span><br></pre></td></tr></table></figure>
-<p>이제 Login 및 SignUp 컴포넌에서 <em>router-link</em>를 사용하여 두 가지 컴포넌트끼리 이동 할 수 구현 하겠습니다.</p>
-<p><img src="https://tuhbm.github.io/images/vue-firebase/vue-firebase18.png" alt="Login.vue"><br><img src="https://tuhbm.github.io/images/vue-firebase/vue-firebase19.png" alt="SignUp.vue"></p>
-<p>이제 방금 만든 링크를 사용하여 두 컴포넌트 사이를 이동 할 수 있습니다.</p>
-<p>마지막으로 <em>Login</em>/<em>SignUp</em> 컴포넌트에서 <em>Hello</em>컴포넌트로 이동시켜야합니다.<br>현재 구현된 코드가 없으므로, 인증확인 확인 없이 <em>Connection</em> 버튼을 클릭할 때 <em>Hello</em> 컴포넌로 간단히 리다이렉션 시킬 것입니다.</p>
-<p>라우터 링크를 사용하면 구성 요소의 html부분에서 이동을 위한 값을 탐색이 이루어집니다.<br>그러나 우리는 계획에따라 경로를 이용하려 합니다.<br>이렇게 하기위해선 <em>Connection</em> 버튼을 클릭할때 vue.js의 v-on메소드를 통해 이벤트를 바인딩하여 처리 할 수 있습니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">이벤트 바인딩</span><br><span class="line"></span><br><span class="line">우리는 v-on 지시문을 사용하여 DOM 이벤트를 수신하고, </span><br><span class="line">호출하였을때 JavaScript를 실행할 수 있습니다.</span><br><span class="line"></span><br><span class="line">Vue2 문서: &lt;https://vuejs.org/v2/guide/events.html#Listening-to-Events&gt;</span><br></pre></td></tr></table></figure>
-<p>우리는 이벤트를 바인딩하고 클릭하여 실행합니다. 지금은 Connection 버튼을 클릭하여 이벤트가 발생해서 Hello 컴포넌트로 이동합니다.</p>
-<p>각 컴포넌트 사이를 프로그래밍 방식으로 이동하려면 <em>vue-router</em>에는 앱에서 사용할 수 있는 메소드들이 있습니다.<br>이러한 메소드에 대한 자세한 내용은 <em>vue-router</em>의 설명서를 참조하세요.<br><a href="https://router.vuejs.org/en/essentials/navigation.html" rel="external nofollow noopener noreferrer" target="_blank">https://router.vuejs.org/en/essentials/navigation.html</a></p>
-<p>이 예제에서는 사용자가 로그인하면 <em>Hello</em> 컴포넌트를 시작 경로로 사용하기 때문에 <em>replace</em> 메소드를 사용하려고합니다.</p>
-<p><em>로그인</em> 컴포넌트를 변경하여 구현해 보겠습니다.</p>
-<p><img src="https://tuhbm.github.io/images/vue-firebase/vue-firebase20.png" alt="Login.vue"><br>우리는 login 함수안에 *this.$router.replace(‘hello’) 가 있는 것을 볼 수 있습니다.</p>
-<p>왜 우리는 router에 접근할때 <em>this</em> 를 함께 사용할까요? <em>main.js</em> 파일을 살펴보면, router객체가 Vue 앱에 삽입되어있는 것을 알 수 있습니다.<br>이러한 방법은 우리가 어플리케이션의 모든 컴포넌트를 쉽게 접근 할 수 있는 방법입니다.</p>
-<p><img src="https://tuhbm.github.io/images/vue-firebase/vue-firebase21.png" alt="src/main.js"></p>
-<p>또한 우리는 <em>‘hello’</em> 로 접근하지만 아직 hello에 대한 경로가 없습니다.</p>
-<p>Hello 컴포넌트의 <em>‘/‘</em> 라는 기본 경로는 앱을 실행시켰을 때에 접속합니다.<br>사용자가 인증을 완료한 후 Hello 컴포넌트에 접근해야 하므로 <em>/hello</em> 경로에 접근했을 할 때 Hello 컴포넌트에 접근 할 수 있도록 경로를 추가해야 합니다.</p>
-<p><img src="https://tuhbm.github.io/images/vue-firebase/vue-firebase22.png" alt="src/router/index.js"></p>
-<p>이제 <em>Login</em> 컴포넌트에서 연결 버튼을 클릭하면 <em>Hello</em> 컴포넌트로 리디렉션됩니다.</p>
-<hr>
-<p>지금까지 router-link를 통해 컴포넌트에서의 이동 및 이벤트를 작성해서 실행해 보았습니다.<br>다음 포스팅에서는 firebase를 실습해보도록 하겠습니다.</p>
-<hr>
-<h2 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h2><p>해당 글은 <a href="https://medium.com/" rel="external nofollow noopener noreferrer" target="_blank">medium</a>에 <a href="https://medium.com/@anas.mammeri" rel="external nofollow noopener noreferrer" target="_blank">Anas Mammeri</a>의 <a href="https://medium.com/@anas.mammeri/vue-2-firebase-how-to-build-a-vue-app-with-firebase-authentication-system-in-15-minutes-fdce6f289c3c" rel="external nofollow noopener noreferrer" target="_blank">포스팅 글</a>을 번역한것입니다.</p>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-link&gt;는 라우터를 사용하는 앱에서 사용자가 이동하기 위한 구성 요소입니다. 목표 위치는 to라는 prop으로 지정됩니다.</span><br><span class="line">기본적으로 올바른 href로 &lt;a&gt; 태그로 렌더링되지만 tag의 prop으로 구성할 수 있습니다.</span><br><span class="line"></span><br><span class="line">&lt;router-link tag=&quot;li&quot; to=&quot;/foo&quot;&gt;</span><br><span class="line">   &lt;a&gt;/foo&lt;/a&gt;</span><br><span class="line">&lt;/router-link&gt;</span><br><span class="line"></span><br><span class="line">또한 대상 경로가 활성화되어 있으면 링크가 자동으로 활성화된 CSS 클래스를 가져옵니다.</span><br><span class="line"></span><br><span class="line">vue-router 설명서&lt;https://router.vuejs.org/en/api/router-link.html&gt;</span><br></pre></td></tr></table></figure><p></p>
+            <p class="article-more-link">
+                <a href="/2018/10/20/vue-firebase3/#more">자세히 보기</a>
+            </p>
         
         </div>
         <footer class="article-footer">
