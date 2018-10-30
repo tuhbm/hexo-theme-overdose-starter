@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-10-22T13:26:38.753Z</updated>
+  <updated>2018-10-30T11:16:17.069Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -17,15 +17,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 5편</title>
+    <link href="https://tuhbm.github.io/2018/10/30/vue-firebase5/"/>
+    <id>https://tuhbm.github.io/2018/10/30/vue-firebase5/</id>
+    <published>2018-10-30T11:06:19.000Z</published>
+    <updated>2018-10-30T11:16:17.069Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;지난 앞선 포스팅에서 &lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase1/&quot;&gt;1편&lt;/a&gt;에서는 기본 이론을 알고,&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase2/&quot;&gt;2편&lt;/a&gt;에선 컴포넌트를 각각 구성해보고, vue-router에 대한 이론을 알아보았습니다.&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase3/&quot;&gt;3편&lt;/a&gt;에선 vue-router를 사용해 컴포넌트간 이동을 진행해보았습니다.&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/22/vue-firebase4/&quot;&gt;4편&lt;/a&gt;에서는 firebase를 연결하고 회원가입&amp;amp;로그인을 진행해 보겠습니다.&lt;/p&gt;
+&lt;p&gt;마지막으로 firebase에 가입된 데이터에 인증을 통해 페이지 접속이 가능하도록 해보겠습니다.&lt;/p&gt;
+&lt;h2 id=&quot;스텝4-인증-후-앱-접속&quot;&gt;&lt;a href=&quot;#스텝4-인증-후-앱-접속&quot; class=&quot;headerlink&quot; title=&quot;스텝4 인증 후 앱 접속&quot;&gt;&lt;/a&gt;스텝4 인증 후 앱 접속&lt;/h2&gt;&lt;h3 id=&quot;4-1-router에-meta-추가&quot;&gt;&lt;a href=&quot;#4-1-router에-meta-추가&quot; class=&quot;headerlink&quot; title=&quot;4.1 router에 meta 추가&quot;&gt;&lt;/a&gt;4.1 router에 meta 추가&lt;/h3&gt;&lt;p&gt;이제 인증을 받았습니다! 하지만 아무 일도 일어나지 않습니다. 사용자를 인증 한 경우에만 응용 프로그램으로 접근 가능하도록 사용자를 리다이렉션시켜야합니다. 우리는 앱에서 인증 후 이동 될 컴포넌트가 &lt;em&gt;Hello&lt;/em&gt; 컴포넌트라고 정의 하였습니다.&lt;/p&gt;
+&lt;p&gt;Vue 애플리케이션에서 이를 구현하기 위해 vue-router의 메타 필드를 사용할 수 있습니다. 메타 필드는 경로에 설정할 수있는 추가 정보입니다.&lt;/p&gt;
+&lt;p&gt;메타에 대한 자세한 내용을 보려면 여기에서 vue-router 설명서를 확인하십시오.&lt;br&gt;&lt;a href=&quot;https://router.vuejs.org/en/advanced/meta.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;https://router.vuejs.org/en/advanced/meta.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;이 예제에서 사용할 Hello 뷰에 메타 필드를 추가해 보겠습니다.&lt;br&gt;이 메타는 requiresAuth라고하며 &lt;em&gt;Hello&lt;/em&gt; 컴포넌트에 인증이 필요함을 알립니다.&lt;/p&gt;
+&lt;p&gt;모든 컴포넌트에 경로가 존재하며, 기본 디폴트 페이지의 앱 기본경로를 재정의해야합니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase36.png&quot; alt=&quot;src/router/index.js&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
+    
+    
+      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
+    
+      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
+    
+      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
+    
+      <category term="vue-router" scheme="https://tuhbm.github.io/tags/vue-router/"/>
+    
+      <category term="router-link" scheme="https://tuhbm.github.io/tags/router-link/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 4편</title>
     <link href="https://tuhbm.github.io/2018/10/22/vue-firebase4/"/>
     <id>https://tuhbm.github.io/2018/10/22/vue-firebase4/</id>
     <published>2018-10-22T13:01:25.000Z</published>
-    <updated>2018-10-22T13:26:38.753Z</updated>
+    <updated>2018-10-30T11:10:59.736Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;스텝3-firebase-사용&quot;&gt;&lt;a href=&quot;#스텝3-firebase-사용&quot; class=&quot;headerlink&quot; title=&quot;스텝3 firebase 사용&quot;&gt;&lt;/a&gt;스텝3 firebase 사용&lt;/h2&gt;&lt;p&gt;우리의 프론트 엔드 애플리케이션을 준비가 되었습니다. 인증 시스템을 사용할 수 있도록 Firebase를 구현합시다!&lt;/p&gt;
+      &lt;p&gt;지난 앞선 포스팅에서 &lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase1/&quot;&gt;1편&lt;/a&gt;에서는 기본 이론을 알고,&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase2/&quot;&gt;2편&lt;/a&gt;에선 컴포넌트를 각각 구성해보고, vue-router에 대한 이론을 알아보았습니다.&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase3/&quot;&gt;3편&lt;/a&gt;에선 vue-router를 사용해 컴포넌트간 이동을 진행해보았습니다.&lt;/p&gt;
+&lt;p&gt;이번편에서는 firebase를 연결하고 회원가입&amp;amp;로그인을 진행해 보겠습니다.&lt;/p&gt;
+&lt;h2 id=&quot;스텝3-firebase-사용&quot;&gt;&lt;a href=&quot;#스텝3-firebase-사용&quot; class=&quot;headerlink&quot; title=&quot;스텝3 firebase 사용&quot;&gt;&lt;/a&gt;스텝3 firebase 사용&lt;/h2&gt;&lt;p&gt;우리의 프론트 엔드 애플리케이션을 준비가 되었습니다. 인증 시스템을 사용할 수 있도록 Firebase를 구현합시다!&lt;/p&gt;
 &lt;h3 id=&quot;3-1-Firebase에서-새로운-프로젝트-만들기&quot;&gt;&lt;a href=&quot;#3-1-Firebase에서-새로운-프로젝트-만들기&quot; class=&quot;headerlink&quot; title=&quot;3.1 Firebase에서 새로운 프로젝트 만들기&quot;&gt;&lt;/a&gt;3.1 Firebase에서 새로운 프로젝트 만들기&lt;/h3&gt;&lt;p&gt;Firebase를 사용하려면, 먼저 firebase 콘솔에 새로운 프로젝트를 생성해야합니다.&lt;br&gt;가입된 계정이 없으면 계정을 만든 다음으로 이동하십시오.&lt;/p&gt;
 &lt;p&gt;&amp;lt;console.firebase.google.com&amp;gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase23.png&quot; alt=&quot;Firebase console&quot;&gt;&lt;/p&gt;
@@ -55,7 +94,7 @@
     <link href="https://tuhbm.github.io/2018/10/20/vue-firebase3/"/>
     <id>https://tuhbm.github.io/2018/10/20/vue-firebase3/</id>
     <published>2018-10-20T05:20:32.000Z</published>
-    <updated>2018-10-22T13:26:38.756Z</updated>
+    <updated>2018-10-30T11:10:59.742Z</updated>
     
     <summary type="html">
     
@@ -66,6 +105,26 @@
     
     </summary>
     
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
+    
+    
+      <category term="컴포넌트" scheme="https://tuhbm.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/"/>
+    
+      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
+    
+      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
+    
+      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
+    
+      <category term="vue-router" scheme="https://tuhbm.github.io/tags/vue-router/"/>
+    
+      <category term="to" scheme="https://tuhbm.github.io/tags/to/"/>
+    
+      <category term="compontent" scheme="https://tuhbm.github.io/tags/compontent/"/>
+    
+      <category term="router-link" scheme="https://tuhbm.github.io/tags/router-link/"/>
     
   </entry>
   
@@ -688,34 +747,6 @@
       <category term="예외" scheme="https://tuhbm.github.io/tags/%EC%98%88%EC%99%B8/"/>
     
       <category term="산술연산자" scheme="https://tuhbm.github.io/tags/%EC%82%B0%EC%88%A0%EC%97%B0%EC%82%B0%EC%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python 시작하기</title>
-    <link href="https://tuhbm.github.io/2018/02/12/startPython/"/>
-    <id>https://tuhbm.github.io/2018/02/12/startPython/</id>
-    <published>2018-02-12T12:17:35.000Z</published>
-    <updated>2018-03-11T03:23:03.874Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;p&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;파이썬-python-시작하기&quot;&gt;&lt;a href=&quot;#파이썬-python-시작하기&quot; class=&quot;headerlink&quot; title=&quot;파이썬(python) 시작하기&quot;&gt;&lt;/a&gt;파이썬(python) 시작하기&lt;/h1&gt;&lt;h2 id=&quot;파이썬을-시작하게된-계기&quot;&gt;&lt;a href=&quot;#파이썬을-시작하게된-계기&quot; class=&quot;headerlink&quot; title=&quot;파이썬을 시작하게된 계기&quot;&gt;&lt;/a&gt;파이썬을 시작하게된 계기&lt;/h2&gt;&lt;p&gt;한빛미디어의 &lt;em&gt;‘나는 리뷰어다.’&lt;/em&gt; 라는 이벤트가 있습니다.&lt;br&gt;한빛미디어에서 신청을 받아 3가지의 선택한 책중 1권을 랜덤으로 보내주는데,&lt;br&gt;그 책을 읽고, 기간내에 책에 대한 리뷰를 블로그 및 온라인 서점 등에 리뷰를 작성하는 이벤트입니다.&lt;br&gt;그래서 받게 된 책이 &lt;code&gt;&amp;#39;비전공자가 궁굼해하는 프로그래머의 첫걸음&amp;#39;&lt;/code&gt;입니다.&lt;br&gt;이 책은 프로그래밍의 내용을 요즘 HOT하다는 &lt;code&gt;파이썬&lt;/code&gt;이란 언어 통해 프로그래밍에 관련된 내용을 전달합니다.&lt;br&gt;책을 반정도 읽다보니, 파이썬을 공부해 포스팅하는것도 좋겠다라는 생각이 들어 파이썬 공부를 시작하게 되었습니다.&lt;br&gt;다만, &lt;code&gt;제가 주로 사용하는 언어가 아닌 만큼 포스팅에 다소 시간이 걸릴 수 있습니다.&lt;/code&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Python" scheme="https://tuhbm.github.io/categories/Python/"/>
-    
-    
-      <category term="python" scheme="https://tuhbm.github.io/tags/python/"/>
-    
-      <category term="start" scheme="https://tuhbm.github.io/tags/start/"/>
-    
-      <category term="파이썬" scheme="https://tuhbm.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
-    
-      <category term="파이썬 시작" scheme="https://tuhbm.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%8B%9C%EC%9E%91/"/>
     
   </entry>
   
