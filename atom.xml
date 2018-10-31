@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-10-30T11:18:23.304Z</updated>
+  <updated>2018-10-31T10:58:20.426Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css의 DOM을 가운데 정렬하는 다양한 방법</title>
+    <link href="https://tuhbm.github.io/2018/10/31/cssAlignCenter/"/>
+    <id>https://tuhbm.github.io/2018/10/31/cssAlignCenter/</id>
+    <published>2018-10-31T10:56:08.000Z</published>
+    <updated>2018-10-31T10:58:20.426Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;CSS에서-스타일을-중심으로-배치하는-방법&quot;&gt;&lt;a href=&quot;#CSS에서-스타일을-중심으로-배치하는-방법&quot; class=&quot;headerlink&quot; title=&quot;CSS에서 스타일을 중심으로 배치하는 방법&quot;&gt;&lt;/a&gt;CSS에서 스타일을 중심으로 배치하는 방법&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/css-align-center.jpg&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;솔직하게 말해봅시다.&lt;/p&gt;
+&lt;p&gt;때때로 우리의 코딩 경력 전반에 걸쳐 우리는 CSS의 중심에 좌절감을 나타 냈습니다(Google 또는 스택 오버 플로우에서 div 내에서 div를 가운데에 배치하는 방법을 찾는 방법).&lt;br&gt;이 작업은 가장 간단한 작업 중 하나일 수 있지만 페이지에 더 많은 요소와 스타일을 추가하면 빠르게 혼란이 올 수 있습니다.&lt;br&gt;이것이 꽤 흔한 문제이기 때문에, 저는 이 가이드에서 CSS를 중심으로 하는 방법을 정리했습니다.&lt;br&gt;또한 CodePen에서 만든 각 예제와 함께 코드/링크도 포함했습니다. 원한다면 마음대로 포크, 공유 또는 복사하세요!&lt;/p&gt;
+&lt;p&gt;여기에서 저의 CodePen을 보세요.&lt;/p&gt;
+&lt;p&gt;더 이상 고민 말고, 그것에 대해 이야기합시다!&lt;br&gt;
+    
+    </summary>
+    
+      <category term="CSS" scheme="https://tuhbm.github.io/categories/CSS/"/>
+    
+    
+      <category term="align center" scheme="https://tuhbm.github.io/tags/align-center/"/>
+    
+      <category term="absolute" scheme="https://tuhbm.github.io/tags/absolute/"/>
+    
+      <category term="flex" scheme="https://tuhbm.github.io/tags/flex/"/>
+    
+      <category term="transform" scheme="https://tuhbm.github.io/tags/transform/"/>
+    
+      <category term="translate" scheme="https://tuhbm.github.io/tags/translate/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 5편</title>
@@ -708,44 +740,6 @@
       <category term="firefox" scheme="https://tuhbm.github.io/tags/firefox/"/>
     
       <category term="safari" scheme="https://tuhbm.github.io/tags/safari/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python2</title>
-    <link href="https://tuhbm.github.io/2018/02/14/python2/"/>
-    <id>https://tuhbm.github.io/2018/02/14/python2/</id>
-    <published>2018-02-14T13:41:49.000Z</published>
-    <updated>2018-03-11T03:23:03.860Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;p&gt;이 카테고리는 파이썬 공부를 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;파이썬-2편&quot;&gt;&lt;a href=&quot;#파이썬-2편&quot; class=&quot;headerlink&quot; title=&quot;파이썬 2편&quot;&gt;&lt;/a&gt;파이썬 2편&lt;/h1&gt;
-    
-    </summary>
-    
-      <category term="Python" scheme="https://tuhbm.github.io/categories/Python/"/>
-    
-    
-      <category term="python" scheme="https://tuhbm.github.io/tags/python/"/>
-    
-      <category term="파이썬" scheme="https://tuhbm.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
-    
-      <category term="indentationError" scheme="https://tuhbm.github.io/tags/indentationError/"/>
-    
-      <category term="문법" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EB%B2%95/"/>
-    
-      <category term="들여쓰기" scheme="https://tuhbm.github.io/tags/%EB%93%A4%EC%97%AC%EC%93%B0%EA%B8%B0/"/>
-    
-      <category term="논리연산자" scheme="https://tuhbm.github.io/tags/%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90/"/>
-    
-      <category term="에러" scheme="https://tuhbm.github.io/tags/%EC%97%90%EB%9F%AC/"/>
-    
-      <category term="예외" scheme="https://tuhbm.github.io/tags/%EC%98%88%EC%99%B8/"/>
-    
-      <category term="산술연산자" scheme="https://tuhbm.github.io/tags/%EC%82%B0%EC%88%A0%EC%97%B0%EC%82%B0%EC%9E%90/"/>
     
   </entry>
   
