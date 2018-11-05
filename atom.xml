@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-11-05T12:51:06.698Z</updated>
+  <updated>2018-11-05T12:54:29.453Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tuhbm.github.io/2018/11/05/async01/"/>
     <id>https://tuhbm.github.io/2018/11/05/async01/</id>
     <published>2018-11-05T12:45:03.000Z</published>
-    <updated>2018-11-05T12:51:06.698Z</updated>
+    <updated>2018-11-05T12:54:29.453Z</updated>
     
     <summary type="html">
     
@@ -34,7 +34,7 @@
 &lt;li&gt;&lt;a href=&quot;https://medium.com/p/d42597ceb496&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;JavaScript Functions&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://medium.com/p/d88f550ffce3&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;JavaScript Prototypes&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;소개&quot;&gt;&lt;a href=&quot;#소개&quot; class=&quot;headerlink&quot; title=&quot;소개&quot;&gt;&lt;/a&gt;소개&lt;/h2&gt;&lt;p&gt;JavaScript에서 비동기 프로그래밍을 처음 접한 경우 다음 코드 조각을 보고 놀랄 수 있습니다.&lt;br&gt;
+&lt;h2 id=&quot;소개&quot;&gt;&lt;a href=&quot;#소개&quot; class=&quot;headerlink&quot; title=&quot;소개&quot;&gt;&lt;/a&gt;소개&lt;/h2&gt;&lt;p&gt;JavaScript에서 비동기 프로그래밍을 처음 접한 경우 다음 코드를 보고 놀랄 수 있습니다.&lt;br&gt;
     
     </summary>
     
