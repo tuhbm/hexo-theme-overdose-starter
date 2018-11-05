@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-11-05T12:45:03.705Z</updated>
+  <updated>2018-11-05T12:48:18.439Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://tuhbm.github.io/2018/11/05/async01/"/>
     <id>https://tuhbm.github.io/2018/11/05/async01/</id>
     <published>2018-11-05T12:45:03.000Z</published>
-    <updated>2018-11-05T12:45:03.705Z</updated>
+    <updated>2018-11-05T12:48:18.439Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;비동기-자바스크립트의-간단한-참고서&quot;&gt;&lt;a href=&quot;#비동기-자바스크립트의-간단한-참고서&quot; class=&quot;headerlink&quot; title=&quot;비동기 자바스크립트의 간단한 참고서&quot;&gt;&lt;/a&gt;비동기 자바스크립트의 간단한 참고서&lt;/h1&gt;&lt;h2 id=&quot;JavaScript로-비동기-프로그래밍-배우기&quot;&gt;&lt;a href=&quot;#JavaScript로-비동기-프로그래밍-배우기&quot; class=&quot;headerlink&quot; title=&quot;JavaScript로 비동기 프로그래밍 배우기&quot;&gt;&lt;/a&gt;JavaScript로 비동기 프로그래밍 배우기&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;../images/javascript/async/async_main_img.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;비동기-자바스크립트의-간단한-참고서&quot;&gt;&lt;a href=&quot;#비동기-자바스크립트의-간단한-참고서&quot; class=&quot;headerlink&quot; title=&quot;비동기 자바스크립트의 간단한 참고서&quot;&gt;&lt;/a&gt;비동기 자바스크립트의 간단한 참고서&lt;/h1&gt;&lt;h2 id=&quot;JavaScript로-비동기-프로그래밍-배우기&quot;&gt;&lt;a href=&quot;#JavaScript로-비동기-프로그래밍-배우기&quot; class=&quot;headerlink&quot; title=&quot;JavaScript로 비동기 프로그래밍 배우기&quot;&gt;&lt;/a&gt;JavaScript로 비동기 프로그래밍 배우기&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/javascript/async/async_main_img.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
 &lt;p&gt;JavaScript의 비동기 특성은 많은 사람들을 혼란스럽게 할 수있는 언어 측면 중 하나입니다. 그러나 기본 비동기 구문을 잘 이해하면 언어에 대한 많은 혼란을 줄일 수 있습니다. 이 가이드의 목표는 JavaScript로 &lt;em&gt;비동기 프로그래밍&lt;/em&gt;을 소개합니다. 그리고 깨끗하고 유지 보수가 가능한 비동기 코드를 작성하는 데 필요한 기술을 제공하는 것입니다. 동기식 및 비동기식 실행 모델과 그 차이점을 살펴 보는 것으로 시작합니다. 그런 다음 콜백 기능에 대해 자세히 알아보고 비동기 작업 결과를 캡처하는 데 어떻게 사용되는지 조사하겠습니다. 그런 다음, &lt;em&gt;promise&lt;/em&gt;에 대해 알아보고 콜백 기능을 추상화하여 비동기 흐름을 단순화하는 방법에 대해 알아보겠습니다.&lt;br&gt;또한 제너레이터를 살펴보고 비동기 흐름에 어떻게 사용할 수 있는지 알아보겠습니다. 끝으로 &lt;em&gt;async&lt;/em&gt; 함수를 살펴보고 비동기 작업을 더욱 단순화하기 위해 &lt;em&gt;promise&lt;/em&gt;와 함께 사용할 수있는 방법을 보여줍니다.&lt;/p&gt;
 &lt;h2 id=&quot;예제코드&quot;&gt;&lt;a href=&quot;#예제코드&quot; class=&quot;headerlink&quot; title=&quot;예제코드&quot;&gt;&lt;/a&gt;예제코드&lt;/h2&gt;&lt;p&gt;이 가이드의 모든 코드 예는 Gitlab에서 확인할 수 있습니다.&lt;br&gt;&lt;a href=&quot;https://gitlab.com/aj_meyghani/asyncjs-code-examples&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;https://gitlab.com/aj_meyghani/asyncjs-code-examples&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;당신은 Repository를 복제하거나 &lt;a href=&quot;https://gitlab.com/aj_meyghani/asyncjs-code-examples/-/archive/master/asyncjs-code-examples-master.zip&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;zip&lt;/a&gt; 파일로 다운로드 할 수 있습니다.&lt;/p&gt;
