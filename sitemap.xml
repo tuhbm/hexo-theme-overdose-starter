@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/2018/01/24/sass1/</loc>
+    
+    <lastmod>2018-11-05T13:00:30.242Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2018/11/05/async01/</loc>
     
     <lastmod>2018-11-05T12:54:29.453Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://tuhbm.github.io/2017/07/17/sass-compile/</loc>
     
     <lastmod>2018-10-30T11:25:52.867Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2018/01/24/sass1/</loc>
-    
-    <lastmod>2018-10-30T11:25:41.914Z</lastmod>
     
   </url>
   
