@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-11-05T12:48:18.439Z</updated>
+  <updated>2018-11-05T12:51:06.698Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tuhbm.github.io/2018/11/05/async01/"/>
     <id>https://tuhbm.github.io/2018/11/05/async01/</id>
     <published>2018-11-05T12:45:03.000Z</published>
-    <updated>2018-11-05T12:48:18.439Z</updated>
+    <updated>2018-11-05T12:51:06.698Z</updated>
     
     <summary type="html">
     
@@ -40,10 +40,6 @@
     
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
-    
-      <category term="통신" scheme="https://tuhbm.github.io/tags/%ED%86%B5%EC%8B%A0/"/>
-    
-      <category term="data" scheme="https://tuhbm.github.io/tags/data/"/>
     
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
