@@ -2,9 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/2018/11/05/async01/</loc>
+    
+    <lastmod>2018-11-05T12:45:03.705Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/10/30/vue-firebase5/</loc>
+    
+    <lastmod>2018-11-05T12:37:30.067Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/10/22/vue-firebase4/</loc>
+    
+    <lastmod>2018-11-05T12:37:30.065Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/10/20/vue-firebase2/</loc>
+    
+    <lastmod>2018-11-05T12:37:30.063Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/10/20/vue-firebase1/</loc>
+    
+    <lastmod>2018-11-05T12:37:30.061Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2018/10/31/cssAlignCenter/</loc>
     
-    <lastmod>2018-10-31T11:07:07.623Z</lastmod>
+    <lastmod>2018-11-05T12:37:30.058Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/10/20/vue-firebase3/</loc>
+    
+    <lastmod>2018-11-05T12:37:30.056Z</lastmod>
     
   </url>
   
@@ -33,41 +75,6 @@
     <loc>https://tuhbm.github.io/2018/01/24/sass2/</loc>
     
     <lastmod>2018-10-30T11:25:41.911Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2018/10/30/vue-firebase5/</loc>
-    
-    <lastmod>2018-10-30T11:18:23.304Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2018/10/20/vue-firebase3/</loc>
-    
-    <lastmod>2018-10-30T11:10:59.742Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2018/10/22/vue-firebase4/</loc>
-    
-    <lastmod>2018-10-30T11:10:59.736Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2018/10/20/vue-firebase2/</loc>
-    
-    <lastmod>2018-10-21T12:32:02.449Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2018/10/20/vue-firebase1/</loc>
-    
-    <lastmod>2018-10-21T12:32:02.443Z</lastmod>
     
   </url>
   
