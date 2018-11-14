@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-11-14T12:34:07.484Z</updated>
+  <updated>2018-11-14T12:39:03.142Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tuhbm.github.io/2018/11/14/async02/"/>
     <id>https://tuhbm.github.io/2018/11/14/async02/</id>
     <published>2018-11-14T12:31:06.000Z</published>
-    <updated>2018-11-14T12:34:07.484Z</updated>
+    <updated>2018-11-14T12:39:03.142Z</updated>
     
     <summary type="html">
     
@@ -39,6 +39,16 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
+    
+      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -46,8 +56,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
   </entry>
   
@@ -76,8 +84,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -85,6 +91,8 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
