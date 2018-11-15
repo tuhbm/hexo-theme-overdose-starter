@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-11-14T12:39:03.142Z</updated>
+  <updated>2018-11-15T00:25:07.228Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://tuhbm.github.io/2018/11/14/async02/"/>
     <id>https://tuhbm.github.io/2018/11/14/async02/</id>
     <published>2018-11-14T12:31:06.000Z</published>
-    <updated>2018-11-14T12:39:03.142Z</updated>
+    <updated>2018-11-15T00:25:07.228Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;비동기-자바스크립트의-간단한-참고서-2편&quot;&gt;&lt;a href=&quot;#비동기-자바스크립트의-간단한-참고서-2편&quot; class=&quot;headerlink&quot; title=&quot;비동기 자바스크립트의 간단한 참고서 2편&quot;&gt;&lt;/a&gt;비동기 자바스크립트의 간단한 참고서 2편&lt;/h1&gt;&lt;p&gt;지난시간 &lt;a href=&quot;https://tuhbm.github.io/2018/11/05/async01/&quot;&gt;1편&lt;/a&gt;에서 동기와 비동기에 대해 배우고, &lt;code&gt;callback&lt;/code&gt;을 통해 비동기 통신을 해보았습니다.&lt;br&gt;이번시간에는 callback이 아닌 &lt;code&gt;Promise&lt;/code&gt;을 알아보고 이를 통해 비동기 작업을 진행하는 방법을 알아보겠습니다.&lt;/p&gt;
 &lt;h2 id=&quot;Promises&quot;&gt;&lt;a href=&quot;#Promises&quot; class=&quot;headerlink&quot; title=&quot;Promises&quot;&gt;&lt;/a&gt;Promises&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Promise는 아마도 자바 스크립트로 비동기 프로그래밍에서 가장 중요한 추상적인 개념 일 것입니다. &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Promise는 다른 많은 비동기 추상적인 개념을 위한 토대를 마련하기 때문에 이 섹션을 반드시 주의 깊게 읽으십시오.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;Promise는 미래의 특정 시점에서 실행될 때 성공하거나 실패할 수 있는 비동기 작업의 결과를 나타내는 개체입니다. 예를 들어 API 서버에 요청을 할 때 api 호출의 결과를 나타내는 약속을 반환할 수 있습니다.&lt;br&gt;api 호출은 성공할 수도 있고 성공하지 못할 수도 있지만 결국에는 사용할 수있는 promise 객체를 얻게됩니다. 아래의 함수는 api 호출을 수행하고 그 결과를 promise 형식으로 반환합니다.&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// code/promises/axios-example.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; axios = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;axios&#39;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// A&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;getDataFromServer&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; result = axios.get(&lt;span class=&quot;string&quot;&gt;&#39;https://jsonplaceholder.typicode.com/posts/1&#39;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// B&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; result; &lt;span class=&quot;comment&quot;&gt;// C&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// code/promises/axios-example.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; axios = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;axios&#39;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// A&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;getDataFromServer&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; result = axios.get(&lt;span class=&quot;string&quot;&gt;&#39;https://jsonplaceholder.typicode.com/posts/1&#39;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// B&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; result; &lt;span class=&quot;comment&quot;&gt;// C&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
 &lt;li&gt;A 행 &lt;a href=&quot;https://github.com/axios/axios&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;axios&lt;/a&gt;에서 promise 기반 http 클라이언트 인 모듈을 로드합니다.&lt;/li&gt;
 &lt;li&gt;B 행에서 우리는 axios api의 endpoint에서 GET 요청을하고 그 결과를 result 상수로 저장합니다.&lt;/li&gt;
@@ -39,6 +39,14 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
+    
+      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
@@ -48,14 +56,6 @@
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
-      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
-    
-      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
   </entry>
   
@@ -84,6 +84,8 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -91,8 +93,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
