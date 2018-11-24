@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-11-15T00:25:07.228Z</updated>
+  <updated>2018-11-24T08:27:03.015Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>번역 - 비동기 자바스크립트의 간단한 참고서 3편</title>
+    <link href="https://tuhbm.github.io/2018/11/24/async03/"/>
+    <id>https://tuhbm.github.io/2018/11/24/async03/</id>
+    <published>2018-11-24T08:18:14.000Z</published>
+    <updated>2018-11-24T08:27:03.015Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;비동기-자바스크립트의-간단한-참고서-3편&quot;&gt;&lt;a href=&quot;#비동기-자바스크립트의-간단한-참고서-3편&quot; class=&quot;headerlink&quot; title=&quot;비동기 자바스크립트의 간단한 참고서 3편&quot;&gt;&lt;/a&gt;비동기 자바스크립트의 간단한 참고서 3편&lt;/h1&gt;&lt;p&gt;지난시간 &lt;a href=&quot;https://tuhbm.github.io/2018/11/05/async01/&quot;&gt;1편&lt;/a&gt;에서 동기와 비동기에 대해 배우고, &lt;code&gt;callback&lt;/code&gt;을 통해 비동기 통신을 해보았습니다.&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/11/14/async02/&quot;&gt;2편&lt;/a&gt;에서는 callback이 아닌 &lt;code&gt;Promise&lt;/code&gt;을 알아보고 정적메소드를 알아보았습니다.&lt;br&gt;이번시간에는 &lt;code&gt;Promise&lt;/code&gt;를 순서대로 진행해보고, 실습을 진행해 보겠습니다.&lt;/p&gt;
+&lt;h2 id=&quot;Promise순서대로-실행하기&quot;&gt;&lt;a href=&quot;#Promise순서대로-실행하기&quot; class=&quot;headerlink&quot; title=&quot;Promise순서대로 실행하기&quot;&gt;&lt;/a&gt;&lt;code&gt;Promise&lt;/code&gt;순서대로 실행하기&lt;/h2&gt;&lt;p&gt;만약 두 개의 비동기 작업을 순서대로 실행하려면 다음과 같은 패턴을 따라야합니다.&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; promiseChain = task1()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  .then(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;task1Result&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; task2();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  .then(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;task2Result&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; task3();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  .then(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;task3Result&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; task4();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  .then(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;task4Result&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;done&#39;&lt;/span&gt;, task4Result);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  .catch(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;err&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;Error&#39;&lt;/span&gt;, err);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+    
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
+    
+      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
+    
+      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
+    
+  </entry>
   
   <entry>
     <title>번역 - 비동기 자바스크립트의 간단한 참고서 2편</title>
@@ -39,14 +76,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
-    
-      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
@@ -56,6 +85,14 @@
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
+    
+      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
   </entry>
   
@@ -84,8 +121,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -93,6 +128,8 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
@@ -444,11 +481,11 @@
     
       <category term="멤버변수" scheme="https://tuhbm.github.io/tags/%EB%A9%A4%EB%B2%84%EB%B3%80%EC%88%98/"/>
     
+      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
+    
       <category term="유효범위" scheme="https://tuhbm.github.io/tags/%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84/"/>
     
       <category term="스코프" scheme="https://tuhbm.github.io/tags/%EC%8A%A4%EC%BD%94%ED%94%84/"/>
-    
-      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
     
       <category term="this" scheme="https://tuhbm.github.io/tags/this/"/>
     
@@ -518,6 +555,8 @@
     
       <category term="객체지향" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/"/>
     
+      <category term="문자열" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/"/>
+    
       <category term="데이터타입" scheme="https://tuhbm.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%83%80%EC%9E%85/"/>
     
       <category term="byte" scheme="https://tuhbm.github.io/tags/byte/"/>
@@ -529,8 +568,6 @@
       <category term="실수" scheme="https://tuhbm.github.io/tags/%EC%8B%A4%EC%88%98/"/>
     
       <category term="문자" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EC%9E%90/"/>
-    
-      <category term="문자열" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/"/>
     
       <category term="long" scheme="https://tuhbm.github.io/tags/long/"/>
     
@@ -567,8 +604,6 @@
     
       <category term="객체지향" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/"/>
     
-      <category term="문자열" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/"/>
-    
       <category term="System.out" scheme="https://tuhbm.github.io/tags/System-out/"/>
     
       <category term="console" scheme="https://tuhbm.github.io/tags/console/"/>
@@ -578,6 +613,8 @@
       <category term="큰따옴표" scheme="https://tuhbm.github.io/tags/%ED%81%B0%EB%94%B0%EC%98%B4%ED%91%9C/"/>
     
       <category term="작은따옴표" scheme="https://tuhbm.github.io/tags/%EC%9E%91%EC%9D%80%EB%94%B0%EC%98%B4%ED%91%9C/"/>
+    
+      <category term="문자열" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/"/>
     
   </entry>
   
@@ -704,51 +741,15 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
-    
-      <category term="ES6" scheme="https://tuhbm.github.io/tags/ES6/"/>
-    
       <category term="var" scheme="https://tuhbm.github.io/tags/var/"/>
     
       <category term="let" scheme="https://tuhbm.github.io/tags/let/"/>
     
       <category term="const" scheme="https://tuhbm.github.io/tags/const/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Reflow와 Repaint</title>
-    <link href="https://tuhbm.github.io/2018/02/22/reflowAndRepaint/"/>
-    <id>https://tuhbm.github.io/2018/02/22/reflowAndRepaint/</id>
-    <published>2018-02-22T13:56:50.000Z</published>
-    <updated>2018-03-11T03:23:03.863Z</updated>
+      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
     
-    <summary type="html">
-    
-      &lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;Reflow와-Repaint&quot;&gt;&lt;a href=&quot;#Reflow와-Repaint&quot; class=&quot;headerlink&quot; title=&quot;Reflow와 Repaint&quot;&gt;&lt;/a&gt;Reflow와 Repaint&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;지금 이후 편하게 한국어로 &lt;code&gt;리플로우 &amp;amp; 리페인트&lt;/code&gt; 로 표현하도록 하겠습니다.&lt;/strong&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
-    
-    
-      <category term="javascript" scheme="https://tuhbm.github.io/tags/javascript/"/>
-    
-      <category term="rendering" scheme="https://tuhbm.github.io/tags/rendering/"/>
-    
-      <category term="reflow" scheme="https://tuhbm.github.io/tags/reflow/"/>
-    
-      <category term="repaint" scheme="https://tuhbm.github.io/tags/repaint/"/>
-    
-      <category term="렌더링" scheme="https://tuhbm.github.io/tags/%EB%A0%8C%EB%8D%94%EB%A7%81/"/>
-    
-      <category term="렌터트리" scheme="https://tuhbm.github.io/tags/%EB%A0%8C%ED%84%B0%ED%8A%B8%EB%A6%AC/"/>
-    
-      <category term="리플로우" scheme="https://tuhbm.github.io/tags/%EB%A6%AC%ED%94%8C%EB%A1%9C%EC%9A%B0/"/>
-    
-      <category term="리페인팅" scheme="https://tuhbm.github.io/tags/%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8C%85/"/>
+      <category term="ES6" scheme="https://tuhbm.github.io/tags/ES6/"/>
     
   </entry>
   
