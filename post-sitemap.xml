@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://tuhbm.github.io</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/12/01/javascriptDestructuring/</loc>
+        <lastmod>2018-12-01T07:02:03.363Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/11/24/async03/</loc>
+        <lastmod>2018-11-24T08:27:03.015Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/11/14/async02/</loc>
+        <lastmod>2018-11-15T00:25:07.228Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/01/24/sass1/</loc>
+        <lastmod>2018-11-05T13:00:30.242Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/11/05/async01/</loc>
+        <lastmod>2018-11-05T12:54:29.453Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/10/30/vue-firebase5/</loc>
+        <lastmod>2018-11-05T12:37:30.067Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/10/22/vue-firebase4/</loc>
+        <lastmod>2018-11-05T12:37:30.065Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/10/20/vue-firebase2/</loc>
+        <lastmod>2018-11-05T12:37:30.063Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/10/20/vue-firebase1/</loc>
+        <lastmod>2018-11-05T12:37:30.061Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/10/31/cssAlignCenter/</loc>
+        <lastmod>2018-11-05T12:37:30.058Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/10/20/vue-firebase3/</loc>
+        <lastmod>2018-11-05T12:37:30.056Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/01/17/bye2017/</loc>
+        <lastmod>2018-10-30T11:26:34.142Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/07/17/sass-compile/</loc>
+        <lastmod>2018-10-30T11:25:52.867Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/01/24/sass2/</loc>
+        <lastmod>2018-10-30T11:25:41.911Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/09/29/seo/</loc>
+        <lastmod>2018-10-20T04:10:21.129Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/09/03/arrayAlign/</loc>
+        <lastmod>2018-09-03T13:20:41.162Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/07/17/frameworkVSliblibrary/</loc>
+        <lastmod>2018-09-03T13:09:03.645Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/08/20/algorithm/</loc>
+        <lastmod>2018-08-20T14:01:37.861Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/01/26/literal/</loc>
+        <lastmod>2018-08-20T14:01:33.566Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/06/24/javaScope/</loc>
+        <lastmod>2018-06-24T12:20:02.090Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/06/14/javaDataType/</loc>
+        <lastmod>2018-06-21T14:01:13.529Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/06/13/javaNumberText/</loc>
+        <lastmod>2018-06-21T13:53:52.645Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/06/21/javaObjectOriented/</loc>
+        <lastmod>2018-06-21T13:53:26.703Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/06/11/startJava/</loc>
+        <lastmod>2018-06-14T12:30:30.711Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/04/12/javaBook/</loc>
+        <lastmod>2018-04-12T13:50:10.193Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/08/17/function1/</loc>
+        <lastmod>2018-03-13T16:48:39.500Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/03/11/superClassAndSubClass/</loc>
+        <lastmod>2018-03-11T05:29:16.152Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/02/21/firstProgramming/</loc>
+        <lastmod>2018-03-11T03:40:17.278Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/02/06/thread/</loc>
+        <lastmod>2018-03-11T03:23:03.914Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/08/14/rendering2/</loc>
+        <lastmod>2018-03-11T03:23:03.911Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/08/10/rendering1/</loc>
+        <lastmod>2018-03-11T03:23:03.909Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/09/15/vue1/</loc>
+        <lastmod>2018-03-11T03:23:03.906Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/08/16/image-compressor/</loc>
+        <lastmod>2018-03-11T03:23:03.896Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/09/19/vue3/</loc>
+        <lastmod>2018-03-11T03:23:03.893Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/01/21/vanillaJS/</loc>
+        <lastmod>2018-03-11T03:23:03.891Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/09/20/vue4/</loc>
+        <lastmod>2018-03-11T03:23:03.887Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/02/21/cssReset/</loc>
+        <lastmod>2018-03-11T03:23:03.885Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/07/17/oneLine-ellipsis/</loc>
+        <lastmod>2018-03-11T03:23:03.884Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/01/22/sideEffect/</loc>
+        <lastmod>2018-03-11T03:23:03.880Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/09/08/OSI7/</loc>
+        <lastmod>2018-03-11T03:23:03.876Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/02/12/startPython/</loc>
+        <lastmod>2018-03-11T03:23:03.874Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/08/21/doctype/</loc>
+        <lastmod>2018-03-11T03:23:03.873Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/01/26/thirdParty/</loc>
+        <lastmod>2018-03-11T03:23:03.871Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/08/05/onePageResume/</loc>
+        <lastmod>2018-03-11T03:23:03.869Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/09/18/vue2/</loc>
+        <lastmod>2018-03-11T03:23:03.867Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/07/17/emmet1/</loc>
+        <lastmod>2018-03-11T03:23:03.864Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/02/22/reflowAndRepaint/</loc>
+        <lastmod>2018-03-11T03:23:03.863Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/02/14/python2/</loc>
+        <lastmod>2018-03-11T03:23:03.860Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/09/06/component/</loc>
+        <lastmod>2018-03-11T03:20:48.859Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2017/07/17/cli/</loc>
+        <lastmod>2018-03-11T03:20:48.856Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tuhbm.github.io/2018/03/05/letAndConst/</loc>
+        <lastmod>2018-03-11T03:17:50.676Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+</urlset>
+<!-- XML Sitemap generated by Hexo SEO Friendly Sitemap Generator -->
