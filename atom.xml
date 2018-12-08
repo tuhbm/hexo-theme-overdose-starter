@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-12-08T17:04:10.476Z</updated>
+  <updated>2018-12-08T17:05:48.281Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,14 +21,15 @@
     <link href="https://tuhbm.github.io/2018/12/09/cssArchitecture/"/>
     <id>https://tuhbm.github.io/2018/12/09/cssArchitecture/</id>
     <published>2018-12-08T17:04:10.000Z</published>
-    <updated>2018-12-08T17:04:10.476Z</updated>
+    <updated>2018-12-08T17:05:48.281Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;OOCSS-BEM-SMACSS를-사용하여-CSS-구조를-효과적으로-구성하는-방법&quot;&gt;&lt;a href=&quot;#OOCSS-BEM-SMACSS를-사용하여-CSS-구조를-효과적으로-구성하는-방법&quot; class=&quot;headerlink&quot; title=&quot;OOCS
-      
+      &lt;h1 id=&quot;OOCSS-BEM-SMACSS를-사용하여-CSS-구조를-효과적으로-구성하는-방법&quot;&gt;&lt;a href=&quot;#OOCSS-BEM-SMACSS를-사용하여-CSS-구조를-효과적으로-구성하는-방법&quot; class=&quot;headerlink&quot; title=&quot;OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법&quot;&gt;&lt;/a&gt;OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법&lt;/h1&gt;&lt;p&gt;필자는 레고 블록을 매우 좋아하는 장난감으로 아주 많았습니다.&lt;br&gt;레고블록은 저의 첫번째 창의적인 작품이었습니다. 그것들은 무엇이든 생각하는대로 조립이 가능했습니다.&lt;br&gt;나는 그 당시 왜 그렇게 레고를 좋아했는지 몰랐습니다.&lt;br&gt;하지만 스타워즈 팔콘을 만들어보면 색깔 및 7000여조각이 각 조각별로 어떻게 완벽하게 맞아 떨어지는지를 보여주었습니다.&lt;/p&gt;
+&lt;p&gt;이런식으로 처리가 된다면 조직화되어 HTML은 더 작아지고, CSS는 훨씬 관리하기 쉬워져 프론트엔드 개발속도가 빨라지게 됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;이번 글에서는 CSS 구조를 레고블록처럼 동작하게하여 HTML / CSS 블록으로 구성하는 방법을 설명합니다.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;CSS 방법론중에 세가지 모듈화 방법을 소개하겠습니다.&lt;br&gt;이 방법론은 우리가 이해하고, 유지하고, 재사용하기 쉽게 컴포넌트화 하는데 도움이 될 것입니다.&lt;/p&gt;
+&lt;p&gt;저는 당신이 사용하고 있는 프론트엔드 프레임워크에 상관없이 이러한 방법들이 당신의 일하는 방식의 일부가 될꺼라고 확신합니다.&lt;br&gt;당신이 이 방법론들을 사용한다면 확신합니다.&lt;br&gt;
     
     </summary>
     
@@ -95,10 +96,6 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
-    
-      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
-    
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
@@ -110,6 +107,10 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
+    
+      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
     
   </entry>
   
@@ -138,6 +139,10 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
+      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
+    
+      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
+    
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
@@ -149,10 +154,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
-    
-      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
     
   </entry>
   
