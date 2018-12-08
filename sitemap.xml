@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/2018/12/09/cssArchitecture/</loc>
+    
+    <lastmod>2018-12-08T17:04:10.476Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/02/21/cssReset/</loc>
+    
+    <lastmod>2018-12-08T13:58:00.185Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2018/12/01/javascriptDestructuring/</loc>
     
     <lastmod>2018-12-01T09:16:45.757Z</lastmod>
@@ -257,13 +271,6 @@
     <loc>https://tuhbm.github.io/2017/09/20/vue4/</loc>
     
     <lastmod>2018-03-11T03:23:03.887Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2018/02/21/cssReset/</loc>
-    
-    <lastmod>2018-03-11T03:23:03.885Z</lastmod>
     
   </url>
   

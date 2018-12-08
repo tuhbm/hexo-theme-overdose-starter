@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2018-12-01T09:16:45.757Z</updated>
+  <updated>2018-12-08T17:04:10.476Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법</title>
+    <link href="https://tuhbm.github.io/2018/12/09/cssArchitecture/"/>
+    <id>https://tuhbm.github.io/2018/12/09/cssArchitecture/</id>
+    <published>2018-12-08T17:04:10.000Z</published>
+    <updated>2018-12-08T17:04:10.476Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;OOCSS-BEM-SMACSS를-사용하여-CSS-구조를-효과적으로-구성하는-방법&quot;&gt;&lt;a href=&quot;#OOCSS-BEM-SMACSS를-사용하여-CSS-구조를-효과적으로-구성하는-방법&quot; class=&quot;headerlink&quot; title=&quot;OOCS
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="https://tuhbm.github.io/categories/CSS/"/>
+    
+    
+      <category term="OOCSS" scheme="https://tuhbm.github.io/tags/OOCSS/"/>
+    
+      <category term="BEM" scheme="https://tuhbm.github.io/tags/BEM/"/>
+    
+      <category term="SMACSS" scheme="https://tuhbm.github.io/tags/SMACSS/"/>
+    
+      <category term="style" scheme="https://tuhbm.github.io/tags/style/"/>
+    
+      <category term="css" scheme="https://tuhbm.github.io/tags/css/"/>
+    
+      <category term="architecture" scheme="https://tuhbm.github.io/tags/architecture/"/>
+    
+  </entry>
   
   <entry>
     <title>번역 - 자바스크립트 분해(destructuring)</title>
@@ -60,6 +93,16 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
+    
+      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -67,16 +110,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
-      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
-    
-      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
     
   </entry>
   
@@ -103,6 +136,12 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -111,15 +150,9 @@
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
     
       <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
   </entry>
   
@@ -148,8 +181,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -157,6 +188,8 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
@@ -706,46 +739,6 @@
       <category term="java" scheme="https://tuhbm.github.io/tags/java/"/>
     
       <category term="major" scheme="https://tuhbm.github.io/tags/major/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>슈퍼클래스 와 서브클래스</title>
-    <link href="https://tuhbm.github.io/2018/03/11/superClassAndSubClass/"/>
-    <id>https://tuhbm.github.io/2018/03/11/superClassAndSubClass/</id>
-    <published>2018-03-11T04:30:13.000Z</published>
-    <updated>2018-03-11T05:29:16.152Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;슈퍼클래스-superClass-와-서브클래스-subClass&quot;&gt;&lt;a href=&quot;#슈퍼클래스-superClass-와-서브클래스-subClass&quot; class=&quot;headerlink&quot; title=&quot;슈퍼클래스(superClass)와 서브클래스(subClass)&quot;&gt;&lt;/a&gt;슈퍼클래스(superClass)와 서브클래스(subClass)&lt;/h1&gt;&lt;p&gt;슈퍼클래스와 서브클래스는 &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EC%83%81%EC%86%8D_(%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;상속&lt;/a&gt;에서 나오는 개념입니다.&lt;br&gt;원래 상속에 대한 개념은 고급언어 Java의 개념입니다.&lt;br&gt;자바스크립트에서는 상속의 대한 개념이 적용이 되지 않고, 상속 비슷하게 만드는 개념인 &lt;code&gt;prototype&lt;/code&gt;이 있습니다.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
-    
-    
-      <category term="클래스" scheme="https://tuhbm.github.io/tags/%ED%81%B4%EB%9E%98%EC%8A%A4/"/>
-    
-      <category term="superClass" scheme="https://tuhbm.github.io/tags/superClass/"/>
-    
-      <category term="subClass" scheme="https://tuhbm.github.io/tags/subClass/"/>
-    
-      <category term="inherit" scheme="https://tuhbm.github.io/tags/inherit/"/>
-    
-      <category term="슈퍼클래스" scheme="https://tuhbm.github.io/tags/%EC%8A%88%ED%8D%BC%ED%81%B4%EB%9E%98%EC%8A%A4/"/>
-    
-      <category term="서브클래스" scheme="https://tuhbm.github.io/tags/%EC%84%9C%EB%B8%8C%ED%81%B4%EB%9E%98%EC%8A%A4/"/>
-    
-      <category term="상속" scheme="https://tuhbm.github.io/tags/%EC%83%81%EC%86%8D/"/>
-    
-      <category term="프로토타입" scheme="https://tuhbm.github.io/tags/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85/"/>
-    
-      <category term="prototype" scheme="https://tuhbm.github.io/tags/prototype/"/>
-    
-      <category term="객체" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4/"/>
     
   </entry>
   

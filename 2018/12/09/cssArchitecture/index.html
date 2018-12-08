@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    
+    <title>번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법 | 보고 배우는 개발</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법필자는 레고 블록을 매우 좋아하는 장난감으로 아주 많았습니다.레고블록은 저의 첫번째 창의적인 작품이었습니다. 그것들은 무엇이든 생각하는대로 조립이 가능했습니다.나는 그 당시 왜 그렇게 레고를 좋아했는지 몰랐습니다.하지만 스타워즈 팔콘을 만들어보면 색깔 및 7000여조각이 각">
+<meta name="keywords" content="OOCSS,BEM,SMACSS,style,css,architecture">
+<meta property="og:type" content="article">
+<meta property="og:title" content="번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법">
+<meta property="og:url" content="https://tuhbm.github.io/2018/12/09/cssArchitecture/index.html">
+<meta property="og:site_name" content="보고 배우는 개발">
+<meta property="og:description" content="OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법필자는 레고 블록을 매우 좋아하는 장난감으로 아주 많았습니다.레고블록은 저의 첫번째 창의적인 작품이었습니다. 그것들은 무엇이든 생각하는대로 조립이 가능했습니다.나는 그 당시 왜 그렇게 레고를 좋아했는지 몰랐습니다.하지만 스타워즈 팔콘을 만들어보면 색깔 및 7000여조각이 각">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://tuhbm.github.io/images/bnr-css.jpg">
+<meta property="og:updated_time" content="2018-12-08T17:04:10.476Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법">
+<meta name="twitter:description" content="OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법필자는 레고 블록을 매우 좋아하는 장난감으로 아주 많았습니다.레고블록은 저의 첫번째 창의적인 작품이었습니다. 그것들은 무엇이든 생각하는대로 조립이 가능했습니다.나는 그 당시 왜 그렇게 레고를 좋아했는지 몰랐습니다.하지만 스타워즈 팔콘을 만들어보면 색깔 및 7000여조각이 각">
+<meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-css.jpg">
+    
+
+    
+        <link rel="alternate" href="/" title="보고 배우는 개발" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/images/logo2.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-104350689-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+        <meta name="google-site-verification" content="104350689">
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">보고 배우는 개발</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">Home</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="https://taekyunkimdev.github.io/" rel="external nofollow noopener noreferrer" target="_blank">Portfolio</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/images/logo2.ico">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '포스트',
+            PAGES: 'Pages',
+            CATEGORIES: '카테고리',
+            TAGS: '태그',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="https://taekyunkimdev.github.io/" rel="external nofollow noopener noreferrer" target="_blank">Portfolio</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/images/logo2.ico">
+            <h2 id="name">TaekyunKim</h2>
+            <h3 id="title">UI Developer &amp; Front-end Developer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Incheon, Korea</span>
+            <a id="follow" target="_blank" href="https://github.com/tuhbm/" rel="external nofollow noopener noreferrer">팔로우</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                52
+                <span>포스트</span>
+            </div>
+            <div class="article-info-block">
+                215
+                <span>태그</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/tuhbm/" target="_blank" title="github" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class="tooltip">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.facebook.com/tuhbm/" target="_blank" title="facebook" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class="tooltip">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-cssArchitecture" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/12/09/cssArchitecture/">
+            <time datetime="2018-12-08T17:04:10.000Z" itemprop="datePublished">2018-12-09</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/CSS/">CSS</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/BEM/">BEM</a>, <a class="tag-link" href="/tags/OOCSS/">OOCSS</a>, <a class="tag-link" href="/tags/SMACSS/">SMACSS</a>, <a class="tag-link" href="/tags/architecture/">architecture</a>, <a class="tag-link" href="/tags/css/">css</a>, <a class="tag-link" href="/tags/style/">style</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h1 id="OOCSS-BEM-SMACSS를-사용하여-CSS-구조를-효과적으로-구성하는-방법"><a href="#OOCSS-BEM-SMACSS를-사용하여-CSS-구조를-효과적으로-구성하는-방법" class="headerlink" title="OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법"></a>OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법</h1><p>필자는 레고 블록을 매우 좋아하는 장난감으로 아주 많았습니다.<br>레고블록은 저의 첫번째 창의적인 작품이었습니다. 그것들은 무엇이든 생각하는대로 조립이 가능했습니다.<br>나는 그 당시 왜 그렇게 레고를 좋아했는지 몰랐습니다.<br>하지만 스타워즈 팔콘을 만들어보면 색깔 및 7000여조각이 각 조각별로 어떻게 완벽하게 맞아 떨어지는지를 보여주었습니다.</p>
+<p>이런식으로 처리가 된다면 조직화되어 HTML은 더 작아지고, CSS는 훨씬 관리하기 쉬워져 프론트엔드 개발속도가 빨라지게 됩니다.</p>
+<p><em>이번 글에서는 CSS 구조를 레고블록처럼 동작하게하여 HTML / CSS 블록으로 구성하는 방법을 설명합니다.</em></p>
+<p>CSS 방법론중에 세가지 모듈화 방법을 소개하겠습니다.<br>이 방법론은 우리가 이해하고, 유지하고, 재사용하기 쉽게 컴포넌트화 하는데 도움이 될 것입니다.</p>
+<p>저는 당신이 사용하고 있는 프론트엔드 프레임워크에 상관없이 이러한 방법들이 당신의 일하는 방식의 일부가 될꺼라고 확신합니다.<br>당신이 이 방법론들을 사용한다면 확신합니다.</p>
+<h2 id="OOCSS"><a href="#OOCSS" class="headerlink" title="OOCSS"></a>OOCSS</h2><p><img src="https://tuhbm.github.io/images/cssPosting/css_architecture/oocss.png" alt="OOCSS"></p>
+<p>OOCSS (Object Oriented CSS)은 모든 인터페이스 디자인 및 개발을 개선하기 위한 개념의 기반입니다.<br>이것은 가능하면 최대한 재사용되어야 컴포넌트로써 좋은 역할을 한다는 것을 알려줍니다.</p>
+<p><em>OOCSS</em>는 객체지향 프로그래밍과 마찬가지로 <em>유연하고 잘 동작하도록 재사용 가능한 컴포넌트를 구성하는것</em>에 중점을 두고 있습니다.<br>이러한부분은 <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle" rel="external nofollow noopener noreferrer" target="_blank">단일책임원</a>, <a href="https://en.wikipedia.org/wiki/Separation_of_concerns" rel="external nofollow noopener noreferrer" target="_blank">관심사 분리</a> 및 <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" rel="external nofollow noopener noreferrer" target="_blank">중복배제</a>과 같은 기본 프로그래밍 원칙을 포함합니다.  </p>
+<p>또한 필수 UX 및 그래픽 디자인의 체크 요소인 일관성 검사를 합니다. 인터페이스 전반적으로 유사한 버튼의 디자인을 통일화 하면, 사용자는 익숙해하고 새로운 페이지에서 더욱 직관적으로 느낍니다.<br>OOCCS를 사용하여 코드를 재사용하면 코드의 중복이 제거 되므로써 더 빠르고 쉽게 만들 수 있습니다.</p>
+<p><a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/" rel="external nofollow noopener noreferrer" target="_blank">Nicole Sullivan의 2010년 포스팅 글</a>에서는 미디어 객체의 OOCSS를 적용한 장점에 대해 설명했습니다.<br>이글의 주요 내용은 HTML과 CSS 모두를 코드블록 형태로 패턴화하고 추상화하는 내용입니다. 다음은 Nicole의 미디어 객체의 예제입니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;media&quot;&gt;</span><br><span class="line">  &lt;a href=&quot;#&quot; class=&quot;img&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;</span><br><span class="line">  &lt;/a&gt; </span><br><span class="line">  &lt;div class=&quot;bd&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">.media &#123;...&#125; </span><br><span class="line">.media .img &#123;...&#125; </span><br><span class="line">.media .img img &#123;...&#125; </span><br><span class="line">.media .imgExt &#123;...&#125; </span><br><span class="line">.bd &#123;...&#125;</span><br></pre></td></tr></table></figure>
+<p>보시면 아시겠지만, 컴포넌트를 캡슐화하여 CSS의 다른곳에서도 스타일을 적절히 사용합니다.<br>밀단 미디어 컴포넌트를 배치하면 모든 코드는 일관적으로 동작해야합니다.</p>
+<h2 id="BEM"><a href="#BEM" class="headerlink" title="BEM"></a>BEM</h2><p><img src="https://tuhbm.github.io/images/cssPosting/css_architecture/bem.png" alt="BEM"><br>BEM은 Yandex가 만든 OOCSS 원칙을 구체적으로 적용한 것입니다.</p>
+<p>이방법의 의미는 <a href="https://en.bem.info/methodology/quick-start/" rel="external nofollow noopener noreferrer" target="_blank">crazy complicated framework</a>에서 Block, element, Modifier 입니다.<br><a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/" rel="external nofollow noopener noreferrer" target="_blank">Nicolas Gallagher</a>가 가장 인기있는 BEM 명명규칙을 단순화 했습니다.<br>이러한 버전은은 이미 대부분의 요구를 충족합니다.</p>
+<p>이전 코드의 예제에 BEM 네임 스페이스를 적용해보겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;media media--inverted&quot;&gt;</span><br><span class="line">  &lt;a href=&quot;#&quot; class=&quot;media__image-wrapper&quot;&gt;</span><br><span class="line">    &lt;img class=&quot;media__image&quot; src=&quot;&quot; alt=&quot;&quot; /&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line">  &lt;div class=&quot;media__content&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">.media &#123;...&#125;</span><br><span class="line">.media--inverter &#123;...&#125;</span><br><span class="line">.media__image-wrapper &#123;...&#125;</span><br><span class="line">.media__image &#123;...&#125;</span><br><span class="line">.media__content &#123;...&#125;</span><br><span class="line">// With SASS - which will output the code above</span><br><span class="line">.media &#123; ... </span><br><span class="line">  &amp;--inverter &#123;...&#125; </span><br><span class="line">  &amp;__image-wrapper &#123;...&#125; </span><br><span class="line">  &amp;__image &#123;...&#125; </span><br><span class="line">  &amp;__content &#123;...&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>BEM에서 한가지 중요한 점은 특이성 제어입니다. 위에서 언급한 명명 규칙을 사용하여 우리는 <code>.class</code>단일 선택자 <code>[0 0 1 0]</code>로 우리의 특이성을 자동으로 무너트립니다.<br>계단식 특이성이 너무 복잡하다는 사실을 알게 되면, 아래와 같은 사항을 명심하세요.</p>
+<p>항상 <code>.class</code> 단일 선택기를 사용하세요.</p>
+<p>다음 몇 단락은 위해 당신이 먼저 <code>[0 0 1 0]</code>의 의미를 이해한다고 가정하겠습니다.<br>만약 이해하지못했다면 <a href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" rel="external nofollow noopener noreferrer" target="_blank">먼저 읽으세요.</a></p>
+<p>css의 특이성은 좀 어렵지만 일단 이해하면 꽤 빨리 활용 할 수 있습니다. BEM의 명명규칙에 따라 <code>.class</code>를 사용하여 <code>[0 0 1 0]</code>가 된다면 우리는 이미 90%의 스타일을 보유하게 됩니다.<br>이것만으로도 우리는 작업이 편해질 것입니다. 그렇다면 우리는 <code>@imports</code>의 파싱 순서가 중요합니다.<br>그렇기에 <code>@imports</code>순서에 대해 주의를 기울여주세요.</p>
+<p>구성요소가 각페이지에 있다면 <code>[0 0 1 0]</code>인 상황에서 <code>body</code>에 ID를 추가하여 페이지에 대한 CSS를 지정 할 수 있습니다.<br>해당 ID를 사용하여 적용 범위를 지정하면 <code>[0 1 1 0]</code>로 코드의 스타일 순서에 관계없이 훨씬 높은 특이성을 발휘합니다.</p>
+<p><em>참고</em>: 두개의 서로 다른 페이지에서 동일한 재정의를 사용해야 하는 경우에는 <code>&amp;--modifier</code>를 사용하여 추상화 하는 것이 좋습니다.</p>
+<p>위와 같은 재정의는 적어야합니다.<br>필자가 사용하는 방식은 SMACSS 과 <a href="https://shop.bradfrost.com/" rel="external nofollow noopener noreferrer" target="_blank">Atomic Design by Brad Frost</a>의 개념을 기반으로 합니다.</p>
+<h2 id="SMACSS"><a href="#SMACSS" class="headerlink" title="SMACSS"></a>SMACSS</h2><p><img src="https://tuhbm.github.io/images/cssPosting/css_architecture/smacss.png" alt="SMACSS"><br>SMACSS는 Yahoo와 Spotify에서 근무한 <a href="https://snook.ca/" rel="external nofollow noopener noreferrer" target="_blank">Jonathan Snook</a>이 대규모의 프로젝트 CSS 코드의 베이스 및 팀워크를 염두해서 만든  Scalable and Modular Architecture의 약자입니다.<br>조나단은 <a href="https://smacss.com/" rel="external nofollow noopener noreferrer" target="_blank">SMACSS 참고서</a>에서 몇가지 깔끔한 아이디어와 CSS 파일 구조 모범 사례를 제시했습니다.</p>
+<p>SMACSS 두번째 수정버전은 구성 요소와 React Craze가 출시되기 오래 전인 2012 년입니다.<br>나에게 SMACSS의 가장 흥미로운 부분은 랩퍼와 컨테이너를 사용하여 컴포넌트를 완벽하게 적합하게 만드는 것입니다.</p>
+<p>이러한 기술은 컴포넌트 방식의 기본 요소입니다. 레고 블록을 기억하세요.<br>그러나 이러한 기술은 CSS 속성을 작성할때 컴포넌트가 서로 상호작용하는 방식을 방해하지 않도록 많은 규칙을 필요로 합니다.</p>
+<h3 id="CSS-컴포넌트-모듈성-이론"><a href="#CSS-컴포넌트-모듈성-이론" class="headerlink" title="CSS 컴포넌트 모듈성 이론"></a>CSS 컴포넌트 모듈성 이론</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.block </span><br><span class="line">  .block__element </span><br><span class="line">  .block__slot</span><br></pre></td></tr></table></figure>
+<p>기본적으로 <code>.block</code>에는 <code>float:left</code>또는 <code>margin-top:20px</code>같은 기본 css속성을 갖지 않습니다.<br>이러한 부분은 class가 하나 이상의 경우 일관성 없이 동작하는 것을 방해가 될 수 있다.</p>
+<p>내가 유용하다고 생각하는 또 다른 최고의 SMACSS 연습은 컨테이너 또는 <code>슬롯</code>의 개념이다.<br>이것은 Vue.js의 <code>&lt;slot&gt;</code>처럼 작동합니다. 컴포넌트의 변경 공간을 만들고, 우리가 속성을 추가했을때 내부의 컴포넌트가 변경됩니다.<br>여기서 우리는 <code>padding</code>과 같은 속성을 <code>.block__continer</code>에 추가하지 않습니다. <code>padding</code>을 추가하면 내부의 컴포넌트가 방해받습니다.<br>우리는 그런걸 원하지 않습니다.</p>
+<p>CSS 아키텍처의 베스트 프랙티스는 이미 CSS를 모듈화되고 “올바르게 작동”하게 만드는 것입니다.<br>우리가 사용하는 프레임 워크와 독립적인 HTML 및 CSS 작성에 대한 컴포넌트 접근 방식을 적용 하는것입니다.<br>SMACSS는 CSS 속성을 구성하는 방법 이상의 것입니다. SMACSS의 주요 장점은 모듈성 입니다.<br>이 가이드 라인을 따르면 HTML / CSS가 이미 주요 JS 프레임 워크에서 구현 될 수 있습니다. 개념적 구조를 따르기 때문입니다.</p>
+<h3 id="프레임-워크에-독립적인-모듈-CSS"><a href="#프레임-워크에-독립적인-모듈-CSS" class="headerlink" title="프레임 워크에 독립적인 모듈 CSS"></a>프레임 워크에 독립적인 모듈 CSS</h3><p>나의 목표: 체계적이고 유지 보수가 잘되는 CSS</p>
+<p>나는 이방법론의 더 좋은 인터페이스를 연구합니다. 현대적인 인터페이스를 위해서는 각 컴포넌트를 격리시켜 효과적으로 구축 할 수 있어야합니다.<br>많은 프레임워크와 무관하게 컴포넌트를 개발하는 최소한의 요구사항을 확인 하려고 노력합니다.</p>
+<p>OOCSS 및 웹 구성 요소의 개념은 스타일링과 거의 동일합니다.<br>독립적인 인터페이스 컴포넌트를 만드는 것은 지금까지 우리가 생각해 낸 최고의 솔루션이며 수백 개의 기사가 있습니다.</p>
+<p>BEM은보다 전통적인 설정에서 작업 할 때 특히 유용합니다.<br>이 환경에서는 해당 컴포넌트의 스타일을 범위 지정하고 요소에 컨텍스트 정보를 추가하는 두 가지 용도로 사용됩니다.<br>하지만 이제는 익숙해지기 때문에 React 나 Vue 에서도 BEM 클래스 이름을 사용하게됩니다 .</p>
+<p>SMACSS의 용기와 포장재를 똑똑하게 사용하면 컴포넌트가 서로 잘 작동하고 어느 곳에서나 적합해집니다.<br>또한 우수한 CSS 파일 구성은 디자인처럼 사용이 더 간단합니다.<br>대규모 프로젝트의 경우이 기능은 매력처럼 작동합니다.</p>
+<p>OOCSS와 BEM &amp; SMACSS를 함께 사용하면 스택이나 프레임 워크에 관계없이 스파게티 코드 작별에 도움이됩니다!</p>
+<hr>
+<h2 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h2><p>이 글은 <a href="https://medium.com/" rel="external nofollow noopener noreferrer" target="_blank">Medium</a>의 <a href="https://medium.freecodecamp.org/@claudioccm2" rel="external nofollow noopener noreferrer" target="_blank">laudio Mendonca</a>의 <a href="https://medium.freecodecamp.org/how-to-better-organize-your-css-architecture-with-oocss-bem-smacss-65e8a5c207c0" rel="external nofollow noopener noreferrer" target="_blank">포스팅 글</a>을 번역한 것입니다.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="https://tuhbm.github.io/2018/12/09/cssArchitecture/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2018/12/09/cssArchitecture/">댓글</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/12/01/javascriptDestructuring/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">이전 글</strong>
+            <div class="article-nav-title">번역 - 자바스크립트 분해(destructuring)</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">최근 글</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/12/09/cssArchitecture/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-css.jpg)" alt="번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/CSS/">CSS</a></p>
+                            <p class="item-title"><a href="/2018/12/09/cssArchitecture/" class="title">번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법</a></p>
+                            <p class="item-date"><time datetime="2018-12-08T17:04:10.000Z" itemprop="datePublished">2018-12-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/12/01/javascriptDestructuring/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 분해(destructuring)" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2018/12/01/javascriptDestructuring/" class="title">번역 - 자바스크립트 분해(destructuring)</a></p>
+                            <p class="item-date"><time datetime="2018-12-01T07:02:03.000Z" itemprop="datePublished">2018-12-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/11/24/async03/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 비동기 자바스크립트의 간단한 참고서 3편" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2018/11/24/async03/" class="title">번역 - 비동기 자바스크립트의 간단한 참고서 3편</a></p>
+                            <p class="item-date"><time datetime="2018-11-24T08:18:14.000Z" itemprop="datePublished">2018-11-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/11/14/async02/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 비동기 자바스크립트의 간단한 참고서 2편" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2018/11/14/async02/" class="title">번역 - 비동기 자바스크립트의 간단한 참고서 2편</a></p>
+                            <p class="item-date"><time datetime="2018-11-14T12:31:06.000Z" itemprop="datePublished">2018-11-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/11/05/async01/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 비동기 자바스크립트의 간단한 참고서 1편" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2018/11/05/async01/" class="title">번역 - 비동기 자바스크립트의 간단한 참고서 1편</a></p>
+                            <p class="item-date"><time datetime="2018-11-05T12:45:03.000Z" itemprop="datePublished">2018-11-05</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">카테고리</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/SASS/">SASS</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Column/">Column</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ETC/">ETC</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">16</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/Vue/">Vue</a><span class="category-list-count">9</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/book/">book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/용어정리/">용어정리</a><span class="category-list-count">11</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">아카이브</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">11월 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">9월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">8월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">6월 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">4월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">3월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1월 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">9월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">8월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">7월 2017</a><span class="archive-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">태그 클라우드</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/BEM/" style="font-size: 10px;">BEM</a> <a href="/tags/CLI/" style="font-size: 10px;">CLI</a> <a href="/tags/CMD/" style="font-size: 10px;">CMD</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/Component/" style="font-size: 11.67px;">Component</a> <a href="/tags/DTD/" style="font-size: 10px;">DTD</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/HTML-이력서/" style="font-size: 10px;">HTML 이력서</a> <a href="/tags/ONEPAGE/" style="font-size: 10px;">ONEPAGE</a> <a href="/tags/OOCSS/" style="font-size: 10px;">OOCSS</a> <a href="/tags/Pure-Javascript/" style="font-size: 10px;">Pure Javascript</a> <a href="/tags/RESUME/" style="font-size: 10px;">RESUME</a> <a href="/tags/SCOUT/" style="font-size: 10px;">SCOUT</a> <a href="/tags/SMACSS/" style="font-size: 10px;">SMACSS</a> <a href="/tags/System-out/" style="font-size: 10px;">System.out</a> <a href="/tags/UI-developer/" style="font-size: 10px;">UI-developer</a> <a href="/tags/UI개발/" style="font-size: 10px;">UI개발</a> <a href="/tags/VanillaJS/" style="font-size: 10px;">VanillaJS</a> <a href="/tags/Vue-component/" style="font-size: 11.67px;">Vue.component</a> <a href="/tags/absolute/" style="font-size: 10px;">absolute</a> <a href="/tags/algorithm/" style="font-size: 11.67px;">algorithm</a> <a href="/tags/align-center/" style="font-size: 10px;">align center</a> <a href="/tags/all/" style="font-size: 11.67px;">all</a> <a href="/tags/architecture/" style="font-size: 10px;">architecture</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/asynchronous/" style="font-size: 13.33px;">asynchronous</a> <a href="/tags/book-review/" style="font-size: 11.67px;">book-review</a> <a href="/tags/build-tool/" style="font-size: 10px;">build tool</a> <a href="/tags/byte/" style="font-size: 10px;">byte</a> <a href="/tags/callback/" style="font-size: 10px;">callback</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/compile/" style="font-size: 11.67px;">compile</a> <a href="/tags/compontent/" style="font-size: 11.67px;">compontent</a> <a href="/tags/compressor/" style="font-size: 10px;">compressor</a> <a href="/tags/computed/" style="font-size: 10px;">computed</a> <a href="/tags/console/" style="font-size: 10px;">console</a> <a href="/tags/const/" style="font-size: 11.67px;">const</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/destructuring/" style="font-size: 10px;">destructuring</a> <a href="/tags/doc/" style="font-size: 10px;">doc</a> <a href="/tags/ellipsis/" style="font-size: 10px;">ellipsis</a> <a href="/tags/emmet/" style="font-size: 10px;">emmet</a> <a href="/tags/engine/" style="font-size: 10px;">engine</a> <a href="/tags/firefox/" style="font-size: 10px;">firefox</a> <a href="/tags/first-programming/" style="font-size: 10px;">first-programming</a> <a href="/tags/flex/" style="font-size: 10px;">flex</a> <a href="/tags/float/" style="font-size: 10px;">float</a> <a href="/tags/framework/" style="font-size: 11.67px;">framework</a> <a href="/tags/front-end-developer/" style="font-size: 10px;">front-end-developer</a> <a href="/tags/function/" style="font-size: 10px;">function</a> <a href="/tags/functional-programming/" style="font-size: 10px;">functional programming</a> <a href="/tags/grunt/" style="font-size: 10px;">grunt</a> <a href="/tags/gulp/" style="font-size: 11.67px;">gulp</a> <a href="/tags/history-mode/" style="font-size: 10px;">history mode</a> <a href="/tags/html/" style="font-size: 16.67px;">html</a> <a href="/tags/html-doctype/" style="font-size: 10px;">html doctype</a> <a href="/tags/html-template-resume/" style="font-size: 10px;">html template resume</a> <a href="/tags/ie/" style="font-size: 10px;">ie</a> <a href="/tags/image/" style="font-size: 10px;">image</a> <a href="/tags/image-compressor/" style="font-size: 10px;">image compressor</a> <a href="/tags/image-optimization/" style="font-size: 10px;">image optimization</a> <a href="/tags/include/" style="font-size: 10px;">include</a> <a href="/tags/indentationError/" style="font-size: 10px;">indentationError</a> <a href="/tags/inherit/" style="font-size: 10px;">inherit</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/java/" style="font-size: 18.33px;">java</a> <a href="/tags/javascript/" style="font-size: 15px;">javascript</a> <a href="/tags/javascript-function/" style="font-size: 10px;">javascript function</a> <a href="/tags/let/" style="font-size: 11.67px;">let</a> <a href="/tags/library/" style="font-size: 11.67px;">library</a> <a href="/tags/literal/" style="font-size: 10px;">literal</a> <a href="/tags/long/" style="font-size: 10px;">long</a> <a href="/tags/major/" style="font-size: 10px;">major</a> <a href="/tags/method/" style="font-size: 11.67px;">method</a> <a href="/tags/methods/" style="font-size: 10px;">methods</a> <a href="/tags/mixin/" style="font-size: 10px;">mixin</a> <a href="/tags/new/" style="font-size: 10px;">new</a> <a href="/tags/non-major/" style="font-size: 10px;">non-major</a> <a href="/tags/normalize/" style="font-size: 10px;">normalize</a> <a href="/tags/npm-install/" style="font-size: 11.67px;">npm install</a> <a href="/tags/npm-run-dev/" style="font-size: 11.67px;">npm run dev</a> <a href="/tags/object/" style="font-size: 10px;">object</a> <a href="/tags/oop/" style="font-size: 16.67px;">oop</a> <a href="/tags/optimization/" style="font-size: 10px;">optimization</a> <a href="/tags/plug-in/" style="font-size: 10px;">plug in</a> <a href="/tags/processors/" style="font-size: 10px;">processors</a> <a href="/tags/programming/" style="font-size: 13.33px;">programming</a> <a href="/tags/promise/" style="font-size: 11.67px;">promise</a> <a href="/tags/prototype/" style="font-size: 10px;">prototype</a> <a href="/tags/python/" style="font-size: 13.33px;">python</a> <a href="/tags/reflow/" style="font-size: 10px;">reflow</a> <a href="/tags/refs/" style="font-size: 10px;">refs</a> <a href="/tags/reject/" style="font-size: 10px;">reject</a> <a href="/tags/rendering/" style="font-size: 15px;">rendering</a> <a href="/tags/repaint/" style="font-size: 10px;">repaint</a> <a href="/tags/reset/" style="font-size: 10px;">reset</a> <a href="/tags/resolve/" style="font-size: 10px;">resolve</a> <a href="/tags/return/" style="font-size: 10px;">return</a> <a href="/tags/router-link/" style="font-size: 13.33px;">router-link</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a> <a href="/tags/sass/" style="font-size: 13.33px;">sass</a> <a href="/tags/scope/" style="font-size: 11.67px;">scope</a> <a href="/tags/scss/" style="font-size: 11.67px;">scss</a> <a href="/tags/search/" style="font-size: 10px;">search</a> <a href="/tags/seo/" style="font-size: 10px;">seo</a> <a href="/tags/side-effect/" style="font-size: 10px;">side effect</a> <a href="/tags/start/" style="font-size: 13.33px;">start</a> <a href="/tags/style/" style="font-size: 10px;">style</a> <a href="/tags/subClass/" style="font-size: 10px;">subClass</a> <a href="/tags/superClass/" style="font-size: 10px;">superClass</a> <a href="/tags/synchronous/" style="font-size: 13.33px;">synchronous</a> <a href="/tags/task-runner/" style="font-size: 10px;">task runner</a> <a href="/tags/then/" style="font-size: 10px;">then</a> <a href="/tags/third-party/" style="font-size: 10px;">third party</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/thread/" style="font-size: 10px;">thread</a> <a href="/tags/to/" style="font-size: 11.67px;">to</a> <a href="/tags/transform/" style="font-size: 10px;">transform</a> <a href="/tags/translate/" style="font-size: 10px;">translate</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/v-bind/" style="font-size: 11.67px;">v-bind</a> <a href="/tags/v-for/" style="font-size: 10px;">v-for</a> <a href="/tags/v-html/" style="font-size: 10px;">v-html</a> <a href="/tags/v-if/" style="font-size: 10px;">v-if</a> <a href="/tags/v-model/" style="font-size: 10px;">v-model</a> <a href="/tags/v-on/" style="font-size: 10px;">v-on</a> <a href="/tags/v-show/" style="font-size: 10px;">v-show</a> <a href="/tags/var/" style="font-size: 11.67px;">var</a> <a href="/tags/vendor/" style="font-size: 10px;">vendor</a> <a href="/tags/vue/" style="font-size: 20px;">vue</a> <a href="/tags/vue-create/" style="font-size: 10px;">vue create</a> <a href="/tags/vue-init/" style="font-size: 11.67px;">vue init</a> <a href="/tags/vue-cli/" style="font-size: 11.67px;">vue-cli</a> <a href="/tags/vue-cli-3-0/" style="font-size: 10px;">vue-cli 3.0</a> <a href="/tags/vue-router/" style="font-size: 15px;">vue-router</a> <a href="/tags/vue-js/" style="font-size: 20px;">vue.js</a> <a href="/tags/vue-js2/" style="font-size: 15px;">vue.js2</a> <a href="/tags/vue를-시작하는방법/" style="font-size: 10px;">vue를 시작하는방법</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/값/" style="font-size: 10px;">값</a> <a href="/tags/개발/" style="font-size: 11.67px;">개발</a> <a href="/tags/객체/" style="font-size: 10px;">객체</a> <a href="/tags/객체지향/" style="font-size: 16.67px;">객체지향</a> <a href="/tags/검색최적화/" style="font-size: 10px;">검색최적화</a> <a href="/tags/논리연산자/" style="font-size: 10px;">논리연산자</a> <a href="/tags/데이터타입/" style="font-size: 10px;">데이터타입</a> <a href="/tags/동기/" style="font-size: 13.33px;">동기</a> <a href="/tags/들여쓰기/" style="font-size: 10px;">들여쓰기</a> <a href="/tags/라이브러리/" style="font-size: 10px;">라이브러리</a> <a href="/tags/랜더링/" style="font-size: 11.67px;">랜더링</a> <a href="/tags/렌더링/" style="font-size: 10px;">렌더링</a> <a href="/tags/렌터트리/" style="font-size: 10px;">렌터트리</a> <a href="/tags/리터럴/" style="font-size: 10px;">리터럴</a> <a href="/tags/리페인팅/" style="font-size: 10px;">리페인팅</a> <a href="/tags/리플로우/" style="font-size: 10px;">리플로우</a> <a href="/tags/멀티스레드/" style="font-size: 10px;">멀티스레드</a> <a href="/tags/메모리/" style="font-size: 10px;">메모리</a> <a href="/tags/메소드/" style="font-size: 11.67px;">메소드</a> <a href="/tags/멤버변수/" style="font-size: 11.67px;">멤버변수</a> <a href="/tags/명시적형변화/" style="font-size: 10px;">명시적형변화</a> <a href="/tags/문법/" style="font-size: 10px;">문법</a> <a href="/tags/문자/" style="font-size: 10px;">문자</a> <a href="/tags/문자열/" style="font-size: 11.67px;">문자열</a> <a href="/tags/바닐라-JS/" style="font-size: 10px;">바닐라 JS</a> <a href="/tags/변수/" style="font-size: 11.67px;">변수</a> <a href="/tags/부수효과/" style="font-size: 10px;">부수효과</a> <a href="/tags/북리뷰/" style="font-size: 11.67px;">북리뷰</a> <a href="/tags/브라우저/" style="font-size: 11.67px;">브라우저</a> <a href="/tags/비동기/" style="font-size: 13.33px;">비동기</a> <a href="/tags/비전공자/" style="font-size: 11.67px;">비전공자</a> <a href="/tags/사스/" style="font-size: 11.67px;">사스</a> <a href="/tags/산술연산자/" style="font-size: 10px;">산술연산자</a> <a href="/tags/상속/" style="font-size: 10px;">상속</a> <a href="/tags/상수/" style="font-size: 10px;">상수</a> <a href="/tags/생성자함수/" style="font-size: 10px;">생성자함수</a> <a href="/tags/서브클래스/" style="font-size: 10px;">서브클래스</a> <a href="/tags/세미콜론/" style="font-size: 10px;">세미콜론</a> <a href="/tags/숫자/" style="font-size: 10px;">숫자</a> <a href="/tags/슈퍼클래스/" style="font-size: 10px;">슈퍼클래스</a> <a href="/tags/스레드/" style="font-size: 10px;">스레드</a> <a href="/tags/스코프/" style="font-size: 10px;">스코프</a> <a href="/tags/실수/" style="font-size: 10px;">실수</a> <a href="/tags/싱글스레드/" style="font-size: 10px;">싱글스레드</a> <a href="/tags/알고리즘/" style="font-size: 11.67px;">알고리즘</a> <a href="/tags/암시적형변화/" style="font-size: 10px;">암시적형변화</a> <a href="/tags/에러/" style="font-size: 10px;">에러</a> <a href="/tags/예외/" style="font-size: 10px;">예외</a> <a href="/tags/원페이지-이력서/" style="font-size: 10px;">원페이지 이력서</a> <a href="/tags/웹퍼블리셔/" style="font-size: 10px;">웹퍼블리셔</a> <a href="/tags/유효범위/" style="font-size: 10px;">유효범위</a> <a href="/tags/은닉화/" style="font-size: 10px;">은닉화</a> <a href="/tags/인터페이스/" style="font-size: 10px;">인터페이스</a> <a href="/tags/작은따옴표/" style="font-size: 10px;">작은따옴표</a> <a href="/tags/전처리기/" style="font-size: 10px;">전처리기</a> <a href="/tags/정수/" style="font-size: 10px;">정수</a> <a href="/tags/캡슐화/" style="font-size: 10px;">캡슐화</a> <a href="/tags/컴포넌트/" style="font-size: 15px;">컴포넌트</a> <a href="/tags/큰따옴표/" style="font-size: 10px;">큰따옴표</a> <a href="/tags/클래스/" style="font-size: 13.33px;">클래스</a> <a href="/tags/터미널/" style="font-size: 10px;">터미널</a> <a href="/tags/텍스트-바인딩/" style="font-size: 10px;">텍스트 바인딩</a> <a href="/tags/파이썬/" style="font-size: 13.33px;">파이썬</a> <a href="/tags/파이썬-시작/" style="font-size: 10px;">파이썬 시작</a> <a href="/tags/프레임워크/" style="font-size: 10px;">프레임워크</a> <a href="/tags/프로그래머/" style="font-size: 11.67px;">프로그래머</a> <a href="/tags/프로세스/" style="font-size: 10px;">프로세스</a> <a href="/tags/프로토타입/" style="font-size: 10px;">프로토타입</a> <a href="/tags/프론트엔드개발/" style="font-size: 10px;">프론트엔드개발</a> <a href="/tags/플러그인/" style="font-size: 10px;">플러그인</a> <a href="/tags/한줄-말줄임/" style="font-size: 10px;">한줄 말줄임</a> <a href="/tags/함수/" style="font-size: 10px;">함수</a> <a href="/tags/함수-바인딩/" style="font-size: 10px;">함수 바인딩</a> <a href="/tags/함수선언문/" style="font-size: 10px;">함수선언문</a> <a href="/tags/함수표현식/" style="font-size: 10px;">함수표현식</a> <a href="/tags/효율성/" style="font-size: 11.67px;">효율성</a>
+        </div>
+    </div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Taekyun Kim<br>
+            Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme by <a href="http://github.com/ppoffice" rel="external nofollow noopener noreferrer" target="_blank">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'https://tuhbm.github.io/2018/12/09/cssArchitecture/';
+        
+        this.page.identifier = 'cssArchitecture';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'bogo-baeuneun-gaebal-6734' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
