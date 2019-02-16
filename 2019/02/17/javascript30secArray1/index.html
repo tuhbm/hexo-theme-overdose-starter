@@ -9,12 +9,12 @@
 <meta name="keywords" content="30sec,js,transform,array">
 <meta property="og:type" content="article">
 <meta property="og:title" content="번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편">
-<meta property="og:url" content="https://tuhbm.github.io/2019/02/12/javascript30secArray1/index.html">
+<meta property="og:url" content="https://tuhbm.github.io/2019/02/17/javascript30secArray1/index.html">
 <meta property="og:site_name" content="보고 배우는 개발">
 <meta property="og:description" content="[Array 1편]코드 30초 시리즈 개요기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.이제 필요한 코드 찾아 사용">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-js.jpg">
-<meta property="og:updated_time" content="2019-02-12T14:03:48.173Z">
+<meta property="og:updated_time" content="2019-02-16T16:40:15.148Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편">
 <meta name="twitter:description" content="[Array 1편]코드 30초 시리즈 개요기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.이제 필요한 코드 찾아 사용">
@@ -241,8 +241,8 @@ ga('send', 'pageview');
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2019/02/12/javascript30secArray1/">
-            <time datetime="2019-02-12T14:03:48.173Z" itemprop="datePublished">2019-02-12</time>
+        <a href="/2019/02/17/javascript30secArray1/">
+            <time datetime="2019-02-16T16:40:15.148Z" itemprop="datePublished">2019-02-17</time>
         </a>
     </div>
 
@@ -272,6 +272,7 @@ ga('send', 'pageview');
 <h2 id="Array편"><a href="#Array편" class="headerlink" title="Array편"></a>Array편</h2><hr>
 <h3 id="all"><a href="#all" class="headerlink" title="all"></a>all</h3><p>제공된 조건부 함수가 컬렉션의 모든 요소에 대해 true를 반환하면 true를 반환하고 그렇지 않으면 false를 반환합니다.<br><code>Array.prototype.every()</code>를 사용하여 컬렉션의 모든 요소가 fn에 따라 <code>true</code>를 반환하는지 테스트합니다. 부울을 기본값으로 사용하려면 두 번째 인수 fn을 생략하십시오.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> all = <span class="function">(<span class="params">arr, fn = <span class="built_in">Boolean</span></span>) =&gt;</span> arr.every(fn);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">all([<span class="number">4</span>, <span class="number">2</span>, <span class="number">3</span>], x =&gt; x &gt; <span class="number">1</span>); <span class="comment">// true</span></span><br><span class="line">all([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
 <hr>
+<a id="more"></a>
 <h3 id="allEqual"><a href="#allEqual" class="headerlink" title="allEqual"></a>allEqual</h3><p>배열의 모든 요소가 같은지 확인하십시오.<br><code>Array.prototype.every()</code>를 사용하여 배열의 모든 요소가 첫 번째 요소와 동일한 지 확인합니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> allEqual = <span class="function"><span class="params">arr</span> =&gt;</span> arr.every(<span class="function"><span class="params">val</span> =&gt;</span> val === arr[<span class="number">0</span>]);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">allEqual([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]); <span class="comment">// false</span></span><br><span class="line">allEqual([<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]); <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
 <hr>
 <h3 id="any"><a href="#any" class="headerlink" title="any"></a>any</h3><p>제공된 조건부 함수가 컬렉션의 적어도 하나의 요소에 대해 true를 반환하면 true를 반환하고 그렇지 않으면 false를 반환합니다.<br><code>Array.prototype.some()</code>을 사용하여 콜렉션의 모든 요소가 <code>fn</code>에 따라 <code>true</code>를 반환하는지 테스트합니다. 부울을 기본값으로 사용하려면 두 번째 인수 fn을 생략하십시오.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> any = <span class="function">(<span class="params">arr, fn = <span class="built_in">Boolean</span></span>) =&gt;</span> arr.some(fn);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">any([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">0</span>], x =&gt; x &gt;= <span class="number">2</span>); <span class="comment">// true</span></span><br><span class="line">any([<span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>]); <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
@@ -382,7 +383,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="https://tuhbm.github.io/2019/02/12/javascript30secArray1/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2019/02/12/javascript30secArray1/">댓글</a>
+        <a href="https://tuhbm.github.io/2019/02/17/javascript30secArray1/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2019/02/17/javascript30secArray1/">댓글</a>
     
 
         </footer>
@@ -391,19 +392,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2019/02/17/javascript30secDate/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">다음 글</strong>
-            <div class="article-nav-title">
-                
-                    번역 - 자바스크립트 코드 30초 시리즈&lt;Date&gt; 1편
-                
-            </div>
-        </a>
     
-    
-        <a href="/2018/12/09/cssArchitecture/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/02/17/javascript30secDate/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">이전 글</strong>
-            <div class="article-nav-title">번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법</div>
+            <div class="article-nav-title">번역 - 자바스크립트 코드 30초 시리즈&lt;Date&gt; 1편</div>
         </a>
     
 </nav>
@@ -436,6 +428,25 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2019/02/17/javascript30secArray1/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2019/02/17/javascript30secArray1/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편</a></p>
+                            <p class="item-date"><time datetime="2019-02-16T16:40:15.148Z" itemprop="datePublished">2019-02-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2019/02/17/javascript30secDate/" class="thumbnail">
     
     
@@ -449,25 +460,6 @@ ga('send', 'pageview');
                             <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
                             <p class="item-title"><a href="/2019/02/17/javascript30secDate/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Date&gt; 1편</a></p>
                             <p class="item-date"><time datetime="2019-02-16T16:38:48.000Z" itemprop="datePublished">2019-02-17</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/02/12/javascript30secArray1/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
-                            <p class="item-title"><a href="/2019/02/12/javascript30secArray1/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편</a></p>
-                            <p class="item-date"><time datetime="2019-02-12T14:03:48.173Z" itemprop="datePublished">2019-02-12</time></p>
                         </div>
                     </li>
                 
@@ -578,7 +570,7 @@ ga('send', 'pageview');
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'https://tuhbm.github.io/2019/02/12/javascript30secArray1/';
+            this.page.url = 'https://tuhbm.github.io/2019/02/17/javascript30secArray1/';
         
         this.page.identifier = 'javascript30secArray1';
     };

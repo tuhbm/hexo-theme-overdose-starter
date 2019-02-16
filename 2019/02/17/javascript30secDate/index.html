@@ -14,7 +14,7 @@
 <meta property="og:description" content="[Date]코드 30초 시리즈 개요기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.이제 필요한 코드 찾아 사용하세요.">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-js.jpg">
-<meta property="og:updated_time" content="2019-02-16T16:38:48.410Z">
+<meta property="og:updated_time" content="2019-02-16T16:40:21.466Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="번역 - 자바스크립트 코드 30초 시리즈&lt;Date&gt; 1편">
 <meta name="twitter:description" content="[Date]코드 30초 시리즈 개요기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.이제 필요한 코드 찾아 사용하세요.">
@@ -272,6 +272,7 @@ ga('send', 'pageview');
 <h2 id="Date편"><a href="#Date편" class="headerlink" title="Date편"></a>Date편</h2><hr>
 <p>###dayOfYear<br><code>Date</code>객체에서 새해로부터 몇번째 날인지 가져옵니다.<br><code>new Date()</code>를 하고 <code>Date.prototype.getFullYear()</code>를 사용하여, 해당 연도의 첫날의 <code>Date</code>객체에서 인자로 받은 <code>date</code>를 뺀 값을 milliseconds로 나누워 결과를 얻습니다.<br><code>Math.floor()</code>으로 결과를 정수로 적절하게 반올림하여 사용하세요.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> dayOfYear = <span class="function"><span class="params">date</span> =&gt;</span> &#123;</span><br><span class="line">2<span class="keyword">return</span> <span class="built_in">Math</span>.floor((date - <span class="keyword">new</span> <span class="built_in">Date</span>(date.getFullYear(), <span class="number">0</span>, <span class="number">0</span>)) / <span class="number">1000</span> / <span class="number">60</span> / <span class="number">60</span> / <span class="number">24</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">dayOfYear(<span class="keyword">new</span> <span class="built_in">Date</span>()); <span class="comment">// 272</span></span><br></pre></td></tr></table></figure></p>
 <hr>
+<a id="more"></a>
 <h3 id="formatDuration"><a href="#formatDuration" class="headerlink" title="formatDuration"></a>formatDuration</h3><p>주어진 milliseconds 숫자를 사람이 읽을 수 있는 형식을 반환합니다.</p>
 <p>인수로 받은 <code>ms</code>을 값으로 나누어 <code>day</code>, <code>hour</code>, <code>minute</code>, <code>second</code>, <code>millisecond</code>에 해당하는 각각의 값을 구합니다.</p>
 <p> <code>Object.entries()</code>와 <code>Array.prototype.filter()</code>를 함께 사용하여 0이 아닌 값을 유지합니다.</p>
@@ -387,10 +388,19 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
+        <a href="/2019/02/17/javascript30secArray1/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">다음 글</strong>
+            <div class="article-nav-title">
+                
+                    번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편
+                
+            </div>
+        </a>
     
-        <a href="/2019/02/12/javascript30secArray1/" id="article-nav-older" class="article-nav-link-wrap">
+    
+        <a href="/2018/12/09/cssArchitecture/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">이전 글</strong>
-            <div class="article-nav-title">번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편</div>
+            <div class="article-nav-title">번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법</div>
         </a>
     
 </nav>
@@ -423,6 +433,25 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2019/02/17/javascript30secArray1/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2019/02/17/javascript30secArray1/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편</a></p>
+                            <p class="item-date"><time datetime="2019-02-16T16:40:15.148Z" itemprop="datePublished">2019-02-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2019/02/17/javascript30secDate/" class="thumbnail">
     
     
@@ -436,25 +465,6 @@ ga('send', 'pageview');
                             <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
                             <p class="item-title"><a href="/2019/02/17/javascript30secDate/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Date&gt; 1편</a></p>
                             <p class="item-date"><time datetime="2019-02-16T16:38:48.000Z" itemprop="datePublished">2019-02-17</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/02/12/javascript30secArray1/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
-                            <p class="item-title"><a href="/2019/02/12/javascript30secArray1/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편</a></p>
-                            <p class="item-date"><time datetime="2019-02-12T14:03:48.173Z" itemprop="datePublished">2019-02-12</time></p>
                         </div>
                     </li>
                 
