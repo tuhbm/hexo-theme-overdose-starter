@@ -14,7 +14,7 @@
 <meta property="og:description" content="[Utiltity]코드 30초 시리즈 개요기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.이제 필요한 코드 찾아 사용">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://tuhbm.github.io/images/bnr-js.jpg">
-<meta property="og:updated_time" content="2019-02-22T13:30:46.649Z">
+<meta property="og:updated_time" content="2019-02-22T13:49:41.740Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편">
 <meta name="twitter:description" content="[Utiltity]코드 30초 시리즈 개요기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.이제 필요한 코드 찾아 사용">
@@ -242,7 +242,7 @@ ga('send', 'pageview');
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2019/02/22/javascript30secUtiltity/">
-            <time datetime="2019-02-22T13:29:23.494Z" itemprop="datePublished">2019-02-22</time>
+            <time datetime="2019-02-22T13:49:41.740Z" itemprop="datePublished">2019-02-22</time>
         </a>
     </div>
 
@@ -273,6 +273,7 @@ ga('send', 'pageview');
 <h3 id="castArray"><a href="#castArray" class="headerlink" title="castArray"></a>castArray</h3><p>인자로 받은 값을 배열로 변경합니다.<br><code>Array.prototype.isArray()</code>를 사용하여 인자로 받은 val을 값을 배열에 넣어 리턴합니다.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> castArray = <span class="function"><span class="params">val</span> =&gt;</span> (<span class="built_in">Array</span>.isArray(val) ? val : [val]);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">castArray(<span class="string">'foo'</span>); <span class="comment">// ['foo']</span></span><br><span class="line">castArray([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]); <span class="comment">// [1,2,3,4]</span></span><br></pre></td></tr></table></figure>
 <hr>
+<a id="more"></a>
 <h3 id="cloneRegExp"><a href="#cloneRegExp" class="headerlink" title="cloneRegExp"></a>cloneRegExp</h3><p>정규식을 복제합니다.<br><code>new RegExp()</code>를 사용하고 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source" rel="external nofollow noopener noreferrer" target="_blank">RegExp.source</a>와 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags" rel="external nofollow noopener noreferrer" target="_blank">RegExp.flags</a>지정된 정규 표현을 복제 할 수 있습니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> cloneRegExp = <span class="function"><span class="params">regExp</span> =&gt;</span> <span class="keyword">new</span> <span class="built_in">RegExp</span>(regExp.source, regExp.flags);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line"><span class="keyword">const</span> regExp = <span class="regexp">/lorem ipsum/gi</span>;</span><br><span class="line"><span class="keyword">const</span> regExp2 = cloneRegExp(regExp); <span class="comment">// /lorem ipsum/gi</span></span><br></pre></td></tr></table></figure></p>
 <hr>
 <h3 id="coalesce"><a href="#coalesce" class="headerlink" title="coalesce"></a>coalesce</h3><p><code>Array.prototype.find()</code>를 사용하여 전달받은 인자값 중에서 null이나 undefined가 아닌 첫번째 값을 리턴합니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> coalesce = <span class="function">(<span class="params">...args</span>) =&gt;</span> args.find(<span class="function"><span class="params">_</span> =&gt;</span> ![<span class="literal">undefined</span>, <span class="literal">null</span>].includes(_));</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">coalesce(<span class="literal">null</span>, <span class="literal">undefined</span>, <span class="string">'Waldo'</span>, <span class="string">''</span>, <span class="literal">NaN</span> ); <span class="comment">// "Waldo"</span></span><br></pre></td></tr></table></figure></p>
@@ -423,7 +424,7 @@ ga('send', 'pageview');
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
                             <p class="item-title"><a href="/2019/02/22/javascript30secUtiltity/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편</a></p>
-                            <p class="item-date"><time datetime="2019-02-22T13:29:23.494Z" itemprop="datePublished">2019-02-22</time></p>
+                            <p class="item-date"><time datetime="2019-02-22T13:49:41.740Z" itemprop="datePublished">2019-02-22</time></p>
                         </div>
                     </li>
                 
