@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-02-21T22:05:52.020Z</updated>
+  <updated>2019-02-22T13:30:46.649Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편</title>
+    <link href="https://tuhbm.github.io/2019/02/22/javascript30secUtiltity/"/>
+    <id>https://tuhbm.github.io/2019/02/22/javascript30secUtiltity/</id>
+    <published>2019-02-22T13:29:23.494Z</published>
+    <updated>2019-02-22T13:30:46.649Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Utiltity-코드-30초-시리즈&quot;&gt;&lt;a href=&quot;#Utiltity-코드-30초-시리즈&quot; class=&quot;headerlink&quot; title=&quot;[Utiltity]코드 30초 시리즈&quot;&gt;&lt;/a&gt;[Utiltity]코드 30초 시리즈&lt;/h1&gt;&lt;p&gt;
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+    
+      <category term="30sec" scheme="https://tuhbm.github.io/tags/30sec/"/>
+    
+      <category term="js" scheme="https://tuhbm.github.io/tags/js/"/>
+    
+      <category term="transform" scheme="https://tuhbm.github.io/tags/transform/"/>
+    
+      <category term="Utiltity" scheme="https://tuhbm.github.io/tags/Utiltity/"/>
+    
+  </entry>
   
   <entry>
     <title>번역 - 자바스크립트 코드 30초 시리즈&lt;Date&gt; 1편</title>
@@ -697,45 +726,6 @@
       <category term="암시적형변화" scheme="https://tuhbm.github.io/tags/%EC%95%94%EC%8B%9C%EC%A0%81%ED%98%95%EB%B3%80%ED%99%94/"/>
     
       <category term="명시적형변화" scheme="https://tuhbm.github.io/tags/%EB%AA%85%EC%8B%9C%EC%A0%81%ED%98%95%EB%B3%80%ED%99%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 숫자와 문자</title>
-    <link href="https://tuhbm.github.io/2018/06/13/javaNumberText/"/>
-    <id>https://tuhbm.github.io/2018/06/13/javaNumberText/</id>
-    <published>2018-06-13T11:29:10.000Z</published>
-    <updated>2018-06-21T13:53:52.645Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/h2&gt;&lt;p&gt;이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 또는 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;자바-JAVA-숫자와-문자&quot;&gt;&lt;a href=&quot;#자바-JAVA-숫자와-문자&quot; class=&quot;headerlink&quot; title=&quot;자바(JAVA) 숫자와 문자&quot;&gt;&lt;/a&gt;자바(JAVA) 숫자와 문자&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/java/img_dataType.png&quot; alt=&quot;text&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;System-out&quot;&gt;&lt;a href=&quot;#System-out&quot; class=&quot;headerlink&quot; title=&quot;System.out&quot;&gt;&lt;/a&gt;System.out&lt;/h2&gt;&lt;p&gt;숫자와 문자를 접하기전에 우리는 결과물을 확인 할 방법을 먼저 알아보겠습니다.&lt;br&gt;자바는 웹브라우저가 아닌 &lt;strong&gt;JVM&lt;/strong&gt;을 이용해 실행합니다. CMD나 터미널등을 통해서도 코드작성이 가능하지만, &lt;strong&gt;IDE(Integrated development environment)&lt;/strong&gt;를 통해 편하게 개발을 할 수 있습니다.&lt;br&gt;IDE에는 여러가지가 있겠지만, 저는 jetbrain사의 &lt;a href=&quot;https://www.jetbrains.com/idea/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;intellij&lt;/a&gt;를 사용하고 있습니다.&lt;br&gt;개발시 각자 본인에 맞는 IDE를 찾아보시길 권장합니다.&lt;br&gt;IDE에서는 Run기능을 통해 실행하여 작성한 코드의 컴파일 결과를 확인 할 수 있습니다.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="JAVA" scheme="https://tuhbm.github.io/categories/JAVA/"/>
-    
-    
-      <category term="java" scheme="https://tuhbm.github.io/tags/java/"/>
-    
-      <category term="oop" scheme="https://tuhbm.github.io/tags/oop/"/>
-    
-      <category term="객체지향" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/"/>
-    
-      <category term="문자열" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/"/>
-    
-      <category term="System.out" scheme="https://tuhbm.github.io/tags/System-out/"/>
-    
-      <category term="console" scheme="https://tuhbm.github.io/tags/console/"/>
-    
-      <category term="세미콜론" scheme="https://tuhbm.github.io/tags/%EC%84%B8%EB%AF%B8%EC%BD%9C%EB%A1%A0/"/>
-    
-      <category term="큰따옴표" scheme="https://tuhbm.github.io/tags/%ED%81%B0%EB%94%B0%EC%98%B4%ED%91%9C/"/>
-    
-      <category term="작은따옴표" scheme="https://tuhbm.github.io/tags/%EC%9E%91%EC%9D%80%EB%94%B0%EC%98%B4%ED%91%9C/"/>
     
   </entry>
   

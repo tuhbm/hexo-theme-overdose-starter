@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    
+    <title>번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편 | 보고 배우는 개발</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="[Utiltity]코드 30초 시리즈 개요기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.이제 필요한 코드 찾아 사용">
+<meta name="keywords" content="30sec,js,transform,Utiltity">
+<meta property="og:type" content="article">
+<meta property="og:title" content="번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편">
+<meta property="og:url" content="https://tuhbm.github.io/2019/02/22/javascript30secUtiltity/index.html">
+<meta property="og:site_name" content="보고 배우는 개발">
+<meta property="og:description" content="[Utiltity]코드 30초 시리즈 개요기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.이제 필요한 코드 찾아 사용">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://tuhbm.github.io/images/bnr-js.jpg">
+<meta property="og:updated_time" content="2019-02-22T13:30:46.649Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편">
+<meta name="twitter:description" content="[Utiltity]코드 30초 시리즈 개요기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.이제 필요한 코드 찾아 사용">
+<meta name="twitter:image" content="https://tuhbm.github.io/images/bnr-js.jpg">
+    
+
+    
+        <link rel="alternate" href="/" title="보고 배우는 개발" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/images/logo2.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-104350689-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+        <meta name="google-site-verification" content="104350689">
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">보고 배우는 개발</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">Home</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="https://taekyunkimdev.github.io/" rel="external nofollow noopener noreferrer" target="_blank">Portfolio</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/images/logo2.ico">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '포스트',
+            PAGES: 'Pages',
+            CATEGORIES: '카테고리',
+            TAGS: '태그',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="https://taekyunkimdev.github.io/" rel="external nofollow noopener noreferrer" target="_blank">Portfolio</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/images/logo2.ico">
+            <h2 id="name">TaekyunKim</h2>
+            <h3 id="title">UI Developer &amp; Front-end Developer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Incheon, Korea</span>
+            <a id="follow" target="_blank" href="https://github.com/tuhbm/" rel="external nofollow noopener noreferrer">팔로우</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                55
+                <span>포스트</span>
+            </div>
+            <div class="article-info-block">
+                219
+                <span>태그</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/tuhbm/" target="_blank" title="github" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class="tooltip">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.facebook.com/tuhbm/" target="_blank" title="facebook" class="tooltip" rel="external nofollow noopener noreferrer">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class="tooltip">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-javascript30secUtiltity" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/02/22/javascript30secUtiltity/">
+            <time datetime="2019-02-22T13:29:23.494Z" itemprop="datePublished">2019-02-22</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Javascript/">Javascript</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/30sec/">30sec</a>, <a class="tag-link" href="/tags/Utiltity/">Utiltity</a>, <a class="tag-link" href="/tags/js/">js</a>, <a class="tag-link" href="/tags/transform/">transform</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h1 id="Utiltity-코드-30초-시리즈"><a href="#Utiltity-코드-30초-시리즈" class="headerlink" title="[Utiltity]코드 30초 시리즈"></a>[Utiltity]코드 30초 시리즈</h1><p><img src="https://tuhbm.github.io/images/javascript/img-javascript30.png" alt="Javascript 30 seconds"></p>
+<h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3><p>기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.<br>하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?<br>코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.<br>어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.<br>이제 필요한 코드 찾아 사용하세요.<br>코드 30초 시리즈는 <a href="https://30secondsofcode.org/index" rel="external nofollow noopener noreferrer" target="_blank">https://30secondsofcode.org/index</a>를 기반으로 번역 &amp; 정리하였습니다.</p>
+<h2 id="Utiltity편"><a href="#Utiltity편" class="headerlink" title="Utiltity편"></a>Utiltity편</h2><hr>
+<h3 id="castArray"><a href="#castArray" class="headerlink" title="castArray"></a>castArray</h3><p>인자로 받은 값을 배열로 변경합니다.<br><code>Array.prototype.isArray()</code>를 사용하여 인자로 받은 val을 값을 배열에 넣어 리턴합니다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> castArray = <span class="function"><span class="params">val</span> =&gt;</span> (<span class="built_in">Array</span>.isArray(val) ? val : [val]);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">castArray(<span class="string">'foo'</span>); <span class="comment">// ['foo']</span></span><br><span class="line">castArray([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]); <span class="comment">// [1,2,3,4]</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="cloneRegExp"><a href="#cloneRegExp" class="headerlink" title="cloneRegExp"></a>cloneRegExp</h3><p>정규식을 복제합니다.<br><code>new RegExp()</code>를 사용하고 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source" rel="external nofollow noopener noreferrer" target="_blank">RegExp.source</a>와 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags" rel="external nofollow noopener noreferrer" target="_blank">RegExp.flags</a>지정된 정규 표현을 복제 할 수 있습니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> cloneRegExp = <span class="function"><span class="params">regExp</span> =&gt;</span> <span class="keyword">new</span> <span class="built_in">RegExp</span>(regExp.source, regExp.flags);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line"><span class="keyword">const</span> regExp = <span class="regexp">/lorem ipsum/gi</span>;</span><br><span class="line"><span class="keyword">const</span> regExp2 = cloneRegExp(regExp); <span class="comment">// /lorem ipsum/gi</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="coalesce"><a href="#coalesce" class="headerlink" title="coalesce"></a>coalesce</h3><p><code>Array.prototype.find()</code>를 사용하여 전달받은 인자값 중에서 null이나 undefined가 아닌 첫번째 값을 리턴합니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> coalesce = <span class="function">(<span class="params">...args</span>) =&gt;</span> args.find(<span class="function"><span class="params">_</span> =&gt;</span> ![<span class="literal">undefined</span>, <span class="literal">null</span>].includes(_));</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">coalesce(<span class="literal">null</span>, <span class="literal">undefined</span>, <span class="string">'Waldo'</span>, <span class="string">''</span>, <span class="literal">NaN</span> ); <span class="comment">// "Waldo"</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="coalesceFactory"><a href="#coalesceFactory" class="headerlink" title="coalesceFactory"></a>coalesceFactory</h3><p>전달받은 인자를 순회하여 <code>args</code>로 제공한 값(배열)과 일치하는 값을 리턴합니다.<br><code>Array.prototype.find()</code>을 사용하여 인자값 중 <code>true</code>와 일치하는 첫번째 값을 리턴합니다.<br><strong>아래 예제는 !(부정연산자)를 사용하여, false인 값을 찾습니다.</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> coalesceFactory = <span class="function"><span class="params">valid</span> =&gt;</span> (...args) =&gt; args.find(valid);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line"><span class="keyword">const</span> customCoalesce = coalesceFactory(<span class="function"><span class="params">_</span> =&gt;</span> ![<span class="literal">null</span>, <span class="literal">undefined</span>, <span class="string">''</span>, <span class="literal">NaN</span>].includes(_));</span><br><span class="line">customCoalesce(<span class="literal">undefined</span>, <span class="literal">null</span>, <span class="literal">NaN</span>, <span class="string">''</span>, <span class="string">'Waldo'</span>); <span class="comment">// "Waldo"</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="extendHex"><a href="#extendHex" class="headerlink" title="extendHex"></a>extendHex</h3><p>3 자리 컬러 코드를 6 자리 컬러 코드로 확장합니다.<br><code>Array.prototype.map()</code>, <code>String.prototype.split()</code>, <code>Array.prototype.join()</code>을 사용하여 3자리 RGB 컬러 코드는 6자리로 변환합니다.<br><code>Array.prototype.slice()</code>은 메소드가 시작할때 <code>#</code>을 제거합니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> extendHex = <span class="function"><span class="params">shortHex</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'#'</span> +</span><br><span class="line">  shortHex</span><br><span class="line">    .slice(shortHex.startsWith(<span class="string">'#'</span>) ? <span class="number">1</span> : <span class="number">0</span>)</span><br><span class="line">    .split(<span class="string">''</span>)</span><br><span class="line">    .map(<span class="function"><span class="params">x</span> =&gt;</span> x + x)</span><br><span class="line">    .join(<span class="string">''</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">extendHex(<span class="string">'#03f'</span>); <span class="comment">// '#0033ff'</span></span><br><span class="line">extendHex(<span class="string">'05a'</span>); <span class="comment">// '#0055aa'</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="getURLParameters"><a href="#getURLParameters" class="headerlink" title="getURLParameters"></a>getURLParameters</h3><p>현재 URL의 파라미터값을 객체로 반환합니다.<br><code>String.match()</code>에서 정규표현식을 사용하여 모든 키- 값 쌍을 가져와서 <code>Array.prototype.reduce()</code>로 매핑하고 결합합니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> getURLParameters = <span class="function"><span class="params">url</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> (url.match(<span class="regexp">/([^?=&amp;]+)(=([^&amp;]*))/g</span>) || []).reduce(</span><br><span class="line">    (a, v) =&gt; ((a[v.slice(<span class="number">0</span>, v.indexOf(<span class="string">'='</span>))] = v.slice(v.indexOf(<span class="string">'='</span>) + <span class="number">1</span>)), a),</span><br><span class="line">    &#123;&#125;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">getURLParameters(<span class="string">'http://url.com/page?name=Adam&amp;surname=Smith'</span>); <span class="comment">// &#123;name: 'Adam', surname: 'Smith'&#125;</span></span><br><span class="line">getURLParameters(<span class="string">'google.com'</span>); <span class="comment">// &#123;&#125;</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="hexToRGB"><a href="#hexToRGB" class="headerlink" title="hexToRGB"></a>hexToRGB</h3><p>인자로 받은 <code>hex</code> 표현된 컬러값을 <code>RGB</code>의 컬러값으로 변환해줍니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> hexToRGB = <span class="function"><span class="params">hex</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> alpha = <span class="literal">false</span>,</span><br><span class="line">    h = hex.slice(hex.startsWith(<span class="string">'#'</span>) ? <span class="number">1</span> : <span class="number">0</span>);</span><br><span class="line">  <span class="keyword">if</span> (h.length === <span class="number">3</span>) h = [...h].map(<span class="function"><span class="params">x</span> =&gt;</span> x + x).join(<span class="string">''</span>);</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span> (h.length === <span class="number">8</span>) alpha = <span class="literal">true</span>;</span><br><span class="line">  h = <span class="built_in">parseInt</span>(h, <span class="number">16</span>);</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="string">'rgb'</span> +</span><br><span class="line">    (alpha ? <span class="string">'a'</span> : <span class="string">''</span>) +</span><br><span class="line">    <span class="string">'('</span> +</span><br><span class="line">    (h &gt;&gt;&gt; (alpha ? <span class="number">24</span> : <span class="number">16</span>)) +</span><br><span class="line">    <span class="string">', '</span> +</span><br><span class="line">    ((h &amp; (alpha ? <span class="number">0x00ff0000</span> : <span class="number">0x00ff00</span>)) &gt;&gt;&gt; (alpha ? <span class="number">16</span> : <span class="number">8</span>)) +</span><br><span class="line">    <span class="string">', '</span> +</span><br><span class="line">    ((h &amp; (alpha ? <span class="number">0x0000ff00</span> : <span class="number">0x0000ff</span>)) &gt;&gt;&gt; (alpha ? <span class="number">8</span> : <span class="number">0</span>)) +</span><br><span class="line">    (alpha ? <span class="string">`, <span class="subst">$&#123;h &amp; <span class="number">0x000000ff</span>&#125;</span>`</span> : <span class="string">''</span>) +</span><br><span class="line">    <span class="string">')'</span></span><br><span class="line">  );</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">hexToRGB(<span class="string">'#27ae60ff'</span>); <span class="comment">// 'rgba(39, 174, 96, 255)'</span></span><br><span class="line">hexToRGB(<span class="string">'27ae60'</span>); <span class="comment">// 'rgb(39, 174, 96)'</span></span><br><span class="line">hexToRGB(<span class="string">'#fff'</span>); <span class="comment">// 'rgb(255, 255, 255)'</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="httpGet"><a href="#httpGet" class="headerlink" title="httpGet"></a>httpGet</h3><p><code>XMLHttpRequest</code>웹 API를 사용하여 <code>GET</code>으로 전달될 <code>URL</code>에 대한 요청합니다.<br><code>onload</code>이벤트를 호출하여 <code>callback</code>으로 <code>responseText</code>값을 제공합니다. 선언된 <code>err</code>함수를 사용하여 <code>onerror</code>처리를 합니다. 세번째로 오류를 <code>error</code> 의 디폴트값으로 기록합니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> httpGet = <span class="function">(<span class="params">url, callback, err = <span class="built_in">console</span>.error</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> request = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">  request.open(<span class="string">'GET'</span>, url, <span class="literal">true</span>);</span><br><span class="line">  request.onload = <span class="function"><span class="params">()</span> =&gt;</span> callback(request.responseText);</span><br><span class="line">  request.onerror = <span class="function"><span class="params">()</span> =&gt;</span> err(request);</span><br><span class="line">  request.send();</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">httpGet(</span><br><span class="line">  <span class="string">'https://jsonplaceholder.typicode.com/posts/1'</span>,</span><br><span class="line">  <span class="built_in">console</span>.log</span><br><span class="line">); </span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">Logs: &#123;</span></span><br><span class="line"><span class="comment">  "userId": 1,</span></span><br><span class="line"><span class="comment">  "id": 1,</span></span><br><span class="line"><span class="comment">  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",</span></span><br><span class="line"><span class="comment">  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="httpPost"><a href="#httpPost" class="headerlink" title="httpPost"></a>httpPost</h3><p><code>XMLHttpRequest</code>웹 API를 사용하여 <code>POST</code>으로 전달 될 <code>URL</code>에 대한 요청합니다.<br><code>HTTP</code>요청 header값을 <code>setRequestHeader</code>메소드를 통해 셋팅합니다. <code>onload</code>이벤트를 호출하여 <code>callback</code>으로 <code>responseText</code>값을 제공합니다. 선언된 <code>err</code>함수를 사용하여 <code>onerror</code>처리를 합니다. 제공된 <code>URL</code>로 데이터를 전송하지 않으려면, 세 번째 인수인 <code>data</code>를 생략합니다. 오류를 <code>error</code> 의 디폴트값으로 기록합니다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> httpPost = <span class="function">(<span class="params">url, data, callback, err = <span class="built_in">console</span>.error</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> request = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">  request.open(<span class="string">'POST'</span>, url, <span class="literal">true</span>);</span><br><span class="line">  request.setRequestHeader(<span class="string">'Content-type'</span>, <span class="string">'application/json; charset=utf-8'</span>);</span><br><span class="line">  request.onload = <span class="function"><span class="params">()</span> =&gt;</span> callback(request.responseText);</span><br><span class="line">  request.onerror = <span class="function"><span class="params">()</span> =&gt;</span> err(request);</span><br><span class="line">  request.send(data);</span><br><span class="line">&#125;;</span><br><span class="line">EXAMPLES</span><br><span class="line"><span class="keyword">const</span> newPost = &#123;</span><br><span class="line">  userId: <span class="number">1</span>,</span><br><span class="line">  id: <span class="number">1337</span>,</span><br><span class="line">  title: <span class="string">'Foo'</span>,</span><br><span class="line">  body: <span class="string">'bar bar bar'</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> data = <span class="built_in">JSON</span>.stringify(newPost);</span><br><span class="line">httpPost(</span><br><span class="line">  <span class="string">'https://jsonplaceholder.typicode.com/posts'</span>,</span><br><span class="line">  data,</span><br><span class="line">  <span class="built_in">console</span>.log</span><br><span class="line">); <span class="comment">/*</span></span><br><span class="line"><span class="comment">Logs: &#123;</span></span><br><span class="line"><span class="comment">  "userId": 1,</span></span><br><span class="line"><span class="comment">  "id": 1337,</span></span><br><span class="line"><span class="comment">  "title": "Foo",</span></span><br><span class="line"><span class="comment">  "body": "bar bar bar"</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">httpPost(</span><br><span class="line">  <span class="string">'https://jsonplaceholder.typicode.com/posts'</span>,</span><br><span class="line">  <span class="literal">null</span>, <span class="comment">// does not send a body</span></span><br><span class="line">  <span class="built_in">console</span>.log</span><br><span class="line">); <span class="comment">/*</span></span><br><span class="line"><span class="comment">Logs: &#123;</span></span><br><span class="line"><span class="comment">  "id": 101</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="randomHexColorCode"><a href="#randomHexColorCode" class="headerlink" title="randomHexColorCode"></a>randomHexColorCode</h3><p>임의의 16 진수 색상 코드를 생성합니다.<br><code>Math.random</code>로 무작위 24 비트(6x4bits)의 16 진수를 생성하는 데 사용 합니다. toString(16)사용하여 16 진수 문자열로 변환하십시오.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> randomHexColorCode = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> n = (<span class="built_in">Math</span>.random() * <span class="number">0xfffff</span> * <span class="number">1000000</span>).toString(<span class="number">16</span>);</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'#'</span> + n.slice(<span class="number">0</span>, <span class="number">6</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">randomHexColorCode(); <span class="comment">// "#e34155"</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="RGBToHex"><a href="#RGBToHex" class="headerlink" title="RGBToHex"></a>RGBToHex</h3><p>RGB 구성 요소의 값을 색상 코드로 변환합니다.<br>주어진 RGB 매개 변수를 비트 시프트 연산자 (<code>&lt;&lt;</code>)를 사용하여 16 진수 문자열을 <code>toString(16)</code>변환한 다음 <code>String.padStart(6,&#39;0&#39;)</code>으로 6 자리 16 진수 값을 가져옵니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> RGBToHex = <span class="function">(<span class="params">r, g, b</span>) =&gt;</span> ((r &lt;&lt; <span class="number">16</span>) + (g &lt;&lt; <span class="number">8</span>) + b).toString(<span class="number">16</span>).padStart(<span class="number">6</span>, <span class="string">'0'</span>);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">RGBToHex(<span class="number">255</span>, <span class="number">165</span>, <span class="number">1</span>); <span class="comment">// 'ffa501'</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="toDecimalMark"><a href="#toDecimalMark" class="headerlink" title="toDecimalMark"></a>toDecimalMark</h3><p><code>toLocaleString()</code>부동 소수점 산술을 소수점 표시 형식 으로 변환하는 데 사용 합니다 . 문자열에 쉼표로 구분 된 숫자를 만듭니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> toDecimalMark = <span class="function"><span class="params">num</span> =&gt;</span> num.toLocaleString(<span class="string">'en-US'</span>);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">toDecimalMark(<span class="number">12305030388.9087</span>); <span class="comment">// "12,305,030,388.909"</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="validateNumber"><a href="#validateNumber" class="headerlink" title="validateNumber"></a>validateNumber</h3><p>인자값이 정수인지 확인하여, <code>true</code>또는 <code>false</code>를 리턴합니다.<br>!isNaN메서드에 parseFloat한 인자값을 넣어 NaN이 아닌 정수값을 확인하고, isFinite 메서드를 실행하여 유한한 숫자인지 확인하고, `Number메서드를 통해 강제로 지정한 숫자인지를 확인합니다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> validateNumber = <span class="function"><span class="params">n</span> =&gt;</span> !<span class="built_in">isNaN</span>(<span class="built_in">parseFloat</span>(n)) &amp;&amp; <span class="built_in">isFinite</span>(n) &amp;&amp; <span class="built_in">Number</span>(n) == n;</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">validateNumber(<span class="string">'10'</span>); <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>지금까지 코드 30초 시리즈 <code>Utility</code>편 이었습니다.</p>
+<p>업무 또는 공부를 진행하면서 <code>util</code>함수처럼 공통으로 사용 할 만한 함수들을 통하여 더욱 좋은 개발을 진행해 보세요.</p>
+<p>이상입니다.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="https://tuhbm.github.io/2019/02/22/javascript30secUtiltity/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2019/02/22/javascript30secUtiltity/">댓글</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/02/17/javascript30secDate/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">이전 글</strong>
+            <div class="article-nav-title">번역 - 자바스크립트 코드 30초 시리즈&lt;Date&gt; 1편</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">최근 글</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/22/javascript30secUtiltity/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2019/02/22/javascript30secUtiltity/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편</a></p>
+                            <p class="item-date"><time datetime="2019-02-22T13:29:23.494Z" itemprop="datePublished">2019-02-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/17/javascript30secDate/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 코드 30초 시리즈&lt;Date&gt; 1편" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2019/02/17/javascript30secDate/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Date&gt; 1편</a></p>
+                            <p class="item-date"><time datetime="2019-02-16T16:38:48.000Z" itemprop="datePublished">2019-02-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/10/javascript30secArray1/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2019/02/10/javascript30secArray1/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Array&gt; 1편</a></p>
+                            <p class="item-date"><time datetime="2019-02-09T16:38:48.000Z" itemprop="datePublished">2019-02-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/12/09/cssArchitecture/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-css.jpg)" alt="번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/CSS/">CSS</a></p>
+                            <p class="item-title"><a href="/2018/12/09/cssArchitecture/" class="title">번역 - OOCSS, BEM, SMACSS를 사용하여 CSS 구조를 효과적으로 구성하는 방법</a></p>
+                            <p class="item-date"><time datetime="2018-12-08T17:04:10.000Z" itemprop="datePublished">2018-12-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/12/01/javascriptDestructuring/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 분해(destructuring)" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2018/12/01/javascriptDestructuring/" class="title">번역 - 자바스크립트 분해(destructuring)</a></p>
+                            <p class="item-date"><time datetime="2018-12-01T07:02:03.000Z" itemprop="datePublished">2018-12-01</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">카테고리</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/SASS/">SASS</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Column/">Column</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ETC/">ETC</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">19</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/Vue/">Vue</a><span class="category-list-count">9</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/book/">book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/용어정리/">용어정리</a><span class="category-list-count">11</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">아카이브</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2월 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">11월 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">9월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">8월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">6월 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">4월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">3월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1월 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">9월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">8월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">7월 2017</a><span class="archive-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">태그 클라우드</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/30sec/" style="font-size: 13.33px;">30sec</a> <a href="/tags/BEM/" style="font-size: 10px;">BEM</a> <a href="/tags/CLI/" style="font-size: 10px;">CLI</a> <a href="/tags/CMD/" style="font-size: 10px;">CMD</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/Component/" style="font-size: 11.67px;">Component</a> <a href="/tags/DTD/" style="font-size: 10px;">DTD</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/HTML-이력서/" style="font-size: 10px;">HTML 이력서</a> <a href="/tags/ONEPAGE/" style="font-size: 10px;">ONEPAGE</a> <a href="/tags/OOCSS/" style="font-size: 10px;">OOCSS</a> <a href="/tags/Pure-Javascript/" style="font-size: 10px;">Pure Javascript</a> <a href="/tags/RESUME/" style="font-size: 10px;">RESUME</a> <a href="/tags/SCOUT/" style="font-size: 10px;">SCOUT</a> <a href="/tags/SMACSS/" style="font-size: 10px;">SMACSS</a> <a href="/tags/System-out/" style="font-size: 10px;">System.out</a> <a href="/tags/UI-developer/" style="font-size: 10px;">UI-developer</a> <a href="/tags/UI개발/" style="font-size: 10px;">UI개발</a> <a href="/tags/Utiltity/" style="font-size: 10px;">Utiltity</a> <a href="/tags/VanillaJS/" style="font-size: 10px;">VanillaJS</a> <a href="/tags/Vue-component/" style="font-size: 11.67px;">Vue.component</a> <a href="/tags/absolute/" style="font-size: 10px;">absolute</a> <a href="/tags/algorithm/" style="font-size: 11.67px;">algorithm</a> <a href="/tags/align-center/" style="font-size: 10px;">align center</a> <a href="/tags/all/" style="font-size: 11.67px;">all</a> <a href="/tags/architecture/" style="font-size: 10px;">architecture</a> <a href="/tags/array/" style="font-size: 11.67px;">array</a> <a href="/tags/asynchronous/" style="font-size: 13.33px;">asynchronous</a> <a href="/tags/book-review/" style="font-size: 11.67px;">book-review</a> <a href="/tags/build-tool/" style="font-size: 10px;">build tool</a> <a href="/tags/byte/" style="font-size: 10px;">byte</a> <a href="/tags/callback/" style="font-size: 10px;">callback</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/compile/" style="font-size: 11.67px;">compile</a> <a href="/tags/compontent/" style="font-size: 11.67px;">compontent</a> <a href="/tags/compressor/" style="font-size: 10px;">compressor</a> <a href="/tags/computed/" style="font-size: 10px;">computed</a> <a href="/tags/console/" style="font-size: 10px;">console</a> <a href="/tags/const/" style="font-size: 11.67px;">const</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/date/" style="font-size: 10px;">date</a> <a href="/tags/destructuring/" style="font-size: 10px;">destructuring</a> <a href="/tags/doc/" style="font-size: 10px;">doc</a> <a href="/tags/ellipsis/" style="font-size: 10px;">ellipsis</a> <a href="/tags/emmet/" style="font-size: 10px;">emmet</a> <a href="/tags/engine/" style="font-size: 10px;">engine</a> <a href="/tags/firefox/" style="font-size: 10px;">firefox</a> <a href="/tags/first-programming/" style="font-size: 10px;">first-programming</a> <a href="/tags/flex/" style="font-size: 10px;">flex</a> <a href="/tags/float/" style="font-size: 10px;">float</a> <a href="/tags/framework/" style="font-size: 11.67px;">framework</a> <a href="/tags/front-end-developer/" style="font-size: 10px;">front-end-developer</a> <a href="/tags/function/" style="font-size: 10px;">function</a> <a href="/tags/functional-programming/" style="font-size: 10px;">functional programming</a> <a href="/tags/grunt/" style="font-size: 10px;">grunt</a> <a href="/tags/gulp/" style="font-size: 11.67px;">gulp</a> <a href="/tags/history-mode/" style="font-size: 10px;">history mode</a> <a href="/tags/html/" style="font-size: 16.67px;">html</a> <a href="/tags/html-doctype/" style="font-size: 10px;">html doctype</a> <a href="/tags/html-template-resume/" style="font-size: 10px;">html template resume</a> <a href="/tags/ie/" style="font-size: 10px;">ie</a> <a href="/tags/image/" style="font-size: 10px;">image</a> <a href="/tags/image-compressor/" style="font-size: 10px;">image compressor</a> <a href="/tags/image-optimization/" style="font-size: 10px;">image optimization</a> <a href="/tags/include/" style="font-size: 10px;">include</a> <a href="/tags/indentationError/" style="font-size: 10px;">indentationError</a> <a href="/tags/inherit/" style="font-size: 10px;">inherit</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/java/" style="font-size: 18.33px;">java</a> <a href="/tags/javascript/" style="font-size: 15px;">javascript</a> <a href="/tags/javascript-function/" style="font-size: 10px;">javascript function</a> <a href="/tags/js/" style="font-size: 13.33px;">js</a> <a href="/tags/let/" style="font-size: 11.67px;">let</a> <a href="/tags/library/" style="font-size: 11.67px;">library</a> <a href="/tags/literal/" style="font-size: 10px;">literal</a> <a href="/tags/long/" style="font-size: 10px;">long</a> <a href="/tags/major/" style="font-size: 10px;">major</a> <a href="/tags/method/" style="font-size: 11.67px;">method</a> <a href="/tags/methods/" style="font-size: 10px;">methods</a> <a href="/tags/mixin/" style="font-size: 10px;">mixin</a> <a href="/tags/new/" style="font-size: 10px;">new</a> <a href="/tags/non-major/" style="font-size: 10px;">non-major</a> <a href="/tags/normalize/" style="font-size: 10px;">normalize</a> <a href="/tags/npm-install/" style="font-size: 11.67px;">npm install</a> <a href="/tags/npm-run-dev/" style="font-size: 11.67px;">npm run dev</a> <a href="/tags/object/" style="font-size: 10px;">object</a> <a href="/tags/oop/" style="font-size: 16.67px;">oop</a> <a href="/tags/optimization/" style="font-size: 10px;">optimization</a> <a href="/tags/plug-in/" style="font-size: 10px;">plug in</a> <a href="/tags/processors/" style="font-size: 10px;">processors</a> <a href="/tags/programming/" style="font-size: 13.33px;">programming</a> <a href="/tags/promise/" style="font-size: 11.67px;">promise</a> <a href="/tags/prototype/" style="font-size: 10px;">prototype</a> <a href="/tags/python/" style="font-size: 13.33px;">python</a> <a href="/tags/reflow/" style="font-size: 10px;">reflow</a> <a href="/tags/refs/" style="font-size: 10px;">refs</a> <a href="/tags/reject/" style="font-size: 10px;">reject</a> <a href="/tags/rendering/" style="font-size: 15px;">rendering</a> <a href="/tags/repaint/" style="font-size: 10px;">repaint</a> <a href="/tags/reset/" style="font-size: 10px;">reset</a> <a href="/tags/resolve/" style="font-size: 10px;">resolve</a> <a href="/tags/return/" style="font-size: 10px;">return</a> <a href="/tags/router-link/" style="font-size: 13.33px;">router-link</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a> <a href="/tags/sass/" style="font-size: 13.33px;">sass</a> <a href="/tags/scope/" style="font-size: 11.67px;">scope</a> <a href="/tags/scss/" style="font-size: 11.67px;">scss</a> <a href="/tags/search/" style="font-size: 10px;">search</a> <a href="/tags/seo/" style="font-size: 10px;">seo</a> <a href="/tags/side-effect/" style="font-size: 10px;">side effect</a> <a href="/tags/start/" style="font-size: 13.33px;">start</a> <a href="/tags/style/" style="font-size: 10px;">style</a> <a href="/tags/subClass/" style="font-size: 10px;">subClass</a> <a href="/tags/superClass/" style="font-size: 10px;">superClass</a> <a href="/tags/synchronous/" style="font-size: 13.33px;">synchronous</a> <a href="/tags/task-runner/" style="font-size: 10px;">task runner</a> <a href="/tags/then/" style="font-size: 10px;">then</a> <a href="/tags/third-party/" style="font-size: 10px;">third party</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/thread/" style="font-size: 10px;">thread</a> <a href="/tags/to/" style="font-size: 11.67px;">to</a> <a href="/tags/transform/" style="font-size: 15px;">transform</a> <a href="/tags/translate/" style="font-size: 10px;">translate</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/v-bind/" style="font-size: 11.67px;">v-bind</a> <a href="/tags/v-for/" style="font-size: 10px;">v-for</a> <a href="/tags/v-html/" style="font-size: 10px;">v-html</a> <a href="/tags/v-if/" style="font-size: 10px;">v-if</a> <a href="/tags/v-model/" style="font-size: 10px;">v-model</a> <a href="/tags/v-on/" style="font-size: 10px;">v-on</a> <a href="/tags/v-show/" style="font-size: 10px;">v-show</a> <a href="/tags/var/" style="font-size: 11.67px;">var</a> <a href="/tags/vendor/" style="font-size: 10px;">vendor</a> <a href="/tags/vue/" style="font-size: 20px;">vue</a> <a href="/tags/vue-create/" style="font-size: 10px;">vue create</a> <a href="/tags/vue-init/" style="font-size: 11.67px;">vue init</a> <a href="/tags/vue-cli/" style="font-size: 11.67px;">vue-cli</a> <a href="/tags/vue-cli-3-0/" style="font-size: 10px;">vue-cli 3.0</a> <a href="/tags/vue-router/" style="font-size: 15px;">vue-router</a> <a href="/tags/vue-js/" style="font-size: 20px;">vue.js</a> <a href="/tags/vue-js2/" style="font-size: 15px;">vue.js2</a> <a href="/tags/vue를-시작하는방법/" style="font-size: 10px;">vue를 시작하는방법</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/값/" style="font-size: 10px;">값</a> <a href="/tags/개발/" style="font-size: 11.67px;">개발</a> <a href="/tags/객체/" style="font-size: 10px;">객체</a> <a href="/tags/객체지향/" style="font-size: 16.67px;">객체지향</a> <a href="/tags/검색최적화/" style="font-size: 10px;">검색최적화</a> <a href="/tags/논리연산자/" style="font-size: 10px;">논리연산자</a> <a href="/tags/데이터타입/" style="font-size: 10px;">데이터타입</a> <a href="/tags/동기/" style="font-size: 13.33px;">동기</a> <a href="/tags/들여쓰기/" style="font-size: 10px;">들여쓰기</a> <a href="/tags/라이브러리/" style="font-size: 10px;">라이브러리</a> <a href="/tags/랜더링/" style="font-size: 11.67px;">랜더링</a> <a href="/tags/렌더링/" style="font-size: 10px;">렌더링</a> <a href="/tags/렌터트리/" style="font-size: 10px;">렌터트리</a> <a href="/tags/리터럴/" style="font-size: 10px;">리터럴</a> <a href="/tags/리페인팅/" style="font-size: 10px;">리페인팅</a> <a href="/tags/리플로우/" style="font-size: 10px;">리플로우</a> <a href="/tags/멀티스레드/" style="font-size: 10px;">멀티스레드</a> <a href="/tags/메모리/" style="font-size: 10px;">메모리</a> <a href="/tags/메소드/" style="font-size: 11.67px;">메소드</a> <a href="/tags/멤버변수/" style="font-size: 11.67px;">멤버변수</a> <a href="/tags/명시적형변화/" style="font-size: 10px;">명시적형변화</a> <a href="/tags/문법/" style="font-size: 10px;">문법</a> <a href="/tags/문자/" style="font-size: 10px;">문자</a> <a href="/tags/문자열/" style="font-size: 11.67px;">문자열</a> <a href="/tags/바닐라-JS/" style="font-size: 10px;">바닐라 JS</a> <a href="/tags/변수/" style="font-size: 11.67px;">변수</a> <a href="/tags/부수효과/" style="font-size: 10px;">부수효과</a> <a href="/tags/북리뷰/" style="font-size: 11.67px;">북리뷰</a> <a href="/tags/브라우저/" style="font-size: 11.67px;">브라우저</a> <a href="/tags/비동기/" style="font-size: 13.33px;">비동기</a> <a href="/tags/비전공자/" style="font-size: 11.67px;">비전공자</a> <a href="/tags/사스/" style="font-size: 11.67px;">사스</a> <a href="/tags/산술연산자/" style="font-size: 10px;">산술연산자</a> <a href="/tags/상속/" style="font-size: 10px;">상속</a> <a href="/tags/상수/" style="font-size: 10px;">상수</a> <a href="/tags/생성자함수/" style="font-size: 10px;">생성자함수</a> <a href="/tags/서브클래스/" style="font-size: 10px;">서브클래스</a> <a href="/tags/세미콜론/" style="font-size: 10px;">세미콜론</a> <a href="/tags/숫자/" style="font-size: 10px;">숫자</a> <a href="/tags/슈퍼클래스/" style="font-size: 10px;">슈퍼클래스</a> <a href="/tags/스레드/" style="font-size: 10px;">스레드</a> <a href="/tags/스코프/" style="font-size: 10px;">스코프</a> <a href="/tags/실수/" style="font-size: 10px;">실수</a> <a href="/tags/싱글스레드/" style="font-size: 10px;">싱글스레드</a> <a href="/tags/알고리즘/" style="font-size: 11.67px;">알고리즘</a> <a href="/tags/암시적형변화/" style="font-size: 10px;">암시적형변화</a> <a href="/tags/에러/" style="font-size: 10px;">에러</a> <a href="/tags/예외/" style="font-size: 10px;">예외</a> <a href="/tags/원페이지-이력서/" style="font-size: 10px;">원페이지 이력서</a> <a href="/tags/웹퍼블리셔/" style="font-size: 10px;">웹퍼블리셔</a> <a href="/tags/유효범위/" style="font-size: 10px;">유효범위</a> <a href="/tags/은닉화/" style="font-size: 10px;">은닉화</a> <a href="/tags/인터페이스/" style="font-size: 10px;">인터페이스</a> <a href="/tags/작은따옴표/" style="font-size: 10px;">작은따옴표</a> <a href="/tags/전처리기/" style="font-size: 10px;">전처리기</a> <a href="/tags/정수/" style="font-size: 10px;">정수</a> <a href="/tags/캡슐화/" style="font-size: 10px;">캡슐화</a> <a href="/tags/컴포넌트/" style="font-size: 15px;">컴포넌트</a> <a href="/tags/큰따옴표/" style="font-size: 10px;">큰따옴표</a> <a href="/tags/클래스/" style="font-size: 13.33px;">클래스</a> <a href="/tags/터미널/" style="font-size: 10px;">터미널</a> <a href="/tags/텍스트-바인딩/" style="font-size: 10px;">텍스트 바인딩</a> <a href="/tags/파이썬/" style="font-size: 13.33px;">파이썬</a> <a href="/tags/파이썬-시작/" style="font-size: 10px;">파이썬 시작</a> <a href="/tags/프레임워크/" style="font-size: 10px;">프레임워크</a> <a href="/tags/프로그래머/" style="font-size: 11.67px;">프로그래머</a> <a href="/tags/프로세스/" style="font-size: 10px;">프로세스</a> <a href="/tags/프로토타입/" style="font-size: 10px;">프로토타입</a> <a href="/tags/프론트엔드개발/" style="font-size: 10px;">프론트엔드개발</a> <a href="/tags/플러그인/" style="font-size: 10px;">플러그인</a> <a href="/tags/한줄-말줄임/" style="font-size: 10px;">한줄 말줄임</a> <a href="/tags/함수/" style="font-size: 10px;">함수</a> <a href="/tags/함수-바인딩/" style="font-size: 10px;">함수 바인딩</a> <a href="/tags/함수선언문/" style="font-size: 10px;">함수선언문</a> <a href="/tags/함수표현식/" style="font-size: 10px;">함수표현식</a> <a href="/tags/효율성/" style="font-size: 11.67px;">효율성</a>
+        </div>
+    </div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Taekyun Kim<br>
+            Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme by <a href="http://github.com/ppoffice" rel="external nofollow noopener noreferrer" target="_blank">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'https://tuhbm.github.io/2019/02/22/javascript30secUtiltity/';
+        
+        this.page.identifier = 'javascript30secUtiltity';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'bogo-baeuneun-gaebal-6734' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
