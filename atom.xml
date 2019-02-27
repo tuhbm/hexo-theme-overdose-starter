@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-02-27T14:14:26.102Z</updated>
+  <updated>2019-02-27T14:16:11.192Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tuhbm.github.io/2019/02/27/accessModifier/"/>
     <id>https://tuhbm.github.io/2019/02/27/accessModifier/</id>
     <published>2019-02-27T12:37:30.000Z</published>
-    <updated>2019-02-27T14:14:26.102Z</updated>
+    <updated>2019-02-27T14:16:11.192Z</updated>
     
     <summary type="html">
     
@@ -30,8 +30,7 @@
 &lt;p&gt;우선 &lt;code&gt;ES6&lt;/code&gt;에서부터 &lt;code&gt;class&lt;/code&gt;를 통한 객체화가 가능해졌습니다. 그렇기에 &lt;code&gt;상속&lt;/code&gt;도 가능해졌습니다.&lt;/p&gt;
 &lt;p&gt;하지만 &lt;code&gt;Javascript&lt;/code&gt;의 상위 개념인 &lt;code&gt;Typescript&lt;/code&gt;는 기존 Java와 같이 interface등을 통해 더욱 객체지향프로그래밍에 가까워 졌습니다. 또한 &lt;code&gt;public&lt;/code&gt;,&lt;code&gt;private&lt;/code&gt;,&lt;code&gt;protected&lt;/code&gt;등 접근 제한자도 사용이 가능합니다.&lt;/p&gt;
 &lt;h2 id=&quot;Public&quot;&gt;&lt;a href=&quot;#Public&quot; class=&quot;headerlink&quot; title=&quot;Public&quot;&gt;&lt;/a&gt;Public&lt;/h2&gt;&lt;p&gt;&lt;em&gt;public&lt;/em&gt;은 영어단어 뜻은 &lt;code&gt;공공의&lt;/code&gt;, &lt;code&gt;대중의&lt;/code&gt;입니다. 단어처럼 접근 제한이 따로 없습니다. &lt;code&gt;상속도 가능&lt;/code&gt;하고,&lt;code&gt;외부 객체를 통한 접근도 가능&lt;/code&gt;합니다.&lt;/p&gt;
-&lt;p&gt;예제를 보겠습니다.&lt;/p&gt;
-&lt;figure class=&quot;highlight typescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; Base &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; defaultAge = &lt;span class=&quot;number&quot;&gt;30&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; Member &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; Base &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2age = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; getAge() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.age + &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.defaultAge;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; member = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Member();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(member.getAge()); &lt;span class=&quot;comment&quot;&gt;// 31&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;예제를 보겠습니다.&lt;br&gt;
     
     </summary>
     
@@ -229,13 +228,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
       <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
   </entry>
   
@@ -272,13 +271,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
-    
-      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
-    
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
+    
+      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
     
   </entry>
   
