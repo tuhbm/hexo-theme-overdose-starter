@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-02-22T13:49:41.740Z</updated>
+  <updated>2019-02-27T14:14:26.102Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>접근 제한자</title>
+    <link href="https://tuhbm.github.io/2019/02/27/accessModifier/"/>
+    <id>https://tuhbm.github.io/2019/02/27/accessModifier/</id>
+    <published>2019-02-27T12:37:30.000Z</published>
+    <updated>2019-02-27T14:14:26.102Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;접근제한자&quot;&gt;&lt;a href=&quot;#접근제한자&quot; class=&quot;headerlink&quot; title=&quot;접근제한자&quot;&gt;&lt;/a&gt;접근제한자&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/typescript/accessModifier.png&quot; alt=&quot;접근제한자&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; class=&quot;headerlink&quot; title=&quot;개요&quot;&gt;&lt;/a&gt;개요&lt;/h3&gt;&lt;p&gt;public, private, protected의 접근 제한자는 &lt;code&gt;Typescript&lt;/code&gt; 공부를 진행하면서, &lt;code&gt;Java&lt;/code&gt;에서 사용하던것은 알겠는데 정확히 무엇인지 인지하지 못해 정리를 하게되었습니다. 많이 보았지만 각각의 제한자는 어떤 범위까지 제한하는지 정리해보겠습니다.&lt;/p&gt;
+&lt;p&gt;우선 &lt;code&gt;ES6&lt;/code&gt;에서부터 &lt;code&gt;class&lt;/code&gt;를 통한 객체화가 가능해졌습니다. 그렇기에 &lt;code&gt;상속&lt;/code&gt;도 가능해졌습니다.&lt;/p&gt;
+&lt;p&gt;하지만 &lt;code&gt;Javascript&lt;/code&gt;의 상위 개념인 &lt;code&gt;Typescript&lt;/code&gt;는 기존 Java와 같이 interface등을 통해 더욱 객체지향프로그래밍에 가까워 졌습니다. 또한 &lt;code&gt;public&lt;/code&gt;,&lt;code&gt;private&lt;/code&gt;,&lt;code&gt;protected&lt;/code&gt;등 접근 제한자도 사용이 가능합니다.&lt;/p&gt;
+&lt;h2 id=&quot;Public&quot;&gt;&lt;a href=&quot;#Public&quot; class=&quot;headerlink&quot; title=&quot;Public&quot;&gt;&lt;/a&gt;Public&lt;/h2&gt;&lt;p&gt;&lt;em&gt;public&lt;/em&gt;은 영어단어 뜻은 &lt;code&gt;공공의&lt;/code&gt;, &lt;code&gt;대중의&lt;/code&gt;입니다. 단어처럼 접근 제한이 따로 없습니다. &lt;code&gt;상속도 가능&lt;/code&gt;하고,&lt;code&gt;외부 객체를 통한 접근도 가능&lt;/code&gt;합니다.&lt;/p&gt;
+&lt;p&gt;예제를 보겠습니다.&lt;/p&gt;
+&lt;figure class=&quot;highlight typescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; Base &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; defaultAge = &lt;span class=&quot;number&quot;&gt;30&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; Member &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; Base &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2age = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; getAge() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.age + &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.defaultAge;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; member = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Member();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(member.getAge()); &lt;span class=&quot;comment&quot;&gt;// 31&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+      <category term="Typescript" scheme="https://tuhbm.github.io/categories/Javascript/Typescript/"/>
+    
+    
+      <category term="access" scheme="https://tuhbm.github.io/tags/access/"/>
+    
+      <category term="public" scheme="https://tuhbm.github.io/tags/public/"/>
+    
+      <category term="private" scheme="https://tuhbm.github.io/tags/private/"/>
+    
+      <category term="protected" scheme="https://tuhbm.github.io/tags/protected/"/>
+    
+  </entry>
   
   <entry>
     <title>번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편</title>
@@ -680,54 +714,6 @@
       <category term="캡슐화" scheme="https://tuhbm.github.io/tags/%EC%BA%A1%EC%8A%90%ED%99%94/"/>
     
       <category term="인터페이스" scheme="https://tuhbm.github.io/tags/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java Data Type</title>
-    <link href="https://tuhbm.github.io/2018/06/14/javaDataType/"/>
-    <id>https://tuhbm.github.io/2018/06/14/javaDataType/</id>
-    <published>2018-06-14T12:27:36.000Z</published>
-    <updated>2018-06-21T14:01:13.529Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/h2&gt;&lt;p&gt;이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 또는 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;데이터-타입&quot;&gt;&lt;a href=&quot;#데이터-타입&quot; class=&quot;headerlink&quot; title=&quot;데이터 타입&quot;&gt;&lt;/a&gt;데이터 타입&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/java/img_data.jpg&quot; alt=&quot;data&quot;&gt;&lt;br&gt;프로그래밍에서 데이터는 데이터형식, 메모리의 소비크기, 표현가능범위에 따라 알맞게 사용해야합니다.&lt;br&gt;그 내용은 데이터의 형식을 알아보면서 알아보겠습니다.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="JAVA" scheme="https://tuhbm.github.io/categories/JAVA/"/>
-    
-    
-      <category term="java" scheme="https://tuhbm.github.io/tags/java/"/>
-    
-      <category term="oop" scheme="https://tuhbm.github.io/tags/oop/"/>
-    
-      <category term="객체지향" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/"/>
-    
-      <category term="데이터타입" scheme="https://tuhbm.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%83%80%EC%9E%85/"/>
-    
-      <category term="byte" scheme="https://tuhbm.github.io/tags/byte/"/>
-    
-      <category term="숫자" scheme="https://tuhbm.github.io/tags/%EC%88%AB%EC%9E%90/"/>
-    
-      <category term="정수" scheme="https://tuhbm.github.io/tags/%EC%A0%95%EC%88%98/"/>
-    
-      <category term="실수" scheme="https://tuhbm.github.io/tags/%EC%8B%A4%EC%88%98/"/>
-    
-      <category term="문자" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EC%9E%90/"/>
-    
-      <category term="문자열" scheme="https://tuhbm.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/"/>
-    
-      <category term="long" scheme="https://tuhbm.github.io/tags/long/"/>
-    
-      <category term="float" scheme="https://tuhbm.github.io/tags/float/"/>
-    
-      <category term="암시적형변화" scheme="https://tuhbm.github.io/tags/%EC%95%94%EC%8B%9C%EC%A0%81%ED%98%95%EB%B3%80%ED%99%94/"/>
-    
-      <category term="명시적형변화" scheme="https://tuhbm.github.io/tags/%EB%AA%85%EC%8B%9C%EC%A0%81%ED%98%95%EB%B3%80%ED%99%94/"/>
     
   </entry>
   
