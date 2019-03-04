@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-02-27T14:16:11.192Z</updated>
+  <updated>2019-03-04T14:16:37.832Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -17,15 +17,46 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>접근 제한자</title>
-    <link href="https://tuhbm.github.io/2019/02/27/accessModifier/"/>
-    <id>https://tuhbm.github.io/2019/02/27/accessModifier/</id>
-    <published>2019-02-27T12:37:30.000Z</published>
-    <updated>2019-02-27T14:16:11.192Z</updated>
+    <title>SEO(Search Engine Optimization) 검색 엔진 최적화 2편</title>
+    <link href="https://tuhbm.github.io/2019/03/04/seo2/"/>
+    <id>https://tuhbm.github.io/2019/03/04/seo2/</id>
+    <published>2019-03-04T14:12:59.000Z</published>
+    <updated>2019-03-04T14:16:37.832Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;접근제한자&quot;&gt;&lt;a href=&quot;#접근제한자&quot; class=&quot;headerlink&quot; title=&quot;접근제한자&quot;&gt;&lt;/a&gt;접근제한자&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/typescript/accessModifier.png&quot; alt=&quot;접근제한자&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/seo.jpg&quot; alt=&quot;SEO&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; class=&quot;headerlink&quot; title=&quot;개요&quot;&gt;&lt;/a&gt;개요&lt;/h2&gt;&lt;p&gt;지난번 &lt;a href=&quot;https://tuhbm.github.io/2018/09/29/seo/&quot;&gt;SEO 검색 엔진 최적화 1편&lt;/a&gt;에 이어서 업무를 하면서 추가로 알게 된 내용들이 있어, 2편을 작성하게 되었습니다.&lt;br&gt;서비스를 검색에 최대한 효율적이고 빈번히 노출시키는 것이 유저를 유입시키는 점에 있어 SEO(검색 엔진 최적화)작업은 매우 중요하다고 1편에서도 말씀드렸습니다.&lt;br&gt;추가적인 내용을 정리해보겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;noindex&quot;&gt;&lt;a href=&quot;#noindex&quot; class=&quot;headerlink&quot; title=&quot;noindex&quot;&gt;&lt;/a&gt;noindex&lt;/h2&gt;&lt;p&gt;먼저 &lt;code&gt;noindex&lt;/code&gt;에 간략히 말씀드리면, &lt;code&gt;bot이 페이지를 크롤링할때 검색 색인 생성 차단하는 방법&lt;/code&gt;이라고 간략히 설명하겠습니다.&lt;br&gt;접근을 차단하는 다른방법으로는 &lt;code&gt;robots.txt&lt;/code&gt;파일을 웹마스터 도구에 등록하므로써 차단하는 방법도 있습니다.&lt;br&gt;하지만 &lt;code&gt;noindex&lt;/code&gt;의 경우는 &lt;code&gt;색인&lt;/code&gt;은 bot이 색인을 &lt;em&gt;생성&lt;/em&gt;하는 부분을 HTTP request에서 &lt;code&gt;noindex header&lt;/code&gt;를 반환하여, 검색엔진에 표시가 되지 않게 하는 방법입니다.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="SEO" scheme="https://tuhbm.github.io/categories/SEO/"/>
+    
+    
+      <category term="Search" scheme="https://tuhbm.github.io/tags/Search/"/>
+    
+      <category term="Engine" scheme="https://tuhbm.github.io/tags/Engine/"/>
+    
+      <category term="Optimization" scheme="https://tuhbm.github.io/tags/Optimization/"/>
+    
+      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
+    
+      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typescript - 접근 제한자</title>
+    <link href="https://tuhbm.github.io/2019/02/27/accessModifier/"/>
+    <id>https://tuhbm.github.io/2019/02/27/accessModifier/</id>
+    <published>2019-02-27T12:37:30.000Z</published>
+    <updated>2019-02-27T14:17:50.252Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Typescript-접근제한자&quot;&gt;&lt;a href=&quot;#Typescript-접근제한자&quot; class=&quot;headerlink&quot; title=&quot;[Typescript] - 접근제한자&quot;&gt;&lt;/a&gt;[Typescript] - 접근제한자&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/typescript/accessModifier.png&quot; alt=&quot;접근제한자&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; class=&quot;headerlink&quot; title=&quot;개요&quot;&gt;&lt;/a&gt;개요&lt;/h3&gt;&lt;p&gt;public, private, protected의 접근 제한자는 &lt;code&gt;Typescript&lt;/code&gt; 공부를 진행하면서, &lt;code&gt;Java&lt;/code&gt;에서 사용하던것은 알겠는데 정확히 무엇인지 인지하지 못해 정리를 하게되었습니다. 많이 보았지만 각각의 제한자는 어떤 범위까지 제한하는지 정리해보겠습니다.&lt;/p&gt;
 &lt;p&gt;우선 &lt;code&gt;ES6&lt;/code&gt;에서부터 &lt;code&gt;class&lt;/code&gt;를 통한 객체화가 가능해졌습니다. 그렇기에 &lt;code&gt;상속&lt;/code&gt;도 가능해졌습니다.&lt;/p&gt;
 &lt;p&gt;하지만 &lt;code&gt;Javascript&lt;/code&gt;의 상위 개념인 &lt;code&gt;Typescript&lt;/code&gt;는 기존 Java와 같이 interface등을 통해 더욱 객체지향프로그래밍에 가까워 졌습니다. 또한 &lt;code&gt;public&lt;/code&gt;,&lt;code&gt;private&lt;/code&gt;,&lt;code&gt;protected&lt;/code&gt;등 접근 제한자도 사용이 가능합니다.&lt;/p&gt;
@@ -228,13 +259,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
-    
-      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
-    
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
+    
+      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
     
   </entry>
   
@@ -271,13 +302,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
     
       <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
   </entry>
   
@@ -546,11 +577,11 @@
   </entry>
   
   <entry>
-    <title>SEO(Search Engine Optimization) 검색 엔진 최적화</title>
-    <link href="https://tuhbm.github.io/2018/09/29/seo/"/>
-    <id>https://tuhbm.github.io/2018/09/29/seo/</id>
+    <title>SEO(Search Engine Optimization) 검색 엔진 최적화 1편</title>
+    <link href="https://tuhbm.github.io/2018/09/29/seo1/"/>
+    <id>https://tuhbm.github.io/2018/09/29/seo1/</id>
     <published>2018-09-29T09:32:59.000Z</published>
-    <updated>2018-10-20T04:10:21.129Z</updated>
+    <updated>2019-03-04T14:12:33.298Z</updated>
     
     <summary type="html">
     
@@ -559,7 +590,7 @@
     
     </summary>
     
-      <category term="HTML" scheme="https://tuhbm.github.io/categories/HTML/"/>
+      <category term="SEO" scheme="https://tuhbm.github.io/categories/SEO/"/>
     
     
       <category term="html" scheme="https://tuhbm.github.io/tags/html/"/>
@@ -673,46 +704,6 @@
       <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
     
       <category term="this" scheme="https://tuhbm.github.io/tags/this/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>객체지향 언어 자바 이론</title>
-    <link href="https://tuhbm.github.io/2018/06/21/javaObjectOriented/"/>
-    <id>https://tuhbm.github.io/2018/06/21/javaObjectOriented/</id>
-    <published>2018-06-21T13:33:33.000Z</published>
-    <updated>2018-06-21T13:53:26.703Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/h2&gt;&lt;p&gt;이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 또는 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;객체지향&quot;&gt;&lt;a href=&quot;#객체지향&quot; class=&quot;headerlink&quot; title=&quot;객체지향&quot;&gt;&lt;/a&gt;객체지향&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/java/img_oop.png&quot; alt=&quot;OOP&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;이론&quot;&gt;&lt;a href=&quot;#이론&quot; class=&quot;headerlink&quot; title=&quot;이론&quot;&gt;&lt;/a&gt;이론&lt;/h2&gt;&lt;p&gt;하나의 결과물을 만들때, 필요한부분을 각각 개발하여, 하나로 사용하고, 또 필요한부분을 가져가 쓰는 방법이 객체지향프로그래밍입니다.&lt;/p&gt;
-&lt;p&gt;예를 들어보겠습니다.&lt;br&gt;초창기 컴퓨터는 하나의 기계였습니다..&lt;br&gt;그림으로 살펴보겠습니다..&lt;br&gt;
-    
-    </summary>
-    
-      <category term="JAVA" scheme="https://tuhbm.github.io/categories/JAVA/"/>
-    
-    
-      <category term="java" scheme="https://tuhbm.github.io/tags/java/"/>
-    
-      <category term="oop" scheme="https://tuhbm.github.io/tags/oop/"/>
-    
-      <category term="객체지향" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/"/>
-    
-      <category term="메소드" scheme="https://tuhbm.github.io/tags/%EB%A9%94%EC%86%8C%EB%93%9C/"/>
-    
-      <category term="클래스" scheme="https://tuhbm.github.io/tags/%ED%81%B4%EB%9E%98%EC%8A%A4/"/>
-    
-      <category term="멤버변수" scheme="https://tuhbm.github.io/tags/%EB%A9%A4%EB%B2%84%EB%B3%80%EC%88%98/"/>
-    
-      <category term="은닉화" scheme="https://tuhbm.github.io/tags/%EC%9D%80%EB%8B%89%ED%99%94/"/>
-    
-      <category term="캡슐화" scheme="https://tuhbm.github.io/tags/%EC%BA%A1%EC%8A%90%ED%99%94/"/>
-    
-      <category term="인터페이스" scheme="https://tuhbm.github.io/tags/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/"/>
     
   </entry>
   

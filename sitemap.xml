@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/2019/03/04/seo2/</loc>
+    
+    <lastmod>2019-03-04T14:16:37.832Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2018/09/29/seo1/</loc>
+    
+    <lastmod>2019-03-04T14:12:33.298Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2019/02/27/accessModifier/</loc>
     
-    <lastmod>2019-02-27T14:16:11.192Z</lastmod>
+    <lastmod>2019-02-27T14:17:50.252Z</lastmod>
     
   </url>
   
@@ -138,13 +152,6 @@
     <loc>https://tuhbm.github.io/2018/01/24/sass2/</loc>
     
     <lastmod>2018-10-30T11:25:41.911Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2018/09/29/seo/</loc>
-    
-    <lastmod>2018-10-20T04:10:21.129Z</lastmod>
     
   </url>
   
