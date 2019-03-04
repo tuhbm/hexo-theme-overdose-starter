@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-03-04T14:16:37.832Z</updated>
+  <updated>2019-03-04T14:32:51.825Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tuhbm.github.io/2019/03/04/seo2/"/>
     <id>https://tuhbm.github.io/2019/03/04/seo2/</id>
     <published>2019-03-04T14:12:59.000Z</published>
-    <updated>2019-03-04T14:16:37.832Z</updated>
+    <updated>2019-03-04T14:32:51.825Z</updated>
     
     <summary type="html">
     
@@ -35,15 +35,17 @@
       <category term="SEO" scheme="https://tuhbm.github.io/categories/SEO/"/>
     
     
+      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
+    
+      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
+    
       <category term="Search" scheme="https://tuhbm.github.io/tags/Search/"/>
     
       <category term="Engine" scheme="https://tuhbm.github.io/tags/Engine/"/>
     
       <category term="Optimization" scheme="https://tuhbm.github.io/tags/Optimization/"/>
     
-      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
-    
-      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
+      <category term="alternate" scheme="https://tuhbm.github.io/tags/alternate/"/>
     
   </entry>
   
@@ -259,13 +261,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
       <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
   </entry>
   
@@ -302,13 +304,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
-    
-      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
-    
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
+    
+      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
     
   </entry>
   
@@ -581,7 +583,7 @@
     <link href="https://tuhbm.github.io/2018/09/29/seo1/"/>
     <id>https://tuhbm.github.io/2018/09/29/seo1/</id>
     <published>2018-09-29T09:32:59.000Z</published>
-    <updated>2019-03-04T14:12:33.298Z</updated>
+    <updated>2019-03-04T14:32:36.320Z</updated>
     
     <summary type="html">
     
@@ -604,6 +606,10 @@
       <category term="optimization" scheme="https://tuhbm.github.io/tags/optimization/"/>
     
       <category term="검색최적화" scheme="https://tuhbm.github.io/tags/%EA%B2%80%EC%83%89%EC%B5%9C%EC%A0%81%ED%99%94/"/>
+    
+      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
+    
+      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
     
   </entry>
   
