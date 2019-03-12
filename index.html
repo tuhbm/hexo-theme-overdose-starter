@@ -198,131 +198,6 @@ ga('send', 'pageview');
 
             
             <section id="main">
-    <article id="post-javascript30secUtiltity" class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/03/13/javascript30secUtiltity/">번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/03/13/javascript30secUtiltity/">
-            <time datetime="2019-03-12T15:00:41.951Z" itemprop="datePublished">2019-03-13</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Javascript/">Javascript</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/30sec/">30sec</a>, <a class="tag-link" href="/tags/Utiltity/">Utiltity</a>, <a class="tag-link" href="/tags/js/">js</a>, <a class="tag-link" href="/tags/transform/">transform</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p></p><h1 id="Utiltity-코드-30초-시리즈"><a href="#Utiltity-코드-30초-시리즈" class="headerlink" title="[Utiltity]코드 30초 시리즈"></a>[Utiltity]코드 30초 시리즈</h1><p><img src="https://tuhbm.github.io/images/javascript/img-javascript30.png" alt="Javascript 30 seconds"></p>
-<h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3><p>기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.<br>하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?<br>코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.<br>어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.<br>이제 필요한 코드 찾아 사용하세요.<br>코드 30초 시리즈는 <a href="https://30secondsofcode.org/index" rel="external nofollow noopener noreferrer" target="_blank">https://30secondsofcode.org/index</a>를 기반으로 번역 &amp; 정리하였습니다.</p>
-<h2 id="Utiltity편"><a href="#Utiltity편" class="headerlink" title="Utiltity편"></a>Utiltity편</h2><hr>
-<h3 id="castArray"><a href="#castArray" class="headerlink" title="castArray"></a>castArray</h3><p>인자로 받은 값을 배열로 변경합니다.<br><code>Array.prototype.isArray()</code>를 사용하여 인자로 받은 val을 값을 배열에 넣어 리턴합니다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> castArray = <span class="function"><span class="params">val</span> =&gt;</span> (<span class="built_in">Array</span>.isArray(val) ? val : [val]);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">castArray(<span class="string">'foo'</span>); <span class="comment">// ['foo']</span></span><br><span class="line">castArray([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]); <span class="comment">// [1,2,3,4]</span></span><br></pre></td></tr></table></figure>
-<hr><p></p>
-            <p class="article-more-link">
-                <a href="/2019/03/13/javascript30secUtiltity/#more">자세히 보기</a>
-            </p>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-    <div class="a2a_kit a2a_default_style">
-    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
-    <span class="a2a_divider"></span>
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_google_plus"></a>
-    <a class="a2a_button_pinterest"></a>
-    <a class="a2a_button_tumblr"></a>
-</div>
-<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-<style>
-    .a2a_menu {
-        border-radius: 4px;
-    }
-    .a2a_menu a {
-        margin: 2px 0;
-        font-size: 14px;
-        line-height: 16px;
-        border-radius: 4px;
-        color: inherit !important;
-        font-family: 'Microsoft Yahei';
-    }
-    #a2apage_dropdown {
-        margin: 10px 0;
-    }
-    .a2a_mini_services {
-        padding: 10px;
-    }
-    a.a2a_i,
-    i.a2a_i {
-        width: 122px;
-        line-height: 16px;
-    }
-    a.a2a_i .a2a_svg,
-    a.a2a_more .a2a_svg {
-        width: 16px;
-        height: 16px;
-        line-height: 16px;
-        vertical-align: top;
-        background-size: 16px;
-    }
-    a.a2a_i {
-        border: none !important;
-    }
-    a.a2a_menu_show_more_less {
-        margin: 0;
-        padding: 10px 0;
-        line-height: 16px;
-    }
-    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-    .a2a_mini_services{*+height:1%;}
-</style>
-
-</div>
-
-            
-    
-        <a href="https://tuhbm.github.io/2019/03/13/javascript30secUtiltity/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2019/03/13/javascript30secUtiltity/">댓글</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <article id="post-seo3" class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
@@ -686,6 +561,131 @@ ga('send', 'pageview');
             
     
         <a href="https://tuhbm.github.io/2019/02/27/accessModifier/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2019/02/27/accessModifier/">댓글</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-javascript30secUtiltity" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/02/22/javascript30secUtiltity/">번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/02/22/javascript30secUtiltity/">
+            <time datetime="2019-02-21T16:38:48.000Z" itemprop="datePublished">2019-02-22</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Javascript/">Javascript</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/30sec/">30sec</a>, <a class="tag-link" href="/tags/Utiltity/">Utiltity</a>, <a class="tag-link" href="/tags/js/">js</a>, <a class="tag-link" href="/tags/transform/">transform</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><h1 id="Utiltity-코드-30초-시리즈"><a href="#Utiltity-코드-30초-시리즈" class="headerlink" title="[Utiltity]코드 30초 시리즈"></a>[Utiltity]코드 30초 시리즈</h1><p><img src="https://tuhbm.github.io/images/javascript/img-javascript30.png" alt="Javascript 30 seconds"></p>
+<h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3><p>기능을 직접 한땀 한땀 개발하는 것은 개발자로써 매우 중요한 업무입니다.<br>하지만 모든 기능을 미리 만들어 놓고 util함수 처럼 사용한다고 하면 어떨까요?<br>코드 30초만 있다면 빠르게 필요한 기능을 찾아 개발 할 수 있습니다.<br>어떠한 라이브러리도 사용하지않고 오로지 ES6로만 작성되어 있습니다.<br>이제 필요한 코드 찾아 사용하세요.<br>코드 30초 시리즈는 <a href="https://30secondsofcode.org/index" rel="external nofollow noopener noreferrer" target="_blank">https://30secondsofcode.org/index</a>를 기반으로 번역 &amp; 정리하였습니다.</p>
+<h2 id="Utiltity편"><a href="#Utiltity편" class="headerlink" title="Utiltity편"></a>Utiltity편</h2><hr>
+<h3 id="castArray"><a href="#castArray" class="headerlink" title="castArray"></a>castArray</h3><p>인자로 받은 값을 배열로 변경합니다.<br><code>Array.prototype.isArray()</code>를 사용하여 인자로 받은 val을 값을 배열에 넣어 리턴합니다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> castArray = <span class="function"><span class="params">val</span> =&gt;</span> (<span class="built_in">Array</span>.isArray(val) ? val : [val]);</span><br><span class="line"><span class="comment">// EXAMPLES</span></span><br><span class="line">castArray(<span class="string">'foo'</span>); <span class="comment">// ['foo']</span></span><br><span class="line">castArray([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]); <span class="comment">// [1,2,3,4]</span></span><br></pre></td></tr></table></figure>
+<hr><p></p>
+            <p class="article-more-link">
+                <a href="/2019/02/22/javascript30secUtiltity/#more">자세히 보기</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="https://tuhbm.github.io/2019/02/22/javascript30secUtiltity/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://tuhbm.github.io/2019/02/22/javascript30secUtiltity/">댓글</a>
     
 
         </footer>
@@ -1455,25 +1455,6 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2019/03/13/javascript30secUtiltity/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
-                            <p class="item-title"><a href="/2019/03/13/javascript30secUtiltity/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편</a></p>
-                            <p class="item-date"><time datetime="2019-03-12T15:00:41.951Z" itemprop="datePublished">2019-03-13</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2019/03/12/seo3/" class="thumbnail">
     
     
@@ -1531,6 +1512,25 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2019/02/22/javascript30secUtiltity/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tuhbm.github.io/images/bnr-js.jpg)" alt="번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2019/02/22/javascript30secUtiltity/" class="title">번역 - 자바스크립트 코드 30초 시리즈&lt;Utiltity&gt; 1편</a></p>
+                            <p class="item-date"><time datetime="2019-02-21T16:38:48.000Z" itemprop="datePublished">2019-02-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2019/02/17/javascript30secDate/" class="thumbnail">
     
     
@@ -1565,7 +1565,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">아카이브</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">3월 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2월 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">11월 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">9월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">8월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">6월 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">4월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">3월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1월 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">9월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">8월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">7월 2017</a><span class="archive-list-count">5</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">3월 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2월 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">11월 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">9월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">8월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">6월 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">4월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">3월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1월 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">9월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">8월 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">7월 2017</a><span class="archive-list-count">5</span></li></ul>
         </div>
     </div>
 
