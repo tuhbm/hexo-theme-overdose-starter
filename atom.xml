@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-03-04T14:32:51.825Z</updated>
+  <updated>2019-03-12T14:42:53.544Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SEO(Search Engine Optimization) 검색 엔진 최적화 3편</title>
+    <link href="https://tuhbm.github.io/2019/03/12/seo3/"/>
+    <id>https://tuhbm.github.io/2019/03/12/seo3/</id>
+    <published>2019-03-12T14:33:42.000Z</published>
+    <updated>2019-03-12T14:42:53.544Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/seo.jpg&quot; alt=&quot;SEO&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; class=&quot;headerlink&quot; title=&quot;개요&quot;&gt;&lt;/a&gt;개요&lt;/h1&gt;&lt;p&gt;지난번 &lt;a href=&quot;https://tuhbm.github.io/2019/03/04/seo2/&quot;&gt;SEO 검색 엔진 최적화 2편&lt;/a&gt;에서는 &lt;code&gt;noindex&lt;/code&gt;처리와 &lt;code&gt;canonical&lt;/code&gt;처리로 색인차단&lt;br&gt;또는 같은 페이지의 paramter값으로 인해 다른 url로 인식되는 문제를 하나의 대표페이지로 지정하여 검색 순위에 대한 문제를 해결해보았습니다.&lt;/p&gt;
+&lt;h2 id=&quot;본문&quot;&gt;&lt;a href=&quot;#본문&quot; class=&quot;headerlink&quot; title=&quot;본문&quot;&gt;&lt;/a&gt;본문&lt;/h2&gt;&lt;p&gt;이번 포스팅을 통해 우리의 서비스 페이지를 구글 또는 네이버의 검색 봇이 들어와 검사를 진행하고, 색인도 생성하여 필요한 url등을 가져가고,&lt;br&gt;sitemap.xml등을 확인하여, 키워드에 대한 검색 랭킹을 등록합니다.&lt;br&gt;이러한 봇이 어떻게 우리 페이지를 바라보게 되는지 테스트를 할 수 있는 크롬 extensions을 소개해 드리겠습니다.&lt;/p&gt;
+&lt;p&gt;사실 우리가 바라보는 웹페이지와 다르게 봇이 보는 우리의 웹사이트는 조금 차이가 있습니다.&lt;/p&gt;
+&lt;p&gt;UI, UX의 디자인적 요소를 바라보는 사람과 달리 봇은 웹사이트의 내용을을 코드로 바라본다고 보시면 될것같습니다.&lt;br&gt;그렇기에 css로 어떻게 표현했는지 이런 것은 바라보지 않습니다.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="SEO" scheme="https://tuhbm.github.io/categories/SEO/"/>
+    
+    
+      <category term="Search" scheme="https://tuhbm.github.io/tags/Search/"/>
+    
+      <category term="Engine" scheme="https://tuhbm.github.io/tags/Engine/"/>
+    
+      <category term="Optimization" scheme="https://tuhbm.github.io/tags/Optimization/"/>
+    
+      <category term="facebook" scheme="https://tuhbm.github.io/tags/facebook/"/>
+    
+      <category term="twitter" scheme="https://tuhbm.github.io/tags/twitter/"/>
+    
+      <category term="share" scheme="https://tuhbm.github.io/tags/share/"/>
+    
+  </entry>
   
   <entry>
     <title>SEO(Search Engine Optimization) 검색 엔진 최적화 2편</title>
@@ -261,13 +295,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
-    
-      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
-    
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
+    
+      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
     
   </entry>
   
@@ -304,13 +338,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
     
       <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
   </entry>
   
@@ -669,47 +703,6 @@
       <category term="알고리즘" scheme="https://tuhbm.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="개발" scheme="https://tuhbm.github.io/tags/%EA%B0%9C%EB%B0%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java 유효범위(scope)</title>
-    <link href="https://tuhbm.github.io/2018/06/24/javaScope/"/>
-    <id>https://tuhbm.github.io/2018/06/24/javaScope/</id>
-    <published>2018-06-24T12:08:55.000Z</published>
-    <updated>2018-06-24T12:20:02.090Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/h2&gt;&lt;p&gt;이 카테고리는 자바를 공부 하며, 익힌 내용을 기록합니다.&lt;br&gt;책을 보며, 또는 독학을 하므로 &lt;code&gt;잘못된 내용이 있으면 댓글 또는 메일주시면 신속히 오류처리하겠습니다.&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;유효범위-scope&quot;&gt;&lt;a href=&quot;#유효범위-scope&quot; class=&quot;headerlink&quot; title=&quot;유효범위(scope)&quot;&gt;&lt;/a&gt;유효범위(scope)&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/java/img_scope.jpg&quot; alt=&quot;Scope&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;이론&quot;&gt;&lt;a href=&quot;#이론&quot; class=&quot;headerlink&quot; title=&quot;이론&quot;&gt;&lt;/a&gt;이론&lt;/h2&gt;&lt;p&gt;우리는 보통 여러명의 개발자들과 협업을 하며 개발을 진행합니다.&lt;br&gt;그렇기에 어떠한 것을 명명할때, 같은 이름으로 충돌이 발생 할 수 있습니다.&lt;br&gt;예를들어,&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; left;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="JAVA" scheme="https://tuhbm.github.io/categories/JAVA/"/>
-    
-    
-      <category term="java" scheme="https://tuhbm.github.io/tags/java/"/>
-    
-      <category term="oop" scheme="https://tuhbm.github.io/tags/oop/"/>
-    
-      <category term="객체지향" scheme="https://tuhbm.github.io/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/"/>
-    
-      <category term="메소드" scheme="https://tuhbm.github.io/tags/%EB%A9%94%EC%86%8C%EB%93%9C/"/>
-    
-      <category term="클래스" scheme="https://tuhbm.github.io/tags/%ED%81%B4%EB%9E%98%EC%8A%A4/"/>
-    
-      <category term="멤버변수" scheme="https://tuhbm.github.io/tags/%EB%A9%A4%EB%B2%84%EB%B3%80%EC%88%98/"/>
-    
-      <category term="유효범위" scheme="https://tuhbm.github.io/tags/%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84/"/>
-    
-      <category term="스코프" scheme="https://tuhbm.github.io/tags/%EC%8A%A4%EC%BD%94%ED%94%84/"/>
-    
-      <category term="scope" scheme="https://tuhbm.github.io/tags/scope/"/>
-    
-      <category term="this" scheme="https://tuhbm.github.io/tags/this/"/>
     
   </entry>
   
