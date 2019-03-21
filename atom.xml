@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-03-12T15:00:41.952Z</updated>
+  <updated>2019-03-21T12:13:46.136Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Axios를 사용하여 HTTP요청하기</title>
+    <link href="https://tuhbm.github.io/2019/03/21/axios/"/>
+    <id>https://tuhbm.github.io/2019/03/21/axios/</id>
+    <published>2019-03-21T10:02:50.000Z</published>
+    <updated>2019-03-21T12:13:46.136Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/javascript/img_axios.png&quot; alt=&quot;SEO&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Axios&quot;&gt;&lt;a href=&quot;#Axios&quot; class=&quot;headerlink&quot; titl
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+    
+      <category term="http" scheme="https://tuhbm.github.io/tags/http/"/>
+    
+      <category term="request" scheme="https://tuhbm.github.io/tags/request/"/>
+    
+      <category term="get" scheme="https://tuhbm.github.io/tags/get/"/>
+    
+      <category term="post" scheme="https://tuhbm.github.io/tags/post/"/>
+    
+  </entry>
   
   <entry>
     <title>SEO(Search Engine Optimization) 검색 엔진 최적화 3편</title>
@@ -661,35 +691,6 @@
 &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/terms/align1.jpg&quot; alt=&quot;정렬&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;정렬&quot;&gt;&lt;a href=&quot;#정렬&quot; class=&quot;headerlink&quot; title=&quot;정렬&quot;&gt;&lt;/a&gt;정렬&lt;/h1&gt;&lt;p&gt;지난시간에 &lt;a href=&quot;https://tuhbm.github.io/2018/08/20/algorithm/&quot;&gt;알고리즘&lt;/a&gt;에 대해 알아보았습니다.&lt;br&gt;알고리즘을 요약하자면, &lt;em&gt;어떠한 명령어들을 처리하는 과정&lt;/em&gt;이라고 하였습니다.&lt;/p&gt;
 &lt;p&gt;이러한 과정을 함에 있어서 &lt;strong&gt;효율적이고 좋은 성능&lt;/strong&gt;을 통해 개발을 하는 것이 좋은 알고리즘이라고 했었습니다.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
-    
-    
-      <category term="효율성" scheme="https://tuhbm.github.io/tags/%ED%9A%A8%EC%9C%A8%EC%84%B1/"/>
-    
-      <category term="algorithm" scheme="https://tuhbm.github.io/tags/algorithm/"/>
-    
-      <category term="알고리즘" scheme="https://tuhbm.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
-    
-      <category term="개발" scheme="https://tuhbm.github.io/tags/%EA%B0%9C%EB%B0%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>알고리즘</title>
-    <link href="https://tuhbm.github.io/2018/08/20/algorithm/"/>
-    <id>https://tuhbm.github.io/2018/08/20/algorithm/</id>
-    <published>2018-08-20T13:47:40.000Z</published>
-    <updated>2018-08-20T14:01:37.861Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/terms/algorithm1.png&quot; alt=&quot;알고리즘&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;알고리즘&quot;&gt;&lt;a href=&quot;#알고리즘&quot; class=&quot;headerlink&quot; title=&quot;알고리즘&quot;&gt;&lt;/a&gt;알고리즘&lt;/h1&gt;&lt;h2 id=&quot;알고리즘이란&quot;&gt;&lt;a href=&quot;#알고리즘이란&quot; class=&quot;headerlink&quot; title=&quot;알고리즘이란?&quot;&gt;&lt;/a&gt;알고리즘이란?&lt;/h2&gt;&lt;p&gt;명령어들의 순서상 &lt;strong&gt;처리과정&lt;/strong&gt;을 말합니다.&lt;br&gt;예를들어 우리가 학교에 등교할때도 잠에서 깨고, 아침을 먹고, 양치를 하고, 씻고, 교복을 입고, 학교에 도착하기까지의 순서상 처리하는 과정이 있습니다.&lt;br&gt;이들을 순서상 나열해놓은 것을 알고리즘이라고 합니다.&lt;/p&gt;
     
     </summary>
     
