@@ -240,8 +240,7 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <p><img src="https://tuhbm.github.io/images/javascript/img_axios.png" alt="SEO"></p>
+            <p></p><p><img src="https://tuhbm.github.io/images/javascript/img_axios.png" alt="SEO"></p>
 <h1 id="Axios"><a href="#Axios" class="headerlink" title="Axios"></a>Axios</h1><h2 id="소개"><a href="#소개" class="headerlink" title="소개"></a>소개</h2><p>Axios는 HTTP통신을 하는데 매우 인기있는 Javascript라이브러리입니다. Axios는 브라우저와 <a href="https://flaviocopes.com/nodejs/" rel="external nofollow noopener noreferrer" target="_blank">Node.js</a> 플랫폼에서 모두 사용할 수 있습니다.</p>
 <p>또한 IE8이상을 포함한 모든 최신 브라우저를 지원합니다.</p>
 <p>Axios는 Promise를 기반으로하여 async/await문법을 사용하여 <a href="https://flaviocopes.com/xhr/" rel="external nofollow noopener noreferrer" target="_blank">XHR</a>요청을 매우 쉽게 할 수 있습니다.</p>
@@ -252,47 +251,12 @@ ga('send', 'pageview');
 <li>응답 시간 초과를 설정하는 방법이 있습니다.</li>
 <li><a href="https://laravel.kr/docs/5.5/csrf" rel="external nofollow noopener noreferrer" target="_blank">CSRF</a> 보호 기능이 내장되어있다.</li>
 <li>JSON 데이터 자동변환</li>
-<li>Node.js에서의 사용</li>
-</ol>
-<h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><h4 id="npm에서-설치"><a href="#npm에서-설치" class="headerlink" title="npm에서 설치"></a><a href="https://flaviocopes.com/npm/" rel="external nofollow noopener noreferrer" target="_blank">npm</a>에서 설치</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install axios</span><br></pre></td></tr></table></figure>
-<h4 id="yarn에서-설치"><a href="#yarn에서-설치" class="headerlink" title="yarn에서 설치"></a><a href="https://flaviocopes.com/yarn/" rel="external nofollow noopener noreferrer" target="_blank">yarn</a>에서 설치</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add axios</span><br></pre></td></tr></table></figure>
-<p>또는 단순하게 CDN을 로드해서 사용 할 수 있습니다.</p>
-<h2 id="Axios-API"><a href="#Axios-API" class="headerlink" title="Axios API"></a>Axios API</h2><p><code>axios</code>객체는 아래와 같이 간단하게 HTTP요청을 할 수 있습니다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">axios(&#123;</span><br><span class="line">  url: <span class="string">'https://test/api/cafe/list/today'</span>,</span><br><span class="line">  method: <span class="string">'get'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    foo: <span class="string">'diary'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>그러나 보기 명확하게 method를 분리하여 사용할 수도 있습니다.</p>
-<ul>
-<li><code>axios.get()</code></li>
-<li><code>axios.post()</code></li>
-</ul>
-<p><code>$.ajax()</code>를 분리해 명확하게 사용하는 <code>$.get()</code>, <code>$.post()</code>처럼 사용하는 jQuery와 매우 흡사합니다.</p>
-<p>Axios가 아직 핫한 라이브러리는 아니지만 HTTP요청에서 사용하는 다양한 method도 제공하고 있습니다.</p>
-<ul>
-<li><code>axios.delete()</code></li>
-<li><code>axios.put()</code></li>
-<li><code>axios.patch()</code></li>
-<li><code>axios.options()</code></li>
-</ul>
-<p>그리고 HTTP헤더를 가져와 본문을 삭제하는 방법 또한 제공합니다.</p>
-<h2 id="GET-요청"><a href="#GET-요청" class="headerlink" title="GET 요청"></a>GET 요청</h2><p>Axios를 사용하는 편한 방법 중 하나는 moden javascript의 요소인 async/ await 구문을 사용하는 것 입니다.</p>
-<p>이 Node.js예제는 <a href="https://dog.ceo/" rel="external nofollow noopener noreferrer" target="_blank">Dog APi</a>를 사용하여 모든 Dog의 breed 목록을 가져와 <code>axios.get()</code> 합니다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">'axios'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> getBreeds = <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">await</span> axios.get(<span class="string">'https://dog.ceo/api/breeds/list/all'</span>);</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="built_in">console</span>.error(error);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> countBreeds = <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> breeds = <span class="keyword">await</span> getBreeds();</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span> (breeds.data.message) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`현재 강아지의 수는 <span class="subst">$&#123;<span class="built_in">Object</span>.entries(breeds.data.message).length&#125;</span>입니다.`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">countBreeds();</span><br></pre></td></tr></table></figure>
-<p>만약 async / await 구문을 사용하지 않는다면 <a href="https://flaviocopes.com/javascript-promises/" rel="external nofollow noopener noreferrer" target="_blank">Promise</a> 구문을 사용 할 수 있습니다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">'axios'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> getBreeds = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> axios.get(<span class="string">'https://dog.ceo/api/breeds/list/all'</span>);</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="built_in">console</span>.error(error)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> countBreeds = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> breeds = getBreeds()</span><br><span class="line">  	.then(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (response.data.message) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`현재 강아지의 수는 <span class="subst">$&#123;<span class="built_in">Object</span>.entries(breeds.data.message).length&#125;</span>입니다.`</span>);</span><br><span class="line">      &#125;</span><br><span class="line">  	&#125;)</span><br><span class="line">  	.catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(error);</span><br><span class="line">  	&#125;)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">countBreeds();</span><br></pre></td></tr></table></figure>
-<h3 id="GET-요청에-매개-변수-추가"><a href="#GET-요청에-매개-변수-추가" class="headerlink" title="GET 요청에 매개 변수 추가"></a>GET 요청에 매개 변수 추가</h3><p>GET 응답에는 URL에 매개변수가 포함 될 수 있습니다.</p>
-<p><code>https://test.com/?foo=bar</code></p>
-<p>Axios를 사용하여 GET 요청시 간단하게 매개변수를 추가 할 수 있습니다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">axios.get(<span class="string">'https://test.com/?foo=bar'</span>);</span><br></pre></td></tr></table></figure>
-<p>또는 <code>params</code>옵션에서 추가하여 사용 할 수 있습니다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">axios.get(<span class="string">'https://test.com/'</span>, &#123;</span><br><span class="line">  params: &#123;</span><br><span class="line">    foo: <span class="string">'bar'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="POST-요청"><a href="#POST-요청" class="headerlink" title="POST 요청"></a>POST 요청</h2><p> <code>axios.post</code>처럼 POST 요청은 <code>axios.get</code>GET 요청과 같이 거의 같습니다. </p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">axios.post(<span class="string">'https://test.com'</span>);</span><br></pre></td></tr></table></figure>
-<p>post 역시 매개변수를 추가하는방법은 get과 같습니다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">axios.post(<span class="string">'https://test.com/'</span>, &#123;</span><br><span class="line">  params: &#123;</span><br><span class="line">    foo: <span class="string">'bar'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="마무리"><a href="#마무리" class="headerlink" title="마무리"></a>마무리</h2><p><code>axios</code>를 통해 api 통신을 하는 것은 매우 간단하고, 러닝커브 또한 매우 낮습니다. 순수 자바스크립트를 사용하는 것으로도 매우 간단하게 api통신이 가능하지만 위에 말한 것처럼 axios의 장점을 생각하며, 도입을 권장합니다.</p>
-<p><strong>Good Luck</strong></p>
-
+<li>Node.js에서의 사용<p></p>
+            <p class="article-more-link">
+                <a href="/2019/03/21/axios/#more">자세히 보기</a>
+            </p>
         
-        </div>
+        </li></ol></div>
         <footer class="article-footer">
             <div class="share-container">
 

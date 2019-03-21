@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-03-21T12:13:46.136Z</updated>
+  <updated>2019-03-21T12:17:05.105Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,15 +21,22 @@
     <link href="https://tuhbm.github.io/2019/03/21/axios/"/>
     <id>https://tuhbm.github.io/2019/03/21/axios/</id>
     <published>2019-03-21T10:02:50.000Z</published>
-    <updated>2019-03-21T12:13:46.136Z</updated>
+    <updated>2019-03-21T12:17:05.105Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/javascript/img_axios.png&quot; alt=&quot;SEO&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Axios&quot;&gt;&lt;a href=&quot;#Axios&quot; class=&quot;headerlink&quot; titl
-      
+      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/javascript/img_axios.png&quot; alt=&quot;SEO&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Axios&quot;&gt;&lt;a href=&quot;#Axios&quot; class=&quot;headerlink&quot; title=&quot;Axios&quot;&gt;&lt;/a&gt;Axios&lt;/h1&gt;&lt;h2 id=&quot;소개&quot;&gt;&lt;a href=&quot;#소개&quot; class=&quot;headerlink&quot; title=&quot;소개&quot;&gt;&lt;/a&gt;소개&lt;/h2&gt;&lt;p&gt;Axios는 HTTP통신을 하는데 매우 인기있는 Javascript라이브러리입니다. Axios는 브라우저와 &lt;a href=&quot;https://flaviocopes.com/nodejs/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; 플랫폼에서 모두 사용할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;또한 IE8이상을 포함한 모든 최신 브라우저를 지원합니다.&lt;/p&gt;
+&lt;p&gt;Axios는 Promise를 기반으로하여 async/await문법을 사용하여 &lt;a href=&quot;https://flaviocopes.com/xhr/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;XHR&lt;/a&gt;요청을 매우 쉽게 할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://flaviocopes.com/fetch-api/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Fetch API&lt;/a&gt;보다 Axios가 더 좋은 장점은 아래와 같습니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;구형브라우저를 지원합니다.(Fetch API의 경우는 &lt;a href=&quot;http://hacks.mozilla.or.kr/2014/12/an-easier-way-of-using-polyfills/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;폴리필&lt;/a&gt;이 필요합니다.)&lt;/li&gt;
+&lt;li&gt;요청을 중단시킬 수 있습니다.&lt;/li&gt;
+&lt;li&gt;응답 시간 초과를 설정하는 방법이 있습니다.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://laravel.kr/docs/5.5/csrf&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;CSRF&lt;/a&gt; 보호 기능이 내장되어있다.&lt;/li&gt;
+&lt;li&gt;JSON 데이터 자동변환&lt;/li&gt;
+&lt;li&gt;Node.js에서의 사용
     
     </summary>
     
