@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-03-21T12:17:38.425Z</updated>
+  <updated>2019-03-21T12:19:24.448Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://tuhbm.github.io/2019/03/21/axios/"/>
     <id>https://tuhbm.github.io/2019/03/21/axios/</id>
     <published>2019-03-21T10:02:50.000Z</published>
-    <updated>2019-03-21T12:17:38.425Z</updated>
+    <updated>2019-03-21T12:19:24.448Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/javascript/img_axios.png&quot; alt=&quot;SEO&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/javascript/img_axios.png&quot; alt=&quot;Axios&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;Axios&quot;&gt;&lt;a href=&quot;#Axios&quot; class=&quot;headerlink&quot; title=&quot;Axios&quot;&gt;&lt;/a&gt;Axios&lt;/h1&gt;&lt;h2 id=&quot;소개&quot;&gt;&lt;a href=&quot;#소개&quot; class=&quot;headerlink&quot; title=&quot;소개&quot;&gt;&lt;/a&gt;소개&lt;/h2&gt;&lt;p&gt;Axios는 HTTP통신을 하는데 매우 인기있는 Javascript라이브러리입니다. Axios는 브라우저와 &lt;a href=&quot;https://flaviocopes.com/nodejs/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; 플랫폼에서 모두 사용할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;또한 IE8이상을 포함한 모든 최신 브라우저를 지원합니다.&lt;/p&gt;
 &lt;p&gt;Axios는 Promise를 기반으로하여 async/await문법을 사용하여 &lt;a href=&quot;https://flaviocopes.com/xhr/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;XHR&lt;/a&gt;요청을 매우 쉽게 할 수 있습니다.&lt;/p&gt;
@@ -322,6 +322,12 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -329,12 +335,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
@@ -365,14 +365,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
-    
-      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
@@ -382,6 +374,14 @@
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
+    
+      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
   </entry>
   
@@ -410,8 +410,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -419,6 +417,8 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
