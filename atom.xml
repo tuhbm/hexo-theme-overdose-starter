@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-03-21T12:19:24.448Z</updated>
+  <updated>2019-04-02T14:07:35.386Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>개발자도구 - performance편</title>
+    <link href="https://tuhbm.github.io/2019/04/02/devTools-performance/"/>
+    <id>https://tuhbm.github.io/2019/04/02/devTools-performance/</id>
+    <published>2019-04-02T14:02:50.000Z</published>
+    <updated>2019-04-02T14:07:35.386Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/devTools/develop_tools.jpg&quot; alt=&quot;SEO&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; class=&quot;headerlink&quot; title=&quot;개요&quot;&gt;&lt;/a&gt;개요&lt;/h1&gt;&lt;p&gt;웹 개발자라면 이슈가 생겼을 때 보통 브라우저에서 개발자 도구를 열어 코드를 확인하며 어떠한 부분에서 이슈가 발생했는지 확인합니다. 제가 주로 사용하는 개발자도구는 크롬입니다. 개발자도구는 보통 브라우저에 포함된 기능입니다. 심지어 우리의 주적인 &lt;em&gt;IE&lt;/em&gt;까지도 개발자도구가 존재합니다.&lt;/p&gt;
+&lt;p&gt;하지만 저도 개발자도구의 좋은 기능들을 활용하지 못했습니다. 최근 한 세미나에 참여하며, 개발자도구의 활용방법에 대해 배웠습니다. 생각보다 좋은 기능들이 많아 우리가 편리하게 개발을 하는데 도움을 받을 수 있습니다. 이러한 좋은 기능에 대해 기록해보겠습니다.&lt;/p&gt;
+&lt;h1 id=&quot;Performance탭&quot;&gt;&lt;a href=&quot;#Performance탭&quot; class=&quot;headerlink&quot; title=&quot;Performance탭&quot;&gt;&lt;/a&gt;Performance탭&lt;/h1&gt;&lt;p&gt;performance탭은 말 그대로 성능을 측정 할 수 있는 있는 도구입니다.&lt;br&gt;맨위에 녹화 버튼을 눌러 녹화를 시작한 후 새로고침을 통해 페이지의 렌더링을 진행합니다.&lt;br&gt;렌더링이 완료되면 &lt;em&gt;STOP&lt;/em&gt; 버튼을 클릭합니다.&lt;br&gt;그렇다면 아래와 같은 그래프 및 랜더링이 진행되는 화면들이 스냅샷으로 확인 가능합니다.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ETC" scheme="https://tuhbm.github.io/categories/ETC/"/>
+    
+    
+      <category term="성능최적화" scheme="https://tuhbm.github.io/tags/%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94/"/>
+    
+      <category term="개발자도구" scheme="https://tuhbm.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%8F%84%EA%B5%AC/"/>
+    
+      <category term="performance" scheme="https://tuhbm.github.io/tags/performance/"/>
+    
+      <category term="DCL" scheme="https://tuhbm.github.io/tags/DCL/"/>
+    
+      <category term="FCP" scheme="https://tuhbm.github.io/tags/FCP/"/>
+    
+      <category term="FMP" scheme="https://tuhbm.github.io/tags/FMP/"/>
+    
+      <category term="Frames" scheme="https://tuhbm.github.io/tags/Frames/"/>
+    
+      <category term="Timings" scheme="https://tuhbm.github.io/tags/Timings/"/>
+    
+      <category term="domContentLoadedEvent" scheme="https://tuhbm.github.io/tags/domContentLoadedEvent/"/>
+    
+      <category term="loadEvent" scheme="https://tuhbm.github.io/tags/loadEvent/"/>
+    
+  </entry>
   
   <entry>
     <title>Axios를 사용하여 HTTP요청하기</title>
@@ -322,12 +363,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -335,6 +370,12 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
@@ -365,6 +406,14 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
+    
+      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
@@ -374,14 +423,6 @@
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
-      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
-    
-      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
   </entry>
   
@@ -410,6 +451,8 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -417,8 +460,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
@@ -681,36 +722,6 @@
       <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
     
       <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>자료정렬</title>
-    <link href="https://tuhbm.github.io/2018/09/03/arrayAlign/"/>
-    <id>https://tuhbm.github.io/2018/09/03/arrayAlign/</id>
-    <published>2018-09-03T13:20:41.162Z</published>
-    <updated>2018-09-03T13:20:41.162Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/terms/align1.jpg&quot; alt=&quot;정렬&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;정렬&quot;&gt;&lt;a href=&quot;#정렬&quot; class=&quot;headerlink&quot; title=&quot;정렬&quot;&gt;&lt;/a&gt;정렬&lt;/h1&gt;&lt;p&gt;지난시간에 &lt;a href=&quot;https://tuhbm.github.io/2018/08/20/algorithm/&quot;&gt;알고리즘&lt;/a&gt;에 대해 알아보았습니다.&lt;br&gt;알고리즘을 요약하자면, &lt;em&gt;어떠한 명령어들을 처리하는 과정&lt;/em&gt;이라고 하였습니다.&lt;/p&gt;
-&lt;p&gt;이러한 과정을 함에 있어서 &lt;strong&gt;효율적이고 좋은 성능&lt;/strong&gt;을 통해 개발을 하는 것이 좋은 알고리즘이라고 했었습니다.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
-    
-    
-      <category term="효율성" scheme="https://tuhbm.github.io/tags/%ED%9A%A8%EC%9C%A8%EC%84%B1/"/>
-    
-      <category term="algorithm" scheme="https://tuhbm.github.io/tags/algorithm/"/>
-    
-      <category term="알고리즘" scheme="https://tuhbm.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
-    
-      <category term="개발" scheme="https://tuhbm.github.io/tags/%EA%B0%9C%EB%B0%9C/"/>
     
   </entry>
   
