@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-04-02T14:12:14.809Z</updated>
+  <updated>2019-04-10T14:07:36.428Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -17,15 +17,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>개발자도구 - performance편</title>
-    <link href="https://tuhbm.github.io/2019/04/02/devTools-performance/"/>
-    <id>https://tuhbm.github.io/2019/04/02/devTools-performance/</id>
-    <published>2019-04-02T14:02:50.000Z</published>
-    <updated>2019-04-02T14:12:14.809Z</updated>
+    <title>개발자도구 - Audits편</title>
+    <link href="https://tuhbm.github.io/2019/04/10/devTools-audits/"/>
+    <id>https://tuhbm.github.io/2019/04/10/devTools-audits/</id>
+    <published>2019-04-10T13:02:50.000Z</published>
+    <updated>2019-04-10T14:07:36.428Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/devTools/develop_tools.jpg&quot; alt=&quot;SEO&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/devTools/develop_tools.jpg&quot; alt=&quot;DevTool&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; class=&quot;headerlink&quot; title=&quot;개요&quot;&gt;&lt;/a&gt;개요&lt;/h1&gt;&lt;p&gt;웹 개발자라면 이슈가 생겼을 때 보통 브라우저에서 개발자 도구를 열어 코드를 확인하며 어떠한 부분에서 이슈가 발생했는지 확인합니다. 제가 주로 사용하는 개발자도구는 크롬입니다. 개발자도구는 보통 브라우저에 포함된 기능입니다. 심지어 우리의 주적인 &lt;em&gt;IE&lt;/em&gt;까지도 개발자도구가 존재합니다.&lt;/p&gt;
+&lt;p&gt;하지만 저도 개발자도구의 좋은 기능들을 활용하지 못했습니다. 최근 한 세미나에 참여하며, 개발자도구의 활용방법에 대해 배웠습니다. 생각보다 좋은 기능들이 많아 우리가 편리하게 개발을 하는데 도움을 받을 수 있습니다. 이러한 좋은 기능에 대해 기록해보겠습니다.&lt;/p&gt;
+&lt;h1 id=&quot;Audits탭&quot;&gt;&lt;a href=&quot;#Audits탭&quot; class=&quot;headerlink&quot; title=&quot;Audits탭&quot;&gt;&lt;/a&gt;Audits탭&lt;/h1&gt;&lt;p&gt;Audits탭은 해당 페이지의 전체적인 검사를 하는 기능이 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/devTools/audits1.png&quot; alt=&quot;audits 실행전&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ETC" scheme="https://tuhbm.github.io/categories/ETC/"/>
+    
+    
+      <category term="성능최적화" scheme="https://tuhbm.github.io/tags/%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94/"/>
+    
+      <category term="개발자도구" scheme="https://tuhbm.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%8F%84%EA%B5%AC/"/>
+    
+      <category term="성능" scheme="https://tuhbm.github.io/tags/%EC%84%B1%EB%8A%A5/"/>
+    
+      <category term="PWA" scheme="https://tuhbm.github.io/tags/PWA/"/>
+    
+      <category term="BestPractices" scheme="https://tuhbm.github.io/tags/BestPractices/"/>
+    
+      <category term="접근성" scheme="https://tuhbm.github.io/tags/%EC%A0%91%EA%B7%BC%EC%84%B1/"/>
+    
+      <category term="TTI" scheme="https://tuhbm.github.io/tags/TTI/"/>
+    
+      <category term="TimeToInteractive" scheme="https://tuhbm.github.io/tags/TimeToInteractive/"/>
+    
+      <category term="검색엔진최적화" scheme="https://tuhbm.github.io/tags/%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84%EC%B5%9C%EC%A0%81%ED%99%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>개발자도구 - Performance편</title>
+    <link href="https://tuhbm.github.io/2019/04/02/devTools-performance/"/>
+    <id>https://tuhbm.github.io/2019/04/02/devTools-performance/</id>
+    <published>2019-04-02T14:02:50.000Z</published>
+    <updated>2019-04-10T13:51:25.463Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/devTools/develop_tools.jpg&quot; alt=&quot;DevTool&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; class=&quot;headerlink&quot; title=&quot;개요&quot;&gt;&lt;/a&gt;개요&lt;/h1&gt;&lt;p&gt;웹 개발자라면 이슈가 생겼을 때 보통 브라우저에서 개발자 도구를 열어 코드를 확인하며 어떠한 부분에서 이슈가 발생했는지 확인합니다. 제가 주로 사용하는 개발자도구는 크롬입니다. 개발자도구는 보통 브라우저에 포함된 기능입니다. 심지어 우리의 주적인 &lt;em&gt;IE&lt;/em&gt;까지도 개발자도구가 존재합니다.&lt;/p&gt;
 &lt;p&gt;하지만 저도 개발자도구의 좋은 기능들을 활용하지 못했습니다. 최근 한 세미나에 참여하며, 개발자도구의 활용방법에 대해 배웠습니다. 생각보다 좋은 기능들이 많아 우리가 편리하게 개발을 하는데 도움을 받을 수 있습니다. 이러한 좋은 기능에 대해 기록해보겠습니다.&lt;/p&gt;
 &lt;h1 id=&quot;Performance탭&quot;&gt;&lt;a href=&quot;#Performance탭&quot; class=&quot;headerlink&quot; title=&quot;Performance탭&quot;&gt;&lt;/a&gt;Performance탭&lt;/h1&gt;&lt;p&gt;performance탭은 말 그대로 성능을 측정 할 수 있는 있는 도구입니다.&lt;br&gt;맨위에 녹화 버튼을 눌러 녹화를 시작한 후 새로고침을 통해 페이지의 렌더링을 진행합니다.&lt;br&gt;렌더링이 완료되면 &lt;em&gt;STOP&lt;/em&gt; 버튼을 클릭합니다.&lt;br&gt;그렇다면 아래와 같은 그래프 및 랜더링이 진행되는 화면들이 스냅샷으로 확인 가능합니다.&lt;br&gt;
@@ -687,41 +727,6 @@
       <category term="npm install" scheme="https://tuhbm.github.io/tags/npm-install/"/>
     
       <category term="npm run dev" scheme="https://tuhbm.github.io/tags/npm-run-dev/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SEO(Search Engine Optimization) 검색 엔진 최적화 1편</title>
-    <link href="https://tuhbm.github.io/2018/09/29/seo1/"/>
-    <id>https://tuhbm.github.io/2018/09/29/seo1/</id>
-    <published>2018-09-29T09:32:59.000Z</published>
-    <updated>2019-03-12T15:00:41.952Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/seo.jpg&quot; alt=&quot;SEO&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;SEO의-중요성&quot;&gt;&lt;a href=&quot;#SEO의-중요성&quot; class=&quot;headerlink&quot; title=&quot;SEO의 중요성&quot;&gt;&lt;/a&gt;SEO의 중요성&lt;/h1&gt;&lt;p&gt;비지니스 측면에 있어서 검색순위 상위권에 노출되는 것은 매우 중요한 부분입니다.&lt;br&gt;검색시 페이지 이동을 해야 검색이 된다면, 그만큼 유저들이 이전페이지들에서 원하는 결과를 얻어 해당 웹사이트에 접속할 확률이 낮습니다.&lt;br&gt;물론 입소문이 타서 자연스럽게 해당 검색어를 정확하게 입력한다면 유저의 유입확률이 높을 것이지만, 그렇지 못한 경우가 많습니다.&lt;br&gt;노출의 효과는 광고를 보면 알 수 있습니다. 자주 보는 광고를 통해 유저에게 특정 비지니스 상품을 홍보하고 그로인해 수익이 됩니다.&lt;br&gt;검색 엔진 최적화도 마찬가지의 효과입니다.&lt;br&gt;그러므로 비지니스 측면에서 검색 엔진 최적화는 매우 중요합니다.&lt;br&gt;스타트업 또는 신제품의 경우 더더욱 중요합니다.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="SEO" scheme="https://tuhbm.github.io/categories/SEO/"/>
-    
-    
-      <category term="html" scheme="https://tuhbm.github.io/tags/html/"/>
-    
-      <category term="seo" scheme="https://tuhbm.github.io/tags/seo/"/>
-    
-      <category term="search" scheme="https://tuhbm.github.io/tags/search/"/>
-    
-      <category term="engine" scheme="https://tuhbm.github.io/tags/engine/"/>
-    
-      <category term="optimization" scheme="https://tuhbm.github.io/tags/optimization/"/>
-    
-      <category term="검색최적화" scheme="https://tuhbm.github.io/tags/%EA%B2%80%EC%83%89%EC%B5%9C%EC%A0%81%ED%99%94/"/>
-    
-      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
-    
-      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
     
   </entry>
   

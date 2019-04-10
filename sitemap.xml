@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/2019/04/10/devTools-audits/</loc>
+    
+    <lastmod>2019-04-10T14:07:36.428Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2019/04/02/devTools-performance/</loc>
     
-    <lastmod>2019-04-02T14:12:14.809Z</lastmod>
+    <lastmod>2019-04-10T13:51:25.463Z</lastmod>
     
   </url>
   
@@ -44,14 +51,14 @@
   </url>
   
   <url>
-    <loc>https://tuhbm.github.io/2019/02/10/javascript30secArray1/</loc>
+    <loc>https://tuhbm.github.io/2019/02/27/accessModifier/</loc>
     
     <lastmod>2019-03-12T15:00:41.951Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://tuhbm.github.io/2019/02/27/accessModifier/</loc>
+    <loc>https://tuhbm.github.io/2019/02/10/javascript30secArray1/</loc>
     
     <lastmod>2019-03-12T15:00:41.951Z</lastmod>
     
