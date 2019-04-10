@@ -413,13 +413,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
-    
-      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
-    
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
+    
+      <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
     
   </entry>
   
@@ -456,13 +456,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
     
       <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
   </entry>
   
