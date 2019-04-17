@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-04-10T14:23:09.653Z</updated>
+  <updated>2019-04-17T12:36:22.697Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>알고리즘이 욕망하는 것들</title>
+    <link href="https://tuhbm.github.io/2019/04/17/bookAlgorithms/"/>
+    <id>https://tuhbm.github.io/2019/04/17/bookAlgorithms/</id>
+    <published>2019-04-17T12:51:20.000Z</published>
+    <updated>2019-04-17T12:36:22.697Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;알고리즘이-욕망하는-것들-What-Algorithms-Want&quot;&gt;&lt;a href=&quot;#알고리즘이-욕망하는-것들-What-Algorithms-Want&quot; class=&quot;headerlink&quot; title=&quot;알고리즘이 욕망하는 것들(What Algorithms Want)&quot;&gt;&lt;/a&gt;알고리즘이 욕망하는 것들(What Algorithms Want)&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/books/algorithms.jpg&quot; alt=&quot;알고리즘이 욕망하는 것들&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;한줄평-리뷰&quot;&gt;&lt;a href=&quot;#한줄평-리뷰&quot; class=&quot;headerlink&quot; title=&quot;한줄평 리뷰&quot;&gt;&lt;/a&gt;한줄평 리뷰&lt;/h2&gt;&lt;p&gt;알고리즘에 대한 공학적인 도서라고 생각하면 대단히 잘못된 생각이다. 매우 어려운 한글로 풀어져 있는 인문학도서이다.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
+    
+    
+      <category term="알고리즘" scheme="https://tuhbm.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="욕망" scheme="https://tuhbm.github.io/tags/%EC%9A%95%EB%A7%9D/"/>
+    
+      <category term="넷플릭스" scheme="https://tuhbm.github.io/tags/%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4/"/>
+    
+      <category term="her" scheme="https://tuhbm.github.io/tags/her/"/>
+    
+      <category term="우버" scheme="https://tuhbm.github.io/tags/%EC%9A%B0%EB%B2%84/"/>
+    
+      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
+    
+      <category term="비트코인" scheme="https://tuhbm.github.io/tags/%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8/"/>
+    
+      <category term="netflix" scheme="https://tuhbm.github.io/tags/netflix/"/>
+    
+  </entry>
   
   <entry>
     <title>개발자도구 - Audits편</title>
@@ -684,49 +721,6 @@
       <category term="to" scheme="https://tuhbm.github.io/tags/to/"/>
     
       <category term="compontent" scheme="https://tuhbm.github.io/tags/compontent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>번역 - Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 1편</title>
-    <link href="https://tuhbm.github.io/2018/10/20/vue-firebase1/"/>
-    <id>https://tuhbm.github.io/2018/10/20/vue-firebase1/</id>
-    <published>2018-10-20T03:56:34.000Z</published>
-    <updated>2018-11-05T12:37:30.061Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Vue-2-Firebase-Firebase-인증-시스템을-사용하여-15분-안에-Vue-앱을-만드는-방법-2편&quot;&gt;&lt;a href=&quot;#Vue-2-Firebase-Firebase-인증-시스템을-사용하여-15분-안에-Vue-앱을-만드는-방법-2편&quot; class=&quot;headerlink&quot; title=&quot;Vue 2 + Firebase: Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 2편&quot;&gt;&lt;/a&gt;Vue 2 + Firebase: Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 2편&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase1.png&quot; alt=&quot;Vue &amp;amp; Firebase&quot;&gt;&lt;/p&gt;
-&lt;p&gt;이 튜토리얼에서는 Vue 2, vue-router 사용 그리고 Firebase의 인증 시스템을 사용하여,&lt;br&gt;웹 어플리케이션을 신속하게 구축하는 방법을 알아봅니다.&lt;/p&gt;
-&lt;h2 id=&quot;Vue-js란-무엇인가&quot;&gt;&lt;a href=&quot;#Vue-js란-무엇인가&quot; class=&quot;headerlink&quot; title=&quot;Vue.js란 무엇인가?&quot;&gt;&lt;/a&gt;Vue.js란 무엇인가?&lt;/h2&gt;&lt;p&gt;다음은 놀랍고 가벼운 Javascript 프레임워크인 Vue.js의 개요입니다.&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Vue는 사용자 인터페이스 구축을 위한 진보적인 프레임워크입니다. Vue는 타 다른 프레임 워크와 다르게 점진적으로 채택 가능하도록 설계되었습니다. 핵심 라이브러리는 &amp;apos;View&amp;apos; 단에만 초점을 맞추고 있으며, 다른 라이브러리 또는 기존 프로젝트와 통합하기가 매우 쉽습니다.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vuejs 공식 문서: &amp;lt;https://vuejs.org/v2/guide&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
-    
-      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
-    
-    
-      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
-    
-      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
-    
-      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
-    
-      <category term="Vue.component" scheme="https://tuhbm.github.io/tags/Vue-component/"/>
-    
-      <category term="vue-cli" scheme="https://tuhbm.github.io/tags/vue-cli/"/>
-    
-      <category term="vue init" scheme="https://tuhbm.github.io/tags/vue-init/"/>
-    
-      <category term="vue-cli 3.0" scheme="https://tuhbm.github.io/tags/vue-cli-3-0/"/>
-    
-      <category term="vue create" scheme="https://tuhbm.github.io/tags/vue-create/"/>
-    
-      <category term="npm install" scheme="https://tuhbm.github.io/tags/npm-install/"/>
-    
-      <category term="npm run dev" scheme="https://tuhbm.github.io/tags/npm-run-dev/"/>
     
   </entry>
   
