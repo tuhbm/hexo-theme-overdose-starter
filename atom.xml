@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-04-24T14:14:41.451Z</updated>
+  <updated>2019-04-24T14:16:18.264Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="https://tuhbm.github.io/2019/04/24/architecture/"/>
     <id>https://tuhbm.github.io/2019/04/24/architecture/</id>
     <published>2019-04-24T14:20:50.000Z</published>
-    <updated>2019-04-24T14:14:41.451Z</updated>
+    <updated>2019-04-24T14:16:18.264Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/img-architecture.jpg&quot; alt=&quot;Architecture&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; t
-      
+      &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/img-architecture.jpg&quot; alt=&quot;Architecture&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; title=&quot;용어정리&quot;&gt;&lt;/a&gt;용어정리&lt;/h2&gt;&lt;p&gt;이 카테고리는 비전공자로서 개발자로써 공부하며, 평소 이해하지 못한 단어를 제방식대로 정리하는 카테고리입니다.&lt;br&gt;제방식대로 풀어 쓴것이므로 오류가 있을 수 있습니다.&lt;br&gt;오류가 있을시 댓글로 남겨주시면 참고하도록 하겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;아키텍처-Architecture&quot;&gt;&lt;a href=&quot;#아키텍처-Architecture&quot; class=&quot;headerlink&quot; title=&quot;아키텍처(Architecture)&quot;&gt;&lt;/a&gt;아키텍처(Architecture)&lt;/h1&gt;&lt;h2 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; class=&quot;headerlink&quot; title=&quot;개요&quot;&gt;&lt;/a&gt;개요&lt;/h2&gt;&lt;p&gt;업무를 진행하면서 듣는 많은 단어들이 있습니다. 그중에 어떤 프로젝트를 시작하기전에 항상 들리는 단어가 있습니다. 바로 &lt;strong&gt;아키텍처&lt;/strong&gt;입니다. 보통 초보개발자가 아키텍처를 구성하는 일은 지극히 드문 케이스입니다.&lt;/p&gt;
+&lt;p&gt;하지만 저와 같은 ‘초보 개발자들도 도대체 &lt;strong&gt;아키텍처&lt;/strong&gt;가 무엇이길래? 왜 우리한테는 이 업무가 주어지지 않는가?’ 에 대해 생각해 볼 수 있기에 정리를 해보려고 합니다.&lt;br&gt;
     
     </summary>
     
@@ -254,15 +254,15 @@
       <category term="SEO" scheme="https://tuhbm.github.io/categories/SEO/"/>
     
     
+      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
+    
+      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
+    
       <category term="Search" scheme="https://tuhbm.github.io/tags/Search/"/>
     
       <category term="Engine" scheme="https://tuhbm.github.io/tags/Engine/"/>
     
       <category term="Optimization" scheme="https://tuhbm.github.io/tags/Optimization/"/>
-    
-      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
-    
-      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
     
       <category term="alternate" scheme="https://tuhbm.github.io/tags/alternate/"/>
     
@@ -470,12 +470,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -484,9 +478,15 @@
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
       <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
   </entry>
   
@@ -513,16 +513,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
-      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
-    
-      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -530,6 +520,16 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
+    
+      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
     
   </entry>
   
@@ -558,6 +558,8 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -565,8 +567,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
