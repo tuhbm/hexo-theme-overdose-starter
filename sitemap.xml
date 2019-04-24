@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/2017/09/08/OSI7/</loc>
+    
+    <lastmod>2019-04-24T14:15:10.136Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tuhbm.github.io/2019/04/24/architecture/</loc>
+    
+    <lastmod>2019-04-24T14:14:41.451Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2019/04/17/bookAlgorithms/</loc>
     
     <lastmod>2019-04-17T12:36:22.697Z</lastmod>
@@ -58,14 +72,14 @@
   </url>
   
   <url>
-    <loc>https://tuhbm.github.io/2019/02/10/javascript30secArray1/</loc>
+    <loc>https://tuhbm.github.io/2019/02/27/accessModifier/</loc>
     
     <lastmod>2019-03-12T15:00:41.951Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://tuhbm.github.io/2019/02/27/accessModifier/</loc>
+    <loc>https://tuhbm.github.io/2019/02/10/javascript30secArray1/</loc>
     
     <lastmod>2019-03-12T15:00:41.951Z</lastmod>
     
@@ -355,13 +369,6 @@
     <loc>https://tuhbm.github.io/2018/01/22/sideEffect/</loc>
     
     <lastmod>2018-03-11T03:23:03.880Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2017/09/08/OSI7/</loc>
-    
-    <lastmod>2018-03-11T03:23:03.876Z</lastmod>
     
   </url>
   

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-04-17T12:36:22.697Z</updated>
+  <updated>2019-04-24T14:14:41.451Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>아키텍처란 무엇인가?</title>
+    <link href="https://tuhbm.github.io/2019/04/24/architecture/"/>
+    <id>https://tuhbm.github.io/2019/04/24/architecture/</id>
+    <published>2019-04-24T14:20:50.000Z</published>
+    <updated>2019-04-24T14:14:41.451Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/img-architecture.jpg&quot; alt=&quot;Architecture&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;용어정리&quot;&gt;&lt;a href=&quot;#용어정리&quot; class=&quot;headerlink&quot; t
+      
+    
+    </summary>
+    
+      <category term="용어정리" scheme="https://tuhbm.github.io/categories/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/"/>
+    
+    
+      <category term="architecture" scheme="https://tuhbm.github.io/tags/architecture/"/>
+    
+      <category term="설계" scheme="https://tuhbm.github.io/tags/%EC%84%A4%EA%B3%84/"/>
+    
+      <category term="구조" scheme="https://tuhbm.github.io/tags/%EA%B5%AC%EC%A1%B0/"/>
+    
+      <category term="기본" scheme="https://tuhbm.github.io/tags/%EA%B8%B0%EB%B3%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>알고리즘이 욕망하는 것들</title>
@@ -224,15 +254,15 @@
       <category term="SEO" scheme="https://tuhbm.github.io/categories/SEO/"/>
     
     
-      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
-    
-      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
-    
       <category term="Search" scheme="https://tuhbm.github.io/tags/Search/"/>
     
       <category term="Engine" scheme="https://tuhbm.github.io/tags/Engine/"/>
     
       <category term="Optimization" scheme="https://tuhbm.github.io/tags/Optimization/"/>
+    
+      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
+    
+      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
     
       <category term="alternate" scheme="https://tuhbm.github.io/tags/alternate/"/>
     
@@ -382,6 +412,8 @@
       <category term="CSS" scheme="https://tuhbm.github.io/categories/CSS/"/>
     
     
+      <category term="architecture" scheme="https://tuhbm.github.io/tags/architecture/"/>
+    
       <category term="OOCSS" scheme="https://tuhbm.github.io/tags/OOCSS/"/>
     
       <category term="BEM" scheme="https://tuhbm.github.io/tags/BEM/"/>
@@ -391,8 +423,6 @@
       <category term="style" scheme="https://tuhbm.github.io/tags/style/"/>
     
       <category term="css" scheme="https://tuhbm.github.io/tags/css/"/>
-    
-      <category term="architecture" scheme="https://tuhbm.github.io/tags/architecture/"/>
     
   </entry>
   
@@ -440,6 +470,12 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -447,12 +483,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
@@ -483,14 +513,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
-    
-      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
@@ -500,6 +522,14 @@
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
+    
+      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
   </entry>
   
@@ -528,8 +558,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -537,6 +565,8 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
@@ -680,47 +710,6 @@
       <category term="compontent" scheme="https://tuhbm.github.io/tags/compontent/"/>
     
       <category term="router-link" scheme="https://tuhbm.github.io/tags/router-link/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>번역 - Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 2편</title>
-    <link href="https://tuhbm.github.io/2018/10/20/vue-firebase2/"/>
-    <id>https://tuhbm.github.io/2018/10/20/vue-firebase2/</id>
-    <published>2018-10-20T05:20:24.000Z</published>
-    <updated>2018-11-05T12:37:30.063Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;코드-작성하기&quot;&gt;&lt;a href=&quot;#코드-작성하기&quot; class=&quot;headerlink&quot; title=&quot;코드 작성하기!&quot;&gt;&lt;/a&gt;코드 작성하기!&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase1/&quot;&gt;지난 포스팅&lt;/a&gt;에서 우리는 vue에 대해 알아보고 실습을 위한 이론 및 프로젝트를 생성해 보았습니다.&lt;br&gt;이번시간에는 코드를 작성하면서 vue-router 실습을 진행해 보겠습니다.&lt;/p&gt;
-&lt;h4 id=&quot;우리의-미래-App-아키텍처&quot;&gt;&lt;a href=&quot;#우리의-미래-App-아키텍처&quot; class=&quot;headerlink&quot; title=&quot;우리의 미래 App 아키텍처&quot;&gt;&lt;/a&gt;우리의 미래 App 아키텍처&lt;/h4&gt;&lt;p&gt;우리의 APP은 인증없이 접근 할 수 있는 2개의 View(로그인보기 및 가입보기)와 인증을 통해서만 접근 할 수 있는 1개의 뷰 View (Hello보기)로 총 3개의 View로 구성됩니다.&lt;br&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase7.png&quot; alt=&quot;APP의 View구성&quot;&gt;&lt;/p&gt;
-&lt;p&gt;로그인이 성공적으로 완료되거나 새 계정을 만든 후에는 앱의 인증 된 부분 Hello의 View로 리다이렉션됩니다.&lt;/p&gt;
-&lt;h2 id=&quot;스텝1-로그인과-회원가입&quot;&gt;&lt;a href=&quot;#스텝1-로그인과-회원가입&quot; class=&quot;headerlink&quot; title=&quot;스텝1. 로그인과 회원가입&quot;&gt;&lt;/a&gt;스텝1. 로그인과 회원가입&lt;/h2&gt;&lt;h3 id=&quot;1-1-로그인-View&quot;&gt;&lt;a href=&quot;#1-1-로그인-View&quot; class=&quot;headerlink&quot; title=&quot;1-1 로그인 View&quot;&gt;&lt;/a&gt;1-1 로그인 View&lt;/h3&gt;&lt;p&gt;Login 컴포넌트를 만들어봅시다. src / components 아래에 Login이라는 새로운 Vue 구성 요소를 만듭니다.&lt;/p&gt;
-&lt;p&gt;일단 컴포넌트는 단순히 제목, 두 개의 input 필드, 버튼 그리고 간단한 문장으로 구성됩니다.&lt;br&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase8.png&quot; alt=&quot;Login 컴포넌트&quot;&gt;&lt;/p&gt;
-&lt;p&gt;이제 컴포넌트가 생성되었습니다! 하지만이 새로운 컴포넌트를 우리 앱에 어떻게 보여 줄 수 있을까요?&lt;br&gt;음… 우리는 vue-router를 사용할것입니다. 기억하시나요? 우리는 Vue-cli로 앱을 초기 구성할때 이미 vue-router를 설치했습니다.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
-    
-      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
-    
-    
-      <category term="컴포넌트" scheme="https://tuhbm.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/"/>
-    
-      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
-    
-      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
-    
-      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
-    
-      <category term="vue-router" scheme="https://tuhbm.github.io/tags/vue-router/"/>
-    
-      <category term="history mode" scheme="https://tuhbm.github.io/tags/history-mode/"/>
-    
-      <category term="to" scheme="https://tuhbm.github.io/tags/to/"/>
-    
-      <category term="compontent" scheme="https://tuhbm.github.io/tags/compontent/"/>
     
   </entry>
   
