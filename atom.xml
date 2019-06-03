@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-04-24T14:16:18.264Z</updated>
+  <updated>2019-06-03T12:20:50.978Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>게임으로 익히는 코딩 알고리즘</title>
+    <link href="https://tuhbm.github.io/2019/06/03/gameLearningAlgorithm/"/>
+    <id>https://tuhbm.github.io/2019/06/03/gameLearningAlgorithm/</id>
+    <published>2019-06-03T12:52:26.000Z</published>
+    <updated>2019-06-03T12:20:50.978Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;게임으로-익히는-코딩-알고리즘&quot;&gt;&lt;a href=&quot;#게임으로-익히는-코딩-알고리즘&quot; class=&quot;headerlink&quot; title=&quot;게임으로 익히는 코딩 알고리즘&quot;&gt;&lt;/a&gt;게임으로 익히는 코딩 알고리즘&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/books/gameLearningAlgorithms.jpg&quot; alt=&quot;게임으로 익히는 코딩 알고리즘&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;한줄평-리뷰&quot;&gt;&lt;a href=&quot;#한줄평-리뷰&quot; class=&quot;headerlink&quot; title=&quot;한줄평 리뷰&quot;&gt;&lt;/a&gt;한줄평 리뷰&lt;/h2&gt;&lt;p&gt;알고리즘을 게임을 통해 보다 쉽고 즐기면서 배울 수 있었다.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
+    
+    
+      <category term="알고리즘" scheme="https://tuhbm.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
+    
+      <category term="python" scheme="https://tuhbm.github.io/tags/python/"/>
+    
+      <category term="코딩게임" scheme="https://tuhbm.github.io/tags/%EC%BD%94%EB%94%A9%EA%B2%8C%EC%9E%84/"/>
+    
+      <category term="codingame" scheme="https://tuhbm.github.io/tags/codingame/"/>
+    
+      <category term="game" scheme="https://tuhbm.github.io/tags/game/"/>
+    
+      <category term="learning" scheme="https://tuhbm.github.io/tags/learning/"/>
+    
+      <category term="수도코드" scheme="https://tuhbm.github.io/tags/%EC%88%98%EB%8F%84%EC%BD%94%EB%93%9C/"/>
+    
+      <category term="pseudocode" scheme="https://tuhbm.github.io/tags/pseudocode/"/>
+    
+  </entry>
   
   <entry>
     <title>아키텍처란 무엇인가?</title>
@@ -470,6 +509,12 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -478,15 +523,9 @@
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
       <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
   </entry>
   
@@ -513,6 +552,16 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
+    
+      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -520,16 +569,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
-      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
-    
-      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
     
   </entry>
   
@@ -558,8 +597,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -567,6 +604,8 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
@@ -669,45 +708,6 @@
       <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
     
       <category term="vue-router" scheme="https://tuhbm.github.io/tags/vue-router/"/>
-    
-      <category term="router-link" scheme="https://tuhbm.github.io/tags/router-link/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>번역 - Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 3편</title>
-    <link href="https://tuhbm.github.io/2018/10/20/vue-firebase3/"/>
-    <id>https://tuhbm.github.io/2018/10/20/vue-firebase3/</id>
-    <published>2018-10-20T05:20:32.000Z</published>
-    <updated>2018-11-05T12:37:30.056Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;지난 앞선 포스팅에서 &lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase1/&quot;&gt;1편&lt;/a&gt;에서는 기본 이론을 알고,&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase2/&quot;&gt;2편&lt;/a&gt;에선 컴포넌트를 각각 구성해보고, vue-router에 대한 이론을 알아보았습니다.&lt;br&gt;이제 vue-router를 사용해 컴포넌트간 이동을 진행해보도록 하겠습니다. &lt;/p&gt;
-&lt;h2 id=&quot;스텝2-컴포넌트에서-컴포넌트의-이동&quot;&gt;&lt;a href=&quot;#스텝2-컴포넌트에서-컴포넌트의-이동&quot; class=&quot;headerlink&quot; title=&quot;스텝2 컴포넌트에서 컴포넌트의 이동&quot;&gt;&lt;/a&gt;스텝2 컴포넌트에서 컴포넌트의 이동&lt;/h2&gt;&lt;p&gt;우리가 정의한 앱 구조를 살펴보면 Login 컴포넌트에서 SignUp컴포넌트로 이동하고 두 컴포넌트에서 Hello 컴포넌트로 이동할 수 있습니다.&lt;br&gt;어떻게 해야할까요?&lt;/p&gt;
-&lt;p&gt;우리는 &lt;em&gt;router-link&lt;/em&gt;라는 &lt;em&gt;vue-router&lt;/em&gt; 구성 요소를 사용할 것입니다.&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;router-link&amp;gt;는 라우터를 사용하는 앱에서 사용자가 이동하기 위한 구성 요소입니다. 목표 위치는 to라는 prop으로 지정됩니다.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;기본적으로 올바른 href로 &amp;lt;a&amp;gt; 태그로 렌더링되지만 tag의 prop으로 구성할 수 있습니다.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;router-link tag=&amp;quot;li&amp;quot; to=&amp;quot;/foo&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;a&amp;gt;/foo&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/router-link&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;또한 대상 경로가 활성화되어 있으면 링크가 자동으로 활성화된 CSS 클래스를 가져옵니다.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vue-router 설명서&amp;lt;https://router.vuejs.org/en/api/router-link.html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
-    
-      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
-    
-    
-      <category term="컴포넌트" scheme="https://tuhbm.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/"/>
-    
-      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
-    
-      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
-    
-      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
-    
-      <category term="vue-router" scheme="https://tuhbm.github.io/tags/vue-router/"/>
-    
-      <category term="to" scheme="https://tuhbm.github.io/tags/to/"/>
-    
-      <category term="compontent" scheme="https://tuhbm.github.io/tags/compontent/"/>
     
       <category term="router-link" scheme="https://tuhbm.github.io/tags/router-link/"/>
     
