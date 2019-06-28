@@ -39,6 +39,8 @@
     
       <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
     
+      <category term="python" scheme="https://tuhbm.github.io/tags/python/"/>
+    
       <category term="코딩게임" scheme="https://tuhbm.github.io/tags/%EC%BD%94%EB%94%A9%EA%B2%8C%EC%9E%84/"/>
     
       <category term="codingame" scheme="https://tuhbm.github.io/tags/codingame/"/>
@@ -46,8 +48,6 @@
       <category term="game" scheme="https://tuhbm.github.io/tags/game/"/>
     
       <category term="learning" scheme="https://tuhbm.github.io/tags/learning/"/>
-    
-      <category term="python" scheme="https://tuhbm.github.io/tags/python/"/>
     
       <category term="수도코드" scheme="https://tuhbm.github.io/tags/%EC%88%98%EB%8F%84%EC%BD%94%EB%93%9C/"/>
     
@@ -519,13 +519,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
       <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
   </entry>
   
@@ -562,13 +562,13 @@
     
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
-      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
-    
-      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
-    
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
+    
+      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
     
   </entry>
   
