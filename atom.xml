@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-06-03T12:25:00.703Z</updated>
+  <updated>2019-06-28T11:58:12.592Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Rxjs를 시작하기전에...</title>
+    <link href="https://tuhbm.github.io/2019/06/28/rxjs1/"/>
+    <id>https://tuhbm.github.io/2019/06/28/rxjs1/</id>
+    <published>2019-06-28T12:49:08.000Z</published>
+    <updated>2019-06-28T11:58:12.592Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;RxJS&quot;&gt;&lt;a href=&quot;#RxJS&quot; class=&quot;headerlink&quot; title=&quot;RxJS&quot;&gt;&lt;/a&gt;RxJS&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-rxjs.png&quot; alt=&quot;RxJS&quot;&gt;&lt;br&gt;RxJS 시리즈 포스팅은 Quick Start RxJS를 읽으면서 공부하고 정리한 내용입니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;Rxjs를-시작하기전에…&quot;&gt;&lt;a href=&quot;#Rxjs를-시작하기전에…&quot; class=&quot;headerlink&quot; title=&quot;Rxjs를 시작하기전에…&quot;&gt;&lt;/a&gt;Rxjs를 시작하기전에…&lt;/h1&gt;&lt;h2 id=&quot;개발-트랜드&quot;&gt;&lt;a href=&quot;#개발-트랜드&quot; class=&quot;headerlink&quot; title=&quot;개발 트랜드&quot;&gt;&lt;/a&gt;개발 트랜드&lt;/h2&gt;&lt;p&gt;최근 많은 개발자들이 사용하고 있는 SPA(Single Page Application)를 웹 어플리케이션 개발은 &lt;code&gt;상태에 따라 변화하는 상태머신으로 보아도 무방합니다.&lt;/code&gt;&lt;br&gt;과거 각 기능별로 모든 페이지가 존재했었습니다.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+      <category term="RxJS" scheme="https://tuhbm.github.io/categories/Javascript/RxJS/"/>
+    
+    
+      <category term="RxJS" scheme="https://tuhbm.github.io/tags/RxJS/"/>
+    
+      <category term="스트림" scheme="https://tuhbm.github.io/tags/%EC%8A%A4%ED%8A%B8%EB%A6%BC/"/>
+    
+      <category term="입력" scheme="https://tuhbm.github.io/tags/%EC%9E%85%EB%A0%A5/"/>
+    
+      <category term="로직" scheme="https://tuhbm.github.io/tags/%EB%A1%9C%EC%A7%81/"/>
+    
+      <category term="상태" scheme="https://tuhbm.github.io/tags/%EC%83%81%ED%83%9C/"/>
+    
+      <category term="Observable" scheme="https://tuhbm.github.io/tags/Observable/"/>
+    
+      <category term="데이터" scheme="https://tuhbm.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>게임으로 익히는 코딩 알고리즘</title>
@@ -657,42 +693,6 @@
 &lt;p&gt;메타에 대한 자세한 내용을 보려면 여기에서 vue-router 설명서를 확인하십시오.&lt;br&gt;&lt;a href=&quot;https://router.vuejs.org/en/advanced/meta.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;https://router.vuejs.org/en/advanced/meta.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;이 예제에서 사용할 Hello 뷰에 메타 필드를 추가해 보겠습니다.&lt;br&gt;이 메타는 requiresAuth라고하며 &lt;em&gt;Hello&lt;/em&gt; 컴포넌트에 인증이 필요함을 알립니다.&lt;/p&gt;
 &lt;p&gt;모든 컴포넌트에 경로가 존재하며, 기본 디폴트 페이지의 앱 기본경로를 재정의해야합니다.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
-    
-      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
-    
-    
-      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
-    
-      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
-    
-      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
-    
-      <category term="vue-router" scheme="https://tuhbm.github.io/tags/vue-router/"/>
-    
-      <category term="router-link" scheme="https://tuhbm.github.io/tags/router-link/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>번역 - Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 4편</title>
-    <link href="https://tuhbm.github.io/2018/10/22/vue-firebase4/"/>
-    <id>https://tuhbm.github.io/2018/10/22/vue-firebase4/</id>
-    <published>2018-10-22T13:01:25.000Z</published>
-    <updated>2018-11-05T12:37:30.065Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;지난 앞선 포스팅에서 &lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase1/&quot;&gt;1편&lt;/a&gt;에서는 기본 이론을 알고,&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase2/&quot;&gt;2편&lt;/a&gt;에선 컴포넌트를 각각 구성해보고, vue-router에 대한 이론을 알아보았습니다.&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase3/&quot;&gt;3편&lt;/a&gt;에선 vue-router를 사용해 컴포넌트간 이동을 진행해보았습니다.&lt;/p&gt;
-&lt;p&gt;이번편에서는 firebase를 연결하고 회원가입&amp;amp;로그인을 진행해 보겠습니다.&lt;/p&gt;
-&lt;h2 id=&quot;스텝3-firebase-사용&quot;&gt;&lt;a href=&quot;#스텝3-firebase-사용&quot; class=&quot;headerlink&quot; title=&quot;스텝3 firebase 사용&quot;&gt;&lt;/a&gt;스텝3 firebase 사용&lt;/h2&gt;&lt;p&gt;우리의 프론트 엔드 애플리케이션을 준비가 되었습니다. 인증 시스템을 사용할 수 있도록 Firebase를 구현합시다!&lt;/p&gt;
-&lt;h3 id=&quot;3-1-Firebase에서-새로운-프로젝트-만들기&quot;&gt;&lt;a href=&quot;#3-1-Firebase에서-새로운-프로젝트-만들기&quot; class=&quot;headerlink&quot; title=&quot;3.1 Firebase에서 새로운 프로젝트 만들기&quot;&gt;&lt;/a&gt;3.1 Firebase에서 새로운 프로젝트 만들기&lt;/h3&gt;&lt;p&gt;Firebase를 사용하려면, 먼저 firebase 콘솔에 새로운 프로젝트를 생성해야합니다.&lt;br&gt;가입된 계정이 없으면 계정을 만든 다음으로 이동하십시오.&lt;/p&gt;
-&lt;p&gt;&amp;lt;console.firebase.google.com&amp;gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/vue-firebase/vue-firebase23.png&quot; alt=&quot;Firebase console&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Add project - 프로젝트추가&lt;/em&gt; 를 클릭하세요. 새 프로젝트를 만드는 팝업이 활성화됩니다.&lt;br&gt;그리고 원하는 이름을 정하세요. 나는 &lt;em&gt;vue-firebase-tutorial&lt;/em&gt; 라고 정했습니다.&lt;br&gt;
     
     </summary>
     
