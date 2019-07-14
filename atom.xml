@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-07-14T13:34:08.081Z</updated>
+  <updated>2019-07-14T13:35:36.565Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,14 +21,13 @@
     <link href="https://tuhbm.github.io/2019/07/14/rxjs2/"/>
     <id>https://tuhbm.github.io/2019/07/14/rxjs2/</id>
     <published>2019-07-14T12:49:08.000Z</published>
-    <updated>2019-07-14T13:34:08.081Z</updated>
+    <updated>2019-07-14T13:35:36.565Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;RxJS&quot;&gt;&lt;a href=&quot;#RxJS&quot; class=&quot;headerlink&quot; title=&quot;RxJS&quot;&gt;&lt;/a&gt;RxJS&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-rxjs.png&quot; alt=&quot;Rx
-      
+      &lt;h2 id=&quot;RxJS&quot;&gt;&lt;a href=&quot;#RxJS&quot; class=&quot;headerlink&quot; title=&quot;RxJS&quot;&gt;&lt;/a&gt;RxJS&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-rxjs.png&quot; alt=&quot;RxJS&quot;&gt;&lt;br&gt;RxJS 시리즈 포스팅은 Quick Start RxJS를 읽으면서 공부하고 정리한 내용입니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;RxJS-시작하기&quot;&gt;&lt;a href=&quot;#RxJS-시작하기&quot; class=&quot;headerlink&quot; title=&quot;RxJS 시작하기&quot;&gt;&lt;/a&gt;RxJS 시작하기&lt;/h1&gt;&lt;p&gt;지난 포스팅인 &lt;a href=&quot;https://tuhbm.github.io/2019/06/28/rxjs1/&quot;&gt;Rxjs를 시작하기전에&lt;/a&gt;편에서 최근 개발트랜드와 Rxjs를 사용해야 하는 원인에 대해 알아보았습니다.&lt;br&gt;최근 개발패턴인 SPA(Single Page Application)는 데이터의 상태를 통해 웹페이지의 View와 데이터가 변경됩니다.&lt;br&gt;그렇기에 RxJS를 통해 상태체크를 통해 데이터의 흐름을 관리하는 라이브러리인 RxJS를 사용해 개발한다고 말씀드렸습니다.&lt;br&gt;실제로 &lt;a href=&quot;https://rxjs-dev.firebaseapp.com/guide/overview&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;RxJS 공식사이트&lt;/a&gt;에서도 &lt;code&gt;&amp;#39;Observable을 사용하여 비동기 및 이벤트 기반 프로그램을 작성하기 위한 라이브러리이다.&amp;#39;&lt;/code&gt;라고 써있&lt;br&gt;&lt;code&gt;&amp;#39;이벤트용 lodash정도...&amp;#39;&lt;/code&gt;라고 써있기도합니다.&lt;br&gt;그러면 이제부터 RxJS를 사용해 개발하는 패턴을 알아보겠습니다.&lt;br&gt;
     
     </summary>
     
@@ -588,6 +587,12 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -595,12 +600,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
@@ -631,14 +630,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
-    
-      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
@@ -648,6 +639,14 @@
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
+      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
+    
+      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
   </entry>
   
@@ -676,8 +675,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -685,6 +682,8 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
