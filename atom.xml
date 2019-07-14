@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-06-28T12:03:39.842Z</updated>
+  <updated>2019-07-14T13:34:08.081Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -17,11 +17,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>RxJS 시작하기</title>
+    <link href="https://tuhbm.github.io/2019/07/14/rxjs2/"/>
+    <id>https://tuhbm.github.io/2019/07/14/rxjs2/</id>
+    <published>2019-07-14T12:49:08.000Z</published>
+    <updated>2019-07-14T13:34:08.081Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;RxJS&quot;&gt;&lt;a href=&quot;#RxJS&quot; class=&quot;headerlink&quot; title=&quot;RxJS&quot;&gt;&lt;/a&gt;RxJS&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/bnr-rxjs.png&quot; alt=&quot;Rx
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
+    
+      <category term="RxJS" scheme="https://tuhbm.github.io/categories/Javascript/RxJS/"/>
+    
+    
+      <category term="RxJS" scheme="https://tuhbm.github.io/tags/RxJS/"/>
+    
+      <category term="스트림" scheme="https://tuhbm.github.io/tags/%EC%8A%A4%ED%8A%B8%EB%A6%BC/"/>
+    
+      <category term="Observable" scheme="https://tuhbm.github.io/tags/Observable/"/>
+    
+      <category term="observer" scheme="https://tuhbm.github.io/tags/observer/"/>
+    
+      <category term="pipe" scheme="https://tuhbm.github.io/tags/pipe/"/>
+    
+      <category term="도트체이닝" scheme="https://tuhbm.github.io/tags/%EB%8F%84%ED%8A%B8%EC%B2%B4%EC%9D%B4%EB%8B%9D/"/>
+    
+      <category term="오퍼레이터" scheme="https://tuhbm.github.io/tags/%EC%98%A4%ED%8D%BC%EB%A0%88%EC%9D%B4%ED%84%B0/"/>
+    
+      <category term="subscription" scheme="https://tuhbm.github.io/tags/subscription/"/>
+    
+      <category term="구독" scheme="https://tuhbm.github.io/tags/%EA%B5%AC%EB%8F%85/"/>
+    
+      <category term="subscribe" scheme="https://tuhbm.github.io/tags/subscribe/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Rxjs를 시작하기전에...</title>
     <link href="https://tuhbm.github.io/2019/06/28/rxjs1/"/>
     <id>https://tuhbm.github.io/2019/06/28/rxjs1/</id>
     <published>2019-06-28T12:49:08.000Z</published>
-    <updated>2019-06-28T12:03:39.842Z</updated>
+    <updated>2019-07-14T12:10:10.283Z</updated>
     
     <summary type="html">
     
@@ -545,12 +588,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -558,6 +595,12 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
@@ -588,6 +631,14 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
+    
+      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
+    
+      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
+    
       <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
     
       <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
@@ -597,14 +648,6 @@
       <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
     
       <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
-      <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
-    
-      <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
-    
-      <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
   </entry>
   
@@ -633,6 +676,8 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -640,8 +685,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
@@ -674,42 +717,6 @@
       <category term="flex" scheme="https://tuhbm.github.io/tags/flex/"/>
     
       <category term="translate" scheme="https://tuhbm.github.io/tags/translate/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>번역 - Vue 2 + Firebase 인증 시스템을 사용하여 15분 안에 Vue 앱을 만드는 방법 5편</title>
-    <link href="https://tuhbm.github.io/2018/10/30/vue-firebase5/"/>
-    <id>https://tuhbm.github.io/2018/10/30/vue-firebase5/</id>
-    <published>2018-10-30T11:06:19.000Z</published>
-    <updated>2018-11-05T12:37:30.067Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;지난 앞선 포스팅에서 &lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase1/&quot;&gt;1편&lt;/a&gt;에서는 기본 이론을 알고,&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase2/&quot;&gt;2편&lt;/a&gt;에선 컴포넌트를 각각 구성해보고, vue-router에 대한 이론을 알아보았습니다.&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/20/vue-firebase3/&quot;&gt;3편&lt;/a&gt;에선 vue-router를 사용해 컴포넌트간 이동을 진행해보았습니다.&lt;br&gt;&lt;a href=&quot;https://tuhbm.github.io/2018/10/22/vue-firebase4/&quot;&gt;4편&lt;/a&gt;에서는 firebase를 연결하고 회원가입&amp;amp;로그인을 진행해 보겠습니다.&lt;/p&gt;
-&lt;p&gt;마지막으로 firebase에 가입된 데이터에 인증을 통해 페이지 접속이 가능하도록 해보겠습니다.&lt;/p&gt;
-&lt;h2 id=&quot;스텝4-인증-후-앱-접속&quot;&gt;&lt;a href=&quot;#스텝4-인증-후-앱-접속&quot; class=&quot;headerlink&quot; title=&quot;스텝4 인증 후 앱 접속&quot;&gt;&lt;/a&gt;스텝4 인증 후 앱 접속&lt;/h2&gt;&lt;h3 id=&quot;4-1-router에-meta-추가&quot;&gt;&lt;a href=&quot;#4-1-router에-meta-추가&quot; class=&quot;headerlink&quot; title=&quot;4.1 router에 meta 추가&quot;&gt;&lt;/a&gt;4.1 router에 meta 추가&lt;/h3&gt;&lt;p&gt;이제 인증을 받았습니다! 하지만 아무 일도 일어나지 않습니다. 사용자를 인증 한 경우에만 응용 프로그램으로 접근 가능하도록 사용자를 리다이렉션시켜야합니다. 우리는 앱에서 인증 후 이동 될 컴포넌트가 &lt;em&gt;Hello&lt;/em&gt; 컴포넌트라고 정의 하였습니다.&lt;/p&gt;
-&lt;p&gt;Vue 애플리케이션에서 이를 구현하기 위해 vue-router의 메타 필드를 사용할 수 있습니다. 메타 필드는 경로에 설정할 수있는 추가 정보입니다.&lt;/p&gt;
-&lt;p&gt;메타에 대한 자세한 내용을 보려면 여기에서 vue-router 설명서를 확인하십시오.&lt;br&gt;&lt;a href=&quot;https://router.vuejs.org/en/advanced/meta.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;https://router.vuejs.org/en/advanced/meta.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;이 예제에서 사용할 Hello 뷰에 메타 필드를 추가해 보겠습니다.&lt;br&gt;이 메타는 requiresAuth라고하며 &lt;em&gt;Hello&lt;/em&gt; 컴포넌트에 인증이 필요함을 알립니다.&lt;/p&gt;
-&lt;p&gt;모든 컴포넌트에 경로가 존재하며, 기본 디폴트 페이지의 앱 기본경로를 재정의해야합니다.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
-    
-      <category term="Vue" scheme="https://tuhbm.github.io/categories/Javascript/Vue/"/>
-    
-    
-      <category term="vue" scheme="https://tuhbm.github.io/tags/vue/"/>
-    
-      <category term="vue.js" scheme="https://tuhbm.github.io/tags/vue-js/"/>
-    
-      <category term="tutorial" scheme="https://tuhbm.github.io/tags/tutorial/"/>
-    
-      <category term="vue-router" scheme="https://tuhbm.github.io/tags/vue-router/"/>
-    
-      <category term="router-link" scheme="https://tuhbm.github.io/tags/router-link/"/>
     
   </entry>
   
