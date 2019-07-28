@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2019-07-14T13:41:24.718Z</updated>
+  <updated>2019-07-28T07:50:33.465Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>새로운 CSS 레이아웃</title>
+    <link href="https://tuhbm.github.io/2019/07/28/newLayout/"/>
+    <id>https://tuhbm.github.io/2019/07/28/newLayout/</id>
+    <published>2019-07-28T13:51:20.000Z</published>
+    <updated>2019-07-28T07:50:33.465Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;이 카테고리는 책을 읽고, 느낀점에 대해 리뷰를 남기는 카테고리입니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;새로운-CSS-레이아웃&quot;&gt;&lt;a href=&quot;#새로운-CSS-레이아웃&quot; class=&quot;headerlink&quot; title=&quot;새로운 CSS 레이아웃&quot;&gt;&lt;/a&gt;새로운 CSS 레이아웃&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/books/newLayout.jpg&quot; alt=&quot;새로운 CSS 레이아웃&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;한줄평-리뷰&quot;&gt;&lt;a href=&quot;#한줄평-리뷰&quot; class=&quot;headerlink&quot; title=&quot;한줄평 리뷰&quot;&gt;&lt;/a&gt;한줄평 리뷰&lt;/h2&gt;&lt;p&gt;구형 브라우저를 대응하느라 css3를 사용해보 못한 마크업 방법 중 레이아웃의 분야에 대해 친절히 설명한 책이다.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
+    
+    
+      <category term="float" scheme="https://tuhbm.github.io/tags/float/"/>
+    
+      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
+    
+      <category term="flex" scheme="https://tuhbm.github.io/tags/flex/"/>
+    
+      <category term="grid" scheme="https://tuhbm.github.io/tags/grid/"/>
+    
+      <category term="css3" scheme="https://tuhbm.github.io/tags/css3/"/>
+    
+  </entry>
   
   <entry>
     <title>RxJS 시작하기</title>
@@ -587,6 +618,12 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -595,15 +632,9 @@
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
       <category term="return" scheme="https://tuhbm.github.io/tags/return/"/>
     
       <category term="then" scheme="https://tuhbm.github.io/tags/then/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
     
   </entry>
   
@@ -630,6 +661,16 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
+      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
+    
+      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
+    
+      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
+    
+      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
+    
+      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
+    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -637,16 +678,6 @@
       <category term="synchronous" scheme="https://tuhbm.github.io/tags/synchronous/"/>
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
-    
-      <category term="promise" scheme="https://tuhbm.github.io/tags/promise/"/>
-    
-      <category term="all" scheme="https://tuhbm.github.io/tags/all/"/>
-    
-      <category term="method" scheme="https://tuhbm.github.io/tags/method/"/>
-    
-      <category term="resolve" scheme="https://tuhbm.github.io/tags/resolve/"/>
-    
-      <category term="reject" scheme="https://tuhbm.github.io/tags/reject/"/>
     
   </entry>
   
@@ -675,8 +706,6 @@
       <category term="Javascript" scheme="https://tuhbm.github.io/categories/Javascript/"/>
     
     
-      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
-    
       <category term="동기" scheme="https://tuhbm.github.io/tags/%EB%8F%99%EA%B8%B0/"/>
     
       <category term="비동기" scheme="https://tuhbm.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/"/>
@@ -685,37 +714,7 @@
     
       <category term="asynchronous" scheme="https://tuhbm.github.io/tags/asynchronous/"/>
     
-  </entry>
-  
-  <entry>
-    <title>번역 - css의 DOM을 가운데 정렬하는 다양한 방법</title>
-    <link href="https://tuhbm.github.io/2018/10/31/cssAlignCenter/"/>
-    <id>https://tuhbm.github.io/2018/10/31/cssAlignCenter/</id>
-    <published>2018-10-31T10:56:08.000Z</published>
-    <updated>2018-11-05T12:37:30.058Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;CSS에서-스타일을-중심으로-배치하는-방법&quot;&gt;&lt;a href=&quot;#CSS에서-스타일을-중심으로-배치하는-방법&quot; class=&quot;headerlink&quot; title=&quot;CSS에서 스타일을 중심으로 배치하는 방법&quot;&gt;&lt;/a&gt;CSS에서 스타일을 중심으로 배치하는 방법&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://tuhbm.github.io/images/css-align-center.jpg&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
-&lt;p&gt;솔직하게 말해봅시다.&lt;/p&gt;
-&lt;p&gt;때때로 우리의 코딩 경력 전반에 걸쳐 우리는 CSS의 중심에 좌절감을 나타 냈습니다(Google 또는 스택 오버 플로우에서 div 내에서 div를 가운데에 배치하는 방법을 찾는 방법).&lt;br&gt;이 작업은 가장 간단한 작업 중 하나일 수 있지만 페이지에 더 많은 요소와 스타일을 추가하면 빠르게 혼란이 올 수 있습니다.&lt;br&gt;이것이 꽤 흔한 문제이기 때문에, 저는 이 가이드에서 CSS를 중심으로 하는 방법을 정리했습니다.&lt;br&gt;또한 CodePen에서 만든 각 예제와 함께 코드/링크도 포함했습니다. 원한다면 마음대로 포크, 공유 또는 복사하세요!&lt;/p&gt;
-&lt;p&gt;여기에서 저의 CodePen을 보세요.&lt;/p&gt;
-&lt;p&gt;더 이상 고민 말고, 그것에 대해 이야기합시다!&lt;br&gt;
-    
-    </summary>
-    
-      <category term="CSS" scheme="https://tuhbm.github.io/categories/CSS/"/>
-    
-    
-      <category term="transform" scheme="https://tuhbm.github.io/tags/transform/"/>
-    
-      <category term="align center" scheme="https://tuhbm.github.io/tags/align-center/"/>
-    
-      <category term="absolute" scheme="https://tuhbm.github.io/tags/absolute/"/>
-    
-      <category term="flex" scheme="https://tuhbm.github.io/tags/flex/"/>
-    
-      <category term="translate" scheme="https://tuhbm.github.io/tags/translate/"/>
+      <category term="callback" scheme="https://tuhbm.github.io/tags/callback/"/>
     
   </entry>
   
