@@ -35,11 +35,11 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
+      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
+    
       <category term="interview" scheme="https://tuhbm.github.io/tags/interview/"/>
     
       <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
-    
-      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
     
       <category term="book" scheme="https://tuhbm.github.io/tags/book/"/>
     
@@ -73,11 +73,11 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
-    
       <category term="smacss" scheme="https://tuhbm.github.io/tags/smacss/"/>
     
       <category term="theme" scheme="https://tuhbm.github.io/tags/theme/"/>
+    
+      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
     
       <category term="base" scheme="https://tuhbm.github.io/tags/base/"/>
     
@@ -106,9 +106,9 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
-    
       <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
+    
+      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
     
       <category term="북리뷰" scheme="https://tuhbm.github.io/tags/%EB%B6%81%EB%A6%AC%EB%B7%B0/"/>
     
