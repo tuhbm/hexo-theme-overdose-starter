@@ -35,11 +35,11 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
-    
       <category term="interview" scheme="https://tuhbm.github.io/tags/interview/"/>
     
       <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
+    
+      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
     
       <category term="book" scheme="https://tuhbm.github.io/tags/book/"/>
     
@@ -73,11 +73,11 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
+      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
+    
       <category term="smacss" scheme="https://tuhbm.github.io/tags/smacss/"/>
     
       <category term="theme" scheme="https://tuhbm.github.io/tags/theme/"/>
-    
-      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
     
       <category term="base" scheme="https://tuhbm.github.io/tags/base/"/>
     
