@@ -68,11 +68,11 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
+      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
     
       <category term="interview" scheme="https://tuhbm.github.io/tags/interview/"/>
     
-      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
+      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
     
       <category term="book" scheme="https://tuhbm.github.io/tags/book/"/>
     
@@ -106,11 +106,11 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
-    
       <category term="smacss" scheme="https://tuhbm.github.io/tags/smacss/"/>
     
       <category term="theme" scheme="https://tuhbm.github.io/tags/theme/"/>
+    
+      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
     
       <category term="base" scheme="https://tuhbm.github.io/tags/base/"/>
     
@@ -248,9 +248,9 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
-    
       <category term="알고리즘" scheme="https://tuhbm.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
     
       <category term="python" scheme="https://tuhbm.github.io/tags/python/"/>
     
@@ -317,8 +317,6 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
-    
       <category term="알고리즘" scheme="https://tuhbm.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="욕망" scheme="https://tuhbm.github.io/tags/%EC%9A%95%EB%A7%9D/"/>
@@ -328,6 +326,8 @@
       <category term="her" scheme="https://tuhbm.github.io/tags/her/"/>
     
       <category term="우버" scheme="https://tuhbm.github.io/tags/%EC%9A%B0%EB%B2%84/"/>
+    
+      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
     
       <category term="비트코인" scheme="https://tuhbm.github.io/tags/%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8/"/>
     
@@ -506,15 +506,15 @@
       <category term="SEO" scheme="https://tuhbm.github.io/categories/SEO/"/>
     
     
-      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
-    
-      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
-    
       <category term="Search" scheme="https://tuhbm.github.io/tags/Search/"/>
     
       <category term="Engine" scheme="https://tuhbm.github.io/tags/Engine/"/>
     
       <category term="Optimization" scheme="https://tuhbm.github.io/tags/Optimization/"/>
+    
+      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
+    
+      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
     
       <category term="alternate" scheme="https://tuhbm.github.io/tags/alternate/"/>
     
