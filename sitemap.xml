@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tuhbm.github.io/2019/07/14/rxjs2/</loc>
+    
+    <lastmod>2020-03-03T14:29:50.544Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2019/02/27/accessModifier/</loc>
     
     <lastmod>2020-03-03T14:26:30.249Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>https://tuhbm.github.io/2019/06/28/rxjs1/</loc>
     
     <lastmod>2019-07-14T13:41:32.575Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2019/07/14/rxjs2/</loc>
-    
-    <lastmod>2019-07-14T13:41:24.718Z</lastmod>
     
   </url>
   
@@ -107,6 +107,13 @@
   </url>
   
   <url>
+    <loc>https://tuhbm.github.io/2019/03/04/seo2/</loc>
+    
+    <lastmod>2019-03-12T15:00:41.952Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tuhbm.github.io/2018/09/29/seo1/</loc>
     
     <lastmod>2019-03-12T15:00:41.952Z</lastmod>
@@ -115,13 +122,6 @@
   
   <url>
     <loc>https://tuhbm.github.io/2019/03/12/seo3/</loc>
-    
-    <lastmod>2019-03-12T15:00:41.952Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tuhbm.github.io/2019/03/04/seo2/</loc>
     
     <lastmod>2019-03-12T15:00:41.952Z</lastmod>
     

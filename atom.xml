@@ -70,9 +70,9 @@
     
       <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
     
-      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
-    
       <category term="interview" scheme="https://tuhbm.github.io/tags/interview/"/>
+    
+      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
     
       <category term="book" scheme="https://tuhbm.github.io/tags/book/"/>
     
@@ -106,11 +106,11 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
+      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
+    
       <category term="smacss" scheme="https://tuhbm.github.io/tags/smacss/"/>
     
       <category term="theme" scheme="https://tuhbm.github.io/tags/theme/"/>
-    
-      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
     
       <category term="base" scheme="https://tuhbm.github.io/tags/base/"/>
     
@@ -156,7 +156,7 @@
     <link href="https://tuhbm.github.io/2019/07/14/rxjs2/"/>
     <id>https://tuhbm.github.io/2019/07/14/rxjs2/</id>
     <published>2019-07-14T12:49:08.000Z</published>
-    <updated>2019-07-14T13:41:24.718Z</updated>
+    <updated>2020-03-03T14:29:50.544Z</updated>
     
     <summary type="html">
     
