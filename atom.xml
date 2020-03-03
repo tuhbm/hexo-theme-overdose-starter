@@ -70,9 +70,9 @@
     
       <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
     
-      <category term="interview" scheme="https://tuhbm.github.io/tags/interview/"/>
-    
       <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
+    
+      <category term="interview" scheme="https://tuhbm.github.io/tags/interview/"/>
     
       <category term="book" scheme="https://tuhbm.github.io/tags/book/"/>
     
@@ -106,11 +106,11 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
-    
       <category term="smacss" scheme="https://tuhbm.github.io/tags/smacss/"/>
     
       <category term="theme" scheme="https://tuhbm.github.io/tags/theme/"/>
+    
+      <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
     
       <category term="base" scheme="https://tuhbm.github.io/tags/base/"/>
     
@@ -506,15 +506,15 @@
       <category term="SEO" scheme="https://tuhbm.github.io/categories/SEO/"/>
     
     
+      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
+    
+      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
+    
       <category term="Search" scheme="https://tuhbm.github.io/tags/Search/"/>
     
       <category term="Engine" scheme="https://tuhbm.github.io/tags/Engine/"/>
     
       <category term="Optimization" scheme="https://tuhbm.github.io/tags/Optimization/"/>
-    
-      <category term="noindex" scheme="https://tuhbm.github.io/tags/noindex/"/>
-    
-      <category term="canonical" scheme="https://tuhbm.github.io/tags/canonical/"/>
     
       <category term="alternate" scheme="https://tuhbm.github.io/tags/alternate/"/>
     
@@ -525,7 +525,7 @@
     <link href="https://tuhbm.github.io/2019/02/27/accessModifier/"/>
     <id>https://tuhbm.github.io/2019/02/27/accessModifier/</id>
     <published>2019-02-27T12:37:30.000Z</published>
-    <updated>2019-03-12T15:00:41.951Z</updated>
+    <updated>2020-03-03T14:26:30.249Z</updated>
     
     <summary type="html">
     
