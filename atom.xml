@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tuhbm.github.io/"/>
-  <updated>2021-03-15T12:26:23.451Z</updated>
+  <updated>2021-03-15T12:30:32.635Z</updated>
   <id>https://tuhbm.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tuhbm.github.io/2021/03/15/interface/"/>
     <id>https://tuhbm.github.io/2021/03/15/interface/</id>
     <published>2021-03-15T11:58:59.000Z</published>
-    <updated>2021-03-15T12:26:23.451Z</updated>
+    <updated>2021-03-15T12:30:32.635Z</updated>
     
     <summary type="html">
     
@@ -43,9 +43,13 @@
     
       <category term="매개체" scheme="https://tuhbm.github.io/tags/%EB%A7%A4%EA%B0%9C%EC%B2%B4/"/>
     
-      <category term="연결고" scheme="https://tuhbm.github.io/tags/%EC%97%B0%EA%B2%B0%EA%B3%A0/"/>
+      <category term="연결고리" scheme="https://tuhbm.github.io/tags/%EC%97%B0%EA%B2%B0%EA%B3%A0%EB%A6%AC/"/>
     
-      <category term="메모리" scheme="https://tuhbm.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/"/>
+      <category term="접속" scheme="https://tuhbm.github.io/tags/%EC%A0%91%EC%86%8D/"/>
+    
+      <category term="접촉" scheme="https://tuhbm.github.io/tags/%EC%A0%91%EC%B4%89/"/>
+    
+      <category term="경계" scheme="https://tuhbm.github.io/tags/%EA%B2%BD%EA%B3%84/"/>
     
   </entry>
   
@@ -101,9 +105,9 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
-    
       <category term="interview" scheme="https://tuhbm.github.io/tags/interview/"/>
+    
+      <category term="programming" scheme="https://tuhbm.github.io/tags/programming/"/>
     
       <category term="layout" scheme="https://tuhbm.github.io/tags/layout/"/>
     
@@ -281,9 +285,9 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
-    
       <category term="알고리즘" scheme="https://tuhbm.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
     
       <category term="python" scheme="https://tuhbm.github.io/tags/python/"/>
     
@@ -350,8 +354,6 @@
       <category term="book" scheme="https://tuhbm.github.io/categories/book/"/>
     
     
-      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
-    
       <category term="알고리즘" scheme="https://tuhbm.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="욕망" scheme="https://tuhbm.github.io/tags/%EC%9A%95%EB%A7%9D/"/>
@@ -361,6 +363,8 @@
       <category term="her" scheme="https://tuhbm.github.io/tags/her/"/>
     
       <category term="우버" scheme="https://tuhbm.github.io/tags/%EC%9A%B0%EB%B2%84/"/>
+    
+      <category term="book-review" scheme="https://tuhbm.github.io/tags/book-review/"/>
     
       <category term="비트코인" scheme="https://tuhbm.github.io/tags/%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8/"/>
     
